@@ -1,0 +1,2 @@
+# docs
+All Pydio Documentation
