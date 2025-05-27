@@ -1,0 +1,61 @@
+---
+slug: put-a-role-uuid
+title: "PUT /a/role/{Uuid}"
+menu: "PUT /a/role/{Uuid}"
+language: und
+menu_name: menu-dev-guide-v7
+
+---
+
+
+
+
+
+
+
+ 
+Create or update a Role  
+
+
+### Body Parameters
+
+Name | Description | Type | Required
+---|---|---|---
+
+
+
+
+
+
+### Response Example (200)
+Response Type /definitions/idmRole
+
+```
+{
+  "AutoApplies": [
+    "string"
+  ],
+  "ForceOverride": true,
+  "GroupRole": true,
+  "IsTeam": true,
+  "Label": "string",
+  "LastUpdated": 10,
+  "Policies": [
+    {
+      "Action": "string",
+      "Effect": "string",
+      "JsonConditions": "string",
+      "Resource": "string",
+      "Subject": "string",
+      "id": "string"
+    }
+  ],
+  "PoliciesContextEditable": true,
+  "UserRole": true,
+  "Uuid": "string"
+}
+```
+
+
+
+

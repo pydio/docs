@@ -1,0 +1,53 @@
+---
+slug: cells-enterprise-admin-config-check
+title: "cells-enterprise admin config check"
+menu: "cells-enterprise admin config check"
+language: und
+menu_name: menu-dev-guide-v7
+weight: 17
+
+---
+Check if a valid config is found
+
+### Synopsis
+
+
+DESCRIPTION
+
+  Use this command to automatically detect if config is already set and valid. 
+  By default it points the URL provided by the **global** --config flag.
+  You can override this with the --conf to specify a config not currently used by Cells. 
+
+EXAMPLE
+
+  Check if an etcd config is prepared 
+  $ ./cells-enterprise admin config check --config etcd://:2379/
+
+
+
+```
+./cells-enterprise admin config check [flags]
+```
+
+### Options
+
+```
+      --conf string   Alternative config URL (overrides global flag)
+  -h, --help          help for check
+```
+
+### Options inherited from parent commands
+
+```
+      --advertise_address string     Default advertise address (default "127.0.0.1")
+      --broker string                Pub/sub service for events between services (default "grpc://:8030")
+      --config string                Configuration storage URL. Supported schemes: etcd|etcd+tls|file|grpc|mem|vault|vaults (default "file:///home/teamcity/.config/pydio/cells/pydio.json")
+      --discovery string             Registry and pub/sub (default "grpc://:8030")
+      --grpc_client_timeout string   Default timeout for long-running GRPC calls, expressed as a golang duration (default "60m")
+      --registry string              Registry used to contact services (default "grpc://:8030")
+```
+
+### SEE ALSO
+
+* [./cells-enterprise admin config](./cells-enterprise-admin-config)	 - Configuration manager
+

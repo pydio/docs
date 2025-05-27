@@ -1,0 +1,27 @@
+---
+slug: import-from-csv
+title: "Import from CSV"
+menu: "Import from CSV"
+language: und
+menu_name: menu-admin-guide-v6-enterprise
+weight: 3
+
+---
+
+ Import users list from a CSV file
+
+### Parameters
+|Label (internal name)|Type|Default|Description|
+|---|---|---|---|
+|**Use fields below to create mapping between columns headers and Pydio Cells internal attributes.** (legend)|legend|<no value>|Use fields below to create mapping between columns headers and Pydio Cells internal attributes.|
+|**Group Base** (group)|string|csvstore|Default group users list will be synced with (leave blank to use root group)|
+|**Comma** (comma)|string|,|Char used as a separator in a comma-separated value file|
+|**Comment** (comment)|string|#|Char used as a comment separator in a comma-separated value file|
+|**Trim Leading Space** (trimLeadingSpace)|boolean|true|Remove leading space from line if any|
+|**CSV Column** (mappings.csv)|string|<no value>|Name of the CSV Column|
+|**User attribute** (mappings.attribute)|select, possible values: Login (Login),<br/>Password (Password),<br/>Name (Attributes.displayName),<br/>Profile (Attributes.profile),<br/>Avatar (Attributes.avatar),<br/>Email (Attributes.email),<br/>HasEmail (Attributes.hasEmail),<br/>AuthSource (Attributes.AuthSource),<br/>GroupPath (GroupPath),<br/>IsGroup (IsGroup),<br/>GroupLabel (GroupLabel),<br/>Roles (separated with pipe symbol) (Roles)||Cells user attribute to be mapped|
+
+
+
+
+

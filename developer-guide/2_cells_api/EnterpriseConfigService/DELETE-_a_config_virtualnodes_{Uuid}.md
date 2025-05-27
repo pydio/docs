@@ -1,0 +1,52 @@
+---
+slug: delete-a-config-virtualnodes-uuid
+title: "DELETE /a/config/virtualnodes/{Uuid}"
+menu: "DELETE /a/config/virtualnodes/{Uuid}"
+language: und
+menu_name: menu-dev-guide-v7
+
+---
+
+
+
+
+
+
+
+ 
+[Enterprise Only] Delete a virtual node  
+
+
+### Path Parameters
+
+ - **Uuid** (_string, required_) ------------------------------------
+Core identification of the node
+------------------------------------
+
+ - **Path** (_string_) 
+
+ - **Type** (_string_) 
+
+ - **Size** (_string_) Size of the file, or cumulated size of folder
+
+ - **MTime** (_string_) Last modification Timestamp
+
+ - **Mode** (_integer_) Permission mode, like 0777
+
+ - **Etag** (_string_) Hash of the content if node is a LEAF, Uuid or
+
+
+
+
+### Response Example (200)
+Response Type /definitions/entDeleteVirtualNodeResponse
+
+```
+{
+  "Success": true
+}
+```
+
+
+
+

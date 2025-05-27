@@ -1,0 +1,49 @@
+---
+slug: cells-enterprise-admin-config-db
+title: "cells-enterprise admin config db"
+menu: "cells-enterprise admin config db"
+language: und
+menu_name: menu-dev-guide-v7
+weight: 19
+
+---
+Manage Database configuration
+
+### Synopsis
+
+
+DESCRIPTION
+
+  Manage database configuration.
+  Each service can be configured to point to its own database. This command provides ways to manage databases.
+
+
+```
+./cells-enterprise admin config db [flags]
+```
+
+### Options
+
+```
+  -h, --help   help for db
+```
+
+### Options inherited from parent commands
+
+```
+      --advertise_address string     Default advertise address (default "127.0.0.1")
+      --broker string                Pub/sub service for events between services (default "grpc://:8030")
+      --config string                Configuration storage URL. Supported schemes: etcd|etcd+tls|file|grpc|mem|vault|vaults (default "file:///home/teamcity/.config/pydio/cells/pydio.json")
+      --discovery string             Registry and pub/sub (default "grpc://:8030")
+      --grpc_client_timeout string   Default timeout for long-running GRPC calls, expressed as a golang duration (default "60m")
+      --registry string              Registry used to contact services (default "grpc://:8030")
+```
+
+### SEE ALSO
+
+* [./cells-enterprise admin config](./cells-enterprise-admin-config)	 - Configuration manager
+* [./cells-enterprise admin config db add](./cells-enterprise-admin-config-db-add)	 - Add a database connection to the configuration
+* [./cells-enterprise admin config db list](./cells-enterprise-admin-config-db-list)	 - List all database connections
+* [./cells-enterprise admin config db move](./cells-enterprise-admin-config-db-move)	 - Move service data from one database to another
+* [./cells-enterprise admin config db set](./cells-enterprise-admin-config-db-set)	 - Assign a database connection to a service
+

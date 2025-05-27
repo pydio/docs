@@ -1,0 +1,40 @@
+---
+slug: get-a-frontend-binaries-binarytype-uuid
+title: "GET /a/frontend/binaries/{BinaryType}/{Uuid}"
+menu: "GET /a/frontend/binaries/{BinaryType}/{Uuid}"
+language: und
+menu_name: menu-dev-guide-v7
+
+---
+
+
+
+
+
+
+
+ 
+Serve frontend binaries directly (avatars / logos / bg images)  
+
+
+### Path Parameters
+
+ - **BinaryType** (_string, required_) Currently supported values are USER and GLOBAL
+
+ - **Uuid** (_string, required_) Id of the binary
+
+
+
+
+### Response Example (200)
+Response Type /definitions/restFrontBinaryResponse
+
+```
+{
+  "Data": "string"
+}
+```
+
+
+
+

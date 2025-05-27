@@ -1,0 +1,70 @@
+---
+slug: get-a-frontend-settings-menu
+title: "GET /a/frontend/settings-menu"
+menu: "GET /a/frontend/settings-menu"
+language: und
+menu_name: menu-dev-guide-v7
+
+---
+
+
+
+
+
+
+
+ 
+Sends a tree of nodes to be used a menu in the Settings panel  
+
+
+No Parameters
+
+
+
+### Response Example (200)
+Response Type /definitions/restSettingsMenuResponse
+
+```
+{
+  "Sections": [
+    {
+      "CHILDREN": [
+        {
+          "ALIAS": "string",
+          "Accesses": {},
+          "DESCRIPTION": "string",
+          "Feature": "string",
+          "Key": "string",
+          "LABEL": "string",
+          "MANAGER": "string",
+          "METADATA": {
+            "advanced": true,
+            "component": "string",
+            "icon_class": "string",
+            "indexed": [
+              "string"
+            ],
+            "props": "string"
+          }
+        }
+      ],
+      "DESCRIPTION": "string",
+      "Key": "string",
+      "LABEL": "string"
+    }
+  ],
+  "__metadata__": {
+    "advanced": true,
+    "component": "string",
+    "icon_class": "string",
+    "indexed": [
+      "string"
+    ],
+    "props": "string"
+  }
+}
+```
+
+
+
+

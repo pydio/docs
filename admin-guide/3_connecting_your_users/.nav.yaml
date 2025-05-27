@@ -1,0 +1,8 @@
+title: Connect your users
+abstract: Connecting your existing directories, either via standard AD/LDAP connection or by creating SSO bridges using modern technologies in Pydio Cells.
+menu: Connect your users
+language: und
+weight: 3
+menu_name: menu-admin-guide-v7-enterprise
+
+slug: connect-your-users

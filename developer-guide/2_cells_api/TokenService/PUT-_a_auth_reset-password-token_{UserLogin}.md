@@ -1,0 +1,42 @@
+---
+slug: put-a-auth-reset-password-token-userlogin
+title: "PUT /a/auth/reset-password-token/{UserLogin}"
+menu: "PUT /a/auth/reset-password-token/{UserLogin}"
+language: und
+menu_name: menu-dev-guide-v7
+
+---
+
+
+
+
+
+
+
+ 
+Generate a unique token for the reset password process  
+
+
+### Body Parameters
+
+Name | Description | Type | Required
+---|---|---|---
+
+
+
+
+
+
+### Response Example (200)
+Response Type /definitions/restResetPasswordTokenResponse
+
+```
+{
+  "Message": "string",
+  "Success": true
+}
+```
+
+
+
+

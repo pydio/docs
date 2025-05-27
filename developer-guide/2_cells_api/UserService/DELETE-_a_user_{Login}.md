@@ -1,0 +1,55 @@
+---
+slug: delete-a-user-login
+title: "DELETE /a/user/{Login}"
+menu: "DELETE /a/user/{Login}"
+language: und
+menu_name: menu-dev-guide-v7
+
+---
+
+
+
+
+
+
+
+ 
+Delete a user  
+
+
+### Path Parameters
+
+ - **Login** (_string, required_) User login is used to connect, field is empty for groups
+
+ - **Uuid** (_string_) User unique identifier
+
+ - **GroupPath** (_string_) Path to the parent group
+
+ - **Password** (_string_) Password can be passed to be updated (but never read back), field is empty for groups
+
+ - **OldPassword** (_string_) OldPassword must be set when a user updates her own password
+
+ - **IsGroup** (_boolean_) Whether this object is a group or a user
+
+ - **GroupLabel** (_string_) Label of the group, field is empty for users
+
+ - **LastConnected** (_integer_) Last successful connection timestamp
+
+ - **PoliciesContextEditable** (_boolean_) Context-resolved to quickly check if user is editable or not.
+
+
+
+
+### Response Example (200)
+Response Type /definitions/restDeleteResponse
+
+```
+{
+  "NumRows": "string",
+  "Success": true
+}
+```
+
+
+
+

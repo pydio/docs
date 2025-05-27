@@ -1,0 +1,65 @@
+---
+slug: cells-enterprise-admin-datasource-snapshot
+title: "cells-enterprise admin datasource snapshot"
+menu: "cells-enterprise admin datasource snapshot"
+language: und
+menu_name: menu-dev-guide-v7
+weight: 34
+
+---
+Dump/Load snapshot of the index for a flat datasource
+
+### Synopsis
+
+
+DESCRIPTION
+
+  For flat format datasources, files are stored horizontally with UUID as their names inside the storage. 
+  The associated tree structure (files and folders) is maintained in the Cells database only.
+  For backup/restore operations, it can be useful to regularly dump a snapshot of this tree structure inside a 
+  particular file inside the storage, which can be later used  to reload data on a clean installation.
+
+  This command allows to dump/load the index on-file.
+
+EXAMPLES
+
+  1. Dump database index inside a snapshot.db file inside the datasource storage:
+  $ ./cells-enterprise admin datasource snapshot --datasource=pydiods1 --operation=dump --basename=snapshot.db
+
+  2. Reload database index from a snapshot.db file located inside the datasource storage:
+  $ ./cells-enterprise admin datasource snapshot --datasource=pydiods1 --operation=load --basename=snapshot.db
+
+  3. Remove a known snapshot.db file from datasource storage:
+  $ ./cells-enterprise admin datasource snapshot --datasource=pydiods1 --operation=delete --basename=snapshot.db
+
+
+
+```
+./cells-enterprise admin datasource snapshot [flags]
+```
+
+### Options
+
+```
+  -b, --basename string     Basename of the snapshot file inside the datasource storage bucket (default "snapshot.db")
+  -d, --datasource string   Name of datasource to resynchronize
+  -f, --force               Force operation, skip confirmation prompts
+  -h, --help                help for snapshot
+  -o, --operation string    One of [dump|load|delete] to either dump index, reload an existing snapshot, or remove a snapshot (default "dump")
+```
+
+### Options inherited from parent commands
+
+```
+      --advertise_address string     Default advertise address (default "127.0.0.1")
+      --broker string                Pub/sub service for events between services (default "grpc://:8030")
+      --config string                Configuration storage URL. Supported schemes: etcd|etcd+tls|file|grpc|mem|vault|vaults (default "file:///home/teamcity/.config/pydio/cells/pydio.json")
+      --discovery string             Registry and pub/sub (default "grpc://:8030")
+      --grpc_client_timeout string   Default timeout for long-running GRPC calls, expressed as a golang duration (default "60m")
+      --registry string              Registry used to contact services (default "grpc://:8030")
+```
+
+### SEE ALSO
+
+* [./cells-enterprise admin datasource](./cells-enterprise-admin-datasource)	 - Datasource management commands
+

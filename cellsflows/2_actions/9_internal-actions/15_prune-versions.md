@@ -1,0 +1,15 @@
+---
+slug: prune-versions
+title: "Prune Versions"
+menu: "Prune Versions"
+language: und
+menu_name: menu-admin-guide-v6-enterprise
+weight: 15
+
+---
+
+[Internal] Apply versioning policies to keep only a limited number of versions.
+
+
+
+

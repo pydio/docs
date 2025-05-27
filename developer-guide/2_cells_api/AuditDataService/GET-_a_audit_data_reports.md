@@ -1,0 +1,37 @@
+---
+slug: get-a-audit-data-reports
+title: "GET /a/audit/data/reports"
+menu: "GET /a/audit/data/reports"
+language: und
+menu_name: menu-dev-guide-v7
+
+---
+
+
+
+
+
+
+
+ 
+[Enterprise Only] Audit all shares across the application  
+
+
+No Parameters
+
+
+
+### Response Example (200)
+Response Type /definitions/reportsListReportsResponse
+
+```
+{
+  "ReportDates": [
+    10
+  ]
+}
+```
+
+
+
+

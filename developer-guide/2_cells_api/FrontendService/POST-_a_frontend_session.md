@@ -1,0 +1,65 @@
+---
+slug: post-a-frontend-session
+title: "POST /a/frontend/session"
+menu: "POST /a/frontend/session"
+language: und
+menu_name: menu-dev-guide-v7
+
+---
+
+
+
+
+
+
+
+ 
+Handle JWT  
+
+
+### Body Parameters
+
+Name | Description | Type | Required
+---|---|---|---
+**AuthInfo** | Data sent back by specific auth steps | _object_ |   
+**ClientTime** | Time reference for computing jwt expiry | _integer_ |   
+**Logout** | Kill session now | _boolean_ |   
+
+
+### Body Example
+```
+{
+  "AuthInfo": {},
+  "ClientTime": 10,
+  "Logout": true
+}
+```
+
+
+
+
+
+
+### Response Example (200)
+Response Type /definitions/restFrontSessionResponse
+
+```
+{
+  "Error": "string",
+  "ExpireTime": 10,
+  "JWT": "string",
+  "RedirectTo": "string",
+  "Token": {
+    "AccessToken": "string",
+    "ExpiresAt": "string",
+    "IDToken": "string",
+    "RefreshToken": "string"
+  },
+  "Trigger": "string",
+  "TriggerInfo": {}
+}
+```
+
+
+
+

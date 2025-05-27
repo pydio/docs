@@ -1,0 +1,55 @@
+---
+slug: cells-enterprise-ctl
+title: "cells-enterprise ctl"
+menu: "cells-enterprise ctl"
+language: und
+menu_name: menu-dev-guide-v7
+weight: 58
+
+---
+Explore all registered items in registry and configuration.
+
+### Synopsis
+
+
+DESCRIPTION
+
+  This command connects to a Registry to list active items currently registered with their metadata. It can also display
+  all configuration stored inside the config store.
+
+  Item types are one of the following : 
+	- Nodes
+	- Services
+	- Servers
+	- DAOs
+	- Addresses
+	- Endpoints
+	- Tags
+	- Stats
+
+
+```
+./cells-enterprise ctl [flags]
+```
+
+### Options
+
+```
+      --advertise_address string   Default advertise address (default "127.0.0.1")
+      --broker string              Pub/sub service for events between services (default "grpc://:8030")
+      --discovery string           Registry and pub/sub (default "grpc://:8030")
+  -h, --help                       help for ctl
+      --registry string            Registry used to contact services (default "grpc://:8030")
+```
+
+### Options inherited from parent commands
+
+```
+      --config string   Configuration storage URL. Supported schemes: etcd|etcd+tls|file|grpc|mem|vault|vaults (default "file:///home/teamcity/.config/pydio/cells/pydio.json")
+```
+
+### SEE ALSO
+
+* [./cells-enterprise](./cells-enterprise)	 - Secure File Sharing for business
+* [./cells-enterprise ctl service-level](./cells-enterprise-ctl-service-level)	 - Update log level for a given service
+

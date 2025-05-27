@@ -1,0 +1,77 @@
+---
+slug: post-a-policy
+title: "POST /a/policy"
+menu: "POST /a/policy"
+language: und
+menu_name: menu-dev-guide-v7
+
+---
+
+
+
+
+
+
+
+ 
+List all defined security policies  
+
+
+### Body Parameters
+
+Name | Description | Type | Required
+---|---|---|---
+**Filter** |  | _string_ |   
+
+
+### Body Example
+```
+{
+  "Filter": "string"
+}
+```
+
+
+
+
+
+
+### Response Example (200)
+Response Type /definitions/idmListPolicyGroupsResponse
+
+```
+{
+  "PolicyGroups": [
+    {
+      "Description": "string",
+      "LastUpdated": 10,
+      "Name": "string",
+      "OwnerUuid": "string",
+      "Policies": [
+        {
+          "actions": [
+            "string"
+          ],
+          "conditions": {},
+          "description": "string",
+          "effect": "string",
+          "id": "string",
+          "resources": [
+            "string"
+          ],
+          "subjects": [
+            "string"
+          ]
+        }
+      ],
+      "ResourceGroup": "string",
+      "Uuid": "string"
+    }
+  ],
+  "Total": 10
+}
+```
+
+
+
+

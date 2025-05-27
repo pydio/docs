@@ -1,0 +1,74 @@
+---
+slug: delete-a-role-uuid
+title: "DELETE /a/role/{Uuid}"
+menu: "DELETE /a/role/{Uuid}"
+language: und
+menu_name: menu-dev-guide-v7
+
+---
+
+
+
+
+
+
+
+ 
+Delete a Role by ID  
+
+
+### Path Parameters
+
+ - **Uuid** (_string, required_) Unique identifier of this role
+
+ - **Label** (_string_) Label of this role
+
+ - **IsTeam** (_boolean_) Whether this role represents a user team or not
+
+ - **GroupRole** (_boolean_) Whether this role is attached to a Group object
+
+ - **UserRole** (_boolean_) Whether this role is attached to a User object
+
+ - **LastUpdated** (_integer_) Last modification date of the role
+
+ - **AutoApplies** (_array_) List of profiles (standard, shared, admin) on which the role will be automatically applied
+
+ - **PoliciesContextEditable** (_boolean_) Whether the policies resolve into an editable state
+
+ - **ForceOverride** (_boolean_) Is used in a stack of roles, this one will always be applied last.
+
+
+
+
+### Response Example (200)
+Response Type /definitions/idmRole
+
+```
+{
+  "AutoApplies": [
+    "string"
+  ],
+  "ForceOverride": true,
+  "GroupRole": true,
+  "IsTeam": true,
+  "Label": "string",
+  "LastUpdated": 10,
+  "Policies": [
+    {
+      "Action": "string",
+      "Effect": "string",
+      "JsonConditions": "string",
+      "Resource": "string",
+      "Subject": "string",
+      "id": "string"
+    }
+  ],
+  "PoliciesContextEditable": true,
+  "UserRole": true,
+  "Uuid": "string"
+}
+```
+
+
+
+

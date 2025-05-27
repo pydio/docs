@@ -1,0 +1,132 @@
+---
+slug: cec-ls
+title: "cec ls"
+menu: "cec ls"
+language: und
+menu_name: menu-dev-guide-v7
+weight: 23
+
+---
+List files in your Cells server
+
+### Synopsis
+
+
+DESCRIPTION
+
+  List files in your Cells server.
+
+SYNTAX
+
+  Use as a normal ls, with additional path to list sub-folders or read info about a node.
+  You can use one of the below optional flags: 
+   - d (--details) flag to display more information, 
+   - r (--raw) flag to only list the paths of found files and folders
+   - f (--exists) flag to only check if given path exists on the server.
+   - format flag with a valid go template to get a custom listing.
+
+  Note that you can only use *one* of the above flags at a time.
+
+  As reference, known attributes for the Go templates are:
+   - Type: File, Folder or Workspace
+   - Uuid: the unique ID of the corresponding node in the Cells Server
+   - Hash: in case of a file, the internal hash computed by the server 
+   - Name: name of the item
+   - Path: the path from the root of the server
+   - HumanSize: a human-friendly formatted size
+   - SizeBytes: the size of the object in bytes 
+   - TimeStamp: number of seconds since 1970 when the item was last modified 
+   - Date: a human-friendly date for the last modification
+
+Note that the last 4 meta-data are only indicative for folders: they might be out of date, if the listing happens shortly after a modification in the sub-tree.
+
+EXAMPLES
+
+ 1/ Listing the content of a folder
+  
+  $ ./cec ls common-files/Test
+  Found 6 nodes at common-files/Test:
+  +--------+-----------------+
+  |  TYPE  |      NAME       |
+  +--------+-----------------+
+  | Folder | .               |
+  | Folder | Archives        |
+  | File   | Garden.jpeg     |
+  | File   | Nighthawks.jpeg |
+  | File   | ReadMe.md       |
+  | File   | Summer.jpeg     |
+  +--------+-----------------+
+
+  
+ 2/ Showing details about a file
+  
+  $ ./cec ls -d common-files/Test/Garden.jpeg
+  Found 1 node at common-files/Test/Garden.jpeg:
+  +------+--------------------------------------+-------------+---------+----------------+----------------------------------+
+  | TYPE |                 UUID                 |    NAME     |  SIZE   |    MODIFIED    |          INTERNAL HASH           |
+  +------+--------------------------------------+-------------+---------+----------------+----------------------------------+
+  | File | e50c9d8a-a84c-4b32-908a-408927657810 | Garden.jpeg | 442 KiB | 52 minutes ago | a6676657eb373c7f3e3c4e01be817fac |
+  +------+--------------------------------------+-------------+---------+----------------+----------------------------------+
+ 
+  Will show the metadata for this node (uuid, size, modification date and internal hash)
+  
+ 3/ Only listing files and folders, one per line.
+  
+  $ ./cec ls -r common-files/Test
+  common-files/Test/Archives/
+  common-files/Test/Garden.jpeg
+  common-files/Test/Nighthawks.jpeg
+  common-files/Test/ReadMe.md
+  ...
+  
+ 4/ Using a template:
+
+  $ ./cec ls personal-files --format '"{{.Name}}";"{{.Type}}";"{{.Path}}";"{{.HumanSize}}";"{{.Date}}"' personal-files/
+  "Cat.jpg";"File";"personal-files/Cat.jpg";"1.3 MB";"2 months ago"
+  "Others";"Folder";"personal-files/Others";"12 MB";"11 minutes ago"
+  "Photo.png";"File";"personal-files/Photo.png";"8.1 MB";"3 minutes ago"
+  ...
+  
+ 5/ Check path existence.
+  
+  $ ./cec ls personal-files/info.txt -f
+  true
+  
+  $ ./cec ls personal-files/not-here -f
+  false
+
+
+
+```
+./cec ls [flags]
+```
+
+### Options
+
+```
+  -d, --details         Show more information about retrieved objects
+  -f, --exists          Check if the passed path exists on the server and return non zero status code if not
+      --format string   Use go template to format each line of the output listing
+  -h, --help            help for ls
+  -r, --raw             List found paths (one per line) with no further info to be able to use returned results in later commands
+```
+
+### Options inherited from parent commands
+
+```
+      --config string     Location of Cells Client's config files (default: /home/teamcity/.config/pydio/cells-client/config.json)
+      --log string        change log level (default: info) (default "info")
+      --login string      The user login, for Client auth only
+      --no-cache          Force token refresh at each call. This might slow down scripts with many calls
+      --password string   The user password, for Client auth only
+      --skip-keyring      Explicitly tell the tool to *NOT* try to use a keyring, even if present. Warning: sensitive information will be stored in clear text
+      --skip-verify       By default the Cells Client verifies the validity of TLS certificates for each communication. This option skips TLS certificate verification
+  -t, --token string      A valid Personal Access Token (PAT)
+  -u, --url string        The full URL of the target server
+```
+
+### SEE ALSO
+
+* [./cec](./cec)	 - Connect to a Pydio Cells server using the command line
+
+###### Auto generated by Cells Client v4.2.1 on 4-Nov-2024

@@ -1,0 +1,107 @@
+---
+slug: cells-enterprise-configure
+title: "cells-enterprise configure"
+menu: "cells-enterprise configure"
+language: und
+menu_name: menu-dev-guide-v7
+weight: 54
+
+---
+Setup required configurations
+
+### Synopsis
+
+
+DESCRIPTION
+
+  Launch the configuration process of Pydio Cells.
+
+REQUIREMENTS
+
+  You must have an available MySQL database, along with a privileged user (for instance 'pydio').
+  Supported databases are:
+   - MariaDB version 10.3 and above,
+   - MySQL version 5.7 and above (except 8.0.22 that has a bug preventing Cells to run correctly).
+
+  As recommended by database documentation, tune the 'max_connections' parameter to a value in line
+  with your production database server specifications. For reference, the default value of 151 will have a 
+  maximum memory usage of about 575MB, but will not scale up for a multiple users load in production.
+
+BROWSER-BASED INSTALLER
+
+  If you are on a desktop machine, pick browser-based installation at first prompt, or you can force it with:
+  $ ./cells-enterprise configure --bind default
+ 
+  The installer opens a web page on port 8080 with a wizard for you to provide various configuration parameters, 
+  including DB connection info and the login/password of the main administrator.
+
+  In case where default port is busy, you can choose another one via the 'bind' flag, for instance:
+  $ ./cells-enterprise configure --bind 0.0.0.0:12345
+  or   
+  $ ./cells-enterprise configure --bind <your server IP or FQDN>:12345
+
+  After browser configuration, all microservices are started automatically and you can directly start using Cells. 
+  It is yet good practice to stop the installer and restart Cells in normal mode before going live.
+
+COMMAND-LINE INSTALLER
+
+  If you are more a shell person, you can perform the configuration process directly using this CLI (using the '--cli' 
+  flag or by choosing so at first prompt). You will then be able to choose to either use the default bindings for the 
+  embedded webserver or adapt these to your specific setup.
+ 
+  You can always reconfigure the webserver bindings afterwards by calling this command:
+  $ ./cells-enterprise configure sites
+  See corresponding inline documentation for further details.
+
+AUTOMATED PROVISIONING
+
+  For automated, non-interactive installation, you can pass a YAML or a JSON config file that contains all necessary 
+  information, please refer to the documentation on https://pydio.com
+
+ENVIRONMENT
+
+  All the command flags documented below are mapped to their associated ENV var using upper case and CELLS_ prefix.
+  For example :
+  $ ./cells-enterprise configure --bind :9876
+  is equivalent to 
+  $ export CELLS_BIND=":9876"; ./cells-enterprise configure
+
+  For backward compatibility reasons, the --cli, --yaml and --json flags do not respect the above rule (this might evolve in a future version).
+  They are respectively equivalent to CELLS_INSTALL_CLI, CELLS_INSTALL_YAML and CELLS_INSTALL_JSON ENV vars.
+
+ 
+
+```
+./cells-enterprise configure [flags]
+```
+
+### Options
+
+```
+      --bind_address string         Address on which servers will bind. Binding port depends on the server type (grpc, http, etc). (default "127.0.0.1")
+      --cli                         Do not prompt for install mode, use CLI mode by default
+      --exit_after_install          Simply exits main process after the installation is done
+  -h, --help                        help for configure
+      --json string                 Points toward a configuration in JSON format
+      --site_bind string            [Site] The 'site_' flags suite overrides config-defined sites. Bind is the site binding address IP|DOMAIN:PORT (default 0.0.0.0:8080)
+      --site_external string        [Site] External full URL http[s]://IP|DOMAIN[:PORT] exposed to the outside
+      --site_le_agree               [Site] Accept Let's Encrypt EULA
+      --site_le_email string        [Site] Set email to enable Let's Encrypt automatic TLS configuration
+      --site_le_staging             [Site] Use Let's Encrypt staging CA instead of production to avoid being banned on misconfiguration.
+      --site_no_tls                 [Site] Use plain HTTP (default false, use self-signed)
+      --site_tls_cert_file string   [Site] Path to custom TLS certificate file
+      --site_tls_key_file string    [Site] Path to custom TLS key file
+      --yaml string                 Points toward a configuration in YAML format
+```
+
+### Options inherited from parent commands
+
+```
+      --config string   Configuration storage URL. Supported schemes: etcd|etcd+tls|file|grpc|mem|vault|vaults (default "file:///home/teamcity/.config/pydio/cells/pydio.json")
+```
+
+### SEE ALSO
+
+* [./cells-enterprise](./cells-enterprise)	 - Secure File Sharing for business
+* [./cells-enterprise configure sites](./cells-enterprise-configure-sites)	 - Manage site addresses
+

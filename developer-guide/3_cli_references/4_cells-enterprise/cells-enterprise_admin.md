@@ -1,0 +1,56 @@
+---
+slug: cells-enterprise-admin
+title: "cells-enterprise admin"
+menu: "cells-enterprise admin"
+language: und
+menu_name: menu-dev-guide-v7
+weight: 2
+
+---
+Direct Read/Write access to Cells data
+
+### Synopsis
+
+
+DESCRIPTION
+
+  Set of commands with direct access to Cells data.
+	
+  These commands require a running Cells instance. They connect directly to low-level services
+  using gRPC connections. They are not authenticated.
+
+
+```
+./cells-enterprise admin [flags]
+```
+
+### Options
+
+```
+      --advertise_address string     Default advertise address (default "127.0.0.1")
+      --broker string                Pub/sub service for events between services (default "grpc://:8030")
+      --discovery string             Registry and pub/sub (default "grpc://:8030")
+      --grpc_client_timeout string   Default timeout for long-running GRPC calls, expressed as a golang duration (default "60m")
+  -h, --help                         help for admin
+      --registry string              Registry used to contact services (default "grpc://:8030")
+```
+
+### Options inherited from parent commands
+
+```
+      --config string   Configuration storage URL. Supported schemes: etcd|etcd+tls|file|grpc|mem|vault|vaults (default "file:///home/teamcity/.config/pydio/cells/pydio.json")
+```
+
+### SEE ALSO
+
+* [./cells-enterprise](./cells-enterprise)	 - Secure File Sharing for business
+* [./cells-enterprise admin acl](./cells-enterprise-admin-acl)	 - Manage access control lists
+* [./cells-enterprise admin cert](./cells-enterprise-admin-cert)	 - Certification manager
+* [./cells-enterprise admin clean](./cells-enterprise-admin-clean)	 - Housekeeping commands
+* [./cells-enterprise admin config](./cells-enterprise-admin-config)	 - Configuration manager
+* [./cells-enterprise admin datasource](./cells-enterprise-admin-datasource)	 - Datasource management commands
+* [./cells-enterprise admin file](./cells-enterprise-admin-file)	 - Directly manage files and metadata on the nodes
+* [./cells-enterprise admin jobs](./cells-enterprise-admin-jobs)	 - Group job-related commands
+* [./cells-enterprise admin license](./cells-enterprise-admin-license)	 - Manage Cells Enterprise license
+* [./cells-enterprise admin user](./cells-enterprise-admin-user)	 - Manage users
+

@@ -1,0 +1,76 @@
+---
+slug: post-a-meta-set-nodepath
+title: "POST /a/meta/set/{NodePath}"
+menu: "POST /a/meta/set/{NodePath}"
+language: und
+menu_name: menu-dev-guide-v7
+
+---
+
+
+
+
+
+
+
+ 
+Update metadata for a given node  
+
+
+### Body Parameters
+
+Name | Description | Type | Required
+---|---|---|---
+
+
+
+
+
+
+### Response Example (200)
+Response Type /definitions/treeNode
+
+```
+{
+  "AppearsIn": [
+    {
+      "Path": "string",
+      "WsLabel": "string",
+      "WsScope": "string",
+      "WsSlug": "string",
+      "WsUuid": "string"
+    }
+  ],
+  "Commits": [
+    {
+      "Data": "string",
+      "Description": "string",
+      "Event": {
+        "Metadata": {},
+        "Optimistic": true,
+        "Silent": true,
+        "Source": "[Recursive structure]",
+        "Target": "[Recursive structure]",
+        "Type": "string"
+      },
+      "Location": "[Recursive structure]",
+      "MTime": "string",
+      "OwnerUuid": "string",
+      "Size": "string",
+      "Uuid": "string"
+    }
+  ],
+  "Etag": "string",
+  "MTime": "string",
+  "MetaStore": {},
+  "Mode": 10,
+  "Path": "string",
+  "Size": "string",
+  "Type": "string",
+  "Uuid": "string"
+}
+```
+
+
+
+

@@ -1,0 +1,139 @@
+---
+slug: post-a-config-registry
+title: "POST /a/config/registry"
+menu: "POST /a/config/registry"
+language: und
+menu_name: menu-dev-guide-v7
+
+---
+
+
+
+
+
+
+
+ 
+  
+
+
+### Body Parameters
+
+Name | Description | Type | Required
+---|---|---|---
+**adjacentsOptions** |  | _#/definitions/registryOptions_ |   
+**options** |  | _#/definitions/registryOptions_ |   
+
+
+### Body Example
+```
+{
+  "adjacentsOptions": {
+    "actions": [
+      "string"
+    ],
+    "ids": [
+      "string"
+    ],
+    "metaName": "string",
+    "metaValue": "string",
+    "names": [
+      "string"
+    ],
+    "ttl": "string",
+    "types": [
+      "string"
+    ]
+  },
+  "options": {
+    "actions": [
+      "string"
+    ],
+    "ids": [
+      "string"
+    ],
+    "metaName": "string",
+    "metaValue": "string",
+    "names": [
+      "string"
+    ],
+    "ttl": "string",
+    "types": [
+      "string"
+    ]
+  }
+}
+```
+
+
+
+
+
+
+### Response Example (200)
+Response Type /definitions/registryListResponse
+
+```
+{
+  "items": [
+    {
+      "adjacents": [
+        "[Recursive structure]"
+      ],
+      "dao": {
+        "driver": "string",
+        "dsn": "string"
+      },
+      "edge": {
+        "vertices": [
+          "string"
+        ]
+      },
+      "generic": {
+        "type": "string"
+      },
+      "id": "string",
+      "metadata": {},
+      "name": "string",
+      "node": {
+        "advertiseIp": "string",
+        "hostname": "string",
+        "ips": [
+          "string"
+        ],
+        "machine": "string"
+      },
+      "server": {
+        "protocol": "string"
+      },
+      "service": {
+        "options": {
+          "actions": [
+            "string"
+          ],
+          "ids": [
+            "string"
+          ],
+          "metaName": "string",
+          "metaValue": "string",
+          "names": [
+            "string"
+          ],
+          "ttl": "string",
+          "types": [
+            "string"
+          ]
+        },
+        "tags": [
+          "string"
+        ],
+        "version": "string"
+      }
+    }
+  ]
+}
+```
+
+
+
+

@@ -1,0 +1,53 @@
+---
+slug: get-a-config-versioning
+title: "GET /a/config/versioning"
+menu: "GET /a/config/versioning"
+language: und
+menu_name: menu-dev-guide-v7
+
+---
+
+
+
+
+
+
+
+ 
+List all defined versioning policies  
+
+
+No Parameters
+
+
+
+### Response Example (200)
+Response Type /definitions/restVersioningPolicyCollection
+
+```
+{
+  "Policies": [
+    {
+      "Description": "string",
+      "IgnoreFilesGreaterThan": "string",
+      "KeepPeriods": [
+        {
+          "IntervalStart": "string",
+          "MaxNumber": 10
+        }
+      ],
+      "MaxSizePerFile": "string",
+      "MaxTotalSize": "string",
+      "Name": "string",
+      "NodeDeletedStrategy": "string",
+      "Uuid": "string",
+      "VersionsDataSourceBucket": "string",
+      "VersionsDataSourceName": "string"
+    }
+  ]
+}
+```
+
+
+
+

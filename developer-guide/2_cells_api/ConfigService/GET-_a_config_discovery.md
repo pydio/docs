@@ -1,0 +1,40 @@
+---
+slug: get-a-config-discovery
+title: "GET /a/config/discovery"
+menu: "GET /a/config/discovery"
+language: und
+menu_name: menu-dev-guide-v7
+
+---
+
+
+
+
+
+
+
+ 
+Publish available endpoints  
+
+
+No Parameters
+
+
+
+### Response Example (200)
+Response Type /definitions/restDiscoveryResponse
+
+```
+{
+  "BuildRevision": "string",
+  "BuildStamp": 10,
+  "Endpoints": {},
+  "PackageLabel": "string",
+  "PackageType": "string",
+  "Version": "string"
+}
+```
+
+
+
+

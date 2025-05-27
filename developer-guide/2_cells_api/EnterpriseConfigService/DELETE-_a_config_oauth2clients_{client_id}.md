@@ -1,0 +1,52 @@
+---
+slug: delete-a-config-oauth2clients-client-id
+title: "DELETE /a/config/oauth2clients/{client_id}"
+menu: "DELETE /a/config/oauth2clients/{client_id}"
+language: und
+menu_name: menu-dev-guide-v7
+
+---
+
+
+
+
+
+
+
+ 
+[Enterprise Only] Delete an oauth2 client  
+
+
+### Path Parameters
+
+ - **client_id** (_string, required_) 
+
+ - **client_name** (_string_) 
+
+ - **client_secret** (_string_) 
+
+ - **redirect_uris** (_array_) 
+
+ - **grant_types** (_array_) 
+
+ - **response_types** (_array_) 
+
+ - **scope** (_string_) 
+
+ - **audience** (_array_) 
+
+
+
+
+### Response Example (200)
+Response Type /definitions/entOAuth2ClientResponse
+
+```
+{
+  "Success": true
+}
+```
+
+
+
+
