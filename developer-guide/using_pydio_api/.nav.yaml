@@ -1,0 +1,7 @@
+title: "Pydio API"
+language: und
+menu: "Pydio API"
+weight: 2
+menu_name: menu-developer-guide
+abstract: "How to consume the standard Pydio server API."
+slug: pydio-api
