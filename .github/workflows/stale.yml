@@ -1,4 +1,3 @@
-```yaml
 name: Build and Deploy MkDocs Versions with Mike
 
 on:
@@ -71,4 +70,3 @@ jobs:
           fi
         env:
           GITHUB_TOKEN: ${{ secrets.MKDOCS_TOKEN }}
-```
