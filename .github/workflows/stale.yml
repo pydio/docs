@@ -62,10 +62,13 @@ jobs:
         run: |
           git config user.name "GitHub Action"
           git config user.email "action@github.com"
-          # Deploy version, set 'latest' alias if branch is main
-          if [ "${{ steps.branch.outputs.branch_name }}" = "main" ]; then
-            mike deploy --push --update-aliases ${{ steps.branch.outputs.branch_name }} latest
+          # Deploy version, set 'latest' alias if branch is cells-v4  
+          if [ "${{ steps.branch.outputs.branch_name }}" = "cells-v4" ]; then
+            mike deploy --push --update-aliases "Cells v4" latest
+          else if [ "${{ steps.branch.outputs.branch_name }}" = "pydio-v8" ]; then
+            mike deploy --push --update-aliases "Pydio PHP (EOL)"          
           else
+            # Do nothing
             mike deploy --push ${{ steps.branch.outputs.branch_name }}
           fi
         env:
