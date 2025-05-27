@@ -1,0 +1,74 @@
+```yaml
+name: Build and Deploy MkDocs Versions with Mike
+
+on:
+  push:
+    branches:
+      - '*'  # Trigger on push to any branch in pydio/docs
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checkout the docs-source repository (pydio/docs, current branch)
+      - name: Checkout pydio/docs
+        uses: actions/checkout@v4
+        with:
+          path: docs-source
+
+      # Checkout the mkdocs repository (pydio/mkdocs)
+      - name: Checkout pydio/mkdocs
+        uses: actions/checkout@v4
+        with:
+          repository: pydio/mkdocs  # Replace with your actual mkdocs repo
+          path: mkdocs
+          token: ${{ secrets.MKDOCS_TOKEN }}  # Token for write access
+
+      # Set up Python
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      # Cache pip dependencies
+      - name: Cache pip
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
+
+      # Install MkDocs, mike, and dependencies
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install mkdocs mkdocs-material mike mkdocs-redirects mkdocs-minify-plugin pymdown-extensions mkdocs-glightbox git+https://github.com/pydio/mkdocs-awesome-nav
+
+      # Get the branch name for versioning
+      - name: Get branch name
+        id: branch
+        run: echo "branch_name=$(echo ${GITHUB_REF#refs/heads/} | sed 's/[^a-zA-Z0-9]/-/g')" >> $GITHUB_OUTPUT
+
+      # Copy docs content to mkdocs/docs/
+      - name: Copy docs content
+        run: |
+          mkdir -p mkdocs/docs
+          cp -r docs-source/docs/* mkdocs/docs/
+
+      # Deploy with mike
+      - name: Deploy with mike
+        working-directory: mkdocs
+        run: |
+          git config user.name "GitHub Action"
+          git config user.email "action@github.com"
+          # Deploy version, set 'latest' alias if branch is main
+          if [ "${{ steps.branch.outputs.branch_name }}" = "main" ]; then
+            mike deploy --push --update-aliases ${{ steps.branch.outputs.branch_name }} latest
+          else
+            mike deploy --push ${{ steps.branch.outputs.branch_name }}
+          fi
+        env:
+          GITHUB_TOKEN: ${{ secrets.MKDOCS_TOKEN }}
+```
