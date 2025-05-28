@@ -39,6 +39,18 @@ jobs:
           path: mkdocs
           token: ${{ secrets.MKDOCS_TOKEN }}  # Token for write access
 
+      # Pull latest gh-pages changes
+      - name: Pull gh-pages changes
+        working-directory: mkdocs
+        run: |
+          git config user.name "GitHub Action"
+          git config user.email "action@github.com"
+          git fetch origin gh-pages
+          git pull origin gh-pages --rebase || echo "Merge conflicts detected, continuing with local changes"
+          git status
+        env:
+          GITHUB_TOKEN: ${{ secrets.MKDOCS_TOKEN }}
+          
       # Set up Python
       - name: Set up Python
         uses: actions/setup-python@v5
