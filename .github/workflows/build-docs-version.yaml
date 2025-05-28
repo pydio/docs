@@ -97,12 +97,26 @@ jobs:
           # Deploy version, set 'latest' alias if branch is cells-v4  
           if [ "${{ steps.branch.outputs.branch_name }}" = "cells-v4" ]; then
             mike deploy --push --update-aliases "${{ steps.branch.outputs.branch_name }}" latest
+            mike set-default cells-v4
           fi
 
           # Deploy version pydio-v8
           if [ "${{ steps.branch.outputs.branch_name }}" = "pydio-v8" ]; then
             mike deploy --push --update-aliases "${{ steps.branch.outputs.branch_name }}"          
+          file
+        
+      # Deploy with mike
+      - name: Set default version with mike
+        working-directory: mkdocs
+        run: |
+          git config user.name "GitHub Action"
+          git config user.email "action@github.com"
+          
+          # Deploy version, set 'latest' alias if branch is cells-v4  
+          if [ "${{ steps.branch.outputs.branch_name }}" = "cells-v4" ]; then
+            mike set-default cells-v4
           fi
+
 
       # Copy docs content to mkdocs/docs/
       - name: Debug working dir content
