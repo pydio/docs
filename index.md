@@ -1,3 +1,3 @@
 Welcome to Pydio documentation
 
-Changes for trigger build action
+Changes for trigger build action.
