@@ -18,6 +18,20 @@ jobs:
         with:
           path: docs-source
 
+
+      # Debug workflow trigger
+      - name: Debug workflow trigger
+        run: |
+          echo "Event: ${{ github.event_name }}"
+          echo "Branch: ${{ github.ref_name }}"
+          echo "Repository: ${{ github.repository }}"
+
+      # Debug docs-source contents
+      - name: Debug docs-source contents
+        run: |
+          ls -la docs-source/
+          ls -la docs-source/docs/ || echo "docs/ folder not found"
+          
       # Checkout the mkdocs repository (pydio/mkdocs)
       - name: Checkout pydio/mkdocs
         uses: actions/checkout@v4
