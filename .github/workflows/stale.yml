@@ -54,7 +54,7 @@ jobs:
       - name: Copy docs content
         run: |
           mkdir -p mkdocs/docs
-          cp -r docs-source/docs/* mkdocs/docs/
+          cp -r docs-source/* mkdocs/docs/
 
       # Deploy with mike
       - name: Deploy with mike
