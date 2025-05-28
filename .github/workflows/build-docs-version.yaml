@@ -50,7 +50,7 @@ jobs:
           git status
         env:
           GITHUB_TOKEN: ${{ secrets.MKDOCS_TOKEN }}
-          
+
       # Set up Python
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -103,13 +103,21 @@ jobs:
           if [ "${{ steps.branch.outputs.branch_name }}" = "pydio-v8" ]; then
             mike deploy --push --update-aliases "${{ steps.branch.outputs.branch_name }}"          
           fi
+
+      # Copy docs content to mkdocs/docs/
+      - name: Debug working dir content
+        run: |
+          ls -lah mkdocs
+
       # Copy specific file to gh-pages
       - name: Copy custom index file to 'version' repo in gh-pages
         working-directory: mkdocs
         run: |
           git config user.name "GitHub Action"
           git config user.email "action@github.com"
-          mkdir -p assets  # Create target directory if needed
+          # mkdir -p assets  # Create target directory if needed
+          ls -lah 
+          git branch -a
           cp resources/fix_index.html "${{ steps.branch.outputs.branch_name }}"/index.html
           git add "${{ steps.branch.outputs.branch_name }}"/index.html
           git commit -m "Add custom index to gh-pages" || echo "No changes to commit"
