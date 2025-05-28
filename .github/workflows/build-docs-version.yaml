@@ -115,12 +115,14 @@ jobs:
         run: |
           git config user.name "GitHub Action"
           git config user.email "action@github.com"
-          # mkdir -p assets  # Create target directory if needed
           ls -lah 
           git branch -a
-          cp resources/fix_index.html "${{ steps.branch.outputs.branch_name }}"/index.html
+          git checkout gh-pages
+          cp -f resources/fix_index.html "${{ steps.branch.outputs.branch_name }}"/index.html
+          cp -f resources/versions.json ./versions.json
           git add "${{ steps.branch.outputs.branch_name }}"/index.html
-          git commit -m "Add custom index to gh-pages" || echo "No changes to commit"
+          git add versions.json
+          git commit -m "Add custom resources to gh-pages" || echo "No changes to commit"
           git push origin gh-pages
 
         env:
