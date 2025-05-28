@@ -84,13 +84,24 @@ jobs:
           git config user.email "action@github.com"
           # Deploy version, set 'latest' alias if branch is cells-v4  
           if [ "${{ steps.branch.outputs.branch_name }}" = "cells-v4" ]; then
-            mike deploy --push --update-aliases "Cells v4" latest
+            mike deploy --push --update-aliases "${{ steps.branch.outputs.branch_name }}" latest
           fi
 
           # Deploy version pydio-v8
           if [ "${{ steps.branch.outputs.branch_name }}" = "pydio-v8" ]; then
-            mike deploy --push --update-aliases "Pydio PHP (EOL)"          
+            mike deploy --push --update-aliases "${{ steps.branch.outputs.branch_name }}"          
           fi
+      # Copy specific file to gh-pages
+      - name: Copy custom index file to 'version' repo in gh-pages
+        working-directory: mkdocs
+        run: |
+          git config user.name "GitHub Action"
+          git config user.email "action@github.com"
+          mkdir -p assets  # Create target directory if needed
+          cp resources/fix_index.html "${{ steps.branch.outputs.branch_name }}"/index.html
+          git add "${{ steps.branch.outputs.branch_name }}"/index.html
+          git commit -m "Add custom index to gh-pages" || echo "No changes to commit"
+          git push origin gh-pages
 
         env:
           GITHUB_TOKEN: ${{ secrets.MKDOCS_TOKEN }}
