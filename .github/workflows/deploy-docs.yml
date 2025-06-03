@@ -1,0 +1,105 @@
+name: Build and Deploy MkDocs Versions with Mike
+
+on:
+  push:
+    branches:
+      - main
+      - cells-v4
+      - cells-v5
+    # paths:
+    #   - 'docs/**'
+    #   - 'resources/**'
+    #   - 'overrides/**'
+    #   - 'mkdocs.yml'
+    #   - 'requirements.txt'
+    #   - '.github/workflows/**'
+
+jobs:
+  sync-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout pydio/docs
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Debug workflow trigger
+        run: |
+          echo "Event: ${{ github.event_name }}"
+          echo "Branch: ${{ github.ref_name }}"
+          echo "Repository: ${{ github.repository }}"
+
+      - name: Sync files from main to version branches
+        if: github.ref_name != 'main'
+        run: |
+          git config --global user.name "GitHub Action"
+          git config user.email "action@github.com"
+          git checkout main -- docs/index.md resources/fix_index.html resources/versions.json docs/assets/custom.css resources/pydio-docs.md resources/docs/assets/pydio-v4.png overrides/pydio-v4.html mkdocs.yml requirements.txt
+          mkdir -p docs/assets resources overrides
+          mv docs/index.md docs/
+          mv resources/fix_index.html resources/
+          mv resources/versions.json resources/
+          mv docs/assets/custom.css docs/assets/
+          mv resources/pydio-v4.css resources/
+          mv resources/pydio-v4.html docs/
+          mv overrides/pydio-v4.html overrides/
+          git add .
+          git commit -m "Sync files from main to ${{ github.ref_name }}" || echo "No changes to commit"
+          git push origin ${{ github.ref_name }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Debug contents
+        run: |
+          ls -la .
+          ls -la docs/ || echo "docs/ not found"
+          ls -la resources/ || echo "resources/ not found"
+          ls -la overrides/ || echo "overrides/ not found"
+          cat docs/index.md || echo "index.md not readable"
+          cat resources/fix_index.html || echo "fix_index.html not readable"
+          cat docs/cellsflows/1_preset_flows/1_efficient-system-maintenance/0_backup-personal-files.md || echo "File not readable"
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Cache pip
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Validate MkDocs build
+        run: |
+          mkdocs build --verbose
+          if [ ! -f "site/index.html" ]; then
+            echo "Error: index.html not generated"
+            exit 1
+          fi
+
+      - name: Deploy with mike
+        run: |
+          git config user.name "GitHub Action"
+          git config user.email "action@github.com"
+          VERSION=${GITHUB_REF_NAME}
+          ALIAS=""
+          if [ "$VERSION" = "cells-v4" ]; then
+            ALIAS="latest"
+          fi
+          mike deploy --push --update-aliases --allow-empty "$VERSION" $ALIAS
+          if [ "$VERSION" = "cells-v4" ]; then
+            mike set-default --push cells-v4
+          fi
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Copy custom files to gh-pages
+       
