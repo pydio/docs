@@ -1,0 +1,108 @@
+site_name: Pydio Documentation
+site_url: https://mkdocs.pydio.com/
+docs_dir: docs
+site_dir: site
+use_directory_urls: true
+theme:
+  name: material
+  custom_dir: overrides
+  favicon: resources/pydio-favicon.png
+  logo: https://pydio.com/sites/all/themes/pydio_theme/images/pydio-logo-grey-coral-sm.png
+  static_templates:
+    - 404.html
+  palette:
+    - scheme: default
+      primary: teal
+      accent: deep orange
+    - scheme: slate
+      primary: indigo
+      accent: lime
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+  navigation_depth: 4  # Support deep navigation
+  features:
+    - navigation.tabs
+    - navigation.sections  # Render nested sections in sidebar
+    #- navigation.expand  # Keep sections expanded
+    - navigation.top  # Add back-to-top button
+    - navigation.tracking  # Update URL on scroll
+    - navigation.footer
+    - search.highlight
+    - search.suggest
+    - content.zoom
+    - navigation.indexes
+    # - navigation.instant
+    # - navigation.instant.prefetch
+    # - navigation.instant.progress
+    # - navigation.prune
+    - navigation.sections
+    - navigation.tabs
+    # - navigation.tabs.sticky
+    - navigation.top
+    - navigation.tracking
+    - search.highlight
+    #- search.share
+    #- search.suggest
+    - toc.follow
+    #- toc.integrate    
+  icon:
+    repo: fontawesome/brands/github    
+  font:
+    text: Roboto
+    code: Roboto Mono
+plugins:
+  - tags
+  - meta
+  - search
+  - awesome-nav
+  - glightbox:
+      touchNavigation: true
+      zoomable: true
+      width: 100%
+      height: auto
+  - mike:
+      version_selector: true  # Enables the version selector
+      canonical_version: latest  # Default version for SEO (optional)
+      css_dir: css  # Where to put version selector CSS
+      
+      #javascript_dir: js  # Where to put version selector JS        
+
+markdown_extensions:
+  - admonition
+  - md_in_html
+  - attr_list
+  - def_list
+  - footnotes
+  - meta
+  - toc:
+      permalink: true
+  - tables
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+      use_pygments: true
+      linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.snippets
+  # - pymdownx.tasklist:
+  #     custom_checkbox: true
+  - pymdownx.superfences
+  - pymdownx.tabbed
+  - pymdownx.blocks.caption
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg  
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format      
+extra:
+  version:
+    provider: mike
+    alias: true
+    default: latest
