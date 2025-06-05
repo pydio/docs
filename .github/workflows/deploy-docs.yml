@@ -57,6 +57,13 @@ jobs:
           cp main-config/overrides/404.html overrides/ || echo "404.html not found"
           rm -rf main-config
 
+      - name: Copy docs to docs repo
+        run: |
+          cp -r admin-guide docs
+          cp -r cellsflow docs
+          cp -r developer-guide docs
+          cp -r knowledge-base docs
+
       - name: Debug contents
         run: |
           ls -la .
