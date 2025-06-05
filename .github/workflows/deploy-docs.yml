@@ -6,6 +6,7 @@ on:
       - 'cells-v4'
       - 'cells-v5'
       - 'pydio-v8'
+      - 'main' # sync workflow file
 
 
 jobs:
@@ -29,6 +30,22 @@ jobs:
         with:
           ref: main
           path: main-config
+
+      - name: Sync workflow file to cells-v4 and cells-v5
+        if: github.ref_name == 'main' && contains(github.event.commits.*.added, '.github/workflows/build-docs.yaml') || contains(github.event.commits.*.modified, '.github/workflows/build-docs.yaml')
+        run: |
+          git config user.name "GitHub Action"
+          git config user.email "action@github.com"
+          for branch in cells-v4 cells-v5 pydio-v8; do
+            git checkout $branch || git checkout -b $branch
+            mkdir -p .github/workflows
+            cp .github/workflows/build-docs.yaml .github/workflows/
+            git add .github/workflows/build-docs.yaml
+            git commit -m "Sync build-docs.yaml from main to $branch" || echo "No changes to commit"
+            git push origin $branch
+          done
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Copy config and resources from main
         run: |
