@@ -4,13 +4,13 @@ on:
   push:
     branches:
       - '*'  # Trigger on any branch
-    # paths:
-    #   - 'docs/**'
-    #   - 'resources/**'
-    #   - 'overrides/**'
-    #   - 'mkdocs.yml'
-    #   - 'requirements.txt'
-    #   - '.github/workflows/**'
+    paths:
+      - 'docs/**'
+      - 'resources/**'
+      - 'overrides/**'
+      - 'mkdocs.yml'
+      - 'requirements.txt'
+      - '.github/workflows/**'
 
 jobs:
   sync-and-deploy:
@@ -20,7 +20,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
-          ref: ${{ github.ref_name }}  # Checkout the branch that triggered the push
+          ref: ${{ github.ref_name }}
 
       - name: Debug workflow trigger
         run: |
@@ -56,6 +56,21 @@ jobs:
           cat resources/fix_index.html || echo "fix_index.html not readable"
           cat docs/cellsflows/1_preset_flows/1_efficient-system-maintenance/0_backup-personal-files.md || echo "File not readable"
 
+      - name: Initialize gh-pages if not exists
+        run: |
+          git fetch origin gh-pages || {
+            echo "gh-pages does not exist, creating it"
+            git checkout --orphan gh-pages
+            git rm -rf .
+            echo "# Pydio Docs" > README.md
+            git add README.md
+            git config user.name "GitHub Action"
+            git config user.email "action@github.com"
+            git commit -m "Initialize gh-pages branch"
+            git push origin gh-pages
+            git checkout ${{ github.ref_name }}
+          }
+
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
@@ -81,6 +96,7 @@ jobs:
             echo "Error: index.html not generated"
             exit 1
           fi
+          ls -la site/
 
       - name: Deploy with mike
         run: |
@@ -91,9 +107,17 @@ jobs:
           if [ "$VERSION" = "cells-v4" ]; then
             ALIAS="latest"
           fi
-          mike deploy --push --update-aliases --allow-empty "$VERSION" $ALIAS
+          echo "Deploying $VERSION with alias $ALIAS"
+          mike deploy --push --update-aliases --allow-empty "$VERSION" $ALIAS || {
+            echo "mike deploy failed"
+            exit 1
+          }
           if [ "$VERSION" = "cells-v4" ]; then
-            mike set-default --push cells-v4
+            echo "Setting default to cells-v4"
+            mike set-default --push cells-v4 || {
+              echo "mike set-default failed"
+              exit 1
+            }
           fi
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -106,8 +130,8 @@ jobs:
           git checkout gh-pages
           VERSION=${GITHUB_REF_NAME}
           mkdir -p "$VERSION"
-          cp resources/fix_index.html "$VERSION/index.html"
-          cp resources/versions.json versions.json
+          cp resources/fix_index.html "$VERSION/index.html" || echo "fix_index.html not found"
+          cp resources/versions.json versions.json || echo "versions.json not found"
           git add "$VERSION/index.html" versions.json
           git commit -m "Add custom index and versions.json for $VERSION" || echo "No changes to commit"
           git push origin gh-pages
