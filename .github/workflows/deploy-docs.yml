@@ -3,9 +3,7 @@ name: Build and Deploy MkDocs Versions with Mike
 on:
   push:
     branches:
-      - main
-      - cells-v4
-      - cells-v5
+      - '*'  # Trigger on any branch
     # paths:
     #   - 'docs/**'
     #   - 'resources/**'
@@ -18,10 +16,11 @@ jobs:
   sync-and-deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout pydio/docs
+      - name: Checkout pydio/docs (pushed branch)
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
+          ref: ${{ github.ref_name }}  # Checkout the branch that triggered the push
 
       - name: Debug workflow trigger
         run: |
@@ -29,25 +28,23 @@ jobs:
           echo "Branch: ${{ github.ref_name }}"
           echo "Repository: ${{ github.repository }}"
 
-      - name: Sync files from main to version branches
-        if: github.ref_name != 'main'
+      - name: Checkout main for workflow and config
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          path: main-config
+
+      - name: Sync config files from main
         run: |
-          git config --global user.name "GitHub Action"
+          cp main-config/mkdocs.yml .
+          cp main-config/requirements.txt .
+          cp -r main-config/.github .
+          rm -rf main-config
+          git config user.name "GitHub Action"
           git config user.email "action@github.com"
-          git checkout main -- docs/index.md resources/fix_index.html resources/versions.json docs/assets/custom.css resources/pydio-docs.md resources/docs/assets/pydio-v4.png overrides/pydio-v4.html mkdocs.yml requirements.txt
-          mkdir -p docs/assets resources overrides
-          mv docs/index.md docs/
-          mv resources/fix_index.html resources/
-          mv resources/versions.json resources/
-          mv docs/assets/custom.css docs/assets/
-          mv resources/pydio-v4.css resources/
-          mv resources/pydio-v4.html docs/
-          mv overrides/pydio-v4.html overrides/
-          git add .
-          git commit -m "Sync files from main to ${{ github.ref_name }}" || echo "No changes to commit"
+          git add mkdocs.yml requirements.txt .github
+          git commit -m "Sync config from main for ${{ github.ref_name }}" || echo "No changes to commit"
           git push origin ${{ github.ref_name }}
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Debug contents
         run: |
@@ -102,4 +99,17 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Copy custom files to gh-pages
-       
+        run: |
+          git config user.name "GitHub Action"
+          git config user.email "action@github.com"
+          git fetch origin gh-pages
+          git checkout gh-pages
+          VERSION=${GITHUB_REF_NAME}
+          mkdir -p "$VERSION"
+          cp resources/fix_index.html "$VERSION/index.html"
+          cp resources/versions.json versions.json
+          git add "$VERSION/index.html" versions.json
+          git commit -m "Add custom index and versions.json for $VERSION" || echo "No changes to commit"
+          git push origin gh-pages
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

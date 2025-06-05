@@ -1,0 +1,8 @@
+mkdocs
+mkdocs-material
+mkdocs-glightbox
+pymdown-extensions
+mike
+mkdocs-redirects
+mkdocs-minify-plugin
+git+https://github.com/pydio/mkdocs-awesome-nav
