@@ -134,6 +134,11 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
+      - name: Debug contents after mike build
+        run: |
+          ls -la .
+          ls -lah resources          
+
       - name: Copy custom files to gh-pages
         run: |
           git config user.name "GitHub Action"
