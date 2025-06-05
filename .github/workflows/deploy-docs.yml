@@ -3,14 +3,17 @@ name: Build and Deploy MkDocs Versions with Mike
 on:
   push:
     branches:
-      - '*'  # Trigger on any branch
-    paths:
-      - 'docs/**'
-      - 'resources/**'
-      - 'overrides/**'
-      - 'mkdocs.yml'
-      - 'requirements.txt'
-      - '.github/workflows/**'
+      - 'cells-v4'
+      - 'pydio-v8'
+      - 'cells-v5'
+      
+    # paths:
+    #   - 'docs/**'
+    #   - 'resources/**'
+    #   - 'overrides/**'
+    #   - 'mkdocs.yml'
+    #   - 'requirements.txt'
+    #   - '.github/workflows/**'
 
 jobs:
   sync-and-deploy:
@@ -45,6 +48,8 @@ jobs:
           git add mkdocs.yml requirements.txt .github
           git commit -m "Sync config from main for ${{ github.ref_name }}" || echo "No changes to commit"
           git push origin ${{ github.ref_name }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Debug contents
         run: |
@@ -108,16 +113,20 @@ jobs:
             ALIAS="latest"
           fi
           echo "Deploying $VERSION with alias $ALIAS"
-          mike deploy --push --update-aliases --allow-empty "$VERSION" $ALIAS || {
+          mike deploy --push --update-aliases --allow-empty "$VERSION" $ALIAS 2>&1 | tee mike_deploy.log
+          if [ $? -ne 0 ]; then
+            cat mike_deploy.log
             echo "mike deploy failed"
             exit 1
-          }
+          fi
           if [ "$VERSION" = "cells-v4" ]; then
             echo "Setting default to cells-v4"
-            mike set-default --push cells-v4 || {
+            mike set-default --push cells-v4 2>&1 | tee mike_default.log
+            if [ $? -ne 0 ]; then
+              cat mike_default.log
               echo "mike set-default failed"
               exit 1
-            }
+            fi
           fi
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
