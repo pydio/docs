@@ -60,7 +60,7 @@ jobs:
       - name: Copy docs to docs repo
         run: |
           cp -r admin-guide docs
-          cp -r cellsflow docs
+          cp -r cellsflows docs
           cp -r developer-guide docs
           cp -r knowledge-base docs
 
