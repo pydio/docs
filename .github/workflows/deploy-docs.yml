@@ -4,16 +4,9 @@ on:
   push:
     branches:
       - 'cells-v4'
-      - 'pydio-v8'
       - 'cells-v5'
-      
-    # paths:
-    #   - 'docs/**'
-    #   - 'resources/**'
-    #   - 'overrides/**'
-    #   - 'mkdocs.yml'
-    #   - 'requirements.txt'
-    #   - '.github/workflows/**'
+      - 'pydio-v8'
+
 
 jobs:
   sync-and-deploy:
@@ -31,31 +24,31 @@ jobs:
           echo "Branch: ${{ github.ref_name }}"
           echo "Repository: ${{ github.repository }}"
 
-      - name: Checkout main for workflow and config
+      - name: Checkout main for config and resources
         uses: actions/checkout@v4
         with:
           ref: main
           path: main-config
 
-      - name: Sync config files from main
+      - name: Copy config and resources from main
         run: |
           cp main-config/mkdocs.yml .
           cp main-config/requirements.txt .
-          cp -r main-config/.github .
+          mkdir -p resources docs/assets overrides
+          cp main-config/resources/fix_index.html resources/ || echo "fix_index.html not found"
+          cp main-config/resources/versions.json resources/ || echo "versions.json not found"
+          cp main-config/resources/pydio-favicon.png resources/ || echo "pydio-favicon.png not found"
+          cp main-config/resources/pydio-logo-grey-coral-sm.png resources/ || echo "pydio-logo-grey-coral-sm.png not found"
+          cp main-config/docs/assets/custom.css docs/assets/ || echo "custom.css not found"
+          cp main-config/overrides/404.html overrides/ || echo "404.html not found"
           rm -rf main-config
-          git config user.name "GitHub Action"
-          git config user.email "action@github.com"
-          git add mkdocs.yml requirements.txt .github
-          git commit -m "Sync config from main for ${{ github.ref_name }}" || echo "No changes to commit"
-          git push origin ${{ github.ref_name }}
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Debug contents
         run: |
           ls -la .
           ls -la docs/ || echo "docs/ not found"
           ls -la resources/ || echo "resources/ not found"
+          ls -la docs/assets/ || echo "docs/assets/ not found"
           ls -la overrides/ || echo "overrides/ not found"
           cat docs/index.md || echo "index.md not readable"
           cat resources/fix_index.html || echo "fix_index.html not readable"
@@ -87,7 +80,7 @@ jobs:
           path: ~/.cache/pip
           key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}
           restore-keys: |
-            ${{ runner.os }}-pip-
+            ${{ runner.os }}-pip
 
       - name: Install dependencies
         run: |
@@ -113,7 +106,7 @@ jobs:
             ALIAS="latest"
           fi
           echo "Deploying $VERSION with alias $ALIAS"
-          mike deploy --push --update-aliases --allow-empty "$VERSION" $ALIAS 2>&1 | tee mike_deploy.log
+          mike deploy --push --verbose "$VERSION" $ALIAS 2>&1 | tee mike_deploy.log
           if [ $? -ne 0 ]; then
             cat mike_deploy.log
             echo "mike deploy failed"
