@@ -123,7 +123,7 @@ jobs:
             ALIAS="latest"
           fi
           echo "Deploying $VERSION with alias $ALIAS"
-          mike deploy --push --verbose "$VERSION" $ALIAS 2>&1 | tee mike_deploy.log
+          mike deploy --push "$VERSION" $ALIAS 2>&1 | tee mike_deploy.log
           if [ $? -ne 0 ]; then
             cat mike_deploy.log
             echo "mike deploy failed"
