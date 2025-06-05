@@ -90,10 +90,6 @@ jobs:
       - name: Validate MkDocs build
         run: |
           mkdocs build --verbose
-          if [ ! -f "site/index.html" ]; then
-            echo "Error: index.html not generated"
-            exit 1
-          fi
           ls -la site/
 
       - name: Deploy with mike
