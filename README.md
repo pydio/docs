@@ -127,5 +127,5 @@ Live Documentation: https://pydio.github.io/docs
 ## Adding new branch
 
 When you need a new branch:
-* Chekout new branch from one of document brach
+* Chekout new branch from one of document branches
 * Update [main branch] resources/versions.json file
