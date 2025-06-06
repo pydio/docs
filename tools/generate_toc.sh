@@ -46,8 +46,10 @@ generate_toc_for_folder() {
       current=$(dirname "$current")
     done
 
-    uri_path="/$(IFS=/; echo "${slugs[*]}")/$slug/"
-    toc+="- [$title]("/${BASE_URL}${uri_path}")\n"
+    # uri_path="/$(IFS=/; echo "${slugs[*]}")/$slug/"
+    # toc+="- [$title]("/${BASE_URL}${uri_path}")\n"
+    uri_path="../$slug/"
+    toc+="- [$title]("${uri_path}")\n"
 
   done
 
