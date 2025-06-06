@@ -2,37 +2,33 @@
 
 Get started quickly with Cells static binaries, or pick an image for your cloud environment. 
 
-=== Binaries
+=== "<div class="logo-img"><img src="../../../images/logos-os/binaries.png?raw=true"/></div> Binaries"
 <a class="logo" href="../install-static-binaries">
     <div class="logo-img"><img src="../../../images/logos-os/binaries.png?raw=true"/></div>
-    <div class="logo-title">Binaries</div>
 </a>
 
-=== Docker
+=== "Docker"
 <a class="logo" href="../docker">
     <div class="logo-img"><img src="../../../images/logos-os/docker.png?raw=true"/></div>
     <div class="logo-title">Docker</div>
 </a>
 
-=== OVF
+=== "OVF"
 <a class="logo" href="../open-virtual-format">
     <div class="logo-img"><img src="../../../images/logos-os/ovf.png?raw=true"/></div>
-    <div class="logo-title">OVF</div>
 </a>
 
-=== VMWARE
+=== "VMWARE"
 <a class="logo" href="../vmware">
     <div class="logo-img"><img src="../../../images/logos-os/vmware.png?raw=true"/></div>
-    <div class="logo-title">VMWare</div>
 </a>
 
-=== Amazon AMI
+=== "Amazon AMI"
 <a class="logo" href="../amazon-ami">
     <div class="logo-img"><img src="../../../images/logos-os/amazon.png?raw=true"/></div>
-    <div class="logo-title">Amazon AMI</div>
 </a>
 
-=== Kubernetes
+=== "Kubernetes"
 <a class="logo" href="../../../run-cells-in-production/deploying-cells-in-a-distributed-environment/kubernetes-quick-install/">
     <div class="logo-img"><img style="height: 70px" src="../../../images/logos-os/logo-kubernetes.png?raw=true"/></div>
     <div class="logo-title">Kubernetes</div>
