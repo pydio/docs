@@ -1,0 +1,5048 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="[Deprecated]  Deploying scalable, flexible enterprise storage shouldn’t lock you in to high-cost proprietary solutions with Red Hat® Storage Server.">
+      
+      
+      
+        <link rel="canonical" href="https://mkdocs.pydio.com/latest/knowledge-base/red-hat-storage-deployment/">
+      
+      
+        <link rel="prev" href="../installing-on-a-linux-distribution-nginx/">
+      
+      
+        <link rel="next" href="../troubleshooting-webdav-server/">
+      
+      
+      <link rel="icon" href="../../resources/pydio-favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
+    
+    
+      
+        <title>Red Hat Storage Deployment - Pydio Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.342714a4.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+   <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="deep-orange">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#introduction" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <div data-md-color-scheme="default" data-md-component="outdated" hidden>
+        
+      </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../index/" title="Pydio Documentation" class="md-header__button md-logo" aria-label="Pydio Documentation" data-md-component="logo">
+      
+  <img src="https://pydio.com/sites/all/themes/pydio_theme/images/pydio-logo-grey-coral-sm.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Pydio Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Red Hat Storage Deployment
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="deep-orange"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="lime"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../index/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Index
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../admin-guide/installation-guide/pydio-requirements/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Admin guide
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../developer-guide/introduction/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Developer guide
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../advanced-authentication-with-ldap-ad/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Knowledge base
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../index/" title="Pydio Documentation" class="md-nav__button md-logo" aria-label="Pydio Documentation" data-md-component="logo">
+      
+  <img src="https://pydio.com/sites/all/themes/pydio_theme/images/pydio-logo-grey-coral-sm.png" alt="logo">
+
+    </a>
+    Pydio Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../index/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Index
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Admin guide
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Admin guide
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../admin-guide/installation-guide/index/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Installation Guide
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            Installation Guide
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../admin-guide/installation-guide/pydio-requirements/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Pydio Requirements
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1_2" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../admin-guide/installation-guide/install-pydio-enterprise-distribution/index/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Install Pydio Enterprise Distribution
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_1_2" id="__nav_2_1_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_1_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1_2">
+            <span class="md-nav__icon md-icon"></span>
+            Install Pydio Enterprise Distribution
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../admin-guide/installation-guide/install-pydio-enterprise-distribution/ed-install-from-archive/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    [ED] Install from archive
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../admin-guide/installation-guide/install-pydio-enterprise-distribution/ed-debian-ubuntu-systems/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    [ED] Debian/Ubuntu Systems
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../admin-guide/installation-guide/install-pydio-enterprise-distribution/ed-centos-rhel-7-systems/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    [ED] CentOS/RHEL 7 Systems
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../admin-guide/installation-guide/install-pydio-enterprise-distribution/ed-centos-rhel-6-systems/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    [ED] CentOS/RHEL 6 Systems
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../admin-guide/installation-guide/install-pydio-enterprise-distribution/in-app-migration-from-community-to-enterprise/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    In-app Migration from Community to Enterprise
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../admin-guide/installation-guide/quick-start/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Quick Start
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1_4" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../admin-guide/installation-guide/install-pydio-community/index/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Install Pydio Community
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_1_4" id="__nav_2_1_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_1_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1_4">
+            <span class="md-nav__icon md-icon"></span>
+            Install Pydio Community
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../admin-guide/installation-guide/install-pydio-community/install-from-archive/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Install from archive
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../admin-guide/installation-guide/install-pydio-community/debian-ubuntu-systems/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Debian/Ubuntu Systems
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../admin-guide/installation-guide/install-pydio-community/centos-rhel-systems/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    CentOS/RHEL Systems
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+          
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1_5" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../admin-guide/installation-guide/pydio-booster/index/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Pydio Booster
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_1_5" id="__nav_2_1_5_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_1_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1_5">
+            <span class="md-nav__icon md-icon"></span>
+            Pydio Booster
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../admin-guide/installation-guide/pydio-booster/install-pydio-booster-automatically/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Install Pydio Booster Automatically
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../admin-guide/installation-guide/pydio-booster/install-pydio-booster-manually/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Install Pydio Booster Manually
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../admin-guide/installation-guide/install-collabora-online/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Install Collabora Online
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../admin-guide/installation-guide/checking-apis/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Checking APIs
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../admin-guide/installation-guide/checking-sync/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Checking Sync
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../admin-guide/installation-guide/securing-your-installation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Securing your installation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../admin-guide/installation-guide/upgrading-from-previous-version/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Upgrading from previous version
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../admin-guide/installation-guide/troubleshooting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Troubleshooting
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../admin-guide/getting-started/index/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Getting Started
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            Getting Started
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../admin-guide/getting-started/setup-a-workspace-and-assign-rights/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Setup a Workspace and Assign Rights
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../admin-guide/getting-started/mobile-apps/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Mobile Apps
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../admin-guide/getting-started/enterprise-license/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Enterprise License
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../admin-guide/getting-started/file-gateway/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    File Gateway
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../admin-guide/getting-started/sharing-features/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Sharing Features
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../admin-guide/getting-started/customizing-user-interface/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Customizing User Interface
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_7" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../admin-guide/getting-started/importing-users/index/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Importing Users
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_2_7" id="__nav_2_2_7_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_2_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2_7">
+            <span class="md-nav__icon md-icon"></span>
+            Importing Users
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../admin-guide/getting-started/importing-users/import-users-from-csv-enterprise-distribution/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Import users from CSV (Enterprise Distribution)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../admin-guide/getting-started/importing-users/setup-authentication-driver/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Setup authentication driver
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../admin-guide/getting-started/importing-users/binding-to-an-ldap-ad-server/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Binding to an LDAP/AD server
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../admin-guide/getting-started/importing-users/enabling-sso-with-a-php-based-cms-dupral-joomla-wordpress-your-own/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Enabling SSO with a php-based CMS (Dupral, Joomla!, Wordpress, your own)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../admin-guide/day-to-day-with-pydio/index/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Day-to-Day with Pydio
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            Day-to-Day with Pydio
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../admin-guide/day-to-day-with-pydio/administrator-dashboard/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Administrator Dashboard
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../admin-guide/day-to-day-with-pydio/activity-log/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Activity Log
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../admin-guide/day-to-day-with-pydio/sessions-monitoring/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Sessions Monitoring
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../admin-guide/day-to-day-with-pydio/workspaces-maintenance/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Workspaces Maintenance
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../admin-guide/day-to-day-with-pydio/users-activities/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Users Activities
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../admin-guide/day-to-day-with-pydio/monitoring-shares/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Monitoring Shares
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../admin-guide/setup-workspaces-and-users/index/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Setup Workspaces and Users
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            Setup Workspaces and Users
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../admin-guide/setup-workspaces-and-users/introduction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Introduction
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_2" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../admin-guide/setup-workspaces-and-users/workspaces-drivers/index/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Workspaces drivers
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_4_2" id="__nav_2_4_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            Workspaces drivers
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../admin-guide/setup-workspaces-and-users/workspaces-drivers/most-standard-case-fs-driver/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Most standard case: FS driver
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../admin-guide/setup-workspaces-and-users/workspaces-drivers/accessing-remote-servers-ftp-sftp-smb-webdav-dropbox/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Accessing remote servers: ftp, sftp, smb, webdav, dropbox
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../admin-guide/setup-workspaces-and-users/workspaces-drivers/access-fs-meta-mount/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Access.fs + Meta.mount
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../admin-guide/setup-workspaces-and-users/workspaces-drivers/object-storage-drivers-s3-swift/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Object Storage drivers: S3, Swift
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../admin-guide/setup-workspaces-and-users/workspaces-drivers/non-files-drivers-mysql-imap-ajxp-jsapi/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Non-files drivers: mysql, imap, ajxp_*, jsapi
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_3" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../admin-guide/setup-workspaces-and-users/workspaces-additional-features/index/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Workspaces additional features
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_4_3" id="__nav_2_4_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_3">
+            <span class="md-nav__icon md-icon"></span>
+            Workspaces additional features
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../admin-guide/setup-workspaces-and-users/workspaces-additional-features/easy-transfer-layout/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Easy Transfer Layout
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../admin-guide/setup-workspaces-and-users/workspaces-additional-features/metastore-meta-index-plugins/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Metastore, meta & index plugins
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../admin-guide/setup-workspaces-and-users/workspaces-additional-features/user-editable-text-metadata/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    User-editable text metadata
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../admin-guide/setup-workspaces-and-users/workspaces-additional-features/comments-feed/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Comments Feed
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../admin-guide/setup-workspaces-and-users/workspaces-additional-features/enabling-quotas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Enabling quotas
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../admin-guide/setup-workspaces-and-users/workspaces-additional-features/files-versionning/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Files versionning
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../admin-guide/setup-workspaces-and-users/workspaces-additional-features/watches-and-notifications/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Watches and Notifications
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../admin-guide/setup-workspaces-and-users/groups-admin-and-delegation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Groups Admin and Delegation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../admin-guide/setup-workspaces-and-users/inheritance-groups-and-users-roles/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Inheritance Groups and Users Roles
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../admin-guide/setup-workspaces-and-users/action-parameters/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Action parameters
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../admin-guide/pydio-advanced-configuration/index/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Pydio Advanced Configuration
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_5" id="__nav_2_5_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_5">
+            <span class="md-nav__icon md-icon"></span>
+            Pydio Advanced Configuration
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../admin-guide/pydio-advanced-configuration/setup-webdav-server-access/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Setup WebDAV server access
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../admin-guide/pydio-advanced-configuration/plugins/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Plugins
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../admin-guide/pydio-advanced-configuration/setup-configuration-storage/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Setup Configuration Storage
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../admin-guide/pydio-advanced-configuration/setup-webdav-server-access/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Setup WebDAV server access
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../admin-guide/pydio-advanced-configuration/tuning-server-performances/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Tuning server performances
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../admin-guide/pydio-advanced-configuration/configure-mail-digest/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Configure mail digest
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Developer guide
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Developer guide
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer-guide/introduction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Introduction
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer-guide/what-s-new-in-pydio-8/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    What's new in Pydio 8
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../developer-guide/pydio-api/index/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Pydio API
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            Pydio API
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer-guide/pydio-api/introduction-to-pydio-apis/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Introduction to Pydio APIs
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer-guide/pydio-api/api-v2-summary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Api V2 summary
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer-guide/pydio-api/filesystem-api-v1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    FileSystem API (v1)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer-guide/pydio-api/provisioning-api-v1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Provisioning API (v1)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer-guide/pydio-api/lifecycle-api-v1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Lifecycle API (v1)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer-guide/pydio-api/other-access-drivers-v1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Other Access Drivers (v1)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer-guide/pydio-api/other-plugins-api-v1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Other plugins API (v1)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../developer-guide/writing-a-plugin/index/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Writing a plugin
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3_4" id="__nav_3_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_4">
+            <span class="md-nav__icon md-icon"></span>
+            Writing a plugin
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer-guide/writing-a-plugin/manifest-xml-overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Manifest.xml overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer-guide/writing-a-plugin/declaring-resources/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Declaring resources
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer-guide/writing-a-plugin/contributing-actions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Contributing actions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer-guide/writing-a-plugin/modify-the-gui/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Modify the GUI
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer-guide/writing-a-plugin/action-skeleton-plugin/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Action.skeleton plugin
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../developer-guide/going-deeper/index/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Going Deeper
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3_5" id="__nav_3_5_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_5">
+            <span class="md-nav__icon md-icon"></span>
+            Going Deeper
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer-guide/going-deeper/technologies-overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Technologies overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer-guide/going-deeper/plugin-architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Plugin Architecture
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer-guide/going-deeper/understanding-xml-registry/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Understanding XML Registry
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer-guide/going-deeper/internal-data-model/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Internal Data Model
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer-guide/going-deeper/setting-up-your-dev-environment/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Setting up your dev environment
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+          
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_6" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../developer-guide/server-component/index/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Server component
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3_6" id="__nav_3_6_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_6">
+            <span class="md-nav__icon md-icon"></span>
+            Server component
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer-guide/server-component/core-classes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Core Classes
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer-guide/server-component/hooks-event-driven-model/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Hooks: event-driven model
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_7" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../developer-guide/web-application/index/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Web Application
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3_7" id="__nav_3_7_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_7">
+            <span class="md-nav__icon md-icon"></span>
+            Web Application
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer-guide/web-application/architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Architecture
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer-guide/web-application/core-js-classes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Core JS Classes
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer-guide/web-application/pydio-forms/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Pydio Forms
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Knowledge base
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Knowledge base
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../advanced-authentication-with-ldap-ad/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Advanced Authentication with LDAP/AD
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../setup-a-webftp/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Setup a WEBFTP
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../instalacion-de-pydio-on-ubuntu-spanish-video-included/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Instalaćion de Pydio on Ubuntu (Spanish, Video included)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../install-on-centos6-4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Install on CentOS6.4
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../installation-de-pydio-sur-iis8-french/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Installation de Pydio sur IIS8 (French)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../using-pydio-in-an-ispconfig-3-multiserver-installation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Using Pydio In An ISPConfig 3 Multiserver Installation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../migration-pydio-6-to-pydio-7-with-yum/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Migration Pydio 6 to Pydio 7 with YUM
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../optimizing-pydio-performances/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Optimizing Pydio Performances
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../use-pydio-sync-client/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Use pydio sync client
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../setting-up-emailers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Setting up emailers
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../using-the-tasks-scheduler/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Using the tasks scheduler
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../configure-applicationpool-for-pydio-in-windows2012-iis8-update-pydio-6/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Configure ApplicationPool for Pydio in Windows2012 & IIS8 [Update Pydio 6]
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pydio-security-model/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Pydio security model
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pydio-with-security-enhanced-linux-selinux/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Pydio with Security-Enhanced Linux (SELinux)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../secure-install-using-ssl-with-pydio/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Secure install using SSL with Pydio
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../deploying-pydio-in-aws-with-glusterfs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Deploying Pydio in AWS with GlusterFS
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../example-installing-pydio-on-windows-server-2012-r2-iis-8-5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Example: Installing Pydio on Windows Server 2012 R2 / IIS 8.5
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../http-ize-your-regular-windows-file-server-with-pydio/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Http-ize your regular Windows file server with Pydio
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../installing-on-debian-nginx/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Installing on Debian+Nginx
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../installing-on-a-linux-distribution-nginx/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Installing on a Linux Distribution NGINX
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Red Hat Storage Deployment
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Red Hat Storage Deployment
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Introduction">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#red-hat-storage-server" class="md-nav__link">
+    <span class="md-ellipsis">
+      Red Hat Storage Server
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Red Hat Storage Server">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#smarter-enterprise-storage" class="md-nav__link">
+    <span class="md-ellipsis">
+      Smarter enterprise storage
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lower-costs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lower costs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#easily-access-information" class="md-nav__link">
+    <span class="md-ellipsis">
+      Easily access information
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#storage-problemssolved" class="md-nav__link">
+    <span class="md-ellipsis">
+      Storage problems—solved
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pydio-and-red-hat-storage" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pydio and Red Hat Storage
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Pydio and Red Hat Storage">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#solution-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Solution overview
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#architecture-diagram" class="md-nav__link">
+    <span class="md-ellipsis">
+      Architecture Diagram
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pre-requisite-create-the-two-gluster-volumes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pre-requisite : create the two gluster volumes
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ajaxplorer-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ajaxplorer Setup
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Ajaxplorer Setup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#download-the-deployment-scripts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Download the deployment scripts
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#running-pydio-script-on-a-first-gluster-node" class="md-nav__link">
+    <span class="md-ellipsis">
+      Running Pydio script on a first gluster node
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pydio-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pydio configuration
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Pydio configuration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#standard-set-up" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standard set-up
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#solution-specific-configurations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Solution specific configurations
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#next-nodes-deployment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Next nodes deployment
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installing-the-load-balancer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installing the Load Balancer
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using-pydio-apps-rest-cli" class="md-nav__link">
+    <span class="md-ellipsis">
+      Using Pydio: apps, REST, CLI
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Using Pydio: apps, REST, CLI">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#standard-access" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standard Access
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#webdav-drive-mounting-rest-access" class="md-nav__link">
+    <span class="md-ellipsis">
+      WebDAV: drive mounting, REST-access
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#accessing-the-framework-via-php-cli" class="md-nav__link">
+    <span class="md-ellipsis">
+      Accessing the framework via PHP CLI
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#going-further-with-ha" class="md-nav__link">
+    <span class="md-ellipsis">
+      Going further with HA
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Going further with HA">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#doubling-the-haproxy-node" class="md-nav__link">
+    <span class="md-ellipsis">
+      Doubling the HAProxy Node
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setting-up-a-mutual-db" class="md-nav__link">
+    <span class="md-ellipsis">
+      Setting up a mutual DB
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#share-the-php-sessions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Share the PHP Sessions
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../troubleshooting-webdav-server/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Troubleshooting WebDAV server
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Introduction">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#red-hat-storage-server" class="md-nav__link">
+    <span class="md-ellipsis">
+      Red Hat Storage Server
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Red Hat Storage Server">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#smarter-enterprise-storage" class="md-nav__link">
+    <span class="md-ellipsis">
+      Smarter enterprise storage
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lower-costs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lower costs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#easily-access-information" class="md-nav__link">
+    <span class="md-ellipsis">
+      Easily access information
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#storage-problemssolved" class="md-nav__link">
+    <span class="md-ellipsis">
+      Storage problems—solved
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pydio-and-red-hat-storage" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pydio and Red Hat Storage
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Pydio and Red Hat Storage">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#solution-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Solution overview
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#architecture-diagram" class="md-nav__link">
+    <span class="md-ellipsis">
+      Architecture Diagram
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pre-requisite-create-the-two-gluster-volumes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pre-requisite : create the two gluster volumes
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ajaxplorer-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ajaxplorer Setup
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Ajaxplorer Setup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#download-the-deployment-scripts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Download the deployment scripts
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#running-pydio-script-on-a-first-gluster-node" class="md-nav__link">
+    <span class="md-ellipsis">
+      Running Pydio script on a first gluster node
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pydio-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pydio configuration
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Pydio configuration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#standard-set-up" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standard set-up
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#solution-specific-configurations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Solution specific configurations
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#next-nodes-deployment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Next nodes deployment
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installing-the-load-balancer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installing the Load Balancer
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using-pydio-apps-rest-cli" class="md-nav__link">
+    <span class="md-ellipsis">
+      Using Pydio: apps, REST, CLI
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Using Pydio: apps, REST, CLI">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#standard-access" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standard Access
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#webdav-drive-mounting-rest-access" class="md-nav__link">
+    <span class="md-ellipsis">
+      WebDAV: drive mounting, REST-access
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#accessing-the-framework-via-php-cli" class="md-nav__link">
+    <span class="md-ellipsis">
+      Accessing the framework via PHP CLI
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#going-further-with-ha" class="md-nav__link">
+    <span class="md-ellipsis">
+      Going further with HA
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Going further with HA">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#doubling-the-haproxy-node" class="md-nav__link">
+    <span class="md-ellipsis">
+      Doubling the HAProxy Node
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setting-up-a-mutual-db" class="md-nav__link">
+    <span class="md-ellipsis">
+      Setting up a mutual DB
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#share-the-php-sessions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Share the PHP Sessions
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+  <h1>Red Hat Storage Deployment</h1>
+
+<h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">&para;</a></h2>
+<h3 id="red-hat-storage-server">Red Hat Storage Server<a class="headerlink" href="#red-hat-storage-server" title="Permanent link">&para;</a></h3>
+<h4 id="smarter-enterprise-storage"><em>Smarter enterprise storage</em><a class="headerlink" href="#smarter-enterprise-storage" title="Permanent link">&para;</a></h4>
+<p>Deploying scalable, flexible enterprise storage shouldn’t lock you in to high-cost proprietary solutions. Red Hat® Storage Server helps your enterprise manage the explosion of big, semi-structured, and unstructured data growth while maintaining the storage performance, capacity, and availability you need to meet your most demanding enterprise storage requirements.</p>
+<h4 id="lower-costs"><em>Lower costs</em><a class="headerlink" href="#lower-costs" title="Permanent link">&para;</a></h4>
+<p>Red Hat’s open software solution for scale-out network-attached storage (NAS) lets you manage exponential data growth at a fraction of the cost of other storage solutions.</p>
+<h4 id="easily-access-information"><em>Easily access information</em><a class="headerlink" href="#easily-access-information" title="Permanent link">&para;</a></h4>
+<p>Whether deployed on-premise, or in a private, public, or hybrid cloud environment, Red Hat Storage makes it easier to access information, brings freedom of choice, and brings the power of community-driven innovation to your enterprise.</p>
+<h4 id="storage-problemssolved"><em>Storage problems—solved</em><a class="headerlink" href="#storage-problemssolved" title="Permanent link">&para;</a></h4>
+<p>Red Hat Storage Server solves enterprise storage requirements, including:</p>
+<ul>
+<li>Enterprise-wide file sharing with a single access point across data storage locations.</li>
+<li>Nearline storage for infrequently accessed data that needs to be online.</li>
+<li>Rich media (audio and video) content distribution with petabyte-scale storage and high-read performance requirements.</li>
+<li>High-performance storage for bandwidth-intensive applications like weather prediction and oil and gas exploration.</li>
+<li>Centralized Storage-as-a-Service to enterprise applications.</li>
+<li>Backup target and archive for on-site or off-site data protection.</li>
+</ul>
+<p><a class="glightbox" href="../images/system/red_hat_storage/redhat-logo.jpg" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/system/red_hat_storage/redhat-logo.jpg" /></a></p>
+<h3 id="pydio-and-red-hat-storage">Pydio and Red Hat Storage<a class="headerlink" href="#pydio-and-red-hat-storage" title="Permanent link">&para;</a></h3>
+<h4 id="solution-overview"><em>Solution overview</em><a class="headerlink" href="#solution-overview" title="Permanent link">&para;</a></h4>
+<p>Pydio is an open-source alternative to Dropbox and Box.net, providing accesss to any filesystem through a neat webapp, dedicated iOS and Android native applications, as well as WebDAV. This document will describe how to deploy it efficiently in an Red Hat Storage environment, assuming you have the following set up :</p>
+<ul>
+<li>One RHServer node for LoadBalancer proxy (using HAProxy software).</li>
+<li>N RHServer node accessing the distributed replicated gluster volume.</li>
+<li>Optionaly, and AD or LDAP directory to provide users (Pydio has its own user system otherwise).</li>
+</ul>
+<p>The idea of this setup is to actually use the gluster nodes to act as HTTP servers, in an High Availability fashion : clients will access through the proxy to either node (based on a round-robin balance), and if one node dies it will be automatically ignored. Adding a node should be a matter of minutes, mounting the gluster volume, running the Pydio install script, and telling the proxy of this new node.</p>
+<p><strong><em>NOTE</em></strong> : During the Pydio installation scripts, except it is already checked, you will be asked to enable the “RHServer EUS Optional Server” channel subscription, by providing your RHN login and password. Please make sure you have them available before running the script.</p>
+<h4 id="architecture-diagram"><em>Architecture Diagram</em><a class="headerlink" href="#architecture-diagram" title="Permanent link">&para;</a></h4>
+<p><a class="glightbox" href="../images/system/red_hat_storage/RHS-Diagram.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/system/red_hat_storage/RHS-Diagram.png" /></a></p>
+<h3 id="pre-requisite-create-the-two-gluster-volumes">Pre-requisite : create the two gluster volumes<a class="headerlink" href="#pre-requisite-create-the-two-gluster-volumes" title="Permanent link">&para;</a></h3>
+<p>This installation will rely on two different gluster volumes</p>
+<ul>
+<li><strong><em>/mnt/samba/ajxp-data/</em></strong> Will contain all the actual data of the users. Metadata will be stored in the file system extended attributes.</li>
+<li><strong><em>/mnt/samba/ajxp-config/</em></strong> Will contain all ajaxplorer specific configurations and internal data.</li>
+</ul>
+<h2 id="ajaxplorer-setup">Ajaxplorer Setup<a class="headerlink" href="#ajaxplorer-setup" title="Permanent link">&para;</a></h2>
+<h3 id="download-the-deployment-scripts">Download the deployment scripts<a class="headerlink" href="#download-the-deployment-scripts" title="Permanent link">&para;</a></h3>
+<p>Download the following scripts on your gluster nodes :</p>
+<p><code>wget https://raw.github.com/ajaxplorer/ajaxplorer-core/master/dist/scripts/rhs/rhs-ajaxplorer.sh</code></p>
+<p><code>chmod 755 rhs-ajaxplorer.sh</code></p>
+<h3 id="running-pydio-script-on-a-first-gluster-node">Running Pydio script on a first gluster node<a class="headerlink" href="#running-pydio-script-on-a-first-gluster-node" title="Permanent link">&para;</a></h3>
+<p>The provided rhs-ajaxplorer.sh script will deploy Pydio and all necessary dependancies automatically on a gluster node.</p>
+<p><code>./rhs-ajaxplorer.sh</code></p>
+<p>It will detect if this is the very first node to be installed, and in that case will ask you to run the Pydio graphical installation, by accessing this first node through a web-browser, at url <a href="http://first_node_IP/ajaxplorer/">http://first_node_IP/ajaxplorer/</a></p>
+<h3 id="pydio-configuration">Pydio configuration<a class="headerlink" href="#pydio-configuration" title="Permanent link">&para;</a></h3>
+<h4 id="standard-set-up"><em>Standard set-up</em><a class="headerlink" href="#standard-set-up" title="Permanent link">&para;</a></h4>
+<p>When deploying this very first Pydio node, you will have to go through the standard Pydio installation wizard to setup the basic configs.</p>
+<ul>
+<li>Choose an administrator user name and password</li>
+<li>Skip Emails configuration for the moment</li>
+<li>Setup the “Configurations Storage” : this defines how Pydio handles its own internal configurations. As a start, we suggest using an Sqlite3-based backend, although a MySQL DB would be recommanded for scalability purpose. The SQlite file will be stored on the gluster config volume, and will be shared amongs all Pydio nodes.</li>
+</ul>
+<p>Execute installation and login, you’re in! If you go to the Settings panel (in the admin user menu), you will here be able to <strong><em>switch the Authentication mechanism to LDAP or AD</em></strong> if necessary. Please refer to the admin guide before touching this, you could end up being logged out of the system!</p>
+<h4 id="solution-specific-configurations"><em>Solution specific configurations</em><a class="headerlink" href="#solution-specific-configurations" title="Permanent link">&para;</a></h4>
+<p>Some Pydio features will generate http links used by the users, and generally, Pydio can safely detect the link “base” using the current server IP. In the architecture presented in this document, the software may end up building links using the Pydio instance server IP, i.e. the internal LAN IP, not the public IP. For this reason, you must update a couple of Pydio parameter using the HAProxy node public IP, the one that will be the unique entry point to the system by the clients.</p>
+<p>Let’s say the public IP of haproxy is HA_IP, here are some options to set inside <strong>Pydio Main Options</strong></p>
+<ul>
+<li>Main Options &gt; Server URL : <a href="http://HA_IP/ajaxplorer">http://HA_IP/ajaxplorer</a></li>
+<li>Sharing &gt; Download URL : <a href="http://HA_IP/ajaxplorer_public">http://HA_IP/ajaxplorer_public</a> (there is a virtual host)</li>
+<li>WebDAV Server &gt; Shares Host : <a href="http://HA_IP">http://HA_IP</a></li>
+<li>WebDAV Server &gt; Shares URI : /ajaxplorer/shares/</li>
+</ul>
+<p>As your editing this parameters,  make sure the following are checked as well:</p>
+<ul>
+<li>WebDAV Server &gt; Enable WebDAV : Yes</li>
+<li>Command line &gt; Command-line Active : Yes</li>
+</ul>
+<h3 id="next-nodes-deployment">Next nodes deployment<a class="headerlink" href="#next-nodes-deployment" title="Permanent link">&para;</a></h3>
+<p>Once you’re setup with your configuration on the first Pydio instance, you will be able to run the script on the other nodes, and configurations will be automatically imported from the “master”. At the end of the installation, you should be notified that Pydio configurations were correctly detected on the gluster volume, and check that everything is indded running as expected by accessing the new node web server : <a href="http://new_node_IP/ajaxplorer/">http://new_node_IP/ajaxplorer/</a></p>
+<h2 id="installing-the-load-balancer">Installing the Load Balancer<a class="headerlink" href="#installing-the-load-balancer" title="Permanent link">&para;</a></h2>
+<p>On the Proxy node, simply download and execute the rhs-haproxy.sh script:</p>
+<p><code>wget https://raw.github.com/ajaxplorer/ajaxplorer-core/master/dist/scripts/rhs/rhs-haproxy.sh</code></p>
+<p><code>chmod 755 rhs-haproxy.sh</code></p>
+<p><code>./rhs-haproxy.sh</code></p>
+<p>Open the /etc/haproxy/haproxy.cfg At the very end of the file, you will see the backend definition : to what IP am I listening (this will be your outside world IP), and what are the available nodes. Please modify this accordingly. Also, make sure to change the root:haproxy credential to access the haproxy statistics through the browser.</p>
+<p>listen http_proxy 192.168.1.21:80
+      mode http
+      # This will enable the statistic interfaces
+      # Accessible at proxy_url/haproxy?stats
+      stats enable
+      #
+      # Modify here the statistics user credential to use a secret key!
+      #
+      stats auth root:haproxy
+      # Round-Robin &amp; Session Stick on Pydio
+      balance roundrobin # Load Balancing algorithm
+      appsession AjaXplorer len 64 timeout 3h request-learn
+      option forwardfor # This sets X-Forwarded-For
+      # Check the health of each server
+      option httpchk HEAD /ajaxplorer/check.txt HTTP/1.0</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span></pre></div></td><td class="code"><div><pre><span></span><code>  #
+  # And modify here your nodes IPs
+  #
+  server ajxpnode1 192.168.1.10:80 weight 1 maxconn 512 check
+  server ajxpnode2 192.168.1.11:80 weight 1 maxconn 512 check
+  server ajxpnode3 192.168.1.12:80 weight 1 maxconn 512 check
+  server ajxpnode4 192.168.1.13:80 weight 1 maxconn 512 check
+  # ADD OTHER NODES HERE
+</code></pre></div></td></tr></table></div>
+<p>Once you are done, restart HAProxy using</p>
+<p><code>/etc/init.d/haproxy restart</code></p>
+<h2 id="using-pydio-apps-rest-cli">Using Pydio: apps, REST, CLI<a class="headerlink" href="#using-pydio-apps-rest-cli" title="Permanent link">&para;</a></h2>
+<h3 id="standard-access">Standard Access<a class="headerlink" href="#standard-access" title="Permanent link">&para;</a></h3>
+<p>At this step of the tutorial, you should be able to access the external IP <a href="http://external_IP/ajaxplorer/">http://external_IP/ajaxplorer/</a> and this will round robin the load on the various nodes.</p>
+<p><a class="glightbox" href="../images/system/red_hat_storage/screenshot-2013-05-14-at-23-00-14.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/system/red_hat_storage/screenshot-2013-05-14-at-23-00-14.png" /></a></p>
+<p>This URL is the unique entry point, used by all standard Pydio “clients” : this <strong>webapp</strong>, but also the <strong>iOS</strong> and <strong>Android</strong> applications. In these apps, at first connexion, you are prompted for some connexion information. Fill them using <a href="http://HA_IP/ajaxplorer/">http://HA_IP/ajaxplorer/</a> as the server URL, and your login / password as credentials.</p>
+<p><a class="glightbox" href="../images/system/red_hat_storage/photo.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/system/red_hat_storage/photo.png" /></a></p>
+<p>Note that you will also be able to access the HAProxy statistics by opening the following URL : <a href="http://external_IP/haproxy?stats">http://external_IP/haproxy?stats</a> and providing the credentials you have modified in the configuration file.</p>
+<h3 id="webdav-drive-mounting-rest-access">WebDAV: drive mounting, REST-access<a class="headerlink" href="#webdav-drive-mounting-rest-access" title="Permanent link">&para;</a></h3>
+<p>WebDAV is by default activated only on a per user basis. In the previous sections, you were instructed to make it available application-wide, in the Settings Panel. Now as a standard user (or admin), you should be able to see in the user top-right menu a “WebDAV Preferences” item. Use it to activate this feature for the given user.</p>
+<p>It will display an URL that is differing from the Webapp access point. This is a dedicated URL you will use to mount your authorized workspaces as a “Network Drive” inside your OS explore (Windows Explorer, Mac OS Finder, Linux DavFS client). This can be quite handy, although not so performant for some of these clients implementations (typically Mac Finder is known to be a poor implementation). You can find below a sample screenshot of the Windows 7 “Map Network Drive” feature.</p>
+<p><a class="glightbox" href="../images/system/red_hat_storage/screenshot-2013-06-08-at-18-58-56.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/system/red_hat_storage/screenshot-2013-06-08-at-18-58-56.png" /></a>
+<a class="glightbox" href="../images/system/red_hat_storage/photo.screenshot-2013-06-08-at-19-00-28.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/system/red_hat_storage/photo.screenshot-2013-06-08-at-19-00-28.png" /></a>
+<a class="glightbox" href="../images/system/red_hat_storage/screenshot-2013-06-08-at-19-10-26.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/system/red_hat_storage/screenshot-2013-06-08-at-19-10-26.png" /></a></p>
+<p>One interesting thing of giving WebDAV access out of the box is that you can now use this API as a RESTful access point to GET / PUT a file inside / from a workspace. Using cURL, here are some sample command lines :</p>
+<p>GET the file contract.pdf from Workspace “My Files”, as user USER, located inside folder /Folder1/subFolder2″
+<code>curl --user USER:PASSWORD --remote-name http://HA_IP/ajaxplorer/shares/my-files/Folder1/subFolder2/contract.pdf</code>
+PUT the file contract2.pdf at the same location, given the file is located in the directory from which you execute the cURL command
+<code>curl --user USER:PASSWORD --upload-file contract2.pdf http://HA_IP/ajaxplorer/shares/my-files/Folder1/subFolder2/contract2.pdf</code></p>
+<h3 id="accessing-the-framework-via-php-cli">Accessing the framework via PHP CLI<a class="headerlink" href="#accessing-the-framework-via-php-cli" title="Permanent link">&para;</a></h3>
+<p>It’s possible to launch the whole framework and execute any actions via the command line.  Typically, System Administrators will use the admin API to automatize provisionning directly, without going through HTTP : create users, roles, assign access rights, etc.</p>
+<p>It is also used internally to make tasks triggered from the GUI “asynchronous” : they are started on the server and do not need to keep a window open. For example, Lucene Indexation is started that way. One can also launch some administrative tasks from outside the web, e.g. via a CRON job..</p>
+<p>If you want to use the command line, placed at the root of the installation, you will first have to find the correct action to trigger, by browsing the “Developer Resources” &gt; “Actions API” available directly inside the Settings panel.</p>
+<p><a class="glightbox" href="../images/system/red_hat_storage/screenshot-2013-06-08-at-19-06-42.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/system/red_hat_storage/screenshot-2013-06-08-at-19-06-42.png" /></a></p>
+<p>Then , if you want for example to trigger the action “create_group” with parameters id “sales” and label “Commercial”, you’ll have to call the following command:
+<code>php cmd.php -u=user -p=password -a=create_group -r=repository_id --group_path=/sales --groupLabel=Commercial</code>
+Note the difference between simple-dash parameters and double-dash parameters : the first ones are always necessary, whereas the latter ones will depend on the triggered action.</p>
+<h2 id="going-further-with-ha">Going further with HA<a class="headerlink" href="#going-further-with-ha" title="Permanent link">&para;</a></h2>
+<p>This setup should easily demonstrate the horizontal scalability of such an RHS+Pydio configuration. However, if you intend to deploy in a highly demanding production environnment, you should consider the following suggestions.</p>
+<h3 id="doubling-the-haproxy-node">Doubling the HAProxy Node<a class="headerlink" href="#doubling-the-haproxy-node" title="Permanent link">&para;</a></h3>
+<p>This is a fairly simple setup for demonstrating LoadBalancing and node failing automatic detection. To provide the best High Availability configuration, you should actually double the LoadBalancer nodes, using HAProxy and Heartbeat to make sure that if one of them fall down, a slave can take the relay.</p>
+<h3 id="setting-up-a-mutual-db">Setting up a mutual DB<a class="headerlink" href="#setting-up-a-mutual-db" title="Permanent link">&para;</a></h3>
+<p>Although the key to the data high availabilty relies on the data being stored on the filesystem, some side-features of Pydio are now requiring a database setup. In this tutorial, we covered the case using a Sqlite3 database shared through the Gluster volume, which would not scale well. You should instead consider dedicating a MySQL database to replace this, eventually using solutions like Percona DB to manage the DB replication and HA.</p>
+<h3 id="share-the-php-sessions">Share the PHP Sessions<a class="headerlink" href="#share-the-php-sessions" title="Permanent link">&para;</a></h3>
+<p>The Proxy setup is set so that once a client is connected to a given Pydio node, the session is “sticky” and HAProxy will always redirect this client to this node. If the node falls down, the client will have to start a new session. Avoiding this can be done by sharing the session amongst all Pydio node, using for example a dedicated Memcache server accessed by all nodes.</p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../installing-on-a-linux-distribution-nginx/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Installing on a Linux Distribution NGINX">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Installing on a Linux Distribution NGINX
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../troubleshooting-webdav-server/" class="md-footer__link md-footer__link--next" aria-label="Next: Troubleshooting WebDAV server">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Troubleshooting WebDAV server
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "navigation.tracking", "navigation.footer", "search.highlight", "search.suggest", "content.zoom", "navigation.indexes", "navigation.sections", "navigation.tabs", "navigation.top", "navigation.tracking", "search.highlight", "toc.follow"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"alias": true, "default": "latest", "provider": "mike"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.13a4f30d.min.js"></script>
+      
+    
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
+</html>
