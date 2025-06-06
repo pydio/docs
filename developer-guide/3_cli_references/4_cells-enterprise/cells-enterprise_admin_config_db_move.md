@@ -1,0 +1,45 @@
+---
+slug: cells-enterprise-admin-config-db-move
+title: "cells-enterprise admin config db move"
+menu: "cells-enterprise admin config db move"
+language: und
+menu_name: menu-dev-guide-v7
+weight: 22
+
+---
+Move service data from one database to another
+
+### Synopsis
+
+
+DESCRIPTION
+
+  Migrate existing data to a new storage type
+
+
+```
+./cells-enterprise admin config db move [flags]
+```
+
+### Options
+
+```
+      --dry-run   Enable/disable dry-run mode (default true)
+  -h, --help      help for move
+```
+
+### Options inherited from parent commands
+
+```
+      --advertise_address string     Default advertise address (default "127.0.0.1")
+      --broker string                Pub/sub service for events between services (default "grpc://:8030")
+      --config string                Configuration storage URL. Supported schemes: etcd|etcd+tls|file|grpc|mem|vault|vaults (default "file:///home/teamcity/.config/pydio/cells/pydio.json")
+      --discovery string             Registry and pub/sub (default "grpc://:8030")
+      --grpc_client_timeout string   Default timeout for long-running GRPC calls, expressed as a golang duration (default "60m")
+      --registry string              Registry used to contact services (default "grpc://:8030")
+```
+
+### SEE ALSO
+
+* [./cells-enterprise admin config db](./cells-enterprise-admin-config-db)	 - Manage Database configuration
+

@@ -1,0 +1,75 @@
+---
+slug: cells-enterprise-admin-user-token
+title: "cells-enterprise admin user token"
+menu: "cells-enterprise admin user token"
+language: und
+menu_name: menu-dev-guide-v7
+weight: 52
+
+---
+Generate a personal token for a user
+
+### Synopsis
+
+
+DESCRIPTION
+
+  Generate a personal authentication token for a user. 
+  Expiration can be set in two ways:  
+    + A hard limit, by using the -e flag (duration)
+    + A sliding window by using the -a flag (duration): in that case the token expiration will be refreshed each time
+      the token is used (e.g a request using this token is received).
+
+EXAMPLES
+
+  Generate a token that lasts 24 hours for user admin
+  $ ./cells-enterprise admin user token -u admin -e 24h
+
+  Generate a token that lasts by default 10mn, but which expiration is refreshed to the next 10mn each time 
+  the token is used.
+  $ ./cells-enterprise admin user token -u admin -a 10m
+
+TOKEN USAGE
+
+  These token can be used in replacement of an OAuth2-based access token: they can replace the "Bearer" access 
+  token when calling any REST API. They can also be used as the password (in conjunction with username) for all 
+  basic-auth based APIs (e.g. webDAV).
+
+TOKEN SCOPE
+
+  By default, generated tokens grant the same level of access as a standard login operation. To improve security, 
+  it is possible to restrict these accesses to a specific file or folder (given it is accessible by the user in 
+  first place) with a "scope" in the format "node:NODE_UUID:PERMISSION" where PERMISSION string contains either "r"
+  (read) or "w" (write) or both.
+
+
+```
+./cells-enterprise admin user token [flags]
+```
+
+### Options
+
+```
+  -a, --auto string     Auto-refresh expiration when token is used. Format is 20u where u is a unit: s (second), m (minute), h (hour), d(day).
+  -e, --expire string   Expire after duration. Format is 20u where u is a unit: s (second), m (minute), h (hour), d(day).
+  -h, --help            help for token
+  -q, --quiet           Only return the newly created token value (typically useful in automation scripts with a short expiry time)
+  -s, --scope strings   Optional scopes
+  -u, --user string     User login (mandatory)
+```
+
+### Options inherited from parent commands
+
+```
+      --advertise_address string     Default advertise address (default "127.0.0.1")
+      --broker string                Pub/sub service for events between services (default "grpc://:8030")
+      --config string                Configuration storage URL. Supported schemes: etcd|etcd+tls|file|grpc|mem|vault|vaults (default "file:///home/teamcity/.config/pydio/cells/pydio.json")
+      --discovery string             Registry and pub/sub (default "grpc://:8030")
+      --grpc_client_timeout string   Default timeout for long-running GRPC calls, expressed as a golang duration (default "60m")
+      --registry string              Registry used to contact services (default "grpc://:8030")
+```
+
+### SEE ALSO
+
+* [./cells-enterprise admin user](./cells-enterprise-admin-user)	 - Manage users
+

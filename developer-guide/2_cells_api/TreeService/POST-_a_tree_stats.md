@@ -1,0 +1,114 @@
+---
+slug: post-a-tree-stats
+title: "POST /a/tree/stats"
+menu: "POST /a/tree/stats"
+language: und
+menu_name: menu-dev-guide-v7
+
+---
+
+
+
+
+
+
+
+ 
+List meta for a list of nodes, or a full directory using /path/* syntax  
+
+
+### Body Parameters
+
+Name | Description | Type | Required
+---|---|---|---
+**AllMetaProviders** | Whether to query all services for the metadata they can contribute to enrich the node | _boolean_ |   
+**Filters** | Children Filtering | _object_ |   
+**Limit** | Limit number of results | _integer_ |   
+**NodePaths** | List of node paths to query (use paths ending with /* to load the children) | _array_ |   
+**Offset** | Start listing at a given position | _integer_ |   
+**SortDirDesc** | Sort descending (otherwise ascending) | _boolean_ |   
+**SortField** | Remote Sort on specific field | _string_ |   
+**Versions** | Load Versions of the given node | _boolean_ |   
+
+
+### Body Example
+```
+{
+  "AllMetaProviders": true,
+  "Filters": {},
+  "Limit": 10,
+  "NodePaths": [
+    "string"
+  ],
+  "Offset": 10,
+  "SortDirDesc": true,
+  "SortField": "string",
+  "Versions": true
+}
+```
+
+
+
+
+
+
+### Response Example (200)
+Response Type /definitions/restBulkMetaResponse
+
+```
+{
+  "Nodes": [
+    {
+      "AppearsIn": [
+        {
+          "Path": "string",
+          "WsLabel": "string",
+          "WsScope": "string",
+          "WsSlug": "string",
+          "WsUuid": "string"
+        }
+      ],
+      "Commits": [
+        {
+          "Data": "string",
+          "Description": "string",
+          "Event": {
+            "Metadata": {},
+            "Optimistic": true,
+            "Silent": true,
+            "Source": "[Recursive structure]",
+            "Target": "[Recursive structure]",
+            "Type": "string"
+          },
+          "Location": "[Recursive structure]",
+          "MTime": "string",
+          "OwnerUuid": "string",
+          "Size": "string",
+          "Uuid": "string"
+        }
+      ],
+      "Etag": "string",
+      "MTime": "string",
+      "MetaStore": {},
+      "Mode": 10,
+      "Path": "string",
+      "Size": "string",
+      "Type": "string",
+      "Uuid": "string"
+    }
+  ],
+  "Pagination": {
+    "CurrentOffset": 10,
+    "CurrentPage": 10,
+    "Limit": 10,
+    "NextOffset": 10,
+    "PrevOffset": 10,
+    "Total": 10,
+    "TotalPages": 10
+  }
+}
+```
+
+
+
+

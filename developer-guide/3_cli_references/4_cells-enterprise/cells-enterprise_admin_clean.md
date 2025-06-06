@@ -1,0 +1,45 @@
+---
+slug: cells-enterprise-admin-clean
+title: "cells-enterprise admin clean"
+menu: "cells-enterprise admin clean"
+language: und
+menu_name: menu-dev-guide-v7
+weight: 10
+
+---
+Housekeeping commands
+
+### Synopsis
+
+Collection of tools for purging Cells internal data (activities, logs, etc)
+
+```
+./cells-enterprise admin clean [flags]
+```
+
+### Options
+
+```
+  -h, --help   help for clean
+```
+
+### Options inherited from parent commands
+
+```
+      --advertise_address string     Default advertise address (default "127.0.0.1")
+      --broker string                Pub/sub service for events between services (default "grpc://:8030")
+      --config string                Configuration storage URL. Supported schemes: etcd|etcd+tls|file|grpc|mem|vault|vaults (default "file:///home/teamcity/.config/pydio/cells/pydio.json")
+      --discovery string             Registry and pub/sub (default "grpc://:8030")
+      --grpc_client_timeout string   Default timeout for long-running GRPC calls, expressed as a golang duration (default "60m")
+      --registry string              Registry used to contact services (default "grpc://:8030")
+```
+
+### SEE ALSO
+
+* [./cells-enterprise admin](./cells-enterprise-admin)	 - Direct Read/Write access to Cells data
+* [./cells-enterprise admin clean acls](./cells-enterprise-admin-clean-acls)	 - Clean Expired ACLs
+* [./cells-enterprise admin clean activities](./cells-enterprise-admin-clean-activities)	 - Purge user or file activities based on various criteria
+* [./cells-enterprise admin clean logs](./cells-enterprise-admin-clean-logs)	 - Truncate log indexes to a given size
+* [./cells-enterprise admin clean reset-jobs](./cells-enterprise-admin-clean-reset-jobs)	 - Reset a job to its default
+* [./cells-enterprise admin clean resync](./cells-enterprise-admin-clean-resync)	 - And a TriggerResync gRPC command to a service
+

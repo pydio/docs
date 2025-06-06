@@ -1,0 +1,65 @@
+---
+slug: get-a-config-sites-filter
+title: "GET /a/config/sites/{Filter}"
+menu: "GET /a/config/sites/{Filter}"
+language: und
+menu_name: menu-dev-guide-v7
+
+---
+
+
+
+
+
+
+
+ 
+List configured sites  
+
+
+### Path Parameters
+
+ - **Filter** (_string, required_) 
+
+
+
+
+### Response Example (200)
+Response Type /definitions/restListSitesResponse
+
+```
+{
+  "Sites": [
+    {
+      "Binds": [
+        "string"
+      ],
+      "Certificate": {
+        "CellsRootCA": "string",
+        "CertFile": "string",
+        "KeyFile": "string"
+      },
+      "LetsEncrypt": {
+        "AcceptEULA": true,
+        "Email": "string",
+        "StagingCA": true
+      },
+      "Maintenance": true,
+      "MaintenanceConditions": [
+        "string"
+      ],
+      "ReverseProxyURL": "string",
+      "SSLRedirect": true,
+      "SelfSigned": {
+        "Hostnames": [
+          "string"
+        ]
+      }
+    }
+  ]
+}
+```
+
+
+
+

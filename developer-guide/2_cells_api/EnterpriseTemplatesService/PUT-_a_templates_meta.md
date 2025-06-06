@@ -1,0 +1,82 @@
+---
+slug: put-a-templates-meta
+title: "PUT /a/templates/meta"
+menu: "PUT /a/templates/meta"
+language: und
+menu_name: menu-dev-guide-v7
+
+---
+
+
+
+
+
+
+
+ 
+Store an arbitrary metadata template  
+
+
+### Body Parameters
+
+Name | Description | Type | Required
+---|---|---|---
+**Template** |  | _#/definitions/entMetaTemplate_ |   
+**Uuid** |  | _string_ |   
+
+
+### Body Example
+```
+{
+  "Template": {
+    "Label": "string",
+    "Meta": "string",
+    "Namespace": "string",
+    "Policies": [
+      {
+        "Action": "string",
+        "Effect": "string",
+        "JsonConditions": "string",
+        "Resource": "string",
+        "Subject": "string",
+        "id": "string"
+      }
+    ],
+    "Uuid": "string"
+  },
+  "Uuid": "string"
+}
+```
+
+
+
+
+
+
+### Response Example (200)
+Response Type /definitions/entPutMetaTemplateResponse
+
+```
+{
+  "Template": {
+    "Label": "string",
+    "Meta": "string",
+    "Namespace": "string",
+    "Policies": [
+      {
+        "Action": "string",
+        "Effect": "string",
+        "JsonConditions": "string",
+        "Resource": "string",
+        "Subject": "string",
+        "id": "string"
+      }
+    ],
+    "Uuid": "string"
+  }
+}
+```
+
+
+
+

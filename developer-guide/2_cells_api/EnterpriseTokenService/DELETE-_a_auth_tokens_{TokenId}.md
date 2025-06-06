@@ -1,0 +1,39 @@
+---
+slug: delete-a-auth-tokens-tokenid
+title: "DELETE /a/auth/tokens/{TokenId}"
+menu: "DELETE /a/auth/tokens/{TokenId}"
+language: und
+menu_name: menu-dev-guide-v7
+
+---
+
+
+
+
+
+
+
+ 
+Delete a personal access token based on its Uuid  
+
+
+### Path Parameters
+
+ - **TokenId** (_string, required_) Pass a specific Token ID to be revoked. If empty, request will use current JWT
+
+
+
+
+### Response Example (200)
+Response Type /definitions/restRevokeResponse
+
+```
+{
+  "Message": "string",
+  "Success": true
+}
+```
+
+
+
+

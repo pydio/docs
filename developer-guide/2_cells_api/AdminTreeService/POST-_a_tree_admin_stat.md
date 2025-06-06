@@ -1,0 +1,100 @@
+---
+slug: post-a-tree-admin-stat
+title: "POST /a/tree/admin/stat"
+menu: "POST /a/tree/admin/stat"
+language: und
+menu_name: menu-dev-guide-v7
+
+---
+
+
+
+
+
+
+
+ 
+Read a node information inside the admin tree  
+
+
+### Body Parameters
+
+Name | Description | Type | Required
+---|---|---|---
+**Node** | Input node | _#/definitions/treeNode_ |   
+**ObjectStats** | Used internally for the router ReadNode request, stat the datasource instead of index | _boolean_ |   
+**StatFlags** | Generic Details Flags | _array_ |   
+**WithCommits** | Gather commit information - This is Deprecated | _boolean_ |   
+**WithExtendedStats** | Get extended stats - For folders, computes ChildrenCount - Depreacted, use StatFlags instead | _boolean_ |   
+
+
+### Body Example
+```
+{
+  "Node": {
+    "Path": "string"
+  },
+  "ObjectStats": true,
+  "StatFlags": [
+    10
+  ],
+  "WithCommits": true,
+  "WithExtendedStats": true
+}
+```
+
+
+
+
+
+
+### Response Example (200)
+Response Type /definitions/treeReadNodeResponse
+
+```
+{
+  "Node": {
+    "AppearsIn": [
+      {
+        "Path": "string",
+        "WsLabel": "string",
+        "WsScope": "string",
+        "WsSlug": "string",
+        "WsUuid": "string"
+      }
+    ],
+    "Commits": [
+      {
+        "Data": "string",
+        "Description": "string",
+        "Event": {
+          "Metadata": {},
+          "Optimistic": true,
+          "Silent": true,
+          "Source": "[Recursive structure]",
+          "Target": "[Recursive structure]",
+          "Type": "string"
+        },
+        "Location": "[Recursive structure]",
+        "MTime": "string",
+        "OwnerUuid": "string",
+        "Size": "string",
+        "Uuid": "string"
+      }
+    ],
+    "Etag": "string",
+    "MTime": "string",
+    "MetaStore": {},
+    "Mode": 10,
+    "Path": "string",
+    "Size": "string",
+    "Type": "string",
+    "Uuid": "string"
+  },
+  "Success": true
+}
+```
+
+
+
+

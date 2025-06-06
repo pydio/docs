@@ -1,0 +1,234 @@
+---
+slug: post-a-scheduler-templates-selectors
+title: "POST /a/scheduler/templates/selectors"
+menu: "POST /a/scheduler/templates/selectors"
+language: und
+menu_name: menu-dev-guide-v7
+
+---
+
+
+
+
+
+
+
+ 
+Templates management for filters  
+
+
+### Body Parameters
+
+Name | Description | Type | Required
+---|---|---|---
+**Filter** |  | _string_ |   
+
+
+### Body Example
+```
+{
+  "Filter": "string"
+}
+```
+
+
+
+
+
+
+### Response Example (200)
+Response Type /definitions/entListSelectorTemplatesResponse
+
+```
+{
+  "Templates": [
+    {
+      "ActionOutputFilter": {
+        "Description": "string",
+        "Label": "string",
+        "Query": {
+          "Limit": "string",
+          "Offset": "string",
+          "Operation": "string",
+          "ResourcePolicyQuery": {
+            "Any": true,
+            "Empty": true,
+            "Subjects": [
+              "string"
+            ]
+          },
+          "SortDesc": true,
+          "SortField": "string",
+          "SubQueries": [
+            {
+              "@type": "string"
+            }
+          ],
+          "groupBy": 10
+        }
+      },
+      "AsFilter": true,
+      "ContextMetaFilter": {
+        "Description": "string",
+        "Label": "string",
+        "Query": {
+          "Limit": "string",
+          "Offset": "string",
+          "Operation": "string",
+          "ResourcePolicyQuery": {
+            "Any": true,
+            "Empty": true,
+            "Subjects": [
+              "string"
+            ]
+          },
+          "SortDesc": true,
+          "SortField": "string",
+          "SubQueries": [
+            {
+              "@type": "string"
+            }
+          ],
+          "groupBy": 10
+        },
+        "Type": "string"
+      },
+      "DataSourceSelector": {
+        "All": true,
+        "ClearInput": true,
+        "Collect": true,
+        "Description": "string",
+        "FanOutInput": true,
+        "Label": "string",
+        "Query": {
+          "Limit": "string",
+          "Offset": "string",
+          "Operation": "string",
+          "ResourcePolicyQuery": {
+            "Any": true,
+            "Empty": true,
+            "Subjects": [
+              "string"
+            ]
+          },
+          "SortDesc": true,
+          "SortField": "string",
+          "SubQueries": [
+            {
+              "@type": "string"
+            }
+          ],
+          "groupBy": 10
+        },
+        "Timeout": "string",
+        "Type": "string"
+      },
+      "Description": "string",
+      "IdmSelector": {
+        "All": true,
+        "ClearInput": true,
+        "Collect": true,
+        "Description": "string",
+        "FanOutInput": true,
+        "Label": "string",
+        "Query": {
+          "Limit": "string",
+          "Offset": "string",
+          "Operation": "string",
+          "ResourcePolicyQuery": {
+            "Any": true,
+            "Empty": true,
+            "Subjects": [
+              "string"
+            ]
+          },
+          "SortDesc": true,
+          "SortField": "string",
+          "SubQueries": [
+            {
+              "@type": "string"
+            }
+          ],
+          "groupBy": 10
+        },
+        "Range": {
+          "Limit": "string",
+          "Offset": "string",
+          "OrderBy": "string",
+          "OrderDir": "string"
+        },
+        "Timeout": "string",
+        "Type": "string"
+      },
+      "Label": "string",
+      "Name": "string",
+      "NodesSelector": {
+        "All": true,
+        "ClearInput": true,
+        "Collect": true,
+        "Description": "string",
+        "FanOutInput": true,
+        "Label": "string",
+        "Pathes": [
+          "string"
+        ],
+        "Query": {
+          "Limit": "string",
+          "Offset": "string",
+          "Operation": "string",
+          "ResourcePolicyQuery": {
+            "Any": true,
+            "Empty": true,
+            "Subjects": [
+              "string"
+            ]
+          },
+          "SortDesc": true,
+          "SortField": "string",
+          "SubQueries": [
+            {
+              "@type": "string"
+            }
+          ],
+          "groupBy": 10
+        },
+        "Range": {
+          "Limit": "string",
+          "Offset": "string",
+          "OrderBy": "string",
+          "OrderDir": "string"
+        },
+        "Timeout": "string"
+      },
+      "TriggerFilter": {
+        "Description": "string",
+        "Label": "string",
+        "Query": {
+          "Limit": "string",
+          "Offset": "string",
+          "Operation": "string",
+          "ResourcePolicyQuery": {
+            "Any": true,
+            "Empty": true,
+            "Subjects": [
+              "string"
+            ]
+          },
+          "SortDesc": true,
+          "SortField": "string",
+          "SubQueries": [
+            {
+              "@type": "string"
+            }
+          ],
+          "groupBy": 10
+        }
+      }
+    }
+  ]
+}
+```
+
+
+
+

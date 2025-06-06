@@ -1,0 +1,121 @@
+---
+slug: post-a-config-directories-test-search
+title: "POST /a/config/directories-test/search"
+menu: "POST /a/config/directories-test/search"
+language: und
+menu_name: menu-dev-guide-v7
+
+---
+
+
+
+
+
+
+
+ 
+[Enterprise Only] Sends an arbitrary config and try to ldapsearch using a given SearchFilter  
+
+
+### Body Parameters
+
+Name | Description | Type | Required
+---|---|---|---
+**Config** |  | _#/definitions/authLdapServerConfig_ |   
+**Filter** |  | _#/definitions/authLdapSearchFilter_ |   
+**Limit** |  | _integer_ |   
+**Offset** |  | _integer_ |   
+
+
+### Body Example
+```
+{
+  "Config": {
+    "BindAnonymous": true,
+    "BindDN": "string",
+    "BindPW": "string",
+    "ConfigId": "string",
+    "Connection": "string",
+    "DomainName": "string",
+    "Host": "string",
+    "MappingRules": [
+      {
+        "LeftAttribute": "string",
+        "RightAttribute": "string",
+        "RolePrefix": "string",
+        "RuleString": "string"
+      }
+    ],
+    "MemberOfMapping": {
+      "GroupFilter": {
+        "DNs": [
+          "string"
+        ],
+        "DisplayAttribute": "string",
+        "Filter": "string",
+        "IDAttribute": "string",
+        "Scope": "string"
+      },
+      "Mapping": {
+        "LeftAttribute": "string",
+        "RightAttribute": "string",
+        "RolePrefix": "string",
+        "RuleString": "string"
+      },
+      "PydioMemberOfAttribute": "string",
+      "PydioMemberOfValueFormat": "string",
+      "RealMemberOf": true,
+      "RealMemberOfAttribute": "string",
+      "RealMemberOfValueFormat": "string",
+      "SupportNestedGroup": true
+    },
+    "PageSize": 10,
+    "RolePrefix": "string",
+    "RootCA": "string",
+    "RootCAData": "string",
+    "Schedule": "string",
+    "SchedulerDetails": "string",
+    "SkipVerifyCertificate": true,
+    "SyncOnly": true,
+    "User": {
+      "DNs": [
+        "string"
+      ],
+      "DisplayAttribute": "string",
+      "Filter": "string",
+      "IDAttribute": "string",
+      "Scope": "string"
+    }
+  },
+  "Filter": {
+    "DNs": [
+      "string"
+    ],
+    "DisplayAttribute": "string",
+    "Filter": "string",
+    "IDAttribute": "string",
+    "Scope": "string"
+  },
+  "Limit": 10,
+  "Offset": 10
+}
+```
+
+
+
+
+
+
+### Response Example (200)
+Response Type /definitions/entExternalDirectoryTestResponse
+
+```
+{
+  "DirectoryResponseJSON": "string",
+  "Success": true
+}
+```
+
+
+
+

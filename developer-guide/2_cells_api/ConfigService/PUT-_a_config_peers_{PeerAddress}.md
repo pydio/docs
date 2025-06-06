@@ -1,0 +1,79 @@
+---
+slug: put-a-config-peers-peeraddress
+title: "PUT /a/config/peers/{PeerAddress}"
+menu: "PUT /a/config/peers/{PeerAddress}"
+language: und
+menu_name: menu-dev-guide-v7
+
+---
+
+
+
+
+
+
+
+ 
+Create a folder on a given path for a given peer (filesystem)  
+
+
+### Body Parameters
+
+Name | Description | Type | Required
+---|---|---|---
+
+
+
+
+
+
+### Response Example (200)
+Response Type /definitions/restCreatePeerFolderResponse
+
+```
+{
+  "Node": {
+    "AppearsIn": [
+      {
+        "Path": "string",
+        "WsLabel": "string",
+        "WsScope": "string",
+        "WsSlug": "string",
+        "WsUuid": "string"
+      }
+    ],
+    "Commits": [
+      {
+        "Data": "string",
+        "Description": "string",
+        "Event": {
+          "Metadata": {},
+          "Optimistic": true,
+          "Silent": true,
+          "Source": "[Recursive structure]",
+          "Target": "[Recursive structure]",
+          "Type": "string"
+        },
+        "Location": "[Recursive structure]",
+        "MTime": "string",
+        "OwnerUuid": "string",
+        "Size": "string",
+        "Uuid": "string"
+      }
+    ],
+    "Etag": "string",
+    "MTime": "string",
+    "MetaStore": {},
+    "Mode": 10,
+    "Path": "string",
+    "Size": "string",
+    "Type": "string",
+    "Uuid": "string"
+  },
+  "Success": true
+}
+```
+
+
+
+

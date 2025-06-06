@@ -1,0 +1,57 @@
+---
+slug: post-a-policy-iplists
+title: "POST /a/policy/iplists"
+menu: "POST /a/policy/iplists"
+language: und
+menu_name: menu-dev-guide-v7
+
+---
+
+
+
+
+
+
+
+ 
+[Enterprise Only] Update white/black lists  
+
+
+### Body Parameters
+
+Name | Description | Type | Required
+---|---|---|---
+**IPs** |  | _array_ |   
+**Name** |  | _string_ |   
+
+
+### Body Example
+```
+{
+  "IPs": [
+    "string"
+  ],
+  "Name": "string"
+}
+```
+
+
+
+
+
+
+### Response Example (200)
+Response Type /definitions/ipbanIPsCollection
+
+```
+{
+  "IPs": [
+    "string"
+  ],
+  "Name": "string"
+}
+```
+
+
+
+

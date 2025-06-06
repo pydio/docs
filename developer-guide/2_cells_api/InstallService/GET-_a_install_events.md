@@ -1,0 +1,35 @@
+---
+slug: get-a-install-events
+title: "GET /a/install/events"
+menu: "GET /a/install/events"
+language: und
+menu_name: menu-dev-guide-v7
+
+---
+
+
+
+
+
+
+
+ 
+  
+
+
+No Parameters
+
+
+
+### Response Example (200)
+Response Type /definitions/installInstallEventsResponse
+
+```
+{
+  "Success": true
+}
+```
+
+
+
+

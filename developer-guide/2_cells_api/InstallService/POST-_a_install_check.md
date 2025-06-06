@@ -1,0 +1,127 @@
+---
+slug: post-a-install-check
+title: "POST /a/install/check"
+menu: "POST /a/install/check"
+language: und
+menu_name: menu-dev-guide-v7
+
+---
+
+
+
+
+
+
+
+ 
+Perform a check during install (like a valid DB connection)  
+
+
+### Body Parameters
+
+Name | Description | Type | Required
+---|---|---|---
+**Config** |  | _#/definitions/installInstallConfig_ |   
+**Name** |  | _string_ |   
+
+
+### Body Example
+```
+{
+  "Config": {
+    "CheckResults": [
+      {
+        "JsonResult": "string",
+        "Name": "string",
+        "Success": true
+      }
+    ],
+    "DocumentsDSN": "string",
+    "ProxyConfig": {
+      "Binds": [
+        "string"
+      ],
+      "Certificate": {
+        "CellsRootCA": "string",
+        "CertFile": "string",
+        "KeyFile": "string"
+      },
+      "LetsEncrypt": {
+        "AcceptEULA": true,
+        "Email": "string",
+        "StagingCA": true
+      },
+      "Maintenance": true,
+      "MaintenanceConditions": [
+        "string"
+      ],
+      "ReverseProxyURL": "string",
+      "SSLRedirect": true,
+      "SelfSigned": {
+        "Hostnames": [
+          "string"
+        ]
+      }
+    },
+    "UseDocumentsDSN": true,
+    "dbConnectionType": "string",
+    "dbManualDSN": "string",
+    "dbSocketFile": "string",
+    "dbSocketName": "string",
+    "dbSocketPassword": "string",
+    "dbSocketUser": "string",
+    "dbTCPHostname": "string",
+    "dbTCPName": "string",
+    "dbTCPPassword": "string",
+    "dbTCPPort": "string",
+    "dbTCPUser": "string",
+    "dbUseDefaults": true,
+    "dsFolder": "string",
+    "dsName": "string",
+    "dsPort": "string",
+    "dsS3ApiKey": "string",
+    "dsS3ApiSecret": "string",
+    "dsS3BucketBinaries": "string",
+    "dsS3BucketCells": "string",
+    "dsS3BucketDefault": "string",
+    "dsS3BucketPersonal": "string",
+    "dsS3BucketThumbs": "string",
+    "dsS3BucketVersions": "string",
+    "dsS3Custom": "string",
+    "dsS3CustomRegion": "string",
+    "dsType": "string",
+    "frontendApplicationTitle": "string",
+    "frontendDefaultLanguage": "string",
+    "frontendHosts": "string",
+    "frontendLogin": "string",
+    "frontendPassword": "string",
+    "frontendRepeatPassword": "string",
+    "internalUrl": "string",
+    "licenseRequired": true,
+    "licenseString": "string"
+  },
+  "Name": "string"
+}
+```
+
+
+
+
+
+
+### Response Example (200)
+Response Type /definitions/installPerformCheckResponse
+
+```
+{
+  "Result": {
+    "JsonResult": "string",
+    "Name": "string",
+    "Success": true
+  }
+}
+```
+
+
+
+

@@ -1,0 +1,55 @@
+---
+slug: post-a-config-versioning-uuid
+title: "POST /a/config/versioning/{Uuid}"
+menu: "POST /a/config/versioning/{Uuid}"
+language: und
+menu_name: menu-dev-guide-v7
+
+---
+
+
+
+
+
+
+
+ 
+[Enterprise Only] Create or update a versioning policy  
+
+
+### Body Parameters
+
+Name | Description | Type | Required
+---|---|---|---
+
+
+
+
+
+
+### Response Example (200)
+Response Type /definitions/treeVersioningPolicy
+
+```
+{
+  "Description": "string",
+  "IgnoreFilesGreaterThan": "string",
+  "KeepPeriods": [
+    {
+      "IntervalStart": "string",
+      "MaxNumber": 10
+    }
+  ],
+  "MaxSizePerFile": "string",
+  "MaxTotalSize": "string",
+  "Name": "string",
+  "NodeDeletedStrategy": "string",
+  "Uuid": "string",
+  "VersionsDataSourceBucket": "string",
+  "VersionsDataSourceName": "string"
+}
+```
+
+
+
+

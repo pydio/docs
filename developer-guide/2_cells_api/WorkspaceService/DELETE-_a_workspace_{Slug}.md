@@ -1,0 +1,55 @@
+---
+slug: delete-a-workspace-slug
+title: "DELETE /a/workspace/{Slug}"
+menu: "DELETE /a/workspace/{Slug}"
+language: und
+menu_name: menu-dev-guide-v7
+
+---
+
+
+
+
+
+
+
+ 
+Delete an existing workspace  
+
+
+### Path Parameters
+
+ - **Slug** (_string, required_) Slug is an url-compatible form of the workspace label, or can be freely modified (max length 500)
+
+ - **UUID** (_string_) Unique identifier of the workspace
+
+ - **Label** (_string_) Label of the workspace (max length 500)
+
+ - **Description** (_string_) Description of the workspace (max length 1000)
+
+ - **Scope** (_string_) Scope can be ADMIN, ROOM (=CELL) or LINK
+
+ - **LastUpdated** (_integer_) Last modification time
+
+ - **Attributes** (_string_) JSON-encoded list of attributes
+
+ - **RootUUIDs** (_array_) Quick list of the RootNodes uuids
+
+ - **PoliciesContextEditable** (_boolean_) Context-resolved to quickly check if workspace is editable or not
+
+
+
+
+### Response Example (200)
+Response Type /definitions/restDeleteResponse
+
+```
+{
+  "NumRows": "string",
+  "Success": true
+}
+```
+
+
+
+

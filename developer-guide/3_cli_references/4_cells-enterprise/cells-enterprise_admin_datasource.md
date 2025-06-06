@@ -1,0 +1,46 @@
+---
+slug: cells-enterprise-admin-datasource
+title: "cells-enterprise admin datasource"
+menu: "cells-enterprise admin datasource"
+language: und
+menu_name: menu-dev-guide-v7
+weight: 28
+
+---
+Datasource management commands
+
+### Synopsis
+
+Collection of tools for manipulating datasources.
+
+```
+./cells-enterprise admin datasource [flags]
+```
+
+### Options
+
+```
+  -h, --help   help for datasource
+```
+
+### Options inherited from parent commands
+
+```
+      --advertise_address string     Default advertise address (default "127.0.0.1")
+      --broker string                Pub/sub service for events between services (default "grpc://:8030")
+      --config string                Configuration storage URL. Supported schemes: etcd|etcd+tls|file|grpc|mem|vault|vaults (default "file:///home/teamcity/.config/pydio/cells/pydio.json")
+      --discovery string             Registry and pub/sub (default "grpc://:8030")
+      --grpc_client_timeout string   Default timeout for long-running GRPC calls, expressed as a golang duration (default "60m")
+      --registry string              Registry used to contact services (default "grpc://:8030")
+```
+
+### SEE ALSO
+
+* [./cells-enterprise admin](./cells-enterprise-admin)	 - Direct Read/Write access to Cells data
+* [./cells-enterprise admin datasource capture](./cells-enterprise-admin-datasource-capture)	 - Capture index and objects into JSON or BoltDB format for sync debugging purposes
+* [./cells-enterprise admin datasource migrate](./cells-enterprise-admin-datasource-migrate)	 - Migrate a datasource format (flat or structured)
+* [./cells-enterprise admin datasource rehash](./cells-enterprise-admin-datasource-rehash)	 - Recompute all files hashes inside a given datasource
+* [./cells-enterprise admin datasource resync](./cells-enterprise-admin-datasource-resync)	 - Trigger resync for a structured datasource
+* [./cells-enterprise admin datasource rethumb](./cells-enterprise-admin-datasource-rethumb)	 - Find and compute missing thumbnails for images
+* [./cells-enterprise admin datasource snapshot](./cells-enterprise-admin-datasource-snapshot)	 - Dump/Load snapshot of the index for a flat datasource
+

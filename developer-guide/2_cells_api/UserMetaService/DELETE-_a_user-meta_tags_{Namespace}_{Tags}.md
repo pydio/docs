@@ -1,0 +1,40 @@
+---
+slug: delete-a-user-meta-tags-namespace-tags
+title: "DELETE /a/user-meta/tags/{Namespace}/{Tags}"
+menu: "DELETE /a/user-meta/tags/{Namespace}/{Tags}"
+language: und
+menu_name: menu-dev-guide-v7
+
+---
+
+
+
+
+
+
+
+ 
+Delete one or all tags for a given namespace (use * for all tags)  
+
+
+### Path Parameters
+
+ - **Namespace** (_string, required_) Delete tags from this namespace
+
+ - **Tags** (_string, required_) Delete this tag
+
+
+
+
+### Response Example (200)
+Response Type /definitions/restDeleteUserMetaTagsResponse
+
+```
+{
+  "Success": true
+}
+```
+
+
+
+

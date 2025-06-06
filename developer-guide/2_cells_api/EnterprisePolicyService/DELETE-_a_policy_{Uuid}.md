@@ -1,0 +1,49 @@
+---
+slug: delete-a-policy-uuid
+title: "DELETE /a/policy/{Uuid}"
+menu: "DELETE /a/policy/{Uuid}"
+language: und
+menu_name: menu-dev-guide-v7
+
+---
+
+
+
+
+
+
+
+ 
+[Enterprise Only] Delete a security policy  
+
+
+### Path Parameters
+
+ - **Uuid** (_string, required_) 
+
+ - **Name** (_string_) 
+
+ - **Description** (_string_) 
+
+ - **OwnerUuid** (_string_) 
+
+ - **ResourceGroup** (_string_) 
+
+ - **LastUpdated** (_integer_) 
+
+
+
+
+### Response Example (200)
+Response Type /definitions/restDeleteResponse
+
+```
+{
+  "NumRows": "string",
+  "Success": true
+}
+```
+
+
+
+

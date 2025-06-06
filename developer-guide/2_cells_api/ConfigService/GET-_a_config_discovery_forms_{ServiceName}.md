@@ -1,0 +1,43 @@
+---
+slug: get-a-config-discovery-forms-servicename
+title: "GET /a/config/discovery/forms/{ServiceName}"
+menu: "GET /a/config/discovery/forms/{ServiceName}"
+language: und
+menu_name: menu-dev-guide-v7
+
+---
+
+
+
+
+
+
+
+ 
+Publish Forms definition for building screens in frontend  
+
+
+### Path Parameters
+
+ - **ServiceName** (_string, required_) Retrieve a configuration form for a given service
+
+
+
+
+### Response Example (200)
+Response Type /definitions/restDiscoveryResponse
+
+```
+{
+  "BuildRevision": "string",
+  "BuildStamp": 10,
+  "Endpoints": {},
+  "PackageLabel": "string",
+  "PackageType": "string",
+  "Version": "string"
+}
+```
+
+
+
+

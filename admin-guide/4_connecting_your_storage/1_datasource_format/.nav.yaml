@@ -1,0 +1,8 @@
+title: Datasource Format
+abstract: 'Explaining the pros and cons of "flat" vs "stuctured" storage when you create a new datasource for your business data '
+menu: Datasource Format
+language: und
+weight: 1
+menu_name: menu-admin-guide-v7-enterprise
+
+slug: datasource-format

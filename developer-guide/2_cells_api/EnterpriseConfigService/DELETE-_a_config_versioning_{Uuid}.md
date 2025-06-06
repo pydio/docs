@@ -1,0 +1,54 @@
+---
+slug: delete-a-config-versioning-uuid
+title: "DELETE /a/config/versioning/{Uuid}"
+menu: "DELETE /a/config/versioning/{Uuid}"
+language: und
+menu_name: menu-dev-guide-v7
+
+---
+
+
+
+
+
+
+
+ 
+[Enterprise Only] Delete a versioning policy  
+
+
+### Path Parameters
+
+ - **Uuid** (_string, required_) 
+
+ - **Name** (_string_) 
+
+ - **Description** (_string_) 
+
+ - **VersionsDataSourceName** (_string_) 
+
+ - **VersionsDataSourceBucket** (_string_) 
+
+ - **MaxTotalSize** (_string_) 
+
+ - **MaxSizePerFile** (_string_) 
+
+ - **IgnoreFilesGreaterThan** (_string_) 
+
+ - **NodeDeletedStrategy** (_string_) 
+
+
+
+
+### Response Example (200)
+Response Type /definitions/entDeleteVersioningPolicyResponse
+
+```
+{
+  "Success": true
+}
+```
+
+
+
+

@@ -1,0 +1,72 @@
+---
+slug: put-a-config-oauth2clients-clientid
+title: "PUT /a/config/oauth2clients/{ClientID}"
+menu: "PUT /a/config/oauth2clients/{ClientID}"
+language: und
+menu_name: menu-dev-guide-v7
+
+---
+
+
+
+
+
+
+
+ 
+[Enterprise Only] Add/Create a new oauth2 client  
+
+
+### Body Parameters
+
+Name | Description | Type | Required
+---|---|---|---
+**Audience** |  | _array_ |   
+**ClientID** |  | _string_ |   
+**GrantTypes** |  | _array_ |   
+**Name** |  | _string_ |   
+**RedirectURIs** |  | _array_ |   
+**ResponseTypes** |  | _array_ |   
+**Scope** |  | _string_ |   
+**Secret** |  | _string_ |   
+
+
+### Body Example
+```
+{
+  "Audience": [
+    "string"
+  ],
+  "ClientID": "string",
+  "GrantTypes": [
+    "string"
+  ],
+  "Name": "string",
+  "RedirectURIs": [
+    "string"
+  ],
+  "ResponseTypes": [
+    "string"
+  ],
+  "Scope": "string",
+  "Secret": "string"
+}
+```
+
+
+
+
+
+
+### Response Example (200)
+Response Type /definitions/entOAuth2ClientResponse
+
+```
+{
+  "Success": true
+}
+```
+
+
+
+

@@ -1,0 +1,72 @@
+---
+slug: cells-enterprise-admin-license-stats
+title: "cells-enterprise admin license stats"
+menu: "cells-enterprise admin license stats"
+language: und
+menu_name: menu-dev-guide-v7
+weight: 44
+
+---
+Load current license statistics
+
+### Synopsis
+
+
+DESCRIPTION
+
+  Query running Cells instance to load license statistics. Without arguments, it will output license statistics
+
+TEMPLATING
+
+  Using the --format flag allows you to create your own output using Golang templating. 
+  Input data is 
+  {
+    ActiveUsers:int
+    MaxUsers:int
+    UsersPercent:int
+    ExpireTime:timestamp
+    ExpireDate:string
+    ExpireIn:seconds
+  }
+  You can for example display a simple percentage using {{.UsersPercent}}% template.
+
+  You can use conditions to return an error signal (1) for special cases, by printing the specific ERROR_CODE keyword.
+
+  For example:
+
+  1. Return error if users usage is greater than 90%
+  $ ./cells-enterprise admin license-stats --format="{{if gt .UsersPercent 90}}ERROR_CODE{{end}}"
+
+  2. Return error if license will expire in less than 3 days (518400 seconds)
+  $ ./cells-enterprise admin license-stats --format="{{if lt .ExpireIn 518400}}ERROR_CODE{{end}}"
+  
+
+
+
+```
+./cells-enterprise admin license stats [flags]
+```
+
+### Options
+
+```
+  -f, --format string   Use golang template to compute your own output
+  -h, --help            help for stats
+  -r, --refresh         Force users computation to be refresh, this can take some time
+```
+
+### Options inherited from parent commands
+
+```
+      --advertise_address string     Default advertise address (default "127.0.0.1")
+      --broker string                Pub/sub service for events between services (default "grpc://:8030")
+      --config string                Configuration storage URL. Supported schemes: etcd|etcd+tls|file|grpc|mem|vault|vaults (default "file:///home/teamcity/.config/pydio/cells/pydio.json")
+      --discovery string             Registry and pub/sub (default "grpc://:8030")
+      --grpc_client_timeout string   Default timeout for long-running GRPC calls, expressed as a golang duration (default "60m")
+      --registry string              Registry used to contact services (default "grpc://:8030")
+```
+
+### SEE ALSO
+
+* [./cells-enterprise admin license](./cells-enterprise-admin-license)	 - Manage Cells Enterprise license
+

@@ -1,0 +1,41 @@
+---
+slug: put-a-jobs-user-jobname
+title: "PUT /a/jobs/user/{JobName}"
+menu: "PUT /a/jobs/user/{JobName}"
+language: und
+menu_name: menu-dev-guide-v7
+
+---
+
+
+
+
+
+
+
+ 
+Create a predefined job to be run directly  
+
+
+### Body Parameters
+
+Name | Description | Type | Required
+---|---|---|---
+
+
+
+
+
+
+### Response Example (200)
+Response Type /definitions/restUserJobResponse
+
+```
+{
+  "JobUuid": "string"
+}
+```
+
+
+
+

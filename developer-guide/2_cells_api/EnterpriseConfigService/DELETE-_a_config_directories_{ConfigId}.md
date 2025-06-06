@@ -1,0 +1,108 @@
+---
+slug: delete-a-config-directories-configid
+title: "DELETE /a/config/directories/{ConfigId}"
+menu: "DELETE /a/config/directories/{ConfigId}"
+language: und
+menu_name: menu-dev-guide-v7
+
+---
+
+
+
+
+
+
+
+ 
+[Enterprise Only] Delete external directory  
+
+
+### Path Parameters
+
+ - **ConfigId** (_string, required_) Id of the external directory
+
+ - **Config.ConfigId** (_string_) 
+
+ - **Config.DomainName** (_string_) 
+
+ - **Config.Host** (_string_) 
+
+ - **Config.Connection** (_string_) 
+
+ - **Config.BindDN** (_string_) 
+
+ - **Config.BindPW** (_string_) 
+
+ - **Config.BindAnonymous** (_boolean_) 
+
+ - **Config.SkipVerifyCertificate** (_boolean_) 
+
+ - **Config.RootCA** (_string_) 
+
+ - **Config.RootCAData** (_string_) To be converted to []byte
+
+ - **Config.PageSize** (_integer_) 
+
+ - **Config.User.DNs** (_array_) 
+
+ - **Config.User.Filter** (_string_) 
+
+ - **Config.User.IDAttribute** (_string_) 
+
+ - **Config.User.DisplayAttribute** (_string_) 
+
+ - **Config.User.Scope** (_string_) 
+
+ - **Config.MemberOfMapping.Mapping.LeftAttribute** (_string_) 
+
+ - **Config.MemberOfMapping.Mapping.RightAttribute** (_string_) 
+
+ - **Config.MemberOfMapping.Mapping.RuleString** (_string_) 
+
+ - **Config.MemberOfMapping.Mapping.RolePrefix** (_string_) 
+
+ - **Config.MemberOfMapping.GroupFilter.DNs** (_array_) 
+
+ - **Config.MemberOfMapping.GroupFilter.Filter** (_string_) 
+
+ - **Config.MemberOfMapping.GroupFilter.IDAttribute** (_string_) 
+
+ - **Config.MemberOfMapping.GroupFilter.DisplayAttribute** (_string_) 
+
+ - **Config.MemberOfMapping.GroupFilter.Scope** (_string_) 
+
+ - **Config.MemberOfMapping.SupportNestedGroup** (_boolean_) 
+
+ - **Config.MemberOfMapping.RealMemberOf** (_boolean_) 
+
+ - **Config.MemberOfMapping.RealMemberOfAttribute** (_string_) 
+
+ - **Config.MemberOfMapping.RealMemberOfValueFormat** (_string_) 
+
+ - **Config.MemberOfMapping.PydioMemberOfAttribute** (_string_) 
+
+ - **Config.MemberOfMapping.PydioMemberOfValueFormat** (_string_) 
+
+ - **Config.RolePrefix** (_string_) 
+
+ - **Config.Schedule** (_string_) 
+
+ - **Config.SchedulerDetails** (_string_) 
+
+ - **Config.SyncOnly** (_boolean_) 
+
+
+
+
+### Response Example (200)
+Response Type /definitions/entExternalDirectoryResponse
+
+```
+{
+  "Success": true
+}
+```
+
+
+
+

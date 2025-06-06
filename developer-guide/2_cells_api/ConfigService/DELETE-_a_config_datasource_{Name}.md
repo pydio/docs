@@ -1,0 +1,76 @@
+---
+slug: delete-a-config-datasource-name
+title: "DELETE /a/config/datasource/{Name}"
+menu: "DELETE /a/config/datasource/{Name}"
+language: und
+menu_name: menu-dev-guide-v7
+
+---
+
+
+
+
+
+
+
+ 
+Delete a datasource  
+
+
+### Path Parameters
+
+ - **Name** (_string, required_) Name of the data source (max length 34)
+
+ - **Disabled** (_boolean_) Whether this data source is disabled or running
+
+ - **StorageType** (_string_) Type of underlying storage (LOCAL, S3, AZURE, GCS)
+
+ - **ObjectsServiceName** (_string_) Corresponding objects service name (underlying s3 service)
+
+ - **ObjectsHost** (_string_) Corresponding objects service host
+
+ - **ObjectsPort** (_integer_) Corresponding objects service port
+
+ - **ObjectsSecure** (_boolean_) Corresponding objects service connection type
+
+ - **ObjectsBucket** (_string_) Corresponding objects service bucket
+
+ - **ObjectsBaseFolder** (_string_) Corresponding objects service base folder inside the bucket
+
+ - **ApiKey** (_string_) Corresponding objects service api key
+
+ - **ApiSecret** (_string_) Corresponding objects service api secret
+
+ - **PeerAddress** (_string_) Peer address of the data source
+
+ - **Watch** (_boolean_) Not implemented, whether to watch for underlying changes on the FS
+
+ - **FlatStorage** (_boolean_) Store data in flat format (object-storage like)
+
+ - **SkipSyncOnRestart** (_boolean_) Do not trigger resync at start
+
+ - **EncryptionMode** (_string_) Type of encryption applied before sending data to storage
+
+ - **EncryptionKey** (_string_) Encryption key used for encrypting data
+
+ - **VersioningPolicyName** (_string_) Versioning policy describes how files are kept in the versioning queue
+
+ - **CreationDate** (_integer_) Data Source creation date
+
+ - **LastSynchronizationDate** (_integer_) Data Source last synchronization date
+
+
+
+
+### Response Example (200)
+Response Type /definitions/restDeleteDataSourceResponse
+
+```
+{
+  "Success": true
+}
+```
+
+
+
+

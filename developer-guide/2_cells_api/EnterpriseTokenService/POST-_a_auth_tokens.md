@@ -1,0 +1,66 @@
+---
+slug: post-a-auth-tokens
+title: "POST /a/auth/tokens"
+menu: "POST /a/auth/tokens"
+language: und
+menu_name: menu-dev-guide-v7
+
+---
+
+
+
+
+
+
+
+ 
+List generated personal access tokens, eventually filtering by user  
+
+
+### Body Parameters
+
+Name | Description | Type | Required
+---|---|---|---
+**ByUser** |  | _string_ |   
+
+
+### Body Example
+```
+{
+  "ByUser": "string"
+}
+```
+
+
+
+
+
+
+### Response Example (200)
+Response Type /definitions/authPatListResponse
+
+```
+{
+  "Tokens": [
+    {
+      "AutoRefreshWindow": 10,
+      "CreatedAt": "string",
+      "CreatedBy": "string",
+      "ExpiresAt": "string",
+      "Label": "string",
+      "Scopes": [
+        "string"
+      ],
+      "Type": "string",
+      "UpdatedAt": "string",
+      "UserLogin": "string",
+      "UserUuid": "string",
+      "Uuid": "string"
+    }
+  ]
+}
+```
+
+
+
+
