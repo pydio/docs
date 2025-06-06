@@ -2,32 +2,42 @@
 
 Get started quickly with Cells static binaries, or pick an image for your cloud environment. 
 
-<div class="install-logos">
-<a class="logo" href="./install-static-binaries">
-    <div class="logo-img"><img src="https://github.com/pydio/pydio-doc-admin-guide/blob/cells-v4/images/logos-os/binaries.png?raw=true"/></div>
+=== Binaries
+<a class="logo" href="../install-static-binaries">
+    <div class="logo-img"><img src="../../../images/logos-os/binaries.png?raw=true"/></div>
     <div class="logo-title">Binaries</div>
 </a>
-<a class="logo" href="./docker">
-    <div class="logo-img"><img src="https://github.com/pydio/pydio-doc-admin-guide/blob/cells-v4/images/logos-os/docker.png?raw=true"/></div>
+
+=== Docker
+<a class="logo" href="../docker">
+    <div class="logo-img"><img src="../../../images/logos-os/docker.png?raw=true"/></div>
     <div class="logo-title">Docker</div>
 </a>
-<a class="logo" href="./open-virtual-format">
-    <div class="logo-img"><img src="https://github.com/pydio/pydio-doc-admin-guide/blob/cells-v4/images/logos-os/ovf.png?raw=true"/></div>
+
+=== OVF
+<a class="logo" href="../open-virtual-format">
+    <div class="logo-img"><img src="../../../images/logos-os/ovf.png?raw=true"/></div>
     <div class="logo-title">OVF</div>
 </a>
-<a class="logo" href="./vmware">
-    <div class="logo-img"><img src="https://github.com/pydio/pydio-doc-admin-guide/blob/cells-v4/images/logos-os/vmware.png?raw=true"/></div>
+
+=== VMWARE
+<a class="logo" href="../vmware">
+    <div class="logo-img"><img src="../../../images/logos-os/vmware.png?raw=true"/></div>
     <div class="logo-title">VMWare</div>
 </a>
-<a class="logo" href="./amazon-ami">
-    <div class="logo-img"><img src="https://github.com/pydio/pydio-doc-admin-guide/blob/cells-v4/images/logos-os/amazon.png?raw=true"/></div>
+
+=== Amazon AMI
+<a class="logo" href="../amazon-ami">
+    <div class="logo-img"><img src="../../../images/logos-os/amazon.png?raw=true"/></div>
     <div class="logo-title">Amazon AMI</div>
 </a>
-<a class="logo" href="./kubernetes-quick-install">
-    <div class="logo-img"><img style="height: 70px" src="https://github.com/pydio/pydio-doc-admin-guide/blob/cells-v4/images/logos-os/logo-kubernetes.png?raw=true"/></div>
+
+=== Kubernetes
+<a class="logo" href="../../../run-cells-in-production/deploying-cells-in-a-distributed-environment/kubernetes-quick-install/">
+    <div class="logo-img"><img style="height: 70px" src="../../../images/logos-os/logo-kubernetes.png?raw=true"/></div>
     <div class="logo-title">Kubernetes</div>
 </a>
-</div>
+
 
 ### Advanced step-by-step guides
 
@@ -35,23 +45,23 @@ These tutorials provide advanced step-by-step guides for bare installation on yo
 
 <div class="install-logos">
 <a class="logo" href="/en/docs/kb/deployment/install-cells-raspberry">
-    <div class="logo-img"><img style="height: 70px" src="https://github.com/pydio/pydio-doc-admin-guide/blob/cells-v4/images/logos-os/logo-raspberrypi.png?raw=true"/></div>
+    <div class="logo-img"><img style="height: 70px" src="../../../images/logos-os/logo-raspberrypi.png?raw=true"/></div>
     <div class="logo-title">Raspberry Pi</div>
 </a>
 <a class="logo" href="/en/docs/kb/deployment/install-cells-centosrhel">
-    <div class="logo-img"><img style="height: 70px" src="https://github.com/pydio/pydio-doc-admin-guide/blob/cells-v4/images/logos-os/logo-rhel.png?raw=true"/></div>
+    <div class="logo-img"><img style="height: 70px" src="../../../images/logos-os/logo-rhel.png?raw=true"/></div>
     <div class="logo-title">RHEL Distros</div>
 </a>
 <a class="logo" href="/en/docs/kb/deployment/install-cells-debianubuntu">
-    <div class="logo-img"><img src="https://github.com/pydio/pydio-doc-admin-guide/blob/cells-v4/images/logos-os/debian.png?raw=true"/></div>
+    <div class="logo-img"><img src="../../../images/logos-os/debian.png?raw=true"/></div>
     <div class="logo-title">Debian/Ubuntu</div>
 </a>
 <a class="logo" href="/en/docs/kb/deployment/install-cells-macosx">
-    <div class="logo-img"><img src="https://github.com/pydio/pydio-doc-admin-guide/blob/cells-v4/images/logos-os/macos.png?raw=true"/></div>
+    <div class="logo-img"><img src="../../../images/logos-os/macos.png?raw=true"/></div>
     <div class="logo-title">Mac OSX</div>
 </a>
 <a class="logo" href="/en/docs/kb/deployment/install-cells-windows">
-    <div class="logo-img"><img src="https://github.com/pydio/pydio-doc-admin-guide/blob/cells-v4/images/logos-os/windows.png?raw=true"/></div>
+    <div class="logo-img"><img src="../../../images/logos-os/windows.png?raw=true"/></div>
     <div class="logo-title">Windows</div>
 </a>
 </div>
