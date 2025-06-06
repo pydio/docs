@@ -56,5 +56,5 @@ EXAMPLES
 
 ### SEE ALSO
 
-* [./cells-enterprise admin datasource](./cells-enterprise-admin-datasource)	 - Datasource management commands
+* [./cells-enterprise admin datasource](../cells-enterprise-admin-datasource)	 - Datasource management commands
 

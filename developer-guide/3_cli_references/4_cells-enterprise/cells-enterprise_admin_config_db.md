@@ -41,9 +41,9 @@ DESCRIPTION
 
 ### SEE ALSO
 
-* [./cells-enterprise admin config](./cells-enterprise-admin-config)	 - Configuration manager
-* [./cells-enterprise admin config db add](./cells-enterprise-admin-config-db-add)	 - Add a database connection to the configuration
-* [./cells-enterprise admin config db list](./cells-enterprise-admin-config-db-list)	 - List all database connections
-* [./cells-enterprise admin config db move](./cells-enterprise-admin-config-db-move)	 - Move service data from one database to another
-* [./cells-enterprise admin config db set](./cells-enterprise-admin-config-db-set)	 - Assign a database connection to a service
+* [./cells-enterprise admin config](../cells-enterprise-admin-config)	 - Configuration manager
+* [./cells-enterprise admin config db add](../cells-enterprise-admin-config-db-add)	 - Add a database connection to the configuration
+* [./cells-enterprise admin config db list](../cells-enterprise-admin-config-db-list)	 - List all database connections
+* [./cells-enterprise admin config db move](../cells-enterprise-admin-config-db-move)	 - Move service data from one database to another
+* [./cells-enterprise admin config db set](../cells-enterprise-admin-config-db-set)	 - Assign a database connection to a service
 

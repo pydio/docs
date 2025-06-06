@@ -36,10 +36,10 @@ Collection of tools for purging Cells internal data (activities, logs, etc)
 
 ### SEE ALSO
 
-* [./cells-enterprise admin](./cells-enterprise-admin)	 - Direct Read/Write access to Cells data
-* [./cells-enterprise admin clean acls](./cells-enterprise-admin-clean-acls)	 - Clean Expired ACLs
-* [./cells-enterprise admin clean activities](./cells-enterprise-admin-clean-activities)	 - Purge user or file activities based on various criteria
-* [./cells-enterprise admin clean logs](./cells-enterprise-admin-clean-logs)	 - Truncate log indexes to a given size
-* [./cells-enterprise admin clean reset-jobs](./cells-enterprise-admin-clean-reset-jobs)	 - Reset a job to its default
-* [./cells-enterprise admin clean resync](./cells-enterprise-admin-clean-resync)	 - And a TriggerResync gRPC command to a service
+* [./cells-enterprise admin](../cells-enterprise-admin)	 - Direct Read/Write access to Cells data
+* [./cells-enterprise admin clean acls](../cells-enterprise-admin-clean-acls)	 - Clean Expired ACLs
+* [./cells-enterprise admin clean activities](../cells-enterprise-admin-clean-activities)	 - Purge user or file activities based on various criteria
+* [./cells-enterprise admin clean logs](../cells-enterprise-admin-clean-logs)	 - Truncate log indexes to a given size
+* [./cells-enterprise admin clean reset-jobs](../cells-enterprise-admin-clean-reset-jobs)	 - Reset a job to its default
+* [./cells-enterprise admin clean resync](../cells-enterprise-admin-clean-resync)	 - And a TriggerResync gRPC command to a service
 

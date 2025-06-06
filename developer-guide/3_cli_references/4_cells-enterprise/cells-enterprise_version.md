@@ -50,5 +50,5 @@ DESCRIPTION
 
 ### SEE ALSO
 
-* [./cells-enterprise](./cells-enterprise)	 - Secure File Sharing for business
+* [./cells-enterprise](../cells-enterprise)	 - Secure File Sharing for business
 

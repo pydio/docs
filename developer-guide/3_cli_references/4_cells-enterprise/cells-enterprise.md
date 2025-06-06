@@ -66,10 +66,10 @@ LOGS LEVEL
 
 ### SEE ALSO
 
-* [./cells-enterprise admin](./cells-enterprise-admin)	 - Direct Read/Write access to Cells data
-* [./cells-enterprise configure](./cells-enterprise-configure)	 - Setup required configurations
-* [./cells-enterprise ctl](./cells-enterprise-ctl)	 - Explore all registered items in registry and configuration.
-* [./cells-enterprise start](./cells-enterprise-start)	 - Start one or more services
-* [./cells-enterprise update](./cells-enterprise-update)	 - Check for available updates and apply them
-* [./cells-enterprise version](./cells-enterprise-version)	 - Print version information
+* [./cells-enterprise admin](../cells-enterprise-admin)	 - Direct Read/Write access to Cells data
+* [./cells-enterprise configure](../cells-enterprise-configure)	 - Setup required configurations
+* [./cells-enterprise ctl](../cells-enterprise-ctl)	 - Explore all registered items in registry and configuration.
+* [./cells-enterprise start](../cells-enterprise-start)	 - Start one or more services
+* [./cells-enterprise update](../cells-enterprise-update)	 - Check for available updates and apply them
+* [./cells-enterprise version](../cells-enterprise-version)	 - Print version information
 

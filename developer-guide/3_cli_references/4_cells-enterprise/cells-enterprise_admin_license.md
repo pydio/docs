@@ -37,7 +37,7 @@ DESCRIPTION
 
 ### SEE ALSO
 
-* [./cells-enterprise admin](./cells-enterprise-admin)	 - Direct Read/Write access to Cells data
-* [./cells-enterprise admin license stats](./cells-enterprise-admin-license-stats)	 - Load current license statistics
-* [./cells-enterprise admin license update](./cells-enterprise-admin-license-update)	 - Update enterprise license
+* [./cells-enterprise admin](../cells-enterprise-admin)	 - Direct Read/Write access to Cells data
+* [./cells-enterprise admin license stats](../cells-enterprise-admin-license-stats)	 - Load current license statistics
+* [./cells-enterprise admin license update](../cells-enterprise-admin-license-update)	 - Update enterprise license
 

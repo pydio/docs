@@ -52,5 +52,5 @@ EXAMPLES
 
 ### SEE ALSO
 
-* [./cells-enterprise admin clean](./cells-enterprise-admin-clean)	 - Housekeeping commands
+* [./cells-enterprise admin clean](../cells-enterprise-admin-clean)	 - Housekeeping commands
 

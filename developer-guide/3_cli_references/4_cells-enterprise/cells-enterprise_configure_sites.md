@@ -71,7 +71,7 @@ EXAMPLES
 
 ### SEE ALSO
 
-* [./cells-enterprise configure](./cells-enterprise-configure)	 - Setup required configurations
-* [./cells-enterprise configure sites add](./cells-enterprise-configure-sites-add)	 - Add a site
-* [./cells-enterprise configure sites delete](./cells-enterprise-configure-sites-delete)	 - Remove a site by its index
+* [./cells-enterprise configure](../cells-enterprise-configure)	 - Setup required configurations
+* [./cells-enterprise configure sites add](../cells-enterprise-configure-sites-add)	 - Add a site
+* [./cells-enterprise configure sites delete](../cells-enterprise-configure-sites-delete)	 - Remove a site by its index
 

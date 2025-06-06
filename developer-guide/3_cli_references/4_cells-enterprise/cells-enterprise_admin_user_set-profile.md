@@ -53,5 +53,5 @@ EXAMPLE
 
 ### SEE ALSO
 
-* [./cells-enterprise admin user](./cells-enterprise-admin-user)	 - Manage users
+* [./cells-enterprise admin user](../cells-enterprise-admin-user)	 - Manage users
 

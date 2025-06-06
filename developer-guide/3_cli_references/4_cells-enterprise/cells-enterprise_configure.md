@@ -102,6 +102,6 @@ ENVIRONMENT
 
 ### SEE ALSO
 
-* [./cells-enterprise](./cells-enterprise)	 - Secure File Sharing for business
-* [./cells-enterprise configure sites](./cells-enterprise-configure-sites)	 - Manage site addresses
+* [./cells-enterprise](../cells-enterprise)	 - Secure File Sharing for business
+* [./cells-enterprise configure sites](../cells-enterprise-configure-sites)	 - Manage site addresses
 

@@ -40,7 +40,7 @@ DESCRIPTION
 
 ### SEE ALSO
 
-* [./cells-enterprise admin](./cells-enterprise-admin)	 - Direct Read/Write access to Cells data
-* [./cells-enterprise admin jobs templates](./cells-enterprise-admin-jobs-templates)	 - Generate docs for job templates
-* [./cells-enterprise admin jobs unlock-public](./cells-enterprise-admin-jobs-unlock-public)	 - Unlock password-protected links that may have been blocked by wrong password
+* [./cells-enterprise admin](../cells-enterprise-admin)	 - Direct Read/Write access to Cells data
+* [./cells-enterprise admin jobs templates](../cells-enterprise-admin-jobs-templates)	 - Generate docs for job templates
+* [./cells-enterprise admin jobs unlock-public](../cells-enterprise-admin-jobs-unlock-public)	 - Unlock password-protected links that may have been blocked by wrong password
 

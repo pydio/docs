@@ -51,5 +51,5 @@ EXAMPLE
 
 ### SEE ALSO
 
-* [./cells-enterprise admin cert](./cells-enterprise-admin-cert)	 - Certification manager
+* [./cells-enterprise admin cert](../cells-enterprise-admin-cert)	 - Certification manager
 

@@ -40,12 +40,12 @@ DESCRIPTION
 
 ### SEE ALSO
 
-* [./cells-enterprise admin](./cells-enterprise-admin)	 - Direct Read/Write access to Cells data
-* [./cells-enterprise admin user create](./cells-enterprise-admin-user-create)	 - Create a user
-* [./cells-enterprise admin user delete](./cells-enterprise-admin-user-delete)	 - Delete a user
-* [./cells-enterprise admin user search](./cells-enterprise-admin-user-search)	 - List all users or search them by login
-* [./cells-enterprise admin user set-profile](./cells-enterprise-admin-user-set-profile)	 - Set profile
-* [./cells-enterprise admin user set-pwd](./cells-enterprise-admin-user-set-pwd)	 - Change user password
-* [./cells-enterprise admin user token](./cells-enterprise-admin-user-token)	 - Generate a personal token for a user
-* [./cells-enterprise admin user unlock](./cells-enterprise-admin-user-unlock)	 - Unlock User
+* [./cells-enterprise admin](../cells-enterprise-admin)	 - Direct Read/Write access to Cells data
+* [./cells-enterprise admin user create](../cells-enterprise-admin-user-create)	 - Create a user
+* [./cells-enterprise admin user delete](../cells-enterprise-admin-user-delete)	 - Delete a user
+* [./cells-enterprise admin user search](../cells-enterprise-admin-user-search)	 - List all users or search them by login
+* [./cells-enterprise admin user set-profile](../cells-enterprise-admin-user-set-profile)	 - Set profile
+* [./cells-enterprise admin user set-pwd](../cells-enterprise-admin-user-set-pwd)	 - Change user password
+* [./cells-enterprise admin user token](../cells-enterprise-admin-user-token)	 - Generate a personal token for a user
+* [./cells-enterprise admin user unlock](../cells-enterprise-admin-user-unlock)	 - Unlock User
 

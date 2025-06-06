@@ -50,6 +50,6 @@ DESCRIPTION
 
 ### SEE ALSO
 
-* [./cells-enterprise](./cells-enterprise)	 - Secure File Sharing for business
-* [./cells-enterprise ctl service-level](./cells-enterprise-ctl-service-level)	 - Update log level for a given service
+* [./cells-enterprise](../cells-enterprise)	 - Secure File Sharing for business
+* [./cells-enterprise ctl service-level](../cells-enterprise-ctl-service-level)	 - Update log level for a given service
 

@@ -39,5 +39,5 @@ Update log level for a given service
 
 ### SEE ALSO
 
-* [./cells-enterprise ctl](./cells-enterprise-ctl)	 - Explore all registered items in registry and configuration.
+* [./cells-enterprise ctl](../cells-enterprise-ctl)	 - Explore all registered items in registry and configuration.
 

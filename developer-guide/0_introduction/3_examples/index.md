@@ -4,7 +4,7 @@ In this section, we provide some real-life examples for making API calls to Cell
 
 [Postman](https://www.postman.com/api-documentation-tool) can be use to better understand the various API requests.
 
-If you want to directly talk to your Cells Server Instance from the command line, typically to perform cron jobs or in your CICD pipe, you most probably want to rather user the [Cells Client](./cells-client), otherwise we also provide [already packaged SDKs](./clients-sdks)
+If you want to directly talk to your Cells Server Instance from the command line, typically to perform cron jobs or in your CICD pipe, you most probably want to rather user the [Cells Client](../../../clients-sdks/cells-client/), otherwise we also provide [already packaged SDKs](../../../clients-sdks/)
 
 - [Using Postman](../using-postman/)
 - [Using cURL](../using-curl/)

@@ -60,5 +60,5 @@ EXAMPLE
 
 ### SEE ALSO
 
-* [./cells-enterprise admin file](./cells-enterprise-admin-file)	 - Directly manage files and metadata on the nodes
+* [./cells-enterprise admin file](../cells-enterprise-admin-file)	 - Directly manage files and metadata on the nodes
 

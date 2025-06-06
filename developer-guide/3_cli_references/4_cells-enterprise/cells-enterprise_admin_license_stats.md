@@ -68,5 +68,5 @@ TEMPLATING
 
 ### SEE ALSO
 
-* [./cells-enterprise admin license](./cells-enterprise-admin-license)	 - Manage Cells Enterprise license
+* [./cells-enterprise admin license](../cells-enterprise-admin-license)	 - Manage Cells Enterprise license
 

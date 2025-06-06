@@ -42,5 +42,5 @@ DESCRIPTION
 
 ### SEE ALSO
 
-* [./cells-enterprise admin config db](./cells-enterprise-admin-config-db)	 - Manage Database configuration
+* [./cells-enterprise admin config db](../cells-enterprise-admin-config-db)	 - Manage Database configuration
 

@@ -36,5 +36,5 @@ DESCRIPTION
 
 ### SEE ALSO
 
-* [./cells-enterprise configure sites](./cells-enterprise-configure-sites)	 - Manage site addresses
+* [./cells-enterprise configure sites](../cells-enterprise-configure-sites)	 - Manage site addresses
 

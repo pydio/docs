@@ -45,5 +45,5 @@ DESCRIPTION
 
 ### SEE ALSO
 
-* [./cells-enterprise admin jobs](./cells-enterprise-admin-jobs)	 - Group job-related commands
+* [./cells-enterprise admin jobs](../cells-enterprise-admin-jobs)	 - Group job-related commands
 

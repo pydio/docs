@@ -41,6 +41,6 @@ DESCRIPTION
 
 ### SEE ALSO
 
-* [./cells-enterprise admin](./cells-enterprise-admin)	 - Direct Read/Write access to Cells data
-* [./cells-enterprise admin cert import](./cells-enterprise-admin-cert-import)	 - Import certificate in vault
+* [./cells-enterprise admin](../cells-enterprise-admin)	 - Direct Read/Write access to Cells data
+* [./cells-enterprise admin cert import](../cells-enterprise-admin-cert-import)	 - Import certificate in vault
 

@@ -46,5 +46,5 @@ DESCRIPTION
 
 ### SEE ALSO
 
-* [./cells-enterprise admin acl](./cells-enterprise-admin-acl)	 - Manage access control lists
+* [./cells-enterprise admin acl](../cells-enterprise-admin-acl)	 - Manage access control lists
 

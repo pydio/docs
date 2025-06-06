@@ -41,12 +41,12 @@ DESCRIPTION
 
 ### SEE ALSO
 
-* [./cells-enterprise admin](./cells-enterprise-admin)	 - Direct Read/Write access to Cells data
-* [./cells-enterprise admin config check](./cells-enterprise-admin-config-check)	 - Check if a valid config is found
-* [./cells-enterprise admin config copy](./cells-enterprise-admin-config-copy)	 - Copy configs between two stores
-* [./cells-enterprise admin config db](./cells-enterprise-admin-config-db)	 - Manage Database configuration
-* [./cells-enterprise admin config delete](./cells-enterprise-admin-config-delete)	 - Delete a configuration item
-* [./cells-enterprise admin config history](./cells-enterprise-admin-config-history)	 - Show the history of all configuration changes
-* [./cells-enterprise admin config list](./cells-enterprise-admin-config-list)	 - List all configurations
-* [./cells-enterprise admin config set](./cells-enterprise-admin-config-set)	 - Store a configuration
+* [./cells-enterprise admin](../cells-enterprise-admin)	 - Direct Read/Write access to Cells data
+* [./cells-enterprise admin config check](../cells-enterprise-admin-config-check)	 - Check if a valid config is found
+* [./cells-enterprise admin config copy](../cells-enterprise-admin-config-copy)	 - Copy configs between two stores
+* [./cells-enterprise admin config db](../cells-enterprise-admin-config-db)	 - Manage Database configuration
+* [./cells-enterprise admin config delete](../cells-enterprise-admin-config-delete)	 - Delete a configuration item
+* [./cells-enterprise admin config history](../cells-enterprise-admin-config-history)	 - Show the history of all configuration changes
+* [./cells-enterprise admin config list](../cells-enterprise-admin-config-list)	 - List all configurations
+* [./cells-enterprise admin config set](../cells-enterprise-admin-config-set)	 - Store a configuration
 

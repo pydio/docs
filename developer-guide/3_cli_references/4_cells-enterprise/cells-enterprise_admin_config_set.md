@@ -56,5 +56,5 @@ EXAMPLES
 
 ### SEE ALSO
 
-* [./cells-enterprise admin config](./cells-enterprise-admin-config)	 - Configuration manager
+* [./cells-enterprise admin config](../cells-enterprise-admin-config)	 - Configuration manager
 
