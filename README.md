@@ -123,3 +123,9 @@ GitHub Actions use MkDocs and Mike to build the documentation and store the resu
 A separate GitHub Pages workflow listens to changes on gh-pages and triggers the website update process.
 
 Live Documentation: https://pydio.github.io/docs
+
+## Adding new branch
+
+When you need a new branch:
+* Chekout new branch from one of document brach
+* Update [main branch] resources/versions.json file
