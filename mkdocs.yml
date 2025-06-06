@@ -6,7 +6,7 @@ use_directory_urls: true
 theme:
   name: material
   custom_dir: overrides
-  favicon: resources/pydio-favicon.png
+  favicon: https://forum.pydio.com/favicon.ico
   logo: https://pydio.com/sites/all/themes/pydio_theme/images/pydio-logo-grey-coral-sm.png
   static_templates:
     - 404.html
