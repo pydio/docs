@@ -19,43 +19,43 @@ You can also apply this rule to Cells, Share links and so on.
 
 - Create a New Policy (**Policy Type**: `Context-based ACLs`. Put the **Name** and **Description** of your choice)
 
-![](../images//cells/acls_example/1.png)
+![](../images/cells/acls_example/1.png)
 
-![](../images//cells/acls_example/2.png)
+![](../images/cells/acls_example/2.png)
 
 - Then define default permissions: they are mandatory otherwise other users will not have access. So we give **read/write** to everyone before adding a restriction based on IPs for specific requests.
 
-![](../images//cells/acls_example/3.png)
+![](../images/cells/acls_example/3.png)
 
 - Now, let's add a policy to define the _IP restriction rule_:
 
-![](../images//cells/acls_example/4.png)
+![](../images/cells/acls_example/4.png)
 
 - Give it a **Label**, **Effect**: `Deny`, **Actions**: `Read/Write`, as seen in screenshot 5:
 
-![](../images//cells/acls_example/5.png)
+![](../images/cells/acls_example/5.png)
 
 - Add a condition and choose `RemoteAddress`:
 
-![](../images//cells/acls_example/6.png)
+![](../images/cells/acls_example/6.png)
 
 - Write the condition, using JSON: in our example we explicitly define some IPs.
 
-![](../images//cells/acls_example/7.png)
+![](../images/cells/acls_example/7.png)
 
 - Save
 
 - We can now apply the newly created rule. In our example, we apply it on a **group**. But you can also choose **user**, **group**, **role**, etc.
 
-![](../images//cells/acls_example/8.png)
+![](../images/cells/acls_example/8.png)
 
 - Select the rule, using the label you have defined earlier
 
-![](../images//cells/acls_example/9.png)
+![](../images/cells/acls_example/9.png)
 
 - Once the rule is selected, save the changes:
 
-![](../images//cells/acls_example/10.png)
+![](../images/cells/acls_example/10.png)
 
 ### Allow access for a specific IP range
 

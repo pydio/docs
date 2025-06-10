@@ -97,7 +97,7 @@ You can configure Prometheus to start on the port you wish, default is 9090.
 
 In the machine where Prometheus runs, you can check that all processes are correctly detected by visiting [http://localhost:9090/targets](http://localhost:9090/targets).
 
-![](../images//devops/Prometheus-Targets.png)
+![](../images/devops/Prometheus-Targets.png)
 
 #### Grafana
 
@@ -117,7 +117,7 @@ It can be simply imported with the Grafana UI by following steps:
 
 The new dashboard should be available and show something like the image below.
 
-![](../images//devops/Grafana-Dashboard.png)
+![](../images/devops/Grafana-Dashboard.png)
 
 ## Advanced Dashboard
 

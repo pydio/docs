@@ -174,7 +174,7 @@ The `pydio.json` file that is at the root of the `CELLS_WORKING_DIR` is the main
 
 Thus said, let's proceed to the next step by editing this file:
 
-![](../images//devops/change_default_ds.png)
+![](../images/devops/change_default_ds.png)
 
 Modify the higlighted part, `defaults.datasource` attribute value, that is `pydiods1` by default, to your new datasource, in our example `s3common`.
 
