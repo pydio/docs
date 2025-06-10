@@ -10,7 +10,7 @@ weight: 0
 ### Select your installation type
 
 Get started quickly with Cells static binaries, or pick an image for your cloud environment. 
-=== "[![](../../../images/logos-os/binaries.png)]()"
+=== "[<img src="../../../images/logos-os/binaries.png" width="40" >]()"
     _These instructions will get you started quickly with Cells binaries. Apply commands similary on either `cells` of `cells-enterprise` binary._
 
     <ol class="install-steps">
