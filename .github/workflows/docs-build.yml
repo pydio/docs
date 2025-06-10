@@ -60,6 +60,7 @@ jobs:
           cp -r cellsflows docs
           cp -r developer-guide docs
           cp -r knowledge-base docs
+          cp -r faq docs
           cp index.md docs
 
       - name: Debug contents
