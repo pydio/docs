@@ -124,13 +124,13 @@ A separate GitHub Pages workflow listens to changes on gh-pages and triggers the
 
 Live Documentation: https://pydio.github.io/docs
 
-## Adding new branch
+## Adding a new branch
 
 When you need a new branch:
 * Chekout new branch from one of document branches
 * Update [main branch] resources/versions.json file
 
-## Adding new folder
+## Adding a new folder
 
 At the top level, there are four repositories:
 - Admin Guide
@@ -140,7 +140,7 @@ At the top level, there are four repositories:
 
 MKdocs uses these repositories for items in the top bar
 
-The folder struct in each frist-level repository reflect the left menu in the page
+The left menu in the page reflects the folder struct in each frist-level repository
 
 For instance:
 
