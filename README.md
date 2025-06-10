@@ -214,3 +214,5 @@ This section provides a full-spectrum overview of Cells installation, configurat
 - [Glossary](../glossary/)
 
 ```
+
+> Notice: the menu item is clickable if an corresponding `index.md` exists
