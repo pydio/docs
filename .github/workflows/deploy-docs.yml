@@ -6,7 +6,7 @@ on:
       - 'cells-v4'
       - 'cells-v5'
       - 'pydio-v8'
-      - 'main' # sync workflow file
+      #- 'main' # sync workflow file
 
 
 jobs:
