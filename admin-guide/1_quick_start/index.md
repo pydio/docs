@@ -1,7 +1,6 @@
 This section provides a full-spectrum overview of Cells installation, configuration and usage.
 
 
-
 - [Requirements](../requirements/)
 - [Quick Admin Tour](../quick-admin-tour/)
 - [Sharing Features](../sharing-features/)
