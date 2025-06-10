@@ -10,7 +10,7 @@ weight: 0
 ### Select your installation type
 
 Get started quickly with Cells static binaries, or pick an image for your cloud environment. 
-=== "[<img src="../../../images/logos-os/binaries.png" width="40" >]()"
+=== "[<img src="../../../images/logos-os/binaries.png" width="60" >]()"
     _These instructions will get you started quickly with Cells binaries. Apply commands similary on either `cells` of `cells-enterprise` binary._
 
     <ol class="install-steps">
@@ -128,7 +128,7 @@ Get started quickly with Cells static binaries, or pick an image for your cloud 
 
     You can also permanently disable SELinux in `/etc/selinux/config`.
 
-=== "[![](../../../images/logos-os/docker.png)]()"
+=== "[<img src="../../../images/logos-os/docker.png" width="60">]()"
     The [Pydio Cells image](https://hub.docker.com/r/pydio/cells/) is a container designed to be used in a Docker environment. It only contains what is strictly necessary to run your server.
 
     ## Run as stand-alone container
@@ -279,7 +279,7 @@ Get started quickly with Cells static binaries, or pick an image for your cloud 
     ```
 
 
-=== "[![](../../../images/logos-os/ovf.png)]()"
+=== "[<img src="../../../images/logos-os/ovf.png" width="60">]()"
     The Cells Enterprise Appliance package follows the OVF standard.
 
     It is an up-to-date, ready to use out of the box, Rocky Linux 8 image preconfigured with MariaDB and Cells Enterprise distribution.  
@@ -371,7 +371,7 @@ Get started quickly with Cells static binaries, or pick an image for your cloud 
     - 443: **cells-enterprise**
     - 22: **ssh**
 
-=== "[![](../../../images/logos-os/vmware.png)]()"
+=== "[<img src="../../../images/logos-os/vmware.png" width="60">]()"
     The Pydio Cells image for VMWare is based on Rocky Linux 9. It has been enriched with necessary third party software and pre-configured to provide an easy to run instance of the Cells server out of the box.  
     It is known to run in VSphere ecosystems and in standalone ESXi hosts.
 
@@ -453,7 +453,7 @@ Get started quickly with Cells static binaries, or pick an image for your cloud 
     ### Firewalld service
 
     We recommand to use the provided appliance in your private network, behind enterprise grade firewall and reverse proxy. Thus, the firewall service in Cells appliance is disabled and stopped by default.
-=== "[![](../../../images/logos-os/amazon.png)]()"
+=== "[<img src="../../../images/logos-os/amazon.png" width="60">]()"
     We expose below the specificities of the AMI custom setup. For further details, please refer to the other sections of this [administration guide](https://pydio.com/en/docs/administration-guides).
 
     ## Cells Ent AMI on AWS Marketplace
@@ -529,36 +529,11 @@ Get started quickly with Cells static binaries, or pick an image for your cloud 
     It is recommended to run the Cells server behind a reverse proxy that exposes a valid TLS certificate when in production.
 
     If you do not provide a valid registered FQDN via "user data" upon launch, it is then configured using the Amazon automatically provided public IP address and the frontend is publicly available at `https://<your-instance-public-ip-address>`.    
-=== "[![](../../../images/logos-os/logo-kubernetes.png)]()"
+=== "[<img src="../../../images/logos-os/logo-kubernetes.png" width="60">]()"
      [Kubernetes](../../../run-cells-in-production/deploying-cells-in-a-distributed-environment/kubernetes-quick-install)
 
 
-### Advanced step-by-step guides
 
-These tutorials provide advanced step-by-step guides for bare installation on your OS/Cloud of choice, from RaspberryPi to Kubernetes Cluster!
-
-<div class="install-logos">
-<a class="logo" href="/en/docs/kb/deployment/install-cells-raspberry">
-    <div class="logo-img"><img style="height: 70px" src="../../../images/logos-os/logo-raspberrypi.png?raw=true"/></div>
-    <div class="logo-title">Raspberry Pi</div>
-</a>
-<a class="logo" href="/en/docs/kb/deployment/install-cells-centosrhel">
-    <div class="logo-img"><img style="height: 70px" src="../../../images/logos-os/logo-rhel.png?raw=true"/></div>
-    <div class="logo-title">RHEL Distros</div>
-</a>
-<a class="logo" href="/en/docs/kb/deployment/install-cells-debianubuntu">
-    <div class="logo-img"><img src="../../../images/logos-os/debian.png?raw=true"/></div>
-    <div class="logo-title">Debian/Ubuntu</div>
-</a>
-<a class="logo" href="/en/docs/kb/deployment/install-cells-macosx">
-    <div class="logo-img"><img src="../../../images/logos-os/macos.png?raw=true"/></div>
-    <div class="logo-title">Mac OSX</div>
-</a>
-<a class="logo" href="/en/docs/kb/deployment/install-cells-windows">
-    <div class="logo-img"><img src="../../../images/logos-os/windows.png?raw=true"/></div>
-    <div class="logo-title">Windows</div>
-</a>
-</div>
 
 
 <style type="text/css">

@@ -1,9 +1,9 @@
 ---
-slug: cells-enterprise-add-google-as-an-authentication-source
-title: "[Cells Enterprise] Add Google as an authentication source"
-description: "[Cells Enterprise] Add Google as an authentication source"
+slug: using-google-as-an-identity-provider
+title: "Using Google as an Identity Provider"
+description: "This article shows how to use Google as an Identity Provider for Pydio Cells."
 language: und
-category: Miscellaneous
+category: Identity Management
 
 ---
 # Add a Google Connector
@@ -16,10 +16,10 @@ category: Miscellaneous
 
 Default values
 
-| name            | value                                             |
-| --------------- | ------------------------------------------------- |
-| Issuer/Provider | https://accounts.google.com                       |
-| redirect_uri    | https://your-cells.com/auth/login/google/callback |
+| name            | value                                               |
+| --------------- | --------------------------------------------------- |
+| Issuer/Provider | `https://accounts.google.com`                       |
+| redirect_uri    | `https://your-cells.com/auth/login/google/callback` |
 
 ## Step 1
 
@@ -55,8 +55,8 @@ And set the following fields:
 
 Last step, name your app (make sure to remember your **ID** and **Secret**) :
 
-- **Authorised JavaScript origins:** Add your Pydio Cells url.
-- **Authorised redirect URIs**: add a redirect url such as `https://my-cells.com/auth/login/google/callback`, add at the end of your Pydio Cells URL **/auth/dex/callback** (this is the endpoint).
+- **Authorized JavaScript origins:** Add your Pydio Cells url.
+- **Authorized redirect URIs**: add a redirect url such as `https://my-cells.com/auth/login/google/callback`, add at the end of your Pydio Cells URL **/auth/login/callback** (this is the endpoint).
   
 ![](../images/cells/authentication/sso_with_oauth2/google/create_client_id_2.png)
 

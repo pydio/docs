@@ -1,372 +1,275 @@
 ---
-slug: running-a-cells-container-behind-with-traefik-reverse-proxy
-title: "Running a Cells container behind with Traefik reverse proxy"
-description: "How to run a Cells container with a Traefik reverse proxy"
+slug: running-a-cells-container-behind-a-traefik-reverse-proxy
+title: "Running a Cells container behind a Traefik reverse proxy"
+description: "This article shows how to run Pydio Cells container with a Traefik reverse proxy."
 language: und
-category: Devops
+category: Deployment
 
 ---
+In this tutorial, we explain how to configure a [Traefik v2](https://doc.traefik.io/traefik/v2.0) reverse proxy for your Cells Docker container and what settings are the most important to change.
 
-This simple how-to is based on the following article to help you run Cells Home with traefik reverse proxy in docker environment.
+Traefik v2 is a very efficient Go reverse proxy designed to perfectly integrate with Docker and Kubernetes.  
 
-https://www.digitalocean.com/community/tutorials/how-to-use-traefik-as-a-reverse-proxy-for-docker-containers-on-ubuntu-18-04
+For the purpose of this deployment, we use `docker compose`: it offers a simple way to visualize the full stack deployment under a single file.  
 
-## Prerequisites
-
-- OS: Ubuntu 18
-- Installed packages: docker, apache2-utils, docker-compose
-  
-## Apache utils for credential generation
-
-Let's generate a hashed password to protect the dashboard behind a user/password.
-
-Install the following package if you are missing it.
-
-`sudo apt install apache2-utils `
-
-To generate the password with htpasswd. Substitute `secure_password` with the password you'd like to use for the Traefik `admin`(you can also change the username) user:
-
-` htpasswd -nb admin secure_password `
-
-The output from the command will look like this:
-
-Output: `admin:$apr1$ruca84Hq$mbjdMZBAG.KWn7vfN/SNK/ `
-
-You'll use this output in the Traefik configuration file(traefik.toml) to set up a Basic Authentication for the Traefik health check and monitoring dashboard. Keep the entire output line inside a text file/note, you will need it later.
-
-## Create new docker network
-
-Create `web` internal network in docker.
-
-` docker network create web `
-
-This command will create a docker bridged network.
-
-## Variable Environment
-
-Before launching docker-compose, you will need to export some env variables.
-
-```bash
-export TRAEFIK_PORT=80
-
-export TRAEFIK_DASHBOARD_PORT=81
-
-export TRAEFIK_DOMAIN_NAME=your.domain
-
-export TRAEFIK_NET_NAME=web
-```
-
-You can also put them inside  `.env` [Docker documentation](https://docs.docker.com/compose/env-file/)
-
-## traefik.toml
-
-Because traefik config file is in text format(TOML), it doesn't recognize variables environments. Please manually replace the strings (including the curly braces **{}**) by actual the values before running docker.
-
-> Note: the encrypted credential is the string generated in the first step. In this instance this is the encrypted version of "P@ssw0rd".
-
-```toml
-defaultEntryPoints = ["http"]
-
-[entryPoints]
-  [entryPoints.dashboard]
-    address = ":{TRAEFIK_PORT}"
-    [entryPoints.dashboard.auth]
-      [entryPoints.dashboard.auth.basic]
-        users = ["admin:$apr1$x/i/X0fT$xEWW3okaBdNoZz/UFn7Dz/"]
-  [entryPoints.http]
-    address = ":{TRAEFIK_DASHBOARD_PORT}"    
-
-[api]
-entrypoint="dashboard"
-
-[docker]
-domain = "{TRAEFIK_DOMAIN_NAME}"
-watch = true
-network = "{TRAEFIK_NET_NAME}"
-
-```
-
-**Warning, when deployed in production you should not let the dashboard exposed to the outside the easiest way is to disable it by deleting the dashboard lines.**
-
-## Docker compose
-
-With the docker-compose file below, all the data of Cells Home will be stored in a "cells" folder inside the current folder.
-Here is a look at the global tree:
-
-```
-├── cells
-│   ├── cells-vault-key
-│   ├── configs-versions.db
-│   ├── data
-│   ├── logs
-│   ├── pydio.json
-│   ├── services
-│   └── static
-├── docker-compose.yml
-└── traefik.toml
-└── mysql
-```
-
-Content of docker-compose.yml:
+## Quick start on localhost
 
 ```yaml
 version: "3"
 
-networks:
-  web:
-    external: true
-  internal:
-    external: false
-
 services:
-  traefik:
-    image: traefik:1.6-alpine
-    container_name: traefik
-    hostname: traefik
-    domainname: ${DOMAIN_NAME}    
-    restart: always
-    ports:
-      - "${TRAEFIK_PORT}:${TRAEFIK_PORT}"
-      - "${TRAEFIK_DASHBOARD_PORT}:${TRAEFIK_DASHBOARD_PORT}"
-    labels:
-      - traefik.enable=true
-      - traefik.backend=traefik
-      - traefik.frontend.rule=Host:traefik.${DOMAIN_NAME}
-      - traefik.port=${TRAEFIK_DASHBOARD_PORT}
-      - traefik.docker.network=web
+  reverse:
+    image: traefik:2.10
+    ports: ["80:80"]
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock:ro
-      - $PWD/traefik.toml:/traefik.toml:ro      
-    networks:
-      - internal
-      - web
-  # Cells image with two named volumes for the static and for the data
+    command:
+      - --providers.docker
+      - --api
+      - --entrypoints.web.address=:80
+    labels:
+      - traefik.http.routers.reverse.service=api@internal
+      - traefik.http.routers.reverse.rule=PathPrefix(`/api`)||PathPrefix(`/dashboard`)
+      - traefik.http.routers.reverse.entrypoints=web
+
   cells:
     image: pydio/cells:latest
+    expose: [8080]
+    environment:
+      - CELLS_BIND=0.0.0.0:8080
+      - CELLS_EXTERNAL=http://localhost
+      - CELLS_NO_TLS=1
+    labels:
+      - traefik.http.routers.cells.rule=Host(`localhost`)
+      - traefik.http.routers.cells.entrypoints=web
+
+  mysql:
+    image: mysql:8
+    restart: unless-stopped
+    environment: 
+      - MYSQL_ROOT_PASSWORD=cells
+      - MYSQL_DATABASE=cells
+      - MYSQL_USER=pydio
+      - MYSQL_PASSWORD=cells
+    cap_add: 
+      - SYS_NICE 
+    command: 
+      - mysqld
+      - --character-set-server=utf8mb4
+      - --collation-server=utf8mb4_unicode_ci
+      - --default_authentication_plugin=mysql_native_password
+```
+
+You can then access the Cells installer on http://localhost and the Traefik dashboard at http://localhost/dashboard/ (the trailing slash is important or you get a 404 - Page not found exception).
+
+## For live environments
+
+This file sets up a production ready Cells ecosystem with opiniated configuration.
+
+It exposes various services via HTTPS (provided by Let's Encrypt) under $PUBLIC_FQDN:
+
+- The Pydio Cells server at the root
+- The Traefik dashboard  under `/dashboard/`
+- Promotheus metrics under `/prometheus`
+
+Both Traefik and Prometheus endpoints are protected by basic authentication with login/password: admin/admin
+
+> Do not forget to prepare / reset acme.json file when changing the Let's Encrypt configiguration,typically at first start or when switching from staging to prod CA server: `touch acme.json; chmod 600 acme.json`
+
+> Note that we do not do the TLS termination of the requests for Cells at the Traefik level in order to enable gRPC communication between the End-User and the Cells application (necessary for the Sync client typically). If you do not need that, refer to the example above to perform TLS termination at the reverse proxy layer and thus have a simpler and easier to maintain configuration.
+
+```yaml
+version: "3"
+
+volumes:
+    cells_working_dir: {}
+    cells_data: {}
+    mysql_data: {}
+    prometheus_data: {}
+
+services:
+  # Traefik as reverse proxy with dashboard enabled
+  reverse:
+    image: traefik:2.10
+    restart: unless-stopped
+    command:
+      # More logs when debugging
+      #- --log.level=DEBUG
+      # Tell traefik to watch docker events for hot reload
+      - --providers.docker
+      - --providers.docker.exposedbydefault=false
+      # Enable the dashboard on https
+      - --api
+      # Listen default HTTP ports
+      - --entrypoints.web.address=:80
+      - --entrypoints.websecure.address=:443
+      # Trust all certificates that are exposed by the downstream services, this is 
+      # necessary to accept the default self-signed cert exposed by the Cells service.
+      - --serverstransport.insecureskipverify=true
+      # Automatic generation of certificate with Let's Encrypt
+      - --certificatesresolvers.leresolver.acme.email=${TLS_MAIL_ADDRESS}
+      - --certificatesresolvers.leresolver.acme.storage=/acme.json
+      - --certificatesresolvers.leresolver.acme.tlschallenge=true
+      # Insure to use staging CA server while testing to avoid being black listed => generated cert is un-trusted by browsers. Comment out once everything is correctly configured.
+      - --certificatesresolvers.leresolver.acme.caserver=https://acme-staging-v02.api.letsencrypt.org/directory
+    ports:
+      - 80:80
+      - 443:443
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+      # Persists certificate locally, otherwise we will recreate new ones at each restarts and quickly hit limits.
+      # Remember to flush the file if you want to switch from staging CA server to prod
+      - ./acme.json:/acme.json
+    labels:
+      # Redirect HTTP traffic to HTTPS
+      - traefik.http.routers.redirs.rule=hostregexp(`{host:.+}`)
+      - traefik.http.routers.redirs.entrypoints=web
+      - traefik.http.routers.redirs.middlewares=redirect-to-https
+      - traefik.http.middlewares.redirect-to-https.redirectscheme.scheme=https
+      # Expose the traefik dashboard on the reserved sub path, TLS is provided by the Let's Encrypt cert provider.
+      - traefik.enable=true
+      - traefik.http.routers.reverse.service=api@internal
+      - traefik.http.routers.reverse.rule=PathPrefix(`/api`)||PathPrefix(`/dashboard`)
+      - traefik.http.routers.reverse.entrypoints=websecure
+      - traefik.http.routers.reverse.tls.certresolver=leresolver
+      # Protect dashboard with simple auth => log with admin / admin for this example
+      - traefik.http.routers.reverse.middlewares=admin
+      # Password is generated with `htpasswd -nb admin admin` beware to escape all '$' replacing them by '$$'
+      - "traefik.http.middlewares.admin.basicauth.users=admin:$$apr1$$KnKvATsN$$L8K.P.maCu4zR/rVzD8h0/"
+
+  # DB backend
+  mysql:
+    image: mysql:8
+    restart: unless-stopped
+    volumes:
+      - mysql_data:/var/lib/mysql
+    environment: 
+      - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}
+      - MYSQL_DATABASE=cells
+      - MYSQL_USER=${MYSQL_CELLS_USER_LOGIN}
+      - MYSQL_PASSWORD=${MYSQL_CELLS_USER_PASSWORD}
+    command: [mysqld, --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci]
+
+# Pydio Cells app
+  cells:
+    image: ${CELLS_DOCKER_IMAGE}
+    restart: unless-stopped
+    # Not compulsory but it eases some of the maintenance operations. 
     hostname: cells
-    domainname: ${DOMAIN_NAME}
-    restart: always
-    volumes: ["./cells:/root/.config/pydio/cells"]
-    environment:
-      - CELLS_BIND=0.0.0.0:${TRAEFIK_PORT}
-      - CELLS_EXTERNAL=cells.${DOMAIN_NAME}:${TRAEFIK_PORT}
-      - CELLS_NO_SSL=1
-    labels:
-      - traefik.enable=true
-      - traefik.backend=cells
-      - traefik.frontend.rule=Host:cells.${DOMAIN_NAME}
-      - traefik.docker.network=web
-      - traefik.port=${TRAEFIK_PORT}
-    networks: 
-      - internal
-      - web
-    depends_on:
-      - mysql
-  # MySQL image with a default database cells and a dedicated user pydio
-  mysql:
-    image: mysql:5.7
-    restart: always
-    volumes: ["./mysql:/var/lib/mysql"]
-    environment:
-      MYSQL_ROOT_PASSWORD: P@ssw0rd
-      MYSQL_DATABASE: cells
-      MYSQL_USER: pydio
-      MYSQL_PASSWORD: P@ssw0rd
-    networks: 
-      - internal
-    labels:
-      - traefik.enable=false
-    command: [mysqld, --character-set-server=utf8mb4, --collation-server=utf8mb4_unicode_ci]
-```
-
-## DNS problems
-To make use of the multiple routes that traefik generates you will most likely need to add dns entries with a valid domain.
-
-Otherwise for quick testing, you can add the following lines inside your `/etc/hosts`
-```
-127.0.0.1 cells.your.domain
-127.0.0.1 traefik.your.domain
-```
-_(127.0.0.1) can be changed for the ip of the server running traefik._
-
-## Config Cells
-
-When you finished to customize your **docker-compose.yaml**, you can start the services with  `docker-composer up -d`, (the -d will keep it in background) and then you can access the Cells web installer:
-
-* With this url: _**http://cells.**`your-domain`_
-
-Default values for the database configuration are:
-- Server name: mysql
-- Port: 3306
-- Username: pydio
-- Password: P@ssw0rd
-- Database Name: cells
-
-Mysql data will be stored inside "mysql" folder in current path (as a docker volume).
-
-## Running Traefik With SSL
-
-
-Here is an example URL to help you understand the values below `http://xyz.example.com`.
-
-**traefik.toml**
-```TOML
-logLevel = "ERROR"
-defaultEntryPoints = ["http", "https"]
-insecureSkipVerify = true
-
-[entryPoints]
-  [entryPoints.dashboard]
-    address = ":81"
-    [entryPoints.dashboard.auth]
-      [entryPoints.dashboard.auth.basic]
-        users = ["admin:$apr1$x/i/X0fT$xEWW3okaBdNoZz/UFn7Dz/"]
-  [entryPoints.http]
-    address = ":80"   
-    [entryPoints.http.redirect]
-      entryPoint = "https"
-  [entryPoints.https]
-    address = ":443" 
-    [entryPoints.https.tls]
-      [[entryPoints.https.tls.certificates]]
-      certFile = "/certs/cells.crt"
-      keyFile = "/certs/cells.key" 
-    
-[retry]
-
-[api]
-entrypoint="dashboard"
-
-[docker]
-domain = "example.com"
-watch = true
-network = "web"
-
-# [acme]
-# email = "mail@gmail.com"
-# storage = "acme.json"
-# entryPoint = "https"
-# onHostRule = true
-# [acme.httpChallenge]
-# entryPoint = "http"
-```
-
-In the following configuration the important parameters are:
-
-### SSL Configuration
-
-| Paramater name     | value            | what is it                                            |
-| ------------------ | ---------------- | ----------------------------------------------------- |
-| certFile           | /certs/cells.crt | path to the certificate file                          |
-| keyFile            | /certs/cells.crt | path to the certificate key                           |
-| insecureSkipVerify | true             | it will skip the certificate verification for traefik |
-
-_Note: the insecureSkipVerify should be used when you have valid certificates_
-
-In this example we use the custom certificates but if you wish to use the integrated let's encrypt you will have to modify the configuration.
-
-#### Troubleshooting
-
-To make use of SSL you must have it enabled on both ends, meaning Traefik and Cells.
-
-### Access points
-
-This is the list of the access points from the outside.
-
-- port 80(will be redirected to 443 automatically) or 443 will give you access to the services
-
-**Warning, when deployed in production you should not let the dashboard exposed to the outside the easiest way is to disable it**
-
-**docker-compose.yaml**
-```yaml
-version: "3"
-
-networks:
-  web:
-    external: true
-  internal:
-    external: false
-
-services:
-  traefik:
-    image: traefik
-    container_name: traefik
-    restart: always
-    ports:
-      - "80:80"
-      - "443:443"
-    labels:
-      - traefik.enable=true
-      - traefik.backend=traefik
-      - traefik.frontend.rule=Host:traefik.example.com
-      - traefik.port=81
-      - traefik.docker.network=web
+    expose:
+      - 443
     volumes:
-      - /var/run/docker.sock:/var/run/docker.sock:ro
-      - $PWD/traefik.toml:/traefik.toml:ro
-      # - $PWD/acme.json:/acme.json:ro
-      - $PWD/certs/:/certs/
-    networks:
-      - internal
-      - web
-
-  # Cells image with two named volumes for the static and for the data
-  cells:
-    image: pydio/cells:latest
-    hostname: xyz
-    domainname: example.com
-    restart: always
-    volumes: 
-      # - $PWD/cells:/root/.config/pydio/cells
-      - $PWD/certs/:/root/ssl/certs/
+      - cells_working_dir:/var/cells
+      - cells_data:/data
+      - ./metrics:/var/cells/services/pydio.gateway.metrics
     environment:
-      - CELLS_BIND=xyz.pydio.com:443
-      - CELLS_EXTERNAL=https://xyz.example.com
-      - CELLS_SSL_KEY_FILE=/root/ssl/certs/cells.key
-      - CELLS_SSL_CERT_FILE=/root/ssl/certs/cells.crt
+      - CELLS_WORKING_DIR=/var/cells
+      - CELLS_DATA=/data
+      - CELLS_BIND=${PUBLIC_FQDN}:443
+      - CELLS_EXTERNAL=https://${PUBLIC_FQDN}
+      - CELLS_ENABLE_METRICS=true
+      - CELLS_METRICS_BASIC_AUTH=admin:admin
     labels:
       - traefik.enable=true
-      - traefik.backend=xyz
-      - traefik.frontend.rule=Host:xyz.pydio.com
-      - traefik.docker.network=web
-      - traefik.port=443
-      - traefik.protocol=https
-    networks: 
-      - internal
-      - web
+      - traefik.http.services.cells.loadbalancer.server.scheme=https
+      - traefik.http.routers.cells.rule=Host(`${PUBLIC_FQDN}`)
+      - traefik.http.routers.cells.entrypoints=websecure
+      - traefik.http.routers.cells.tls=true
+      - traefik.http.routers.cells.tls.certresolver=leresolver
     depends_on:
       - mysql
 
-  # MySQL image with a default database cells and a dedicated user pydio
-  mysql:
-    image: mysql:latest
-    restart: always
-    environment:
-      MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: cells
-      MYSQL_USER: pydio
-      MYSQL_PASSWORD: P@ssw0rd
-    networks: 
-      - internal
+  # Prometheus to expose metrics
+  prometheus:
+    image: prom/prometheus
+    expose:
+      - 9090
+    volumes:
+      - prometheus_data:/prometheus
+      - ./prom.yml:/etc/prometheus/prometheus.yml
+      - ./metrics:/etc/prometheus/watch:ro
+    command:
+      - --config.file=/etc/prometheus/prometheus.yml
+      - --storage.tsdb.path=/prometheus
+      - --storage.tsdb.retention.time=30d
+      - --web.external-url=https://${PUBLIC_FQDN}/prometheus
+      - --web.listen-address=:9090
     labels:
-      - traefik.enable=false
-    command: [mysqld, --character-set-server=utf8mb4, --collation-server=utf8mb4_unicode_ci]
-    logging:
-      driver: none
-```
-_the acme.json volume is disabled but if you are going to use lets encrypt with Traefik make sure to uncomment it_
-
-For the SSL configuration on Cells side, take a look at the [following page](https://github.com/pydio/cells/tree/master/tools/docker).
-
-To access the traefik dashboard (if you do not have the domain name) you can add an entry inside your /etc/hosts such as:
-
-```conf
-x.x.x.x traefik.example.com
+      # Expose the metrics on the reserved sub path, TLS is provided by the Let's Encrypt cert provider.
+      - traefik.enable=true
+      - traefik.http.routers.prometheus.rule=Host(`${PUBLIC_FQDN}`)&&PathPrefix(`/prometheus`)
+      - traefik.http.routers.prometheus.entrypoints=websecure
+      - traefik.http.services.prometheus.loadbalancer.server.port=9090
+      - traefik.http.routers.prometheus.tls.certresolver=leresolver
+      # Protect metrics entry point with simple auth
+      - traefik.http.routers.prometheus.middlewares=admin
 ```
 
-To access cells you can directly go to `http(s)://xyz.example.com`
+In order to use the above file, you must add a `.env` and a `prom.yml` file in the same folder with following content:
 
-## Encountered issues
-In the case of Traefik (SSL ON) and Cells (SSL OFF) there is a bit of an issue because Traefik does HTTPS requests on cells.
+```properties
+CELLS_DOCKER_IMAGE=pydio/cells-enterprise:latest
+PUBLIC_FQDN=share.example.com
+TLS_MAIL_ADDRESS=tls@example.com
+MYSQL_ROOT_PASSWORD=cells
+MYSQL_CELLS_USER_LOGIN=pydio
+MYSQL_CELLS_USER_PASSWORD=cells
+```
+  
 
-* Looking for a backend redirect, seems that when you try to login it requests Cells with the following url `https://xxxx/auth/dex/token` but cells expects `http://xxxx/auth/dex/token`.
+```yaml
+# Simple prometheus configuration that watches itself and the entry points declared by cells:
+scrape_configs:
+  # The job name is added as a label `job=<job_name>` to any timeseries scraped from this config.
+  - job_name: 'prometheus'
+    metrics_path: '/prometheus/metrics'
+    # scheme defaults to 'http'.
+    static_configs:
+    - targets: ['prometheus:9090']
+  - job_name: 'cells'
+    scheme: https
+    basic_auth:
+      username: "admin"
+      password: "admin"
+    tls_config:
+      insecure_skip_verify: true
+    http_sd_configs:
+      - url: "https://cells/metrics/sd"
+        basic_auth:
+          username: "admin"
+          password: "admin"
+        tls_config:
+          insecure_skip_verify: true
+```
+
+### A few more hints about the docker-compose file
+
+For `reverse`:
+
+- `ports`: our reverse proxy listens incoming requests on port 443
+- `volumes`:
+  - in order to listen to docker events, traefik containers needs to access our machine docker socket
+  - we also setup a permanent volume so the SSL certificates are not regenerated every time we relaunch our container
+- `command`:
+  - `provider`: we link traefik routing system to docker
+  - `entrypoints`: we name `websecure` our link to port 443
+  - `certificateresolvers`:
+    - we name `leresolver` the certificate issuing process, set it up to `tlschallenge` - meaning that Let's encrypt checks the domain is ours by connecting to our server on port 443 -, provide a valid email to complete the certificate issuing, and define the path in the container where the certificate is stored / found
+    - in case the machine is not accessible from outside your network, you might use `dnschallenge` instead of `tlschallenge`
+  
+For `cells`:
+
+- `expose`: our cells instance is configured to listen on port 443, but this port is **not** exposed outside of docker.
+- `environment`:
+  - `CELLS_BIND`: address where the application http server is bound to - our cell container accepts requests addressed to `$PUBLIC_FQDN:443`, with a self signed certificate that is managed by Cells
+  - `CELLS_EXTERNAL`: url the end user uses to connect to the application - in our case, by typing `https://$PUBLIC_FQDN` in a web browser
+- `labels`:
+  - we name `cells` the configuration we are going to use, and specify it is to be used for requests searching to reach the host.
+  - we specify that the requests that are served are the ones reaching the entrypoint `websecure` - that we have defined in traefik, listening on port 443
+  - we define that the SSL communication for this host is using the resolver `leresolver` we configured in traefik
+  - Note: the `extra_hosts` option can be used if there is no DNS entry accessible by the Cells container matching the FQDN: and if you are using an old version of Cells (prior to 2.1). Cells must be able to access itself via the `CELLS_BIND` address. `extra_hosts` directive simply add a new entry to the `/etc/hosts` file of the container.
+
+--------------------------------------------------------------------------------------------------------
+_See Also_
+
+[Running Cells Behind a reverse proxy](en/docs/cells/v4/configure-cells-reverse-proxy)

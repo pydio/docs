@@ -1,16 +1,16 @@
 ---
-slug: cells-managing-resources-ownership
-title: "[Cells] Managing resources ownership"
-description: "How to manage resource ownership in Cells"
+slug: managing-resources-ownership
+title: "Managing resources ownership"
+description: "This article shows how to manage resource ownership in Pydio Cells."
 language: und
-category: Miscellaneous
+category: Access Control
 
 ---
 In this HowTo, we take a closer look at the visibility parameters of the shared resources:
 
-- what they are
-- how to enable them
-- and a few use cases
+- What they are,
+- How to enable them,
+- A few use cases.
 
 ### Cells ownership
 

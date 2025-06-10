@@ -1,9 +1,9 @@
 ---
-slug: cells-using-webdav-clients
-title: "[Cells] Using Webdav clients"
-description: "How to configure and use Webdav clients."
+slug: using-webdav-clients
+title: "Using WebDAV clients"
+description: "This article shows how to configure and use Webdav clients with Pydio Cells."
 language: und
-category: Miscellaneous 
+category: Client Applications
 
 ---
 

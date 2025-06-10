@@ -1,16 +1,22 @@
 ---
 slug: running-cells-as-a-service-with-systemd
 title: "Running Cells as a service with Systemd"
-description: "How to run Cells as a service using Systemd"
+description: "This article shows how to run Pydio Cells as a service using Systemd."
 language: und
-category: Devops
+category: Deployment
 
 ---
-You can use systemd as a way to run cells as a service, it will provide you advantages such as automatically restarting your cells after failure.
+When deployed in a production environment, we generally advise to run Pydio Cells as a [systemd](https://systemd.io) service.
 
-_Note: this configuration assume you have done a vanilla setup following our installation guides. Adapt to your specific setup if necessary._
+The present guide explains you how to do it on a Linux box, assuming that you have followed our [recommended best practices](en/docs/cells/v4/best-practices) during the installation process. Adapt to your specific setup if necessary.
 
-Create new `/etc/systemd/system/cells.service` file with following content:
+Thus you have:
+
+- defined `CELLS_WORKING_DIR` as `/var/cells`
+- the downloaded binary at `/opt/pydio/bin/cells`
+- a `pydio` user that has correct (read and execute) permissions on `/opt/pydio` and `/var/cells`.
+
+Create a new `/etc/systemd/system/cells.service` file with following content:
 
 ```conf
 [Unit]
@@ -18,13 +24,16 @@ Description=Pydio Cells
 Documentation=https://pydio.com
 Wants=network-online.target
 After=network-online.target
-AssertFileIsExecutable=/home/pydio/cells
+AssertFileIsExecutable=/opt/pydio/bin/cells
+
 [Service]
-WorkingDirectory=/home/pydio/.config/
 User=pydio
 Group=pydio
+WorkingDirectory=/home/pydio
 PermissionsStartOnly=true
-ExecStart=/bin/bash -c 'exec /home/pydio/cells start &>> /home/pydio/.config/pydio/cells/logs/cells.log'
+
+AmbientCapabilities=CAP_NET_BIND_SERVICE
+ExecStart=/opt/pydio/bin/cells start
 Restart=on-failure
 StandardOutput=journal
 StandardError=inherit
@@ -33,35 +42,54 @@ TimeoutStopSec=5
 KillSignal=INT
 SendSIGKILL=yes
 SuccessExitStatus=0
+
+# Add environment variables
+Environment=CELLS_ENABLE_METRICS=false
+Environment=CELLS_WORKING_DIR=/var/cells
+
 [Install]
 WantedBy=multi-user.target
-```
-
-If you are running Pydio Cells in a production environment, you probably want to enable production logging:
-
-```conf
-# Add en environment variable in the [Service] section
-Environment=PYDIO_LOGS_LEVEL=production
 ```
 
 Then, enable and start the service:
 
 ```sh
-sudo systemctl enable cells
-sudo systemctl start cells
+sudo systemctl enable --now cells
 ```
 
-Logs can then be found in `/home/pydio/.config/pydio/cells/logs/cells.log`.
+## Various Notes
 
-#### Alternative configuration
+### Loging
 
-If you prefer having the logs integrated in the standard `journalctl` service, you can replace the `ExecStart` directive from the above file with:
-
-```conf
-ExecStart=/home/pydio/cells start
-```
-
-The output of the service can then be tailed with this command:
+With the above configuration, Pydio Cells logs in rolling text files of 10MB under `<CELLS_WORKING_DIR>/logs/` folder. Typically, on Linux:
 
 ```sh
-sudo journalctl -f -u cells
+tail -200f /var/cells/logs/pydio.log
+```
+
+It is worth noting that logs are also outputed to the systemd standard loging system so that you can also see them with e.g.:
+
+```sh
+sudo journalctl -fu cells --since "1 hour ago"
+```
+
+### Systemd working directory
+
+In the above file, we also overwrite the default systemd configuration for the working directory by using:
+
+```conf
+...
+[Service]
+WorkingDirectory=/home/pydio
+...
+```
+
+Please note that this directory **must exist and be writable** before launching the application.
+
+If it is not the case, the system fails to start with a message that can be quite cryptic for people that are not _systemd fluent_:
+
+```log
+...
+code=exited, status=200/CHDIR
+...
+```

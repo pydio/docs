@@ -1,212 +1,130 @@
 ---
 slug: running-cells-behind-a-nginx-reverse-proxy
 title: "Running Cells behind a Nginx reverse proxy"
-description: "How to run Cells behind a Nginx reverse proxy"
+description: "This article shows how to run Pydio Cells behind a Nginx reverse proxy."
 language: und
-category: Devops
+category: Deployment
 
 ---
-### Specific Cells parameters
+In this tutorial, we explain how to use [nginx](https://www.nginx.com) as reverse proxy in front of a Pydio Cells instance, together with a few tips to address the most common issues. 
 
-During your Pydio Cells installation (actually at the beginning) you will be prompted for 2 important parameters:
+## Requirements
 
-* **Internal Url**: is the url used to bind your cells to the server.
+We assume that:
 
-* **External Url**: is the url used to access your cells from outside.
+- You are using a Linux server, if not you might have to adapt some commands
+- You own a FQDN (e.g.: `cells.example.com`) that has been registered in a public DNS
+- Your `A record` has been propagated: you can verify this with `ping <YOUR_FQDN>` from your local workstation
+- Both port 80 and 443 are free and not blocked by any firewall `sudo netstat -tulpn`
 
-In this case for the reverse proxy, we must pay extra attention to the **External URL** as it has to match the address of the reverse proxy entrypoint that is going to be used to access Cells.
+Depending on your setup, you might have to install nginx on your machine, please refer to the [official documentation](https://nginx.org/en/linux_packages.html).
 
+You also must adapt your configuration to define your public FQDN, and optionally adapt bindind configuration. To do so, you have 3 options:
 
+- Open a shell on the machine where the application is running and call the `cells configure sites` command, _**with the user that runs the service**_
+- Define `CELLS_SITE_EXTERNAL` (and optionally `CELLS_SITE_BIND` and `CELLS_SITE_NO_TLS`) environment variable or the corresponding flag
+- Add a `proxyconfig` section in your YAML installation file (or `ProxyConfig` if you use JSON format)
 
-For instance if **Cells** is running under **192.168.0.12** and the **Reverse proxy** **192.168.1.201** both running on 2  completely different networks and/or publicly exposed.
+Note that the external (public) URL must contain the protocol (http or https).
 
+## Examples
 
+### Simple setup on a stand alone server
 
-> Note: in the examples below we use ip addresses but you can also use domains (make sure that they are reachable)
+We assume that:
 
-| Cells Server | Reverse proxy Server |
-| ------------ | -------------------- |
-| 192.168.0.12 | 192.168.1.201        |
+- your registered FQDN is `cells.example.com`, adapt with **your** FQDN
+- nginx and cells are running on the same machine
+- you have docker installed and have launched a [Collabora](https://www.collaboraoffice.com/code/) server with e.g.: `docker run -t -d --restart=always -p 9980:9980 -e "domain=cells.example.com" collabora/code`
+- you have used [Certbot](https://certbot.eff.org/) to generate the certificates
 
-
-
-Hence on **Cells Server** we use the following values upon installation, we also want to access Cells through **https**.
-
-
-
-> (assuming that we are binding Cells on port 8080, internal_url)
-
-| Internal URL      | External URL          |
-| ----------------- | --------------------- |
-| 192.168.0.12:8080 | https://192.168.1.201 |
-
-
-
-To resume, we will access **Cells** through `https://192.168.1.201` while Cells is actually running on another server (192.168.0.12).
-
-
-
-### Basic NGINX reverse proxy configuration
-
-
+_This config has been last tested with nginx version 1.18 that can be installed on Debian 11 (Bulleyes) by running `sudo apt install nginx`_.
 
 ```nginx
 server {
-        client_max_body_size 200M;
-        server_name example.pydio.com;
+    server_name cells.example.com;
+    
+    # Allow any size file to be uploaded
+    client_max_body_size 0;
+    # Disable buffering
+    proxy_buffering off;
 
-        location / {
-                proxy_buffering off;
-                proxy_pass https://192.168.0.1$request_uri;
-                #proxy_pass_request_headers on;
-                #proxy_set_header Host $host;
-                proxy_set_header X-Real-IP $remote_addr;
-        }
+    # Main entry point for the application
+    location / {
+        # Uncomment this to enable gRPC and thus be able to use cells-sync
+        #if ($http_content_type = "application/grpc") {
+        #    grpc_pass grpcs://cells:8080;
+        #}
+        proxy_pass https://localhost:8080;
+    }
 
-        location /ws {
-                proxy_buffering off;
-                proxy_pass https://192.168.0.1;
-                proxy_set_header Upgrade $http_upgrade;
-                proxy_set_header Connection "upgrade";
-                proxy_read_timeout 86400;
-        }
+    # Enable the websocket
+    location /ws/ {
+        proxy_pass https://localhost:8080;
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection "Upgrade";
+    }
+
+   # Necessary to use Collabora (online edition of office documents)
+   location /cool/ {
+        proxy_pass https://localhost:8080;
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection "Upgrade";
+    }
 
     error_log /var/log/nginx/cells-proxy-error.log;
     access_log /var/log/nginx/cells-proxy-access.log;
 
-    listen [::]:443 ssl http2; 
+    listen [::]:443 ssl;
     listen 443 ssl http2;
-    ssl_certificate     www.example.com.crt;
-    ssl_certificate_key www.example.com.key;
-    ssl_protocols       TLSv1 TLSv1.1 TLSv1.2;
-    ssl_ciphers         HIGH:!aNULL:!MD5;
+    
+    # certificate configuration (generated by certbot)  
+    ssl_certificate /etc/letsencrypt/live/cells.example.com/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/cells.example.com/privkey.pem;
 }
 
 server {
-    if ($host = example.pydio.com) {
+    if ($host = cells.example.com) {
         return 301 https://$host$request_uri;
-    } 
+    }
 
-    listen 80 http2;
-    listen [::]:80 http2;
-    server_name example.pydio.com;
+    listen 80;
+    listen [::]:80;
+    server_name cells.example.com;
     return 404;
 }
 ```
 
-
+## Further configuration
 
 ### Cells Sync
 
-**Mandatory section for the Sync Client to work behind a Nginx reverse proxy.**
+[Cells Sync](https://github.com/pydio/cells-sync) is the desktop client tool that can be used to synchronise a folder on your local workstation with e.g. a subfolder of your personal file folder on the server.
 
-If your Cells Server is running behind a Nginx reverse proxy you must meet 2 requirements and then add the config below to your main nginx reverse proxy configuration.
+In Cells Home distribution, you can only use the Cells Sync client with sub-folders of the `Personal Files` workspace (a.k.a: `My Files`).
 
-TLS and HTTP2 meaning that the reverse proxy and Cells must communicate with SSL (you can use the self signed option during installation).
+The communication between the client and the server uses `gRPC` on `http2`, thus:
 
-Once that is done you must set a port for **grpc** in this example it's **33060**,
+- HTTP2 has to be enabled on nginx with `http2` for instance `listen 443 ssl http2;`
+- if you are using TLS encryption, you **cannot** perform TLS termination at the reverse proxy (nginx) level
 
-to set it you have the folllowing env variable, `PYDIO_GRPC_EXTERNAL=33060`
+### Collabora
 
-otherwise you can set it when running the binary with the following flag **--grpc_external**, for instance;
+With the setup described above, you must also configure the Collabora plugin via the Cells Admin Console:
 
-`./cells start --grpc_external=33060`
-
-
-
-> In all those examples you can subsitute the port 33060 by the port of your choice
-
-Also make sure to put the **address/domain** on which your **Cells Server** is running (refer to the arrays above) line **grpc_pass**.
-
-```nginx
-server {
-	listen 33060 ssl http2;
-	listen [::]:33060 ssl http2;
-  ssl_certificate     www.example.com.crt;
-  ssl_certificate_key www.example.com.key;
-  ssl_protocols       TLSv1 TLSv1.1 TLSv1.2;
-  ssl_ciphers         HIGH:!aNULL:!MD5;
-	keepalive_timeout 600s;
-  
-    location / {
-		grpc_pass grpcs://192.168.0.1:33060;
-	}
-  
-  error_log /var/log/nginx/proxy-grpc-error.log;
-  access_log /var/log/nginx/proxy-grpc-access.log;
-}
-```
-
-> Below you can have a look at the complete file
-
-#### Finale note
-
-Make sure to substitute the values of the **certificates** and **ip/domains**.
+- Go to `Admin Console >> Advanced Parameters >> Application Parameters >> All Plugins >> (search for collabora)`
+- Enable the plugin
+- Configure with:
+  - Code version: 21 and upper
+  - Libre Office SSL: enabled
+  - Host for Libre Office: localhost
+  - Port: 9980
+- It is safer to restart the Cells service
 
 
+--------------------------------------------------------------------------------------------------------
+_See Also_
 
-#### The complete configuration
-
-**cells.conf**
-
-```nginx
-server {
-        client_max_body_size 200M;
-        server_name example.pydio.com;
-
-        location / {
-                proxy_buffering off;
-                proxy_pass https://192.168.0.1$request_uri;
-                #proxy_pass_request_headers on;
-                #proxy_set_header Host $host;
-                proxy_set_header X-Real-IP $remote_addr;
-        }
-
-        location /ws {
-                proxy_buffering off;
-                proxy_pass https://192.168.0.1;
-                proxy_set_header Upgrade $http_upgrade;
-                proxy_set_header Connection "upgrade";
-                proxy_read_timeout 86400;
-        }
-
-    error_log /var/log/nginx/cells-proxy-error.log;
-    access_log /var/log/nginx/cells-proxy-access.log;
-
-    listen [::]:443 ssl http2; 
-    listen 443 ssl http2;
-    ssl_certificate     www.example.com.crt;
-    ssl_certificate_key www.example.com.key;
-    ssl_protocols       TLSv1 TLSv1.1 TLSv1.2;
-    ssl_ciphers         HIGH:!aNULL:!MD5;
-}
-
-server {
-    if ($host = example.pydio.com) {
-        return 301 https://$host$request_uri;
-    } 
-
-    listen 80 http2;
-    listen [::]:80 http2;
-    server_name example.pydio.com;
-    return 404;
-}
-
-server {
-	listen 33060 ssl http2;
-	listen [::]:33060 ssl http2;
-  ssl_certificate     www.example.com.crt;
-  ssl_certificate_key www.example.com.key;
-  ssl_protocols       TLSv1 TLSv1.1 TLSv1.2;
-  ssl_ciphers         HIGH:!aNULL:!MD5;
-  keepalive_timeout 600s;
-	
-    location / {
-		grpc_pass grpcs://192.168.0.1:33060;
-	}
-  
-  error_log /var/log/nginx/proxy-grpc-error.log;
-  access_log /var/log/nginx/proxy-grpc-access.log;
-}
-```
-
+[Running Cells Behind a reverse proxy](en/docs/cells/v4/configure-cells-reverse-proxy)
