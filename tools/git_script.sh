@@ -18,8 +18,8 @@ DEVELOPER_GUIDE="$GIT_REPO_LOCAL/developer-guide"
 KB="$GIT_REPO_LOCAL/knowledge-base"
 FLOWS="$GIT_REPO_LOCAL/cellsflows"
 
-CELLS_V4_RELATIVE_URL="mkdocs/cells-v4"
-PYDIO_V8_RELATIVE_URL="mkdocs/pydio-v8"
+CELLS_V4_RELATIVE_URL="docs/cells-v4"
+PYDIO_V8_RELATIVE_URL="docs/pydio-v8"
 
 cd "$GIT_REPO_LOCAL"
 git init
@@ -155,12 +155,15 @@ git checkout cells-v2
 "$SCRIPT_DIR/convertor.sh" ./ "$DEVELOPER_GUIDE" "$CELLS_V4_RELATIVE_URL"
 
 cd "$LOCAL_REPO_KB"
-git checkout cells-v2
-"$SCRIPT_DIR/convertor.sh" ./ "$KB" "$CELLS_V4_RELATIVE_URL"
+git checkout master
+
 # remove legacy doc in knowledge-base folder and other p8 files
 rm -rf "$KB/legacy"
 rm -rf "$KB/plugins_setting_up_emailers.md"
 rm -rf "$KB/plugins_task_scheduler.md"
+rm -rf "$KB/p8*"
+"$SCRIPT_DIR/convertor.sh" ./ "$KB" "$CELLS_V4_RELATIVE_URL"
+
 
 cd "$LOCAL_REPO_DEVELOPER_GUIDE"
 git checkout cells-flows
