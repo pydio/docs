@@ -13,7 +13,7 @@
         <link rel="canonical" href="https://mkdocs.pydio.com/latest/admin-guide/quick-start/cells-installation/advanced-setups/">
       
       
-        <link rel="prev" href="../amazon-ami/">
+        <link rel="prev" href="./">
       
       
         <link rel="next" href="../../add-collaboration-tools/index/">
@@ -611,6 +611,8 @@
       
         
       
+        
+      
     
     
     
@@ -775,6 +777,29 @@
                 
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="./" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Advanced setups
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -829,6 +854,750 @@
       Advanced step-by-step guides
     </span>
   </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Installation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dedicated-user-and-file-system-layout" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dedicated user and file system layout
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Dedicated user and file system layout">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#verification" class="md-nav__link">
+    <span class="md-ellipsis">
+      Verification
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#database" class="md-nav__link">
+    <span class="md-ellipsis">
+      Database
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Database">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#verification_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Verification
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#retrieve-binary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Retrieve binary
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Retrieve binary">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#verification_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Verification
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configuration
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Configuration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#configure-the-server" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configure the server
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Configure the server">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#verification_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Verification
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#finalisation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Finalisation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Finalisation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#run-your-server-as-a-service-with-systemd" class="md-nav__link">
+    <span class="md-ellipsis">
+      Run your server as a service with systemd
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Run your server as a service with systemd">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#verification_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Verification
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#troubleshooting" class="md-nav__link">
+    <span class="md-ellipsis">
+      Troubleshooting
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Troubleshooting">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#main-tips" class="md-nav__link">
+    <span class="md-ellipsis">
+      Main tips
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installation_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Installation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dedicated-user-and-file-system-layout_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dedicated user and file system layout
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Dedicated user and file system layout">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#verification_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Verification
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#database_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Database
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Database">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#verification_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      Verification
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#retrieve-binary_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Retrieve binary
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Retrieve binary">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#verification_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      Verification
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuration_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configuration
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Configuration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#configure-the-server_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configure the server
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Configure the server">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#verification_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      Verification
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#declare-site-and-generate-lets-encrypt-certificate" class="md-nav__link">
+    <span class="md-ellipsis">
+      Declare site and generate Let's Encrypt Certificate
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Declare site and generate Let&#39;s Encrypt Certificate">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#verification_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      Verification
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#finalisation_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Finalisation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Finalisation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#run-your-server-as-a-service-with-systemd_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Run your server as a service with systemd
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Run your server as a service with systemd">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#verification_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      Verification
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#troubleshooting_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Troubleshooting
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Troubleshooting">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#main-tips_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Main tips
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#time-out-while-trying-to-reach-the-web-ui" class="md-nav__link">
+    <span class="md-ellipsis">
+      Time-out while trying to reach the web UI
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#selinux-is-enforced" class="md-nav__link">
+    <span class="md-ellipsis">
+      SELinux is enforced
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#non-standard-db-install" class="md-nav__link">
+    <span class="md-ellipsis">
+      Non standard DB install
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installation_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Installation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dedicated-user-and-file-system-layout_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dedicated user and file system layout
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Dedicated user and file system layout">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#verification_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      Verification
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#database_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Database
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Database">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#verification_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      Verification
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#retrieve-binary_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Retrieve binary
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Retrieve binary">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#verification_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      Verification
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuration_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configuration
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Configuration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#configure-the-server_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configure the server
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Configure the server">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#verification_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      Verification
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#declare-site-and-generate-lets-encrypt-certificate_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Declare site and generate Let's Encrypt Certificate
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Declare site and generate Let&#39;s Encrypt Certificate">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#verification_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      Verification
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#finalisation_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Finalisation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Finalisation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#run-your-server-as-a-service-with-systemd_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Run your server as a service with systemd
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Run your server as a service with systemd">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#verification_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      Verification
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#add-a-firewall" class="md-nav__link">
+    <span class="md-ellipsis">
+      Add a firewall
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#troubleshooting_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Troubleshooting
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Troubleshooting">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#main-tips_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Main tips
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installation_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Installation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pydio" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pydio
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#port-80-443" class="md-nav__link">
+    <span class="md-ellipsis">
+      Port 80 &amp; 443
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#database-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Database configuration
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#starting-with-pydio" class="md-nav__link">
+    <span class="md-ellipsis">
+      Starting with Pydio
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#troubleshooting_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Troubleshooting
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#install-cells-on-windows-10" class="md-nav__link">
+    <span class="md-ellipsis">
+      Install Cells on Windows 10
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#troubleshooting_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Troubleshooting
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Troubleshooting">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#error-message-when-moving-files-license-binary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Error message when moving files (license, binary...)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -23312,6 +24081,750 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Installation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dedicated-user-and-file-system-layout" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dedicated user and file system layout
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Dedicated user and file system layout">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#verification" class="md-nav__link">
+    <span class="md-ellipsis">
+      Verification
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#database" class="md-nav__link">
+    <span class="md-ellipsis">
+      Database
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Database">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#verification_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Verification
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#retrieve-binary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Retrieve binary
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Retrieve binary">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#verification_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Verification
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configuration
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Configuration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#configure-the-server" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configure the server
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Configure the server">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#verification_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Verification
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#finalisation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Finalisation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Finalisation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#run-your-server-as-a-service-with-systemd" class="md-nav__link">
+    <span class="md-ellipsis">
+      Run your server as a service with systemd
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Run your server as a service with systemd">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#verification_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Verification
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#troubleshooting" class="md-nav__link">
+    <span class="md-ellipsis">
+      Troubleshooting
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Troubleshooting">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#main-tips" class="md-nav__link">
+    <span class="md-ellipsis">
+      Main tips
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installation_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Installation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dedicated-user-and-file-system-layout_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dedicated user and file system layout
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Dedicated user and file system layout">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#verification_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Verification
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#database_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Database
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Database">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#verification_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      Verification
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#retrieve-binary_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Retrieve binary
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Retrieve binary">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#verification_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      Verification
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuration_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configuration
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Configuration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#configure-the-server_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configure the server
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Configure the server">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#verification_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      Verification
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#declare-site-and-generate-lets-encrypt-certificate" class="md-nav__link">
+    <span class="md-ellipsis">
+      Declare site and generate Let's Encrypt Certificate
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Declare site and generate Let&#39;s Encrypt Certificate">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#verification_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      Verification
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#finalisation_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Finalisation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Finalisation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#run-your-server-as-a-service-with-systemd_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Run your server as a service with systemd
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Run your server as a service with systemd">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#verification_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      Verification
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#troubleshooting_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Troubleshooting
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Troubleshooting">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#main-tips_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Main tips
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#time-out-while-trying-to-reach-the-web-ui" class="md-nav__link">
+    <span class="md-ellipsis">
+      Time-out while trying to reach the web UI
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#selinux-is-enforced" class="md-nav__link">
+    <span class="md-ellipsis">
+      SELinux is enforced
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#non-standard-db-install" class="md-nav__link">
+    <span class="md-ellipsis">
+      Non standard DB install
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installation_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Installation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dedicated-user-and-file-system-layout_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dedicated user and file system layout
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Dedicated user and file system layout">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#verification_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      Verification
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#database_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Database
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Database">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#verification_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      Verification
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#retrieve-binary_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Retrieve binary
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Retrieve binary">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#verification_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      Verification
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuration_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configuration
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Configuration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#configure-the-server_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configure the server
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Configure the server">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#verification_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      Verification
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#declare-site-and-generate-lets-encrypt-certificate_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Declare site and generate Let's Encrypt Certificate
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Declare site and generate Let&#39;s Encrypt Certificate">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#verification_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      Verification
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#finalisation_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Finalisation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Finalisation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#run-your-server-as-a-service-with-systemd_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Run your server as a service with systemd
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Run your server as a service with systemd">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#verification_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      Verification
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#add-a-firewall" class="md-nav__link">
+    <span class="md-ellipsis">
+      Add a firewall
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#troubleshooting_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Troubleshooting
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Troubleshooting">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#main-tips_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Main tips
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installation_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Installation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pydio" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pydio
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#port-80-443" class="md-nav__link">
+    <span class="md-ellipsis">
+      Port 80 &amp; 443
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#database-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Database configuration
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#starting-with-pydio" class="md-nav__link">
+    <span class="md-ellipsis">
+      Starting with Pydio
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#troubleshooting_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Troubleshooting
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#install-cells-on-windows-10" class="md-nav__link">
+    <span class="md-ellipsis">
+      Install Cells on Windows 10
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#troubleshooting_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Troubleshooting
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Troubleshooting">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#error-message-when-moving-files-license-binary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Error message when moving files (license, binary...)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -23335,35 +24848,942 @@
 <div class="tabbed-set tabbed-alternate" data-tabs="1:5"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><input id="__tabbed_1_4" name="__tabbed_1" type="radio" /><input id="__tabbed_1_5" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1"><a href=""><img src="../../../images/logos-os/logo-raspberrypi.png" width="60" ></a></label><label for="__tabbed_1_2"><a href=""><img src="../../../images/logos-os/logo-rhel.png" width="60" ></a></label><label for="__tabbed_1_3"><a href=""><img src="../../../images/logos-os/debian.png" width="60" ></a></label><label for="__tabbed_1_4"><a href=""><img src="../../../images/logos-os/macos.png" width="60" ></a></label><label for="__tabbed_1_5"><a href=""><img src="../../../images/logos-os/windows.png" width="60" ></a></label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<p><em>These instructions will get you started quickly with Cells binaries. Apply commands similary on either <code>cells</code> of <code>cells-enterprise</code> binary.</em></p>
+<p><em>This guide explains how to install and configure Cells on a Raspberry Pi system</em>.</p>
+<p><strong>Use case</strong></p>
+<p>Deploy a self-contained Pydio Cells instance on your local home network with a simple Raspberry Pi.</p>
+<p><strong>Requirements</strong></p>
+<ul>
+<li>Although we tested and could start Cells on a Rasberry Pi 3B with only 1GB of RAM, we suggest to use a version 4B with at least 4 GB RAM.</li>
+<li><strong>Storage</strong>: 32 SD card</li>
+<li><strong>Operating System</strong>:</li>
+<li>Raspbian (Bullseye, Buster or Stretch), the official Raspberry Pi desktop OS (which a Raspbian repackaged the Raspberry Pi team) also works out of the box.  </li>
+<li>An admin user with sudo rights that can connect to the server via SSH</li>
+<li><strong>Networking</strong>: TODO.</li>
+</ul>
+<h2 id="installation">Installation<a class="headerlink" href="#installation" title="Permanent link">&para;</a></h2>
+<h3 id="dedicated-user-and-file-system-layout">Dedicated user and file system layout<a class="headerlink" href="#dedicated-user-and-file-system-layout" title="Permanent link">&para;</a></h3>
+<p>We recommend to run Pydio Cells with a dedicated <code>pydio</code> user with <strong>no sudo</strong> permission:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-0-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-0-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-0-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-0-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-0-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-0-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-0-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-0-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-0-10">10</a></span>
+<span class="normal"><a href="#__codelineno-0-11">11</a></span>
+<span class="normal"><a href="#__codelineno-0-12">12</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="c1"># Create pydio user with a home directory</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2"></a>sudo<span class="w"> </span>useradd<span class="w"> </span>-m<span class="w"> </span>-s<span class="w"> </span>/bin/bash<span class="w"> </span>pydio
+<a id="__codelineno-0-3" name="__codelineno-0-3"></a>
+<a id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="c1"># Create necessary folders</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5"></a>sudo<span class="w"> </span>mkdir<span class="w"> </span>-p<span class="w"> </span>/opt/pydio/bin<span class="w"> </span>/var/cells/certs
+<a id="__codelineno-0-6" name="__codelineno-0-6"></a>sudo<span class="w"> </span>chown<span class="w"> </span>-R<span class="w"> </span>pydio:<span class="w"> </span>/opt/pydio<span class="w"> </span>/var/cells
+<a id="__codelineno-0-7" name="__codelineno-0-7"></a>
+<a id="__codelineno-0-8" name="__codelineno-0-8"></a><span class="c1"># Add system-wide ENV var</span>
+<a id="__codelineno-0-9" name="__codelineno-0-9"></a>sudo<span class="w"> </span>tee<span class="w"> </span>-a<span class="w"> </span>/etc/profile.d/cells-env.sh<span class="w"> </span><span class="s">&lt;&lt; EOF</span>
+<a id="__codelineno-0-10" name="__codelineno-0-10"></a><span class="s">export CELLS_WORKING_DIR=/var/cells</span>
+<a id="__codelineno-0-11" name="__codelineno-0-11"></a><span class="s">EOF</span>
+<a id="__codelineno-0-12" name="__codelineno-0-12"></a>sudo<span class="w"> </span>chmod<span class="w"> </span><span class="m">0755</span><span class="w"> </span>/etc/profile.d/cells-env.sh
+</code></pre></div></td></tr></table></div>
+<h4 id="verification">Verification<a class="headerlink" href="#verification" title="Permanent link">&para;</a></h4>
+<p>Login as user <code>pydio</code> and make sure that the environment variables are correctly set:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span>
+<span class="normal"><a href="#__codelineno-1-2">2</a></span>
+<span class="normal"><a href="#__codelineno-1-3">3</a></span>
+<span class="normal"><a href="#__codelineno-1-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a>user@raspberrypi:~$<span class="w"> </span>sudo<span class="w"> </span>su<span class="w"> </span>-<span class="w"> </span>pydio<span class="w"> </span>
+<a id="__codelineno-1-2" name="__codelineno-1-2"></a>pydio@raspberrypi:~$<span class="w"> </span><span class="nb">echo</span><span class="w"> </span><span class="nv">$CELLS_WORKING_DIR</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3"></a>/var/cells
+<a id="__codelineno-1-4" name="__codelineno-1-4"></a>pydio@raspberrypi:~$<span class="w"> </span><span class="nb">exit</span>
+</code></pre></div></td></tr></table></div>
+<h3 id="database">Database<a class="headerlink" href="#database" title="Permanent link">&para;</a></h3>
+<p>We use the default mariadb-server package shipped with Bullseye, it installs the 10.5 version with no hassle:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span>
+<span class="normal"><a href="#__codelineno-2-2">2</a></span>
+<span class="normal"><a href="#__codelineno-2-3">3</a></span>
+<span class="normal"><a href="#__codelineno-2-4">4</a></span>
+<span class="normal"><a href="#__codelineno-2-5">5</a></span>
+<span class="normal"><a href="#__codelineno-2-6">6</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>mariadb-server
+<a id="__codelineno-2-2" name="__codelineno-2-2"></a><span class="c1"># You should run the script to secure your install</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3"></a>sudo<span class="w"> </span>mysql_secure_installation
+<a id="__codelineno-2-4" name="__codelineno-2-4"></a>
+<a id="__codelineno-2-5" name="__codelineno-2-5"></a><span class="c1"># Open MySQL CLI to create your database and a dedicated user</span>
+<a id="__codelineno-2-6" name="__codelineno-2-6"></a>sudo<span class="w"> </span>mysql<span class="w"> </span>-u<span class="w"> </span>root<span class="w"> </span>-p
+</code></pre></div></td></tr></table></div>
+<p>Start a MySQL prompt and create the database and the dedicated <code>pydio</code> user.</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1">1</a></span>
+<span class="normal"><a href="#__codelineno-3-2">2</a></span>
+<span class="normal"><a href="#__codelineno-3-3">3</a></span>
+<span class="normal"><a href="#__codelineno-3-4">4</a></span>
+<span class="normal"><a href="#__codelineno-3-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1"></a><span class="k">CREATE</span><span class="w"> </span><span class="k">DATABASE</span><span class="w"> </span><span class="n">cells</span><span class="p">;</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2"></a><span class="k">CREATE</span><span class="w"> </span><span class="k">USER</span><span class="w"> </span><span class="s1">&#39;pydio&#39;</span><span class="nv">@&#39;localhost&#39;</span><span class="w"> </span><span class="k">IDENTIFIED</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="s1">&#39;&lt;PUT YOUR PASSWORD HERE&gt;&#39;</span><span class="p">;</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3"></a><span class="k">GRANT</span><span class="w"> </span><span class="k">ALL</span><span class="w"> </span><span class="k">PRIVILEGES</span><span class="w"> </span><span class="k">ON</span><span class="w"> </span><span class="n">cells</span><span class="p">.</span><span class="o">*</span><span class="w"> </span><span class="k">to</span><span class="w"> </span><span class="s1">&#39;pydio&#39;</span><span class="nv">@&#39;localhost&#39;</span><span class="p">;</span>
+<a id="__codelineno-3-4" name="__codelineno-3-4"></a><span class="k">FLUSH</span><span class="w"> </span><span class="k">PRIVILEGES</span><span class="p">;</span>
+<a id="__codelineno-3-5" name="__codelineno-3-5"></a><span class="k">exit</span>
+</code></pre></div></td></tr></table></div>
+<h4 id="verification_1">Verification<a class="headerlink" href="#verification_1" title="Permanent link">&para;</a></h4>
+<p>Check the service is running and that the user <code>pydio</code> is correctly created:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-1">1</a></span>
+<span class="normal"><a href="#__codelineno-4-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>status<span class="w"> </span>mariadb
+<a id="__codelineno-4-2" name="__codelineno-4-2"></a>mysql<span class="w"> </span>-u<span class="w"> </span>pydio<span class="w"> </span>-p
+</code></pre></div></td></tr></table></div>
+<h3 id="retrieve-binary">Retrieve binary<a class="headerlink" href="#retrieve-binary" title="Permanent link">&para;</a></h3>
+<p>Note: we only started shipping the necessary ARM build for Cells at v4.</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-5-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-5-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-5-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-5-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-5-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-5-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-5-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-5-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-5-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-5-10">10</a></span>
+<span class="normal"><a href="#__codelineno-5-11">11</a></span>
+<span class="normal"><a href="#__codelineno-5-12">12</a></span>
+<span class="normal"><a href="#__codelineno-5-13">13</a></span>
+<span class="normal"><a href="#__codelineno-5-14">14</a></span>
+<span class="normal"><a href="#__codelineno-5-15">15</a></span>
+<span class="normal"><a href="#__codelineno-5-16">16</a></span>
+<span class="normal"><a href="#__codelineno-5-17">17</a></span>
+<span class="normal"><a href="#__codelineno-5-18">18</a></span>
+<span class="normal"><a href="#__codelineno-5-19">19</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1"></a><span class="c1"># As pydio user</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2"></a>sudo<span class="w"> </span>su<span class="w"> </span>-<span class="w"> </span>pydio<span class="w"> </span>
+<a id="__codelineno-5-3" name="__codelineno-5-3"></a>
+<a id="__codelineno-5-4" name="__codelineno-5-4"></a><span class="c1"># Download correct binary</span>
+<a id="__codelineno-5-5" name="__codelineno-5-5"></a><span class="nv">distribId</span><span class="o">=</span>cells<span class="w"> </span>
+<a id="__codelineno-5-6" name="__codelineno-5-6"></a><span class="c1"># or for Cells Enterprise</span>
+<a id="__codelineno-5-7" name="__codelineno-5-7"></a><span class="c1"># distribId=cells-enterprise </span>
+<a id="__codelineno-5-8" name="__codelineno-5-8"></a>wget<span class="w"> </span>-O<span class="w"> </span>/opt/pydio/bin/cells<span class="w"> </span>https://download.pydio.com/latest/<span class="si">${</span><span class="nv">distribId</span><span class="si">}</span>/release/<span class="o">{</span>latest<span class="o">}</span>/linux-arm/<span class="si">${</span><span class="nv">distribId</span><span class="si">}</span>
+<a id="__codelineno-5-9" name="__codelineno-5-9"></a>
+<a id="__codelineno-5-10" name="__codelineno-5-10"></a><span class="c1"># Make it executable</span>
+<a id="__codelineno-5-11" name="__codelineno-5-11"></a>chmod<span class="w"> </span>a+x<span class="w"> </span>/opt/pydio/bin/cells
+<a id="__codelineno-5-12" name="__codelineno-5-12"></a><span class="nb">exit</span>
+<a id="__codelineno-5-13" name="__codelineno-5-13"></a>
+<a id="__codelineno-5-14" name="__codelineno-5-14"></a><span class="c1"># As sysadmin user </span>
+<a id="__codelineno-5-15" name="__codelineno-5-15"></a><span class="c1"># Add permissions to bind to default HTTP ports</span>
+<a id="__codelineno-5-16" name="__codelineno-5-16"></a>sudo<span class="w"> </span>setcap<span class="w"> </span><span class="s1">&#39;cap_net_bind_service=+ep&#39;</span><span class="w"> </span>/opt/pydio/bin/cells
+<a id="__codelineno-5-17" name="__codelineno-5-17"></a>
+<a id="__codelineno-5-18" name="__codelineno-5-18"></a><span class="c1"># Declare the cells commands system wide</span>
+<a id="__codelineno-5-19" name="__codelineno-5-19"></a>sudo<span class="w"> </span>ln<span class="w"> </span>-s<span class="w"> </span>/opt/pydio/bin/cells<span class="w"> </span>/usr/local/bin/cells
+</code></pre></div></td></tr></table></div>
+<h4 id="verification_2">Verification<a class="headerlink" href="#verification_2" title="Permanent link">&para;</a></h4>
+<p>Call the command <code>version</code> as user <code>pydio</code>:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-6-1">1</a></span>
+<span class="normal"><a href="#__codelineno-6-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1"></a>sudo<span class="w"> </span>su<span class="w"> </span>-<span class="w"> </span>pydio<span class="w"> </span>
+<a id="__codelineno-6-2" name="__codelineno-6-2"></a>cells<span class="w"> </span>version
+</code></pre></div></td></tr></table></div>
+<h2 id="configuration">Configuration<a class="headerlink" href="#configuration" title="Permanent link">&para;</a></h2>
+<h3 id="configure-the-server">Configure the server<a class="headerlink" href="#configure-the-server" title="Permanent link">&para;</a></h3>
+<p>Call the command <code>configure</code> as user <code>pydio</code>:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-7-1">1</a></span>
+<span class="normal"><a href="#__codelineno-7-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1"></a>sudo<span class="w"> </span>su<span class="w"> </span>-<span class="w"> </span>pydio<span class="w"> </span>
+<a id="__codelineno-7-2" name="__codelineno-7-2"></a>cells<span class="w"> </span>configure
+</code></pre></div></td></tr></table></div>
+<p>If you choose <code>Browser install</code> at the first prompt, you can access the configuration wizard at <code>https://&lt;YOUR PUBLIC IP&gt;:8080</code> after accepting the self-signed certificate. (Ensure the port <code>8080</code> is free and not blocked by a firewall).</p>
+<p>You can alternatively finalise the configuration from the command line by answering a few questions.</p>
+<h4 id="verification_3">Verification<a class="headerlink" href="#verification_3" title="Permanent link">&para;</a></h4>
+<p>If you used the browser install, you can login in the web browser as user <code>admin</code>.</p>
+<p>If you have done the CLI install, you first need to start the server:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-8-1">1</a></span>
+<span class="normal"><a href="#__codelineno-8-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1"></a>sudo<span class="w"> </span>su<span class="w"> </span>-<span class="w"> </span>pydio<span class="w"> </span>
+<a id="__codelineno-8-2" name="__codelineno-8-2"></a>cells<span class="w"> </span>start
+</code></pre></div></td></tr></table></div>
+<p>Connect and login at <code>https://&lt;YOUR PUBLIC IP&gt;:8080</code></p>
+<p><strong>Note</strong>:<br />
+At this stage, we start the server in <strong>foreground</strong> mode. In such case, it is important that you <strong>always stop</strong> the server using the <code>CTRL + C</code> shortcut before calling the <code>start</code> command again.</p>
+<h2 id="finalisation">Finalisation<a class="headerlink" href="#finalisation" title="Permanent link">&para;</a></h2>
+<h3 id="run-your-server-as-a-service-with-systemd">Run your server as a service with systemd<a class="headerlink" href="#run-your-server-as-a-service-with-systemd" title="Permanent link">&para;</a></h3>
+<p>Create a configuration file <code>sudo vi /etc/systemd/system/cells.service</code> with the following:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-9-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-9-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-9-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-9-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-9-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-9-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-9-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-9-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-9-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-9-10">10</a></span>
+<span class="normal"><a href="#__codelineno-9-11">11</a></span>
+<span class="normal"><a href="#__codelineno-9-12">12</a></span>
+<span class="normal"><a href="#__codelineno-9-13">13</a></span>
+<span class="normal"><a href="#__codelineno-9-14">14</a></span>
+<span class="normal"><a href="#__codelineno-9-15">15</a></span>
+<span class="normal"><a href="#__codelineno-9-16">16</a></span>
+<span class="normal"><a href="#__codelineno-9-17">17</a></span>
+<span class="normal"><a href="#__codelineno-9-18">18</a></span>
+<span class="normal"><a href="#__codelineno-9-19">19</a></span>
+<span class="normal"><a href="#__codelineno-9-20">20</a></span>
+<span class="normal"><a href="#__codelineno-9-21">21</a></span>
+<span class="normal"><a href="#__codelineno-9-22">22</a></span>
+<span class="normal"><a href="#__codelineno-9-23">23</a></span>
+<span class="normal"><a href="#__codelineno-9-24">24</a></span>
+<span class="normal"><a href="#__codelineno-9-25">25</a></span>
+<span class="normal"><a href="#__codelineno-9-26">26</a></span>
+<span class="normal"><a href="#__codelineno-9-27">27</a></span>
+<span class="normal"><a href="#__codelineno-9-28">28</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1"></a>[Unit]
+<a id="__codelineno-9-2" name="__codelineno-9-2"></a>Description=Pydio Cells
+<a id="__codelineno-9-3" name="__codelineno-9-3"></a>Documentation=https://pydio.com
+<a id="__codelineno-9-4" name="__codelineno-9-4"></a>Wants=network-online.target
+<a id="__codelineno-9-5" name="__codelineno-9-5"></a>After=network-online.target
+<a id="__codelineno-9-6" name="__codelineno-9-6"></a>AssertFileIsExecutable=/opt/pydio/bin/cells
+<a id="__codelineno-9-7" name="__codelineno-9-7"></a>
+<a id="__codelineno-9-8" name="__codelineno-9-8"></a>[Service]
+<a id="__codelineno-9-9" name="__codelineno-9-9"></a>User=pydio
+<a id="__codelineno-9-10" name="__codelineno-9-10"></a>Group=pydio
+<a id="__codelineno-9-11" name="__codelineno-9-11"></a>PermissionsStartOnly=true
+<a id="__codelineno-9-12" name="__codelineno-9-12"></a>AmbientCapabilities=CAP_NET_BIND_SERVICE
+<a id="__codelineno-9-13" name="__codelineno-9-13"></a>ExecStart=/opt/pydio/bin/cells start
+<a id="__codelineno-9-14" name="__codelineno-9-14"></a>Restart=on-failure
+<a id="__codelineno-9-15" name="__codelineno-9-15"></a>StandardOutput=journal
+<a id="__codelineno-9-16" name="__codelineno-9-16"></a>StandardError=inherit
+<a id="__codelineno-9-17" name="__codelineno-9-17"></a>LimitNOFILE=65536
+<a id="__codelineno-9-18" name="__codelineno-9-18"></a>TimeoutStopSec=5
+<a id="__codelineno-9-19" name="__codelineno-9-19"></a>KillSignal=INT
+<a id="__codelineno-9-20" name="__codelineno-9-20"></a>SendSIGKILL=yes
+<a id="__codelineno-9-21" name="__codelineno-9-21"></a>SuccessExitStatus=0
+<a id="__codelineno-9-22" name="__codelineno-9-22"></a>WorkingDirectory=/home/pydio
+<a id="__codelineno-9-23" name="__codelineno-9-23"></a>
+<a id="__codelineno-9-24" name="__codelineno-9-24"></a># Add environment variables
+<a id="__codelineno-9-25" name="__codelineno-9-25"></a>Environment=CELLS_WORKING_DIR=/var/cells
+<a id="__codelineno-9-26" name="__codelineno-9-26"></a>
+<a id="__codelineno-9-27" name="__codelineno-9-27"></a>[Install]
+<a id="__codelineno-9-28" name="__codelineno-9-28"></a>WantedBy=multi-user.target
+</code></pre></div></td></tr></table></div>
+<p>Reload systemd daemon, enable and start cells:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-10-1">1</a></span>
+<span class="normal"><a href="#__codelineno-10-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>daemon-reload
+<a id="__codelineno-10-2" name="__codelineno-10-2"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span><span class="nb">enable</span><span class="w"> </span>--now<span class="w"> </span>cells
+</code></pre></div></td></tr></table></div>
+<h4 id="verification_4">Verification<a class="headerlink" href="#verification_4" title="Permanent link">&para;</a></h4>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-11-1">1</a></span>
+<span class="normal"><a href="#__codelineno-11-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1"></a><span class="c1"># you can check the system logs to insure everything seems OK</span>
+<a id="__codelineno-11-2" name="__codelineno-11-2"></a>journalctl<span class="w"> </span>-fu<span class="w"> </span>cells<span class="w"> </span>-S<span class="w"> </span>-1h
+</code></pre></div></td></tr></table></div>
+<p><strong>You are now good to go</strong>. Happy file sharing!</p>
+<h2 id="troubleshooting">Troubleshooting<a class="headerlink" href="#troubleshooting" title="Permanent link">&para;</a></h2>
+<h3 id="main-tips">Main tips<a class="headerlink" href="#main-tips" title="Permanent link">&para;</a></h3>
+<p>With cells as a service, you can access the logs in different ways:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-12-1">1</a></span>
+<span class="normal"><a href="#__codelineno-12-2">2</a></span>
+<span class="normal"><a href="#__codelineno-12-3">3</a></span>
+<span class="normal"><a href="#__codelineno-12-4">4</a></span>
+<span class="normal"><a href="#__codelineno-12-5">5</a></span>
+<span class="normal"><a href="#__codelineno-12-6">6</a></span>
+<span class="normal"><a href="#__codelineno-12-7">7</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1"></a><span class="c1"># Pydio file logs</span>
+<a id="__codelineno-12-2" name="__codelineno-12-2"></a>tail<span class="w"> </span>-200f<span class="w"> </span>/var/cells/logs/pydio.log
+<a id="__codelineno-12-3" name="__codelineno-12-3"></a><span class="c1"># Some of the microservices have their own log files, check:</span>
+<a id="__codelineno-12-4" name="__codelineno-12-4"></a>ls<span class="w"> </span>-lsah<span class="w"> </span>/var/cells/logs/
+<a id="__codelineno-12-5" name="__codelineno-12-5"></a>
+<a id="__codelineno-12-6" name="__codelineno-12-6"></a><span class="c1"># Check systemd files</span>
+<a id="__codelineno-12-7" name="__codelineno-12-7"></a>journalctl<span class="w"> </span>-fu<span class="w"> </span>cells<span class="w"> </span>-S<span class="w"> </span>-1h
+</code></pre></div></td></tr></table></div>
 </div>
 <div class="tabbed-block">
-<p><em>These instructions will get you started quickly with Cells binaries. Apply commands similary on either <code>cells</code> of <code>cells-enterprise</code> binary.</em></p>
+<p><em>This guide explains how to configure Cells on a Red-Hat-Enterprise-Linux-like system. It contains strongly opinionated choices and best practices. It guides you through the steps required for a production-ready and reasonnably secured server. For a simple test on a RHEL-like server, you can skim through <a href="./quick-start">our quick start page</a> instead</em>.</p>
+<p><strong>Usecase</strong></p>
+<p>Deploy a self-contained Pydio Cells instance on a web-facing RHEL-like Linux server,<br />
+exposed at <code>https://&lt;your-fqdn&gt;</code> using a Let's Encrypt certificate.</p>
+<p><strong>Requirements</strong></p>
+<ul>
+<li><strong>CPU/Memory</strong>: 4GB RAM, 2 CPU</li>
+<li><strong>Storage</strong>: 100GB SSD hard drive</li>
+<li><strong>Operating System</strong>:</li>
+<li>RHEL 7, 8 or 9, Rocky Linux 8 or 9, CentOS and Scientific Linux 7.  </li>
+<li>An admin user with sudo rights that can connect to the server via SSH</li>
+<li><em>Note: The present guide uses a Rocky Linux 9 server. You might have to adapt some commands if you use a different version or flavour.</em></li>
+<li><strong>Networking</strong>:</li>
+<li>One Network Interface Controller connected to the internet</li>
+<li>A registered domain that points toward the public IP of your server: if you already know your IP address, it is a good idea to already add a <code>A Record</code> in your provider DNS so that the record has been already propagated when we need it.</li>
+</ul>
+<h2 id="installation_1">Installation<a class="headerlink" href="#installation_1" title="Permanent link">&para;</a></h2>
+<h3 id="dedicated-user-and-file-system-layout_1">Dedicated user and file system layout<a class="headerlink" href="#dedicated-user-and-file-system-layout_1" title="Permanent link">&para;</a></h3>
+<p>We recommend to run Pydio Cells with a dedicated <code>pydio</code> user with <strong>no sudo</strong> permission.</p>
+<p>As admin user on your server:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-13-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-13-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-13-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-13-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-13-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-13-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-13-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-13-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-13-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-13-10">10</a></span>
+<span class="normal"><a href="#__codelineno-13-11">11</a></span>
+<span class="normal"><a href="#__codelineno-13-12">12</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1"></a><span class="c1"># Create pydio user with a home directory</span>
+<a id="__codelineno-13-2" name="__codelineno-13-2"></a>sudo<span class="w"> </span>useradd<span class="w"> </span>-m<span class="w"> </span>-s<span class="w"> </span>/bin/bash<span class="w"> </span>pydio
+<a id="__codelineno-13-3" name="__codelineno-13-3"></a>
+<a id="__codelineno-13-4" name="__codelineno-13-4"></a><span class="c1"># Create necessary folders</span>
+<a id="__codelineno-13-5" name="__codelineno-13-5"></a>sudo<span class="w"> </span>mkdir<span class="w"> </span>-p<span class="w"> </span>/opt/pydio/bin<span class="w"> </span>/var/cells/certs
+<a id="__codelineno-13-6" name="__codelineno-13-6"></a>sudo<span class="w"> </span>chown<span class="w"> </span>-R<span class="w"> </span>pydio:pydio<span class="w"> </span>/opt/pydio<span class="w"> </span>/var/cells
+<a id="__codelineno-13-7" name="__codelineno-13-7"></a>
+<a id="__codelineno-13-8" name="__codelineno-13-8"></a><span class="c1"># Add system-wide ENV var</span>
+<a id="__codelineno-13-9" name="__codelineno-13-9"></a>sudo<span class="w"> </span>tee<span class="w"> </span>-a<span class="w"> </span>/etc/profile.d/cells-env.sh<span class="w"> </span><span class="s">&lt;&lt; EOF</span>
+<a id="__codelineno-13-10" name="__codelineno-13-10"></a><span class="s">export CELLS_WORKING_DIR=/var/cells</span>
+<a id="__codelineno-13-11" name="__codelineno-13-11"></a><span class="s">EOF</span>
+<a id="__codelineno-13-12" name="__codelineno-13-12"></a>sudo<span class="w"> </span>chmod<span class="w"> </span><span class="m">0755</span><span class="w"> </span>/etc/profile.d/cells-env.sh
+</code></pre></div></td></tr></table></div>
+<h4 id="verification_5">Verification<a class="headerlink" href="#verification_5" title="Permanent link">&para;</a></h4>
+<p>Login as user <code>pydio</code> and make sure that the environment variables are correctly set:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-14-1">1</a></span>
+<span class="normal"><a href="#__codelineno-14-2">2</a></span>
+<span class="normal"><a href="#__codelineno-14-3">3</a></span>
+<span class="normal"><a href="#__codelineno-14-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1"></a>sysadmin@server:~$<span class="w"> </span>sudo<span class="w"> </span>su<span class="w"> </span>-<span class="w"> </span>pydio<span class="w"> </span>
+<a id="__codelineno-14-2" name="__codelineno-14-2"></a>pydio@server:~$<span class="w"> </span><span class="nb">echo</span><span class="w"> </span><span class="nv">$CELLS_WORKING_DIR</span>
+<a id="__codelineno-14-3" name="__codelineno-14-3"></a>/var/cells
+<a id="__codelineno-14-4" name="__codelineno-14-4"></a>pydio@server:~$<span class="w"> </span><span class="nb">exit</span>
+</code></pre></div></td></tr></table></div>
+<h3 id="database_1">Database<a class="headerlink" href="#database_1" title="Permanent link">&para;</a></h3>
+<p>On Rocky Linux 9.2, default MariaDB package is 10.5 that works well for Cells. So simply do:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-15-1">1</a></span>
+<span class="normal"><a href="#__codelineno-15-2">2</a></span>
+<span class="normal"><a href="#__codelineno-15-3">3</a></span>
+<span class="normal"><a href="#__codelineno-15-4">4</a></span>
+<span class="normal"><a href="#__codelineno-15-5">5</a></span>
+<span class="normal"><a href="#__codelineno-15-6">6</a></span>
+<span class="normal"><a href="#__codelineno-15-7">7</a></span>
+<span class="normal"><a href="#__codelineno-15-8">8</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1"></a>sudo<span class="w"> </span>yum<span class="w"> </span>install<span class="w"> </span>mariadb-server
+<a id="__codelineno-15-2" name="__codelineno-15-2"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span><span class="nb">enable</span><span class="w"> </span>--now<span class="w"> </span>mariadb
+<a id="__codelineno-15-3" name="__codelineno-15-3"></a>
+<a id="__codelineno-15-4" name="__codelineno-15-4"></a><span class="c1"># Run the script to secure your install</span>
+<a id="__codelineno-15-5" name="__codelineno-15-5"></a>sudo<span class="w"> </span>mysql_secure_installation
+<a id="__codelineno-15-6" name="__codelineno-15-6"></a>
+<a id="__codelineno-15-7" name="__codelineno-15-7"></a><span class="c1"># Open MySQL CLI to create your database and a dedicated user</span>
+<a id="__codelineno-15-8" name="__codelineno-15-8"></a>sudo<span class="w"> </span>mysql<span class="w"> </span>-u<span class="w"> </span>root<span class="w"> </span>-p
+</code></pre></div></td></tr></table></div>
+<p>Start a MySQL prompt and create the database and the dedicated <code>pydio</code> user.</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-16-1">1</a></span>
+<span class="normal"><a href="#__codelineno-16-2">2</a></span>
+<span class="normal"><a href="#__codelineno-16-3">3</a></span>
+<span class="normal"><a href="#__codelineno-16-4">4</a></span>
+<span class="normal"><a href="#__codelineno-16-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1"></a><span class="k">CREATE</span><span class="w"> </span><span class="k">DATABASE</span><span class="w"> </span><span class="n">cells</span><span class="p">;</span>
+<a id="__codelineno-16-2" name="__codelineno-16-2"></a><span class="k">CREATE</span><span class="w"> </span><span class="k">USER</span><span class="w"> </span><span class="s1">&#39;pydio&#39;</span><span class="nv">@&#39;localhost&#39;</span><span class="w"> </span><span class="k">IDENTIFIED</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="s1">&#39;&lt;PUT YOUR OWN PASSWORD HERE&gt;&#39;</span><span class="p">;</span>
+<a id="__codelineno-16-3" name="__codelineno-16-3"></a><span class="k">GRANT</span><span class="w"> </span><span class="k">ALL</span><span class="w"> </span><span class="k">PRIVILEGES</span><span class="w"> </span><span class="k">ON</span><span class="w"> </span><span class="n">cells</span><span class="p">.</span><span class="o">*</span><span class="w"> </span><span class="k">to</span><span class="w"> </span><span class="s1">&#39;pydio&#39;</span><span class="nv">@&#39;localhost&#39;</span><span class="p">;</span>
+<a id="__codelineno-16-4" name="__codelineno-16-4"></a><span class="k">FLUSH</span><span class="w"> </span><span class="k">PRIVILEGES</span><span class="p">;</span>
+<a id="__codelineno-16-5" name="__codelineno-16-5"></a><span class="k">exit</span>
+</code></pre></div></td></tr></table></div>
+<h4 id="verification_6">Verification<a class="headerlink" href="#verification_6" title="Permanent link">&para;</a></h4>
+<p>Check the service is running and that the user <code>pydio</code> is correctly created:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-17-1">1</a></span>
+<span class="normal"><a href="#__codelineno-17-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>status<span class="w"> </span>mariadb
+<a id="__codelineno-17-2" name="__codelineno-17-2"></a>mysql<span class="w"> </span>-u<span class="w"> </span>pydio<span class="w"> </span>-p
+</code></pre></div></td></tr></table></div>
+<h3 id="retrieve-binary_1">Retrieve binary<a class="headerlink" href="#retrieve-binary_1" title="Permanent link">&para;</a></h3>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-18-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-18-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-18-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-18-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-18-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-18-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-18-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-18-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-18-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-18-10">10</a></span>
+<span class="normal"><a href="#__codelineno-18-11">11</a></span>
+<span class="normal"><a href="#__codelineno-18-12">12</a></span>
+<span class="normal"><a href="#__codelineno-18-13">13</a></span>
+<span class="normal"><a href="#__codelineno-18-14">14</a></span>
+<span class="normal"><a href="#__codelineno-18-15">15</a></span>
+<span class="normal"><a href="#__codelineno-18-16">16</a></span>
+<span class="normal"><a href="#__codelineno-18-17">17</a></span>
+<span class="normal"><a href="#__codelineno-18-18">18</a></span>
+<span class="normal"><a href="#__codelineno-18-19">19</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1"></a><span class="c1"># As pydio user</span>
+<a id="__codelineno-18-2" name="__codelineno-18-2"></a>sudo<span class="w"> </span>su<span class="w"> </span>-<span class="w"> </span>pydio<span class="w"> </span>
+<a id="__codelineno-18-3" name="__codelineno-18-3"></a>
+<a id="__codelineno-18-4" name="__codelineno-18-4"></a><span class="c1"># Download correct binary</span>
+<a id="__codelineno-18-5" name="__codelineno-18-5"></a><span class="nv">distribId</span><span class="o">=</span>cells<span class="w"> </span>
+<a id="__codelineno-18-6" name="__codelineno-18-6"></a><span class="c1"># or for Cells Enterprise</span>
+<a id="__codelineno-18-7" name="__codelineno-18-7"></a><span class="c1"># distribId=cells-enterprise </span>
+<a id="__codelineno-18-8" name="__codelineno-18-8"></a>wget<span class="w"> </span>-O<span class="w"> </span>/opt/pydio/bin/cells<span class="w"> </span>-v<span class="w"> </span>https://download.pydio.com/latest/<span class="si">${</span><span class="nv">distribId</span><span class="si">}</span>/release/<span class="o">{</span>latest<span class="o">}</span>/linux-amd64/<span class="si">${</span><span class="nv">distribId</span><span class="si">}</span>
+<a id="__codelineno-18-9" name="__codelineno-18-9"></a>
+<a id="__codelineno-18-10" name="__codelineno-18-10"></a><span class="c1"># Make it executable</span>
+<a id="__codelineno-18-11" name="__codelineno-18-11"></a>chmod<span class="w"> </span>a+x<span class="w"> </span>/opt/pydio/bin/cells
+<a id="__codelineno-18-12" name="__codelineno-18-12"></a><span class="nb">exit</span>
+<a id="__codelineno-18-13" name="__codelineno-18-13"></a>
+<a id="__codelineno-18-14" name="__codelineno-18-14"></a><span class="c1"># As sysadmin user </span>
+<a id="__codelineno-18-15" name="__codelineno-18-15"></a><span class="c1"># Add permissions to bind to default HTTP ports</span>
+<a id="__codelineno-18-16" name="__codelineno-18-16"></a>sudo<span class="w"> </span>setcap<span class="w"> </span><span class="s1">&#39;cap_net_bind_service=+ep&#39;</span><span class="w"> </span>/opt/pydio/bin/cells
+<a id="__codelineno-18-17" name="__codelineno-18-17"></a>
+<a id="__codelineno-18-18" name="__codelineno-18-18"></a><span class="c1"># Declare the cells commands system wide</span>
+<a id="__codelineno-18-19" name="__codelineno-18-19"></a>sudo<span class="w"> </span>ln<span class="w"> </span>-s<span class="w"> </span>/opt/pydio/bin/cells<span class="w"> </span>/usr/local/bin/cells
+</code></pre></div></td></tr></table></div>
+<h4 id="verification_7">Verification<a class="headerlink" href="#verification_7" title="Permanent link">&para;</a></h4>
+<p>Call the command <code>version</code> as user <code>pydio</code>:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-19-1">1</a></span>
+<span class="normal"><a href="#__codelineno-19-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1"></a>sudo<span class="w"> </span>su<span class="w"> </span>-<span class="w"> </span>pydio<span class="w"> </span>
+<a id="__codelineno-19-2" name="__codelineno-19-2"></a>cells<span class="w"> </span>version
+</code></pre></div></td></tr></table></div>
+<h2 id="configuration_1">Configuration<a class="headerlink" href="#configuration_1" title="Permanent link">&para;</a></h2>
+<h3 id="configure-the-server_1">Configure the server<a class="headerlink" href="#configure-the-server_1" title="Permanent link">&para;</a></h3>
+<p>Call the command <code>configure</code> as user <code>pydio</code>:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-20-1">1</a></span>
+<span class="normal"><a href="#__codelineno-20-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-20-1" name="__codelineno-20-1"></a>sudo<span class="w"> </span>su<span class="w"> </span>-<span class="w"> </span>pydio<span class="w"> </span>
+<a id="__codelineno-20-2" name="__codelineno-20-2"></a>cells<span class="w"> </span>configure
+</code></pre></div></td></tr></table></div>
+<p>If you choose <code>Browser install</code> at the first prompt, you can access the configuration wizard at <code>https://&lt;YOUR PUBLIC IP&gt;:8080</code> after accepting the self-signed certificate. (Ensure the port <code>8080</code> is free and not blocked by a firewall).</p>
+<p>You can alternatively finalise the configuration from the command line by answering a few questions.</p>
+<h4 id="verification_8">Verification<a class="headerlink" href="#verification_8" title="Permanent link">&para;</a></h4>
+<p>If you used the browser install, you can login in the web browser as user <code>admin</code></p>
+<p>First insure your firewall does not block the port 8080:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-21-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-21-1" name="__codelineno-21-1"></a>sudo<span class="w"> </span>firewall-cmd<span class="w"> </span>--add-port<span class="o">=</span><span class="m">8080</span>/tcp
+</code></pre></div></td></tr></table></div>
+<p>If you have done the CLI install, you first need to start the server:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-22-1">1</a></span>
+<span class="normal"><a href="#__codelineno-22-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-22-1" name="__codelineno-22-1"></a>sudo<span class="w"> </span>su<span class="w"> </span>-<span class="w"> </span>pydio<span class="w"> </span>
+<a id="__codelineno-22-2" name="__codelineno-22-2"></a>cells<span class="w"> </span>start
+</code></pre></div></td></tr></table></div>
+<p>Connect and login at <code>https://&lt;YOUR PUBLIC IP&gt;:8080</code></p>
+<p><strong>Note</strong>:<br />
+At this stage, we start the server in <strong>foreground</strong> mode. It is important that you <strong>always stop</strong> the server using the <code>CTRL + C</code> shortcut before calling the <code>start</code> command again.</p>
+<h3 id="declare-site-and-generate-lets-encrypt-certificate">Declare site and generate Let's Encrypt Certificate<a class="headerlink" href="#declare-site-and-generate-lets-encrypt-certificate" title="Permanent link">&para;</a></h3>
+<p>At this point, we assume that:</p>
+<ul>
+<li>your <code>A record</code> has been propagated: verify with <code>ping &lt;YOUR_FQDN&gt;</code> from your local workstation</li>
+<li>both port 80 and 443 are free and not blocked by any firewall <code>sudo netstat -tulpn</code></li>
+</ul>
+<p>Create a site:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-23-1">1</a></span>
+<span class="normal"><a href="#__codelineno-23-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-23-1" name="__codelineno-23-1"></a>sudo<span class="w"> </span>su<span class="w"> </span>-<span class="w"> </span>pydio<span class="w"> </span>
+<a id="__codelineno-23-2" name="__codelineno-23-2"></a>cells<span class="w"> </span>configure<span class="w"> </span>sites
+</code></pre></div></td></tr></table></div>
+<ul>
+<li>Choose "Create a new site"</li>
+<li>Choose <code>443</code> as the port to bind to</li>
+<li>Enter your FQDN as the address to bind to</li>
+<li>Choose "Automagically generate certificate with Let's Encrypt"</li>
+<li>Enter your Email, Accept Let's Encrypt EULA</li>
+<li>In a first pass, if you have a <em>complicated</em> network setup, you might want to choose to use the staging entrypoint for Let's Encrypt: it has much more <em>generous</em> limitations and let you try/error while fixing glitches in your network setup without getting black-listed. </li>
+<li>Redirect default <code>HTTP</code> port towards <code>HTTPS</code></li>
+<li>Double check and save.</li>
+</ul>
+<h4 id="verification_9">Verification<a class="headerlink" href="#verification_9" title="Permanent link">&para;</a></h4>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-24-1">1</a></span>
+<span class="normal"><a href="#__codelineno-24-2">2</a></span>
+<span class="normal"><a href="#__codelineno-24-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-24-1" name="__codelineno-24-1"></a><span class="c1"># Restart your server</span>
+<a id="__codelineno-24-2" name="__codelineno-24-2"></a>sudo<span class="w"> </span>su<span class="w"> </span>-<span class="w"> </span>pydio<span class="w"> </span>
+<a id="__codelineno-24-3" name="__codelineno-24-3"></a>cells<span class="w"> </span>start
+</code></pre></div></td></tr></table></div>
+<p>Connect to your web site at <code>https://&lt;YOUR_FQDN&gt;</code>. A valid certificate is now used.</p>
+<p>Stop your server once again before performing the finalisation steps.</p>
+<h2 id="finalisation_1">Finalisation<a class="headerlink" href="#finalisation_1" title="Permanent link">&para;</a></h2>
+<h3 id="run-your-server-as-a-service-with-systemd_1">Run your server as a service with systemd<a class="headerlink" href="#run-your-server-as-a-service-with-systemd_1" title="Permanent link">&para;</a></h3>
+<p>Create a configuration file <code>sudo vi /etc/systemd/system/cells.service</code> with the following:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-25-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-25-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-25-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-25-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-25-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-25-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-25-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-25-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-25-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-25-10">10</a></span>
+<span class="normal"><a href="#__codelineno-25-11">11</a></span>
+<span class="normal"><a href="#__codelineno-25-12">12</a></span>
+<span class="normal"><a href="#__codelineno-25-13">13</a></span>
+<span class="normal"><a href="#__codelineno-25-14">14</a></span>
+<span class="normal"><a href="#__codelineno-25-15">15</a></span>
+<span class="normal"><a href="#__codelineno-25-16">16</a></span>
+<span class="normal"><a href="#__codelineno-25-17">17</a></span>
+<span class="normal"><a href="#__codelineno-25-18">18</a></span>
+<span class="normal"><a href="#__codelineno-25-19">19</a></span>
+<span class="normal"><a href="#__codelineno-25-20">20</a></span>
+<span class="normal"><a href="#__codelineno-25-21">21</a></span>
+<span class="normal"><a href="#__codelineno-25-22">22</a></span>
+<span class="normal"><a href="#__codelineno-25-23">23</a></span>
+<span class="normal"><a href="#__codelineno-25-24">24</a></span>
+<span class="normal"><a href="#__codelineno-25-25">25</a></span>
+<span class="normal"><a href="#__codelineno-25-26">26</a></span>
+<span class="normal"><a href="#__codelineno-25-27">27</a></span>
+<span class="normal"><a href="#__codelineno-25-28">28</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-25-1" name="__codelineno-25-1"></a>[Unit]
+<a id="__codelineno-25-2" name="__codelineno-25-2"></a>Description=Pydio Cells
+<a id="__codelineno-25-3" name="__codelineno-25-3"></a>Documentation=https://pydio.com
+<a id="__codelineno-25-4" name="__codelineno-25-4"></a>Wants=network-online.target
+<a id="__codelineno-25-5" name="__codelineno-25-5"></a>After=network-online.target
+<a id="__codelineno-25-6" name="__codelineno-25-6"></a>AssertFileIsExecutable=/opt/pydio/bin/cells
+<a id="__codelineno-25-7" name="__codelineno-25-7"></a>
+<a id="__codelineno-25-8" name="__codelineno-25-8"></a>[Service]
+<a id="__codelineno-25-9" name="__codelineno-25-9"></a>User=pydio
+<a id="__codelineno-25-10" name="__codelineno-25-10"></a>Group=pydio
+<a id="__codelineno-25-11" name="__codelineno-25-11"></a>PermissionsStartOnly=true
+<a id="__codelineno-25-12" name="__codelineno-25-12"></a>AmbientCapabilities=CAP_NET_BIND_SERVICE
+<a id="__codelineno-25-13" name="__codelineno-25-13"></a>ExecStart=/opt/pydio/bin/cells start
+<a id="__codelineno-25-14" name="__codelineno-25-14"></a>Restart=on-failure
+<a id="__codelineno-25-15" name="__codelineno-25-15"></a>StandardOutput=journal
+<a id="__codelineno-25-16" name="__codelineno-25-16"></a>StandardError=inherit
+<a id="__codelineno-25-17" name="__codelineno-25-17"></a>LimitNOFILE=65536
+<a id="__codelineno-25-18" name="__codelineno-25-18"></a>TimeoutStopSec=5
+<a id="__codelineno-25-19" name="__codelineno-25-19"></a>KillSignal=INT
+<a id="__codelineno-25-20" name="__codelineno-25-20"></a>SendSIGKILL=yes
+<a id="__codelineno-25-21" name="__codelineno-25-21"></a>SuccessExitStatus=0
+<a id="__codelineno-25-22" name="__codelineno-25-22"></a>WorkingDirectory=/home/pydio
+<a id="__codelineno-25-23" name="__codelineno-25-23"></a>
+<a id="__codelineno-25-24" name="__codelineno-25-24"></a># Add environment variables
+<a id="__codelineno-25-25" name="__codelineno-25-25"></a>Environment=CELLS_WORKING_DIR=/var/cells
+<a id="__codelineno-25-26" name="__codelineno-25-26"></a>
+<a id="__codelineno-25-27" name="__codelineno-25-27"></a>[Install]
+<a id="__codelineno-25-28" name="__codelineno-25-28"></a>WantedBy=multi-user.target
+</code></pre></div></td></tr></table></div>
+<p>Reload systemd daemon, enable and start cells:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-26-1">1</a></span>
+<span class="normal"><a href="#__codelineno-26-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-26-1" name="__codelineno-26-1"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>daemon-reload
+<a id="__codelineno-26-2" name="__codelineno-26-2"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span><span class="nb">enable</span><span class="w"> </span>--now<span class="w"> </span>cells
+</code></pre></div></td></tr></table></div>
+<h4 id="verification_10">Verification<a class="headerlink" href="#verification_10" title="Permanent link">&para;</a></h4>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-27-1">1</a></span>
+<span class="normal"><a href="#__codelineno-27-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-27-1" name="__codelineno-27-1"></a><span class="c1"># you can check the system logs to insure everything seems OK</span>
+<a id="__codelineno-27-2" name="__codelineno-27-2"></a>sudo<span class="w"> </span>journalctl<span class="w"> </span>-fu<span class="w"> </span>cells<span class="w"> </span>-S<span class="w"> </span>-1h
+</code></pre></div></td></tr></table></div>
+<p>Connect to your certified web site at <code>https://&lt;YOUR_FQDN&gt;</code>.</p>
+<p><strong>You are now good to go</strong>. Happy file sharing!</p>
+<h2 id="troubleshooting_1">Troubleshooting<a class="headerlink" href="#troubleshooting_1" title="Permanent link">&para;</a></h2>
+<h3 id="main-tips_1">Main tips<a class="headerlink" href="#main-tips_1" title="Permanent link">&para;</a></h3>
+<p>With Cells running as a service, you can access the logs in different ways:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-28-1">1</a></span>
+<span class="normal"><a href="#__codelineno-28-2">2</a></span>
+<span class="normal"><a href="#__codelineno-28-3">3</a></span>
+<span class="normal"><a href="#__codelineno-28-4">4</a></span>
+<span class="normal"><a href="#__codelineno-28-5">5</a></span>
+<span class="normal"><a href="#__codelineno-28-6">6</a></span>
+<span class="normal"><a href="#__codelineno-28-7">7</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-28-1" name="__codelineno-28-1"></a><span class="c1"># Pydio file logs</span>
+<a id="__codelineno-28-2" name="__codelineno-28-2"></a>tail<span class="w"> </span>-200f<span class="w"> </span>/var/cells/logs/pydio.log
+<a id="__codelineno-28-3" name="__codelineno-28-3"></a><span class="c1"># Some of the microservices have their own log files, check:</span>
+<a id="__codelineno-28-4" name="__codelineno-28-4"></a>ls<span class="w"> </span>-lsah<span class="w"> </span>/var/cells/logs/
+<a id="__codelineno-28-5" name="__codelineno-28-5"></a>
+<a id="__codelineno-28-6" name="__codelineno-28-6"></a><span class="c1"># Check systemd files</span>
+<a id="__codelineno-28-7" name="__codelineno-28-7"></a>journalctl<span class="w"> </span>-fu<span class="w"> </span>cells<span class="w"> </span>-S<span class="w"> </span>-1h
+</code></pre></div></td></tr></table></div>
+<h3 id="time-out-while-trying-to-reach-the-web-ui">Time-out while trying to reach the web UI<a class="headerlink" href="#time-out-while-trying-to-reach-the-web-ui" title="Permanent link">&para;</a></h3>
+<p>If the server is started and you get timeout errors while trying to connect to the web UI, it is generally a sign that the connection to the declared port is blocked by a firewall. Check both on your OS and on the admin console of your machine provider. </p>
+<h3 id="selinux-is-enforced">SELinux is enforced<a class="headerlink" href="#selinux-is-enforced" title="Permanent link">&para;</a></h3>
+<p>If, after a successful installation and when you try to navigate to the main application page with your browser, you land on a blank page with following message:</p>
+<blockquote>
+<p>Access denied.</p>
+</blockquote>
+<p>ensure you have modified SELinux to be in permissive mode.</p>
+<h3 id="non-standard-db-install">Non standard DB install<a class="headerlink" href="#non-standard-db-install" title="Permanent link">&para;</a></h3>
+<p>If the default MariaDB package shipped with your OS does not meet your needs, you can install a more recent version from official MariaDB repository.
+Typically to get version 10.4 on Centos7:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-29-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-29-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-29-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-29-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-29-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-29-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-29-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-29-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-29-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-29-10">10</a></span>
+<span class="normal"><a href="#__codelineno-29-11">11</a></span>
+<span class="normal"><a href="#__codelineno-29-12">12</a></span>
+<span class="normal"><a href="#__codelineno-29-13">13</a></span>
+<span class="normal"><a href="#__codelineno-29-14">14</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-29-1" name="__codelineno-29-1"></a><span class="c1"># Add MariaDB 10.4 CentOS repository list</span>
+<a id="__codelineno-29-2" name="__codelineno-29-2"></a><span class="c1"># See http://downloads.mariadb.org/mariadb/repositories/</span>
+<a id="__codelineno-29-3" name="__codelineno-29-3"></a>sudo<span class="w"> </span>mkdir<span class="w"> </span>-p<span class="w"> </span>/etc/yum.repos.d
+<a id="__codelineno-29-4" name="__codelineno-29-4"></a>sudo<span class="w"> </span>tee<span class="w"> </span>/etc/yum.repos.d/MariaDB.repo<span class="w"> </span><span class="s">&lt;&lt; EOF</span>
+<a id="__codelineno-29-5" name="__codelineno-29-5"></a><span class="s">[mariadb]</span>
+<a id="__codelineno-29-6" name="__codelineno-29-6"></a><span class="s">name = MariaDB</span>
+<a id="__codelineno-29-7" name="__codelineno-29-7"></a><span class="s">baseurl = http://yum.mariadb.org/10.4/centos7-amd64</span>
+<a id="__codelineno-29-8" name="__codelineno-29-8"></a><span class="s">gpgkey=https://yum.mariadb.org/RPM-GPG-KEY-MariaDB</span>
+<a id="__codelineno-29-9" name="__codelineno-29-9"></a><span class="s">gpgcheck=1</span>
+<a id="__codelineno-29-10" name="__codelineno-29-10"></a><span class="s">EOF</span>
+<a id="__codelineno-29-11" name="__codelineno-29-11"></a>
+<a id="__codelineno-29-12" name="__codelineno-29-12"></a><span class="c1"># Install and start the server</span>
+<a id="__codelineno-29-13" name="__codelineno-29-13"></a>sudo<span class="w"> </span>yum<span class="w"> </span>install<span class="w"> </span>MariaDB-server
+<a id="__codelineno-29-14" name="__codelineno-29-14"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span><span class="nb">enable</span><span class="w"> </span>--now<span class="w"> </span>mariadb
+</code></pre></div></td></tr></table></div>
 </div>
 <div class="tabbed-block">
-<p><em>These instructions will get you started quickly with Cells binaries. Apply commands similary on either <code>cells</code> of <code>cells-enterprise</code> binary.</em></p>
+<p><em>This guide explains how to install and configure Cells on an Debian-like system. It contains strongly opinionated choices and best practices. It explains the steps required for a production-ready and reasonnably secured server. For a simple test, you should rather visit our <a href="./quick-start">quick start page</a></em>.</p>
+<p><strong>Use case</strong></p>
+<p>Deploy a self-contained Pydio Cells instance on a web-facing Debian 12 server,<br />
+exposed at <code>https://&lt;your-fqdn&gt;</code> using a Let's Encrypt certificate.</p>
+<p><strong>Requirements</strong></p>
+<ul>
+<li><strong>CPU/Memory</strong>: 4GB RAM, 2 CPU</li>
+<li><strong>Storage</strong>: 100GB SSD hard drive</li>
+<li><strong>Operating System</strong>:</li>
+<li>Debian (10, 11, 12), Ubuntu LTS (18, 20, 22)</li>
+<li>An admin user with sudo rights that can connect to the server via SSH</li>
+<li><em>Note: The present guide uses a Debian 11 (Bullseye) server. You might have to adapt some commands if you use a different version or flavour.</em></li>
+<li><strong>Networking</strong>:</li>
+<li>One Network Interface Controller connected to the internet</li>
+<li>A registered domain that points toward the public IP of your server: if you already know your IP address, it is a good idea to already add a <code>A Record</code> in your provider DNS so that the record has been already propagated when we need it.</li>
+</ul>
+<h2 id="installation_2">Installation<a class="headerlink" href="#installation_2" title="Permanent link">&para;</a></h2>
+<h3 id="dedicated-user-and-file-system-layout_2">Dedicated user and file system layout<a class="headerlink" href="#dedicated-user-and-file-system-layout_2" title="Permanent link">&para;</a></h3>
+<p>We recommend to run Pydio Cells with a dedicated <code>pydio</code> user with <strong>no sudo</strong> permission.</p>
+<p>As admin user on your server:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-30-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-30-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-30-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-30-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-30-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-30-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-30-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-30-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-30-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-30-10">10</a></span>
+<span class="normal"><a href="#__codelineno-30-11">11</a></span>
+<span class="normal"><a href="#__codelineno-30-12">12</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-30-1" name="__codelineno-30-1"></a><span class="c1"># Create pydio user with a home directory</span>
+<a id="__codelineno-30-2" name="__codelineno-30-2"></a>sudo<span class="w"> </span>useradd<span class="w"> </span>-m<span class="w"> </span>-s<span class="w"> </span>/bin/bash<span class="w"> </span>pydio
+<a id="__codelineno-30-3" name="__codelineno-30-3"></a>
+<a id="__codelineno-30-4" name="__codelineno-30-4"></a><span class="c1"># Create necessary folders</span>
+<a id="__codelineno-30-5" name="__codelineno-30-5"></a>sudo<span class="w"> </span>mkdir<span class="w"> </span>-p<span class="w"> </span>/opt/pydio/bin<span class="w"> </span>/var/cells
+<a id="__codelineno-30-6" name="__codelineno-30-6"></a>sudo<span class="w"> </span>chown<span class="w"> </span>-R<span class="w"> </span>pydio:<span class="w"> </span>/opt/pydio<span class="w"> </span>/var/cells
+<a id="__codelineno-30-7" name="__codelineno-30-7"></a>
+<a id="__codelineno-30-8" name="__codelineno-30-8"></a><span class="c1"># Add system-wide ENV var</span>
+<a id="__codelineno-30-9" name="__codelineno-30-9"></a>sudo<span class="w"> </span>tee<span class="w"> </span>-a<span class="w"> </span>/etc/profile.d/cells-env.sh<span class="w"> </span><span class="s">&lt;&lt; EOF</span>
+<a id="__codelineno-30-10" name="__codelineno-30-10"></a><span class="s">export CELLS_WORKING_DIR=/var/cells</span>
+<a id="__codelineno-30-11" name="__codelineno-30-11"></a><span class="s">EOF</span>
+<a id="__codelineno-30-12" name="__codelineno-30-12"></a>sudo<span class="w"> </span>chmod<span class="w"> </span><span class="m">0755</span><span class="w"> </span>/etc/profile.d/cells-env.sh
+</code></pre></div></td></tr></table></div>
+<h4 id="verification_11">Verification<a class="headerlink" href="#verification_11" title="Permanent link">&para;</a></h4>
+<p>Login as user <code>pydio</code> and make sure that the environment variables are correctly set:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-31-1">1</a></span>
+<span class="normal"><a href="#__codelineno-31-2">2</a></span>
+<span class="normal"><a href="#__codelineno-31-3">3</a></span>
+<span class="normal"><a href="#__codelineno-31-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-31-1" name="__codelineno-31-1"></a>sysadmin@server:~$<span class="w"> </span>sudo<span class="w"> </span>su<span class="w"> </span>-<span class="w"> </span>pydio<span class="w"> </span>
+<a id="__codelineno-31-2" name="__codelineno-31-2"></a>pydio@server:~$<span class="w"> </span><span class="nb">echo</span><span class="w"> </span><span class="nv">$CELLS_WORKING_DIR</span>
+<a id="__codelineno-31-3" name="__codelineno-31-3"></a>/var/cells
+<a id="__codelineno-31-4" name="__codelineno-31-4"></a>pydio@server:~$<span class="w"> </span><span class="nb">exit</span>
+</code></pre></div></td></tr></table></div>
+<h3 id="database_2">Database<a class="headerlink" href="#database_2" title="Permanent link">&para;</a></h3>
+<p>We use the default MariaDB package shipped with Debian Bullseye:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-32-1">1</a></span>
+<span class="normal"><a href="#__codelineno-32-2">2</a></span>
+<span class="normal"><a href="#__codelineno-32-3">3</a></span>
+<span class="normal"><a href="#__codelineno-32-4">4</a></span>
+<span class="normal"><a href="#__codelineno-32-5">5</a></span>
+<span class="normal"><a href="#__codelineno-32-6">6</a></span>
+<span class="normal"><a href="#__codelineno-32-7">7</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-32-1" name="__codelineno-32-1"></a><span class="c1"># Install the server from the default repository</span>
+<a id="__codelineno-32-2" name="__codelineno-32-2"></a>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>mariadb-server
+<a id="__codelineno-32-3" name="__codelineno-32-3"></a><span class="c1"># Run the script to secure your install</span>
+<a id="__codelineno-32-4" name="__codelineno-32-4"></a>sudo<span class="w"> </span>mysql_secure_installation
+<a id="__codelineno-32-5" name="__codelineno-32-5"></a>
+<a id="__codelineno-32-6" name="__codelineno-32-6"></a><span class="c1"># Open MySQL CLI to create your database and a dedicated user</span>
+<a id="__codelineno-32-7" name="__codelineno-32-7"></a>mysql<span class="w"> </span>-u<span class="w"> </span>root<span class="w"> </span>-p
+</code></pre></div></td></tr></table></div>
+<p>Start a MySQL prompt and create the database and the dedicated <code>pydio</code> user.</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-33-1">1</a></span>
+<span class="normal"><a href="#__codelineno-33-2">2</a></span>
+<span class="normal"><a href="#__codelineno-33-3">3</a></span>
+<span class="normal"><a href="#__codelineno-33-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-33-1" name="__codelineno-33-1"></a><span class="k">CREATE</span><span class="w"> </span><span class="k">DATABASE</span><span class="w"> </span><span class="n">cells</span><span class="p">;</span>
+<a id="__codelineno-33-2" name="__codelineno-33-2"></a><span class="k">CREATE</span><span class="w"> </span><span class="k">USER</span><span class="w"> </span><span class="s1">&#39;pydio&#39;</span><span class="nv">@&#39;localhost&#39;</span><span class="w"> </span><span class="k">IDENTIFIED</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="s1">&#39;&lt;PUT YOUR PASSWORD HERE&gt;&#39;</span><span class="p">;</span>
+<a id="__codelineno-33-3" name="__codelineno-33-3"></a><span class="k">GRANT</span><span class="w"> </span><span class="k">ALL</span><span class="w"> </span><span class="k">PRIVILEGES</span><span class="w"> </span><span class="k">ON</span><span class="w"> </span><span class="n">cells</span><span class="p">.</span><span class="o">*</span><span class="w"> </span><span class="k">to</span><span class="w"> </span><span class="s1">&#39;pydio&#39;</span><span class="nv">@&#39;localhost&#39;</span><span class="p">;</span>
+<a id="__codelineno-33-4" name="__codelineno-33-4"></a><span class="k">FLUSH</span><span class="w"> </span><span class="k">PRIVILEGES</span><span class="p">;</span>
+</code></pre></div></td></tr></table></div>
+<p>Note: default limits on MariaDB are quite low after install. If your target instance is not small, you probably should adapt them for Cells to run smoothly:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-34-1">1</a></span>
+<span class="normal"><a href="#__codelineno-34-2">2</a></span>
+<span class="normal"><a href="#__codelineno-34-3">3</a></span>
+<span class="normal"><a href="#__codelineno-34-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-34-1" name="__codelineno-34-1"></a><span class="k">SET</span><span class="w"> </span><span class="k">GLOBAL</span><span class="w"> </span><span class="n">max_connections</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1000</span><span class="p">;</span>
+<a id="__codelineno-34-2" name="__codelineno-34-2"></a><span class="k">SHOW</span><span class="w"> </span><span class="k">VARIABLES</span><span class="w"> </span><span class="k">LIKE</span><span class="w"> </span><span class="s2">&quot;max_connections&quot;</span><span class="p">;</span>
+<a id="__codelineno-34-3" name="__codelineno-34-3"></a><span class="k">SET</span><span class="w"> </span><span class="k">GLOBAL</span><span class="w"> </span><span class="n">max_prepared_stmt_count</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">131056</span><span class="p">;</span>
+<a id="__codelineno-34-4" name="__codelineno-34-4"></a><span class="k">SHOW</span><span class="w"> </span><span class="k">VARIABLES</span><span class="w"> </span><span class="k">LIKE</span><span class="w"> </span><span class="s2">&quot;max_prepared_stmt_count&quot;</span><span class="p">;</span>
+</code></pre></div></td></tr></table></div>
+<h4 id="verification_12">Verification<a class="headerlink" href="#verification_12" title="Permanent link">&para;</a></h4>
+<p>Check the service is running and that the user <code>pydio</code> is correctly created:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-35-1">1</a></span>
+<span class="normal"><a href="#__codelineno-35-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-35-1" name="__codelineno-35-1"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>status<span class="w"> </span>mariadb
+<a id="__codelineno-35-2" name="__codelineno-35-2"></a>mysql<span class="w"> </span>-u<span class="w"> </span>pydio<span class="w"> </span>-p
+</code></pre></div></td></tr></table></div>
+<h3 id="retrieve-binary_2">Retrieve binary<a class="headerlink" href="#retrieve-binary_2" title="Permanent link">&para;</a></h3>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-36-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-36-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-36-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-36-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-36-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-36-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-36-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-36-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-36-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-36-10">10</a></span>
+<span class="normal"><a href="#__codelineno-36-11">11</a></span>
+<span class="normal"><a href="#__codelineno-36-12">12</a></span>
+<span class="normal"><a href="#__codelineno-36-13">13</a></span>
+<span class="normal"><a href="#__codelineno-36-14">14</a></span>
+<span class="normal"><a href="#__codelineno-36-15">15</a></span>
+<span class="normal"><a href="#__codelineno-36-16">16</a></span>
+<span class="normal"><a href="#__codelineno-36-17">17</a></span>
+<span class="normal"><a href="#__codelineno-36-18">18</a></span>
+<span class="normal"><a href="#__codelineno-36-19">19</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-36-1" name="__codelineno-36-1"></a><span class="c1"># As pydio user</span>
+<a id="__codelineno-36-2" name="__codelineno-36-2"></a>sudo<span class="w"> </span>su<span class="w"> </span>-<span class="w"> </span>pydio<span class="w"> </span>
+<a id="__codelineno-36-3" name="__codelineno-36-3"></a>
+<a id="__codelineno-36-4" name="__codelineno-36-4"></a><span class="c1"># Download correct binary</span>
+<a id="__codelineno-36-5" name="__codelineno-36-5"></a><span class="nv">distribId</span><span class="o">=</span>cells<span class="w"> </span>
+<a id="__codelineno-36-6" name="__codelineno-36-6"></a><span class="c1"># or for Cells Enterprise</span>
+<a id="__codelineno-36-7" name="__codelineno-36-7"></a><span class="c1"># distribId=cells-enterprise </span>
+<a id="__codelineno-36-8" name="__codelineno-36-8"></a>wget<span class="w"> </span>-O<span class="w"> </span>/opt/pydio/bin/cells<span class="w"> </span>https://download.pydio.com/latest/<span class="si">${</span><span class="nv">distribId</span><span class="si">}</span>/release/<span class="o">{</span>latest<span class="o">}</span>/linux-amd64/<span class="si">${</span><span class="nv">distribId</span><span class="si">}</span>
+<a id="__codelineno-36-9" name="__codelineno-36-9"></a>
+<a id="__codelineno-36-10" name="__codelineno-36-10"></a><span class="c1"># Make it executable</span>
+<a id="__codelineno-36-11" name="__codelineno-36-11"></a>chmod<span class="w"> </span>a+x<span class="w"> </span>/opt/pydio/bin/cells
+<a id="__codelineno-36-12" name="__codelineno-36-12"></a><span class="nb">exit</span>
+<a id="__codelineno-36-13" name="__codelineno-36-13"></a>
+<a id="__codelineno-36-14" name="__codelineno-36-14"></a><span class="c1"># As sysadmin user </span>
+<a id="__codelineno-36-15" name="__codelineno-36-15"></a><span class="c1"># Add permissions to bind to default HTTP ports</span>
+<a id="__codelineno-36-16" name="__codelineno-36-16"></a>sudo<span class="w"> </span>setcap<span class="w"> </span><span class="s1">&#39;cap_net_bind_service=+ep&#39;</span><span class="w"> </span>/opt/pydio/bin/cells
+<a id="__codelineno-36-17" name="__codelineno-36-17"></a>
+<a id="__codelineno-36-18" name="__codelineno-36-18"></a><span class="c1"># Declare the cells commands system wide</span>
+<a id="__codelineno-36-19" name="__codelineno-36-19"></a>sudo<span class="w"> </span>ln<span class="w"> </span>-s<span class="w"> </span>/opt/pydio/bin/cells<span class="w"> </span>/usr/local/bin/cells
+</code></pre></div></td></tr></table></div>
+<h4 id="verification_13">Verification<a class="headerlink" href="#verification_13" title="Permanent link">&para;</a></h4>
+<p>Call the command <code>version</code> as user <code>pydio</code>:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-37-1">1</a></span>
+<span class="normal"><a href="#__codelineno-37-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-37-1" name="__codelineno-37-1"></a>sudo<span class="w"> </span>su<span class="w"> </span>-<span class="w"> </span>pydio<span class="w"> </span>
+<a id="__codelineno-37-2" name="__codelineno-37-2"></a>cells<span class="w"> </span>version
+</code></pre></div></td></tr></table></div>
+<h2 id="configuration_2">Configuration<a class="headerlink" href="#configuration_2" title="Permanent link">&para;</a></h2>
+<h3 id="configure-the-server_2">Configure the server<a class="headerlink" href="#configure-the-server_2" title="Permanent link">&para;</a></h3>
+<p>Call the command <code>configure</code> as user <code>pydio</code>:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-38-1">1</a></span>
+<span class="normal"><a href="#__codelineno-38-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-38-1" name="__codelineno-38-1"></a>sudo<span class="w"> </span>su<span class="w"> </span>-<span class="w"> </span>pydio<span class="w"> </span>
+<a id="__codelineno-38-2" name="__codelineno-38-2"></a>cells<span class="w"> </span>configure
+</code></pre></div></td></tr></table></div>
+<p>If you choose <code>Browser install</code> at the first prompt, you can access the configuration wizard at <code>https://&lt;YOUR PUBLIC IP&gt;:8080</code> after accepting the self-signed certificate. (Ensure the port <code>8080</code> is free and not blocked by a firewall).</p>
+<p>You can alternatively finalise the configuration from the command line by answering a few questions.</p>
+<h4 id="verification_14">Verification<a class="headerlink" href="#verification_14" title="Permanent link">&para;</a></h4>
+<p>If you used the browser install, you can login in the web browser as user <code>admin</code>.</p>
+<p>If you have done the CLI install, you first need to start the server:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-39-1">1</a></span>
+<span class="normal"><a href="#__codelineno-39-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-39-1" name="__codelineno-39-1"></a>sudo<span class="w"> </span>su<span class="w"> </span>-<span class="w"> </span>pydio<span class="w"> </span>
+<a id="__codelineno-39-2" name="__codelineno-39-2"></a>cells<span class="w"> </span>start
+</code></pre></div></td></tr></table></div>
+<p>Connect and login at <code>https://&lt;YOUR PUBLIC IP&gt;:8080</code></p>
+<p><strong>Note</strong>:<br />
+At this stage, we start the server in <strong>foreground</strong> mode. In such case, it is important that you <strong>always stop</strong> the server using the <code>CTRL + C</code> shortcut before calling the <code>start</code> command again.</p>
+<h3 id="declare-site-and-generate-lets-encrypt-certificate_1">Declare site and generate Let's Encrypt Certificate<a class="headerlink" href="#declare-site-and-generate-lets-encrypt-certificate_1" title="Permanent link">&para;</a></h3>
+<p>At this point, we assume that:</p>
+<ul>
+<li>your <code>A record</code> has been propagated: verify with <code>ping &lt;YOUR_FQDN&gt;</code> from your local workstation</li>
+<li>both port 80 and 443 are free and not blocked by any firewall <code>sudo netstat -tulpn</code></li>
+</ul>
+<p>Create a site:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-40-1">1</a></span>
+<span class="normal"><a href="#__codelineno-40-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-40-1" name="__codelineno-40-1"></a>sudo<span class="w"> </span>su<span class="w"> </span>-<span class="w"> </span>pydio<span class="w"> </span>
+<a id="__codelineno-40-2" name="__codelineno-40-2"></a>cells<span class="w"> </span>configure<span class="w"> </span>sites
+</code></pre></div></td></tr></table></div>
+<ul>
+<li>Choose "Create a new site"</li>
+<li>Choose <code>443</code> as the port to bind to</li>
+<li>Enter your FQDN as the address to bind to</li>
+<li>Choose "Automagically generate certificate with Let's Encrypt"</li>
+<li>Enter your Email, Accept Let's Encrypt EULA</li>
+<li>Redirect default <code>HTTP</code> port towards <code>HTTPS</code>  </li>
+<li>Double check and save.</li>
+</ul>
+<p>Note: if you are not 100% sure of your network setup, we suggest that you first use the staging entry point for Let's Encrypt. You can then avoid being black-listed while fine-tuning and fixing any network issue you might still have at this point.</p>
+<h4 id="verification_15">Verification<a class="headerlink" href="#verification_15" title="Permanent link">&para;</a></h4>
+<p>Restart your server:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-41-1">1</a></span>
+<span class="normal"><a href="#__codelineno-41-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-41-1" name="__codelineno-41-1"></a>sudo<span class="w"> </span>su<span class="w"> </span>-<span class="w"> </span>pydio<span class="w"> </span>
+<a id="__codelineno-41-2" name="__codelineno-41-2"></a>cells<span class="w"> </span>start
+</code></pre></div></td></tr></table></div>
+<p>Connect to your web site at <code>https://&lt;YOUR_FQDN&gt;</code>. A valid certificate is now used.</p>
+<p>Stop your server once again before performing the finalisation steps.</p>
+<h2 id="finalisation_2">Finalisation<a class="headerlink" href="#finalisation_2" title="Permanent link">&para;</a></h2>
+<h3 id="run-your-server-as-a-service-with-systemd_2">Run your server as a service with systemd<a class="headerlink" href="#run-your-server-as-a-service-with-systemd_2" title="Permanent link">&para;</a></h3>
+<p>Create a configuration file <code>sudo vi /etc/systemd/system/cells.service</code> with the following:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-42-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-42-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-42-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-42-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-42-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-42-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-42-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-42-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-42-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-42-10">10</a></span>
+<span class="normal"><a href="#__codelineno-42-11">11</a></span>
+<span class="normal"><a href="#__codelineno-42-12">12</a></span>
+<span class="normal"><a href="#__codelineno-42-13">13</a></span>
+<span class="normal"><a href="#__codelineno-42-14">14</a></span>
+<span class="normal"><a href="#__codelineno-42-15">15</a></span>
+<span class="normal"><a href="#__codelineno-42-16">16</a></span>
+<span class="normal"><a href="#__codelineno-42-17">17</a></span>
+<span class="normal"><a href="#__codelineno-42-18">18</a></span>
+<span class="normal"><a href="#__codelineno-42-19">19</a></span>
+<span class="normal"><a href="#__codelineno-42-20">20</a></span>
+<span class="normal"><a href="#__codelineno-42-21">21</a></span>
+<span class="normal"><a href="#__codelineno-42-22">22</a></span>
+<span class="normal"><a href="#__codelineno-42-23">23</a></span>
+<span class="normal"><a href="#__codelineno-42-24">24</a></span>
+<span class="normal"><a href="#__codelineno-42-25">25</a></span>
+<span class="normal"><a href="#__codelineno-42-26">26</a></span>
+<span class="normal"><a href="#__codelineno-42-27">27</a></span>
+<span class="normal"><a href="#__codelineno-42-28">28</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-42-1" name="__codelineno-42-1"></a>[Unit]
+<a id="__codelineno-42-2" name="__codelineno-42-2"></a>Description=Pydio Cells
+<a id="__codelineno-42-3" name="__codelineno-42-3"></a>Documentation=https://pydio.com
+<a id="__codelineno-42-4" name="__codelineno-42-4"></a>Wants=network-online.target
+<a id="__codelineno-42-5" name="__codelineno-42-5"></a>After=network-online.target
+<a id="__codelineno-42-6" name="__codelineno-42-6"></a>AssertFileIsExecutable=/opt/pydio/bin/cells
+<a id="__codelineno-42-7" name="__codelineno-42-7"></a>
+<a id="__codelineno-42-8" name="__codelineno-42-8"></a>[Service]
+<a id="__codelineno-42-9" name="__codelineno-42-9"></a>User=pydio
+<a id="__codelineno-42-10" name="__codelineno-42-10"></a>Group=pydio
+<a id="__codelineno-42-11" name="__codelineno-42-11"></a>PermissionsStartOnly=true
+<a id="__codelineno-42-12" name="__codelineno-42-12"></a>AmbientCapabilities=CAP_NET_BIND_SERVICE
+<a id="__codelineno-42-13" name="__codelineno-42-13"></a>ExecStart=/opt/pydio/bin/cells start
+<a id="__codelineno-42-14" name="__codelineno-42-14"></a>Restart=on-failure
+<a id="__codelineno-42-15" name="__codelineno-42-15"></a>StandardOutput=journal
+<a id="__codelineno-42-16" name="__codelineno-42-16"></a>StandardError=inherit
+<a id="__codelineno-42-17" name="__codelineno-42-17"></a>LimitNOFILE=65536
+<a id="__codelineno-42-18" name="__codelineno-42-18"></a>TimeoutStopSec=5
+<a id="__codelineno-42-19" name="__codelineno-42-19"></a>KillSignal=INT
+<a id="__codelineno-42-20" name="__codelineno-42-20"></a>SendSIGKILL=yes
+<a id="__codelineno-42-21" name="__codelineno-42-21"></a>SuccessExitStatus=0
+<a id="__codelineno-42-22" name="__codelineno-42-22"></a>WorkingDirectory=/home/pydio
+<a id="__codelineno-42-23" name="__codelineno-42-23"></a>
+<a id="__codelineno-42-24" name="__codelineno-42-24"></a># Add environment variables
+<a id="__codelineno-42-25" name="__codelineno-42-25"></a>Environment=CELLS_WORKING_DIR=/var/cells
+<a id="__codelineno-42-26" name="__codelineno-42-26"></a>
+<a id="__codelineno-42-27" name="__codelineno-42-27"></a>[Install]
+<a id="__codelineno-42-28" name="__codelineno-42-28"></a>WantedBy=multi-user.target
+</code></pre></div></td></tr></table></div>
+<p>Reload systemd daemon, enable and start cells:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-43-1">1</a></span>
+<span class="normal"><a href="#__codelineno-43-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-43-1" name="__codelineno-43-1"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>daemon-reload
+<a id="__codelineno-43-2" name="__codelineno-43-2"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span><span class="nb">enable</span><span class="w"> </span>--now<span class="w"> </span>cells
+</code></pre></div></td></tr></table></div>
+<h4 id="verification_16">Verification<a class="headerlink" href="#verification_16" title="Permanent link">&para;</a></h4>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-44-1">1</a></span>
+<span class="normal"><a href="#__codelineno-44-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-44-1" name="__codelineno-44-1"></a><span class="c1"># you can check the system logs to insure everything seems OK</span>
+<a id="__codelineno-44-2" name="__codelineno-44-2"></a>journalctl<span class="w"> </span>-fu<span class="w"> </span>cells<span class="w"> </span>-S<span class="w"> </span>-1h
+</code></pre></div></td></tr></table></div>
+<p>Connect to your certified web site at <code>https://&lt;YOUR_FQDN&gt;</code>.</p>
+<h3 id="add-a-firewall">Add a firewall<a class="headerlink" href="#add-a-firewall" title="Permanent link">&para;</a></h3>
+<p>In this tutorial, we use <a href="https://wiki.ubuntu.com/UncomplicatedFirewall">UncomplicatedFirewall (UFW)</a>.</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-45-1">1</a></span>
+<span class="normal"><a href="#__codelineno-45-2">2</a></span>
+<span class="normal"><a href="#__codelineno-45-3">3</a></span>
+<span class="normal"><a href="#__codelineno-45-4">4</a></span>
+<span class="normal"><a href="#__codelineno-45-5">5</a></span>
+<span class="normal"><a href="#__codelineno-45-6">6</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-45-1" name="__codelineno-45-1"></a>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>ufw
+<a id="__codelineno-45-2" name="__codelineno-45-2"></a>sudo<span class="w"> </span>ufw<span class="w"> </span>allow<span class="w"> </span>ssh
+<a id="__codelineno-45-3" name="__codelineno-45-3"></a>sudo<span class="w"> </span>ufw<span class="w"> </span>allow<span class="w"> </span>http
+<a id="__codelineno-45-4" name="__codelineno-45-4"></a>sudo<span class="w"> </span>ufw<span class="w"> </span>allow<span class="w"> </span>https
+<a id="__codelineno-45-5" name="__codelineno-45-5"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>start<span class="w"> </span>ufw
+<a id="__codelineno-45-6" name="__codelineno-45-6"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>status<span class="w"> </span>ufw
+</code></pre></div></td></tr></table></div>
+<p>If you can still connect to your web GUI and open a ssh connection, even after reboot, <strong>you are now good to go</strong>. </p>
+<p>Thanks for using Pydio Cells and happy file sharing!</p>
+<h2 id="troubleshooting_2">Troubleshooting<a class="headerlink" href="#troubleshooting_2" title="Permanent link">&para;</a></h2>
+<h3 id="main-tips_2">Main tips<a class="headerlink" href="#main-tips_2" title="Permanent link">&para;</a></h3>
+<p>With cells as a service, you can access the logs in different ways:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-46-1">1</a></span>
+<span class="normal"><a href="#__codelineno-46-2">2</a></span>
+<span class="normal"><a href="#__codelineno-46-3">3</a></span>
+<span class="normal"><a href="#__codelineno-46-4">4</a></span>
+<span class="normal"><a href="#__codelineno-46-5">5</a></span>
+<span class="normal"><a href="#__codelineno-46-6">6</a></span>
+<span class="normal"><a href="#__codelineno-46-7">7</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-46-1" name="__codelineno-46-1"></a><span class="c1"># Pydio file logs</span>
+<a id="__codelineno-46-2" name="__codelineno-46-2"></a>tail<span class="w"> </span>-200f<span class="w"> </span>/var/cells/logs/pydio.log
+<a id="__codelineno-46-3" name="__codelineno-46-3"></a><span class="c1"># Some of the microservices have their own log files, check:</span>
+<a id="__codelineno-46-4" name="__codelineno-46-4"></a>ls<span class="w"> </span>-lsah<span class="w"> </span>/var/cells/logs/
+<a id="__codelineno-46-5" name="__codelineno-46-5"></a>
+<a id="__codelineno-46-6" name="__codelineno-46-6"></a><span class="c1"># Check systemd files</span>
+<a id="__codelineno-46-7" name="__codelineno-46-7"></a>journalctl<span class="w"> </span>-fu<span class="w"> </span>cells<span class="w"> </span>-S<span class="w"> </span>-1h
+</code></pre></div></td></tr></table></div>
 </div>
 <div class="tabbed-block">
-<p><em>These instructions will get you started quickly with Cells binaries. Apply commands similary on either <code>cells</code> of <code>cells-enterprise</code> binary.</em></p>
+<p><em>This guide explains how to install and configure Pydio Cells on macOS</em>.</p>
+<p>Cells comes as a self-contained binary that can be directly run. The only hard requirement is a recent MySQL server. You can use either MySQL (5.7 or 8) or MariaDB 10.3+, both are available in Homebrew.</p>
+<p><code>brew install mysql</code> or <code>brew install mariadb</code></p>
+<h2 id="installation_3">Installation<a class="headerlink" href="#installation_3" title="Permanent link">&para;</a></h2>
+<h3 id="pydio">Pydio<a class="headerlink" href="#pydio" title="Permanent link">&para;</a></h3>
+<p>Download the Pydio Cells binary on your server/machine with the following command:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-47-1">1</a></span>
+<span class="normal"><a href="#__codelineno-47-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-47-1" name="__codelineno-47-1"></a><span class="c1"># You can use this url as-is: it will be resolved automatically to latest version</span>
+<a id="__codelineno-47-2" name="__codelineno-47-2"></a>wget<span class="w"> </span>https://download.pydio.com/latest/cells/release/<span class="o">{</span>latest<span class="o">}</span>/darwin-amd64/cells
+</code></pre></div></td></tr></table></div>
+<h3 id="port-80-443">Port 80 &amp; 443<a class="headerlink" href="#port-80-443" title="Permanent link">&para;</a></h3>
+<p>You can only use these ports if you are connected as an Admin User or root.</p>
+<p>By default, Apache is running on macOS, so you need to ensure that it - or any other webservers - is not bound to these ports.</p>
+<p>To stop the default Apache, you can use:</p>
+<p><code>sudo apachectl stop</code></p>
+<p>To prevent Apache from starting during launch, you may use:</p>
+<p><code>sudo launchctl unload -w /System/Library/LaunchDaemons/org.apache.httpd.plist</code></p>
+<h3 id="database-configuration">Database configuration<a class="headerlink" href="#database-configuration" title="Permanent link">&para;</a></h3>
+<p>In this section, we assume you have installed MySQL server. Adapt the following steps to your current setup.</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-48-1">1</a></span>
+<span class="normal"><a href="#__codelineno-48-2">2</a></span>
+<span class="normal"><a href="#__codelineno-48-3">3</a></span>
+<span class="normal"><a href="#__codelineno-48-4">4</a></span>
+<span class="normal"><a href="#__codelineno-48-5">5</a></span>
+<span class="normal"><a href="#__codelineno-48-6">6</a></span>
+<span class="normal"><a href="#__codelineno-48-7">7</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-48-1" name="__codelineno-48-1"></a><span class="c1"># Go to mysql mode</span>
+<a id="__codelineno-48-2" name="__codelineno-48-2"></a>sudo<span class="w"> </span>mysql<span class="w"> </span>-u<span class="w"> </span>root
+<a id="__codelineno-48-3" name="__codelineno-48-3"></a><span class="c1"># Create new user and set password</span>
+<a id="__codelineno-48-4" name="__codelineno-48-4"></a>CREATE<span class="w"> </span>USER<span class="w"> </span><span class="s1">&#39;pydio&#39;</span>@<span class="s1">&#39;localhost&#39;</span><span class="w"> </span>IDENTIFIED<span class="w"> </span>BY<span class="w"> </span><span class="s1">&#39;your password goes here&#39;</span><span class="p">;</span>
+<a id="__codelineno-48-5" name="__codelineno-48-5"></a>CREATE<span class="w"> </span>DATABASE<span class="w"> </span>cells<span class="p">;</span>
+<a id="__codelineno-48-6" name="__codelineno-48-6"></a>GRANT<span class="w"> </span>ALL<span class="w"> </span>PRIVILEGES<span class="w"> </span>ON<span class="w"> </span>cells.*<span class="w"> </span>to<span class="w"> </span><span class="s1">&#39;pydio&#39;</span>@<span class="s1">&#39;localhost&#39;</span><span class="p">;</span>
+<a id="__codelineno-48-7" name="__codelineno-48-7"></a>FLUSH<span class="w"> </span>PRIVILEGES<span class="p">;</span>
+</code></pre></div></td></tr></table></div>
+<h2 id="starting-with-pydio">Starting with Pydio<a class="headerlink" href="#starting-with-pydio" title="Permanent link">&para;</a></h2>
+<p>First, give execution permission on the file for your user. For instance, you can use <code>chmod u+x &lt;binary&gt;</code>.</p>
+<p>Then run the installer with the following command:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-49-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-49-1" name="__codelineno-49-1"></a>cells<span class="w"> </span>configure
+</code></pre></div></td></tr></table></div>
+<p>Once you have finished the configuration, you can start Cells with:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-50-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-50-1" name="__codelineno-50-1"></a>cells start
+</code></pre></div></td></tr></table></div>
+<p>By default, the server is started with a self-signed certificate on port 8080: to access the webUI browse to <code>https://localhost:8080</code> and accept the certificate.</p>
+<p>To configure a different URL and/or port for Cells, run the following command.</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-51-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-51-1" name="__codelineno-51-1"></a>cells configure sites
+</code></pre></div></td></tr></table></div>
+<h2 id="troubleshooting_3">Troubleshooting<a class="headerlink" href="#troubleshooting_3" title="Permanent link">&para;</a></h2>
+<ul>
+<li>The database service might not be started, you can look at its status using : <code>brew services list</code> and then <code>brew services start mysql</code> if needed.</li>
+<li>You can look at the webserver's error file located in <code>/Users/&lt;Your User Name&gt;/Library/Application Support/Pydio/cells</code>.</li>
+</ul>
 </div>
 <div class="tabbed-block">
-<p><em>These instructions will get you started quickly with Cells binaries. Apply commands similary on either <code>cells</code> of <code>cells-enterprise</code> binary.</em></p>
+<p>This guide shows how to install and run Pydio Cells on Windows 10.</p>
+<p>The binary also work on other version of Windows Desktop (8, 11) and of the Windows Server. Yet, please note that due to the majority of UNIX-like boxes in the enterprise server world and also the lack of feedback from the community, the Windows version of our application might still have unknown glitches and is not officially suported.</p>
+<p>Please feel free to join our <a href="https://forum.pydio.com">community</a> to improve this. </p>
+<h2 id="install-cells-on-windows-10">Install Cells on Windows 10<a class="headerlink" href="#install-cells-on-windows-10" title="Permanent link">&para;</a></h2>
+<p>The only hard requirement is a recent MySQL database. If not yet present on your machine, you can refer to:  </p>
+<ul>
+<li><a href="https://dev.mysql.com/doc/refman/8.0/en/windows-installation.html">MySQL 8.0</a></li>
+<li><a href="https://mariadb.org/download/">MariaDB 10.4</a></li>
+</ul>
+<p>You can then download the Pydio Cells executable from <a href="https://download.pydio.com/latest/cells/release/{latest}/windows-amd64/cells.exe">our download server</a>.</p>
+<p>Open a powershell terminal then proceed to install with the following command:</p>
+<ul>
+<li><code>.\cells.exe configure</code></li>
+</ul>
+<blockquote>
+<p>Note: on Powershell, with legacy version of Cells or Windows, if the arrows keys do not seem to work, you can try with H-J-K-L (J: Up, K: Down).</p>
+<p>Note: the legacy <em>Windows Command Prompt</em>, also known as <em>CMD</em>, which is the original shell for the Microsoft DOS operating system and has been the default until Windows 10 is known to have issues with the <code>Go</code> language command framework that we use to directly communicate with the server via terminal. On some version, it renders the Cells CLI completely unusable. TL;DR: use <code>powershell</code>.</p>
+</blockquote>
+<p>At first prompt, you can choose how you want to go on with the installation:</p>
+<ul>
+<li><strong>Browser based</strong>: opens a tab in your local browser with an intuitive installer.</li>
+<li><strong>command line interface</strong>: for advanced users, pretty straight forward.</li>
+</ul>
+<p>Once installed, you can find the application working folder with data, configurations and logs under %APPDATA%.<br />
+For instance: <code>C:\Users\pydio\AppData\Roaming\Pydio\cells</code>.</p>
+<blockquote>
+<p>Note: you may have to explicitly allow displaying <strong>hidden files/folders</strong> in your settings to see this folder.</p>
+</blockquote>
+<p>You can now start Cells and access it at <code>https://localhost:8080</code> or <code>https://&lt;server ip or domain&gt;:8080</code></p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-52-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-52-1" name="__codelineno-52-1"></a>.\cells.exe start
+</code></pre></div></td></tr></table></div>
+<p>By default, Cells start on port 8080 with a self-signed certificate. To change this and use a different domain, port or protocol, run:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-53-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-53-1" name="__codelineno-53-1"></a>.\cells.exe configure sites
+</code></pre></div></td></tr></table></div>
+<h2 id="troubleshooting_4">Troubleshooting<a class="headerlink" href="#troubleshooting_4" title="Permanent link">&para;</a></h2>
+<h3 id="error-message-when-moving-files-license-binary">Error message when moving files (license, binary...)<a class="headerlink" href="#error-message-when-moving-files-license-binary" title="Permanent link">&para;</a></h3>
+<p>You might encounter this message in the logs after performing actions like updating the license or upgrading to the latest version of the server via the in-app process:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-54-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-54-1" name="__codelineno-54-1"></a>Update successfully applied but previous binary could not be moved to backup folder     {&quot;error&quot;: &quot;remove C:\\&lt;path to you binary file&gt;\\cells-v3.0.9.exe: Access is denied.&quot;}
+</code></pre></div></td></tr></table></div>
+<p>This is a known issue and non-blocking: the new file is correctly installed on its intended destination and the app will function normally.</p>
 </div>
 </div>
 </div>
-<p><a class="logo" href="/en/docs/kb/deployment/install-cells-debianubuntu">
-    <div class="logo-img"><a class="glightbox" href="../../../images/logos-os/debian.png?raw=true" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="../../../images/logos-os/debian.png?raw=true"/></a></div>
-    <div class="logo-title">Debian/Ubuntu</div>
-</a>
-<a class="logo" href="/en/docs/kb/deployment/install-cells-macosx">
-    <div class="logo-img"><a class="glightbox" href="../../../images/logos-os/macos.png?raw=true" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="../../../images/logos-os/macos.png?raw=true"/></a></div>
-    <div class="logo-title">Mac OSX</div>
-</a>
-<a class="logo" href="/en/docs/kb/deployment/install-cells-windows">
-    <div class="logo-img"><a class="glightbox" href="../../../images/logos-os/windows.png?raw=true" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="../../../images/logos-os/windows.png?raw=true"/></a></div>
-    <div class="logo-title">Windows</div>
-</a>
-</div></p>
 
 
 
@@ -23402,7 +25822,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../amazon-ami/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Amazon AMI">
+          <a href="./" class="md-footer__link md-footer__link--prev" aria-label="Previous: Advanced setups">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -23412,7 +25832,7 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Amazon AMI
+                Advanced setups
               </div>
             </div>
           </a>
