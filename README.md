@@ -129,3 +129,88 @@ Live Documentation: https://pydio.github.io/docs
 When you need a new branch:
 * Chekout new branch from one of document branches
 * Update [main branch] resources/versions.json file
+
+## Adding new folder
+
+At the top level, there are four repositories:
+- Admin Guide
+- CellsFlows
+- Developer Guide
+- Knowledge Base
+
+MKdocs uses these repositories for items in the top bar
+
+The folder struct in each frist-level repository reflect the left menu in the page
+
+For instance:
+
+```
+admin-guide/
+├── 1_quick_start
+├── 2_running_cells_in_production
+├── 3_connecting_your_users
+├── 4_connecting_your_storage
+├── 5_securing_your_data
+├── 6_customize_interface
+├── 7_advanced
+├── images
+└── urlmaps
+```
+
+* **images** : repository for all images
+* **urlmaps**: A specific file containing the map of urls of legacy page to new format. Can be use for automatical redirection
+
+When you browse `Admin Guide` page, you will see in the left-menu
+
+```
+- Quick Start
+  ..
+- Run Cells in Production
+  ..
+```
+
+**FrontMatter** is a section in yaml instructs mkdocs to do following tasks:
+- formating url with slugs
+- labeling menu items by title
+- ordering menu items by weight
+
+For a `.md` file, frontmatter are at the top of file
+
+
+```
+---
+slug: install-static-binaries
+title: Install Static Binaries
+description: Installing Pydio Cells on your server using our pre-compiled binaries.
+weight: 1
+---
+Page content
+```
+
+For a repository, frontmatter is in `.nav.yaml` file at the top level of repository
+
+```
+title: Cells Installation
+abstract: Getting started with Pydio Cells using pre-compiled binaries or cloud images.
+weight: 1
+slug: cells-installation
+```
+
+> Notice: only three meta are taken into account: `title`, `weight`, `slug`
+
+### Introduction page
+Each repository may have an introduction page. You can do by adding `index.md` file at the top level of the repository
+
+For example:
+
+```
+This section provides a full-spectrum overview of Cells installation, configuration and usage.
+
+- [Requirements](../requirements/)
+- [Quick Admin Tour](../quick-admin-tour/)
+- [Sharing Features](../sharing-features/)
+- [Connect Desktop Sync](../connect-desktop-sync/)
+- [Mobile Apps](../mobile-apps/)
+- [Glossary](../glossary/)
+
+```
