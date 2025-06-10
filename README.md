@@ -216,3 +216,17 @@ This section provides a full-spectrum overview of Cells installation, configurat
 ```
 
 > Notice: the menu item is clickable if an corresponding `index.md` exists
+
+> Notice: Adding a new topbar section, it's require addition copy line in .github/workflows/deploy-docs.yml file
+
+```
+      - name: Copy docs to docs repo
+        run: |
+          cp -r admin-guide docs
+          cp -r cellsflows docs
+          cp -r developer-guide docs
+          cp -r knowledge-base docs
+          
+          # New section
+          cp -r new-section docs
+```
