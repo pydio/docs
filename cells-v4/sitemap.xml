@@ -57,6 +57,10 @@
          <lastmod>2025-06-10</lastmod>
     </url>
     <url>
+         <loc>https://mkdocs.pydio.com/latest/admin-guide/quick-start/cells-installation/advanced-setups/</loc>
+         <lastmod>2025-06-10</lastmod>
+    </url>
+    <url>
          <loc>https://mkdocs.pydio.com/latest/admin-guide/quick-start/add-collaboration-tools/index/</loc>
          <lastmod>2025-06-10</lastmod>
     </url>
@@ -2849,7 +2853,39 @@
          <lastmod>2025-06-10</lastmod>
     </url>
     <url>
+         <loc>https://mkdocs.pydio.com/latest/knowledge-base/install-cells-on-debian-ubuntu/</loc>
+         <lastmod>2025-06-10</lastmod>
+    </url>
+    <url>
+         <loc>https://mkdocs.pydio.com/latest/knowledge-base/install-cells-on-centos-rhel/</loc>
+         <lastmod>2025-06-10</lastmod>
+    </url>
+    <url>
+         <loc>https://mkdocs.pydio.com/latest/knowledge-base/install-cells-on-macosx/</loc>
+         <lastmod>2025-06-10</lastmod>
+    </url>
+    <url>
+         <loc>https://mkdocs.pydio.com/latest/knowledge-base/install-cells-on-windows/</loc>
+         <lastmod>2025-06-10</lastmod>
+    </url>
+    <url>
+         <loc>https://mkdocs.pydio.com/latest/knowledge-base/install-cells-on-raspberry/</loc>
+         <lastmod>2025-06-10</lastmod>
+    </url>
+    <url>
+         <loc>https://mkdocs.pydio.com/latest/knowledge-base/changing-token-lifespan/</loc>
+         <lastmod>2025-06-10</lastmod>
+    </url>
+    <url>
+         <loc>https://mkdocs.pydio.com/latest/knowledge-base/fully-disabling-cells/</loc>
+         <lastmod>2025-06-10</lastmod>
+    </url>
+    <url>
          <loc>https://mkdocs.pydio.com/latest/knowledge-base/acl-use-cases/</loc>
+         <lastmod>2025-06-10</lastmod>
+    </url>
+    <url>
+         <loc>https://mkdocs.pydio.com/latest/knowledge-base/no-private-ip-detected-issue/</loc>
          <lastmod>2025-06-10</lastmod>
     </url>
     <url>
@@ -2857,7 +2893,15 @@
          <lastmod>2025-06-10</lastmod>
     </url>
     <url>
-         <loc>https://mkdocs.pydio.com/latest/knowledge-base/monitoring-cells-using-the-elastic-stack/</loc>
+         <loc>https://mkdocs.pydio.com/latest/knowledge-base/cleanup-strategies-for-production-instances/</loc>
+         <lastmod>2025-06-10</lastmod>
+    </url>
+    <url>
+         <loc>https://mkdocs.pydio.com/latest/knowledge-base/installing-clamav-on-a-server/</loc>
+         <lastmod>2025-06-10</lastmod>
+    </url>
+    <url>
+         <loc>https://mkdocs.pydio.com/latest/knowledge-base/migrate-a-cells-instance-to-a-new-server/</loc>
          <lastmod>2025-06-10</lastmod>
     </url>
     <url>
@@ -2869,11 +2913,7 @@
          <lastmod>2025-06-10</lastmod>
     </url>
     <url>
-         <loc>https://mkdocs.pydio.com/latest/knowledge-base/running-cells-behind-a-caddy-reverse-proxy/</loc>
-         <lastmod>2025-06-10</lastmod>
-    </url>
-    <url>
-         <loc>https://mkdocs.pydio.com/latest/knowledge-base/running-your-cells-docker-container-behind-a-reverse-proxy/</loc>
+         <loc>https://mkdocs.pydio.com/latest/knowledge-base/running-cells-behind-a-caddy2-reverse-proxy/</loc>
          <lastmod>2025-06-10</lastmod>
     </url>
     <url>
@@ -2881,7 +2921,7 @@
          <lastmod>2025-06-10</lastmod>
     </url>
     <url>
-         <loc>https://mkdocs.pydio.com/latest/knowledge-base/running-a-cells-container-behind-with-traefik-reverse-proxy/</loc>
+         <loc>https://mkdocs.pydio.com/latest/knowledge-base/running-a-cells-container-behind-a-traefik-reverse-proxy/</loc>
          <lastmod>2025-06-10</lastmod>
     </url>
     <url>
@@ -2893,23 +2933,47 @@
          <lastmod>2025-06-10</lastmod>
     </url>
     <url>
-         <loc>https://mkdocs.pydio.com/latest/knowledge-base/cells-using-the-cells-command-line-tool/</loc>
+         <loc>https://mkdocs.pydio.com/latest/knowledge-base/datasources-workspaces-layout-recommendations/</loc>
          <lastmod>2025-06-10</lastmod>
     </url>
     <url>
-         <loc>https://mkdocs.pydio.com/latest/knowledge-base/cells-managing-resources-ownership/</loc>
+         <loc>https://mkdocs.pydio.com/latest/knowledge-base/managing-resources-ownership/</loc>
          <lastmod>2025-06-10</lastmod>
     </url>
     <url>
-         <loc>https://mkdocs.pydio.com/latest/knowledge-base/cells-using-webdav-clients/</loc>
+         <loc>https://mkdocs.pydio.com/latest/knowledge-base/using-webdav-clients/</loc>
          <lastmod>2025-06-10</lastmod>
     </url>
     <url>
-         <loc>https://mkdocs.pydio.com/latest/knowledge-base/cells_sso_with_oauth2/cells-enterprise-add-github-as-an-authentication-source/</loc>
+         <loc>https://mkdocs.pydio.com/latest/knowledge-base/using-aws-cognito-as-an-identity-provider/</loc>
          <lastmod>2025-06-10</lastmod>
     </url>
     <url>
-         <loc>https://mkdocs.pydio.com/latest/knowledge-base/cells_sso_with_oauth2/cells-enterprise-add-google-as-an-authentication-source/</loc>
+         <loc>https://mkdocs.pydio.com/latest/knowledge-base/connect-to-pydio-cells-via-microsoft-identity/</loc>
+         <lastmod>2025-06-10</lastmod>
+    </url>
+    <url>
+         <loc>https://mkdocs.pydio.com/latest/knowledge-base/using-github-as-an-identity-provider/</loc>
+         <lastmod>2025-06-10</lastmod>
+    </url>
+    <url>
+         <loc>https://mkdocs.pydio.com/latest/knowledge-base/using-google-as-an-identity-provider/</loc>
+         <lastmod>2025-06-10</lastmod>
+    </url>
+    <url>
+         <loc>https://mkdocs.pydio.com/latest/knowledge-base/connect-to-pydio-cells-via-on-premise-adfs-server/</loc>
+         <lastmod>2025-06-10</lastmod>
+    </url>
+    <url>
+         <loc>https://mkdocs.pydio.com/latest/knowledge-base/connect-to-pydio-cells-via-simplesaml-php/</loc>
+         <lastmod>2025-06-10</lastmod>
+    </url>
+    <url>
+         <loc>https://mkdocs.pydio.com/latest/knowledge-base/using-pydio-cells-as-an-identity-provider-for-wordpress/</loc>
+         <lastmod>2025-06-10</lastmod>
+    </url>
+    <url>
+         <loc>https://mkdocs.pydio.com/latest/knowledge-base/setup-cells-server-for-cellssync/</loc>
          <lastmod>2025-06-10</lastmod>
     </url>
 </urlset>

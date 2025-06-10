@@ -6,17 +6,17 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="How to to change the default filesytem datasources to another type of storage">
+        <meta name="description" content="This article shows how to change the default filesytem datasources for another type of storage on Pydio Cells.">
       
       
       
         <link rel="canonical" href="https://mkdocs.pydio.com/latest/knowledge-base/changing-the-default-datasource-storage-type/">
       
       
-        <link rel="prev" href="../acl-use-cases/">
+        <link rel="prev" href="../no-private-ip-detected-issue/">
       
       
-        <link rel="next" href="../monitoring-cells-using-the-elastic-stack/">
+        <link rel="next" href="../cleanup-strategies-for-production-instances/">
       
       
       <link rel="icon" href="https://forum.pydio.com/favicon.ico">
@@ -85,7 +85,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#create-the-datasources-and-required-buckets" class="md-skip">
+        <a href="#validate-datasources-are-correctly-configured" class="md-skip">
           Skip to content
         </a>
       
@@ -350,7 +350,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="../acl-use-cases/" class="md-tabs__link">
+        <a href="../install-cells-on-debian-ubuntu/" class="md-tabs__link">
           
   
   
@@ -595,6 +595,8 @@
       
         
       
+        
+      
     
     
     
@@ -745,6 +747,29 @@
   
   <span class="md-ellipsis">
     Amazon AMI
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../admin-guide/quick-start/cells-installation/advanced-setups/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Advanced setups
     
   </span>
   
@@ -22389,6 +22414,38 @@
       
         
       
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
     
     
     
@@ -22435,12 +22492,196 @@
   
   
     <li class="md-nav__item">
+      <a href="../install-cells-on-debian-ubuntu/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Install Cells on Debian/Ubuntu
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../install-cells-on-centos-rhel/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Install Cells on CentOS/RHEL
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../install-cells-on-macosx/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Install Cells on MacOSX
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../install-cells-on-windows/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Install Cells on Windows
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../install-cells-on-raspberry/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Install Cells on Raspberry
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../changing-token-lifespan/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Changing Token Lifespan
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../fully-disabling-cells/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Fully disabling Cells
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../acl-use-cases/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     ACL use cases
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../no-private-ip-detected-issue/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    No private IP detected issue
     
   </span>
   
@@ -22504,47 +22745,137 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#create-the-datasources-and-required-buckets" class="md-nav__link">
+  <a href="#validate-datasources-are-correctly-configured" class="md-nav__link">
     <span class="md-ellipsis">
-      Create the datasources and required buckets.
+      Validate datasources are correctly configured
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
+  <a href="#legacy-version-v21-change-default-location-still-using-local-file-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      Legacy (version &lt; v2.1) - Change default location still using local file system
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Legacy (version &lt; v2.1) - Change default location still using local file system">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#my-files-and-cells-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      My Files and Cells Data
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="My Files and Cells Data">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#enterprise-distribution" class="md-nav__link">
+    <span class="md-ellipsis">
+      Enterprise Distribution
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#home-distribution" class="md-nav__link">
+    <span class="md-ellipsis">
+      Home distribution
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#common-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      Common files
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#technical-buckets" class="md-nav__link">
+    <span class="md-ellipsis">
+      Technical buckets
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#legacy-version-v21-switch-to-amazon-s3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Legacy (version &lt; v2.1) - Switch to Amazon S3
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Legacy (version &lt; v2.1) - Switch to Amazon S3">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#create-the-required-buckets" class="md-nav__link">
+    <span class="md-ellipsis">
+      Create the required buckets
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#create-the-new-datasources" class="md-nav__link">
     <span class="md-ellipsis">
-      Create the New datasources
+      Create the new datasources
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#change-template-paths-to-point-to-the-new-datasources" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#adapt-the-template-paths-to-point-to-the-new-datasources" class="md-nav__link">
     <span class="md-ellipsis">
-      Change template paths to point to the new datasources
+      Adapt the template paths to point to the new datasources
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#change-the-workspaces-default-datasource" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#adapt-config-by-directly-impacting-pydiojson" class="md-nav__link">
     <span class="md-ellipsis">
-      Change the workspaces default datasource
+      Adapt config by directly impacting pydio.json
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#final-step" class="md-nav__link">
     <span class="md-ellipsis">
       Final STEP
     </span>
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -22573,12 +22904,58 @@
   
   
     <li class="md-nav__item">
-      <a href="../monitoring-cells-using-the-elastic-stack/" class="md-nav__link">
+      <a href="../cleanup-strategies-for-production-instances/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Monitoring Cells using the Elastic stack
+    Cleanup Strategies for Production Instances
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../installing-clamav-on-a-server/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Installing ClamAV on a server
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../migrate-a-cells-instance-to-a-new-server/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Migrate a Cells instance to a new server
     
   </span>
   
@@ -22642,35 +23019,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../running-cells-behind-a-caddy-reverse-proxy/" class="md-nav__link">
+      <a href="../running-cells-behind-a-caddy2-reverse-proxy/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Running Cells behind a Caddy reverse proxy
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../running-your-cells-docker-container-behind-a-reverse-proxy/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Running your Cells Docker container behind a reverse proxy
+    Running Cells behind a Caddy2 reverse proxy
     
   </span>
   
@@ -22711,12 +23065,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../running-a-cells-container-behind-with-traefik-reverse-proxy/" class="md-nav__link">
+      <a href="../running-a-cells-container-behind-a-traefik-reverse-proxy/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Running a Cells container behind with Traefik reverse proxy
+    Running a Cells container behind a Traefik reverse proxy
     
   </span>
   
@@ -22780,12 +23134,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../cells-using-the-cells-command-line-tool/" class="md-nav__link">
+      <a href="../datasources-workspaces-layout-recommendations/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    [Cells] Using the Cells command line tool
+    Datasources & Workspaces Layout Recommendations
     
   </span>
   
@@ -22803,12 +23157,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../cells-managing-resources-ownership/" class="md-nav__link">
+      <a href="../managing-resources-ownership/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    [Cells] Managing resources ownership
+    Managing resources ownership
     
   </span>
   
@@ -22826,87 +23180,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../cells-using-webdav-clients/" class="md-nav__link">
+      <a href="../using-webdav-clients/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    [Cells] Using Webdav clients
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-      
-        
-      
-        
-      
-    
-    
-    
-      
-      
-        
-          
-          
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_15" >
-        
-          
-          <label class="md-nav__link" for="__nav_5_15" id="__nav_5_15_label" tabindex="">
-            
-  
-  
-  <span class="md-ellipsis">
-    Cells sso with oauth2
-    
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_15_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_5_15">
-            <span class="md-nav__icon md-icon"></span>
-            Cells sso with oauth2
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../cells_sso_with_oauth2/cells-enterprise-add-github-as-an-authentication-source/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    [Cells Enterprise] Add Github as an authentication source
+    Using WebDAV clients
     
   </span>
   
@@ -22924,12 +23203,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../cells_sso_with_oauth2/cells-enterprise-add-google-as-an-authentication-source/" class="md-nav__link">
+      <a href="../using-aws-cognito-as-an-identity-provider/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    [Cells Enterprise] Add Google as an authentication source
+    Using AWS Cognito as an Identity Provider
     
   </span>
   
@@ -22940,9 +23219,162 @@
 
               
             
-          </ul>
-        </nav>
-      
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../connect-to-pydio-cells-via-microsoft-identity/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Connect to Pydio Cells via Microsoft Identity
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../using-github-as-an-identity-provider/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Using Github as an Identity Provider
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../using-google-as-an-identity-provider/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Using Google as an Identity Provider
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../connect-to-pydio-cells-via-on-premise-adfs-server/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Connect to Pydio Cells via On-Premise ADFS server
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../connect-to-pydio-cells-via-simplesaml-php/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Connect to Pydio Cells via SimpleSAML PHP
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../using-pydio-cells-as-an-identity-provider-for-wordpress/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Using Pydio Cells as an Identity Provider for WordPress
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../setup-cells-server-for-cellssync/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Setup Cells Server for CellsSync
+    
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -22980,47 +23412,137 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#create-the-datasources-and-required-buckets" class="md-nav__link">
+  <a href="#validate-datasources-are-correctly-configured" class="md-nav__link">
     <span class="md-ellipsis">
-      Create the datasources and required buckets.
+      Validate datasources are correctly configured
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
+  <a href="#legacy-version-v21-change-default-location-still-using-local-file-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      Legacy (version &lt; v2.1) - Change default location still using local file system
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Legacy (version &lt; v2.1) - Change default location still using local file system">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#my-files-and-cells-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      My Files and Cells Data
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="My Files and Cells Data">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#enterprise-distribution" class="md-nav__link">
+    <span class="md-ellipsis">
+      Enterprise Distribution
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#home-distribution" class="md-nav__link">
+    <span class="md-ellipsis">
+      Home distribution
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#common-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      Common files
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#technical-buckets" class="md-nav__link">
+    <span class="md-ellipsis">
+      Technical buckets
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#legacy-version-v21-switch-to-amazon-s3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Legacy (version &lt; v2.1) - Switch to Amazon S3
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Legacy (version &lt; v2.1) - Switch to Amazon S3">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#create-the-required-buckets" class="md-nav__link">
+    <span class="md-ellipsis">
+      Create the required buckets
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#create-the-new-datasources" class="md-nav__link">
     <span class="md-ellipsis">
-      Create the New datasources
+      Create the new datasources
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#change-template-paths-to-point-to-the-new-datasources" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#adapt-the-template-paths-to-point-to-the-new-datasources" class="md-nav__link">
     <span class="md-ellipsis">
-      Change template paths to point to the new datasources
+      Adapt the template paths to point to the new datasources
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#change-the-workspaces-default-datasource" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#adapt-config-by-directly-impacting-pydiojson" class="md-nav__link">
     <span class="md-ellipsis">
-      Change the workspaces default datasource
+      Adapt config by directly impacting pydio.json
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#final-step" class="md-nav__link">
     <span class="md-ellipsis">
       Final STEP
     </span>
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -23051,101 +23573,211 @@
 
   <h1>Changing the default datasource storage type</h1>
 
-<p>You can change the default datasources with another storage, but you will need to execute those exact steps to make it work.</p>
-<h3 id="create-the-datasources-and-required-buckets">Create the datasources and required buckets.<a class="headerlink" href="#create-the-datasources-and-required-buckets" title="Permanent link">&para;</a></h3>
-<p>First create the datasources that you wish to use, for our example we are going to use a remote S3 datasource.
-Let's replicate the exact datasources that where by default, but on our S3 remote storage.</p>
-<p>Basically create the required buckets and create the s3 connection to each one of them depending on your datasource. (for each datasource, use a different bucket)</p>
-<p><strong>The 3 following buckets must be created on your storage</strong> ():</p>
+<p>During the installation process, the application creates 3 default datasources. Namely:</p>
 <ul>
-<li><strong>thumbnail</strong> (is used to store the thumbnails).</li>
-<li><strong>versions</strong> (is used for the versioning).</li>
-<li><strong>binaries</strong> .</li>
+<li><strong>pydiods1</strong>: the default datasource for shared files. The <code>Common Files</code> workspace (that exists at startup) points here.</li>
+<li><strong>personal</strong>: contains "My Files"-like workspaces for each user.</li>
+<li><strong>cellsdata</strong>: is used to create <em>cells</em> when no root node has been defined upon creation.</li>
 </ul>
-<h3 id="create-the-new-datasources">Create the New datasources<a class="headerlink" href="#create-the-new-datasources" title="Permanent link">&para;</a></h3>
-<p>The array above gives you an idea to replicate the exact functionning default datasources.</p>
+<p><strong>By default, these datasources are local FS based and the corresponding folders are created under <code>&lt;CELLS_DATA_DIR&gt;</code></strong></p>
+<p><code>&lt;CELLS_DATA_DIR&gt;</code> is defined as <code>&lt;CELLS_WORKING_DIR&gt;/data/</code> if not explicitely overridden.</p>
+<p>Furthermore, the application also create three S3 buckets that are used to store internal and technical data:</p>
+<ul>
+<li><strong>thumbs</strong>: stores the thumbnails.</li>
+<li><strong>versions</strong>: stores the old versions of the files, when the versioning is enabled on a given DS.</li>
+<li><strong>binaries</strong>: service docstore. It stores various things, like e.g. avatars, custom backgrounds, etc.</li>
+</ul>
+<p>In the default setup, these 3 buckets are folders that are siblings of the <code>pydiods1</code> folder and can be also found under <code>&lt;CELLS_DATA_DIR&gt;</code>. These folders are created during the installation process.</p>
+<p>More generally speaking, the system uses the <em>object service</em> that is linked to the <em>default datasource</em> to create these buckets, see <code>defaults.datasource</code> attribute in the <code>pydio.json</code> configuration file. The system uses this object service to retrieve connection information: where to find and how to connect to the technical buckets.</p>
+<p>As from version <strong>2.1</strong> of Pydio Cells, if you want to change the default layout for both default DSs and technical buckets, we strongly advise to do so during the installation process: in the last page of the installation wizard, under "Advanced Configuration", you can choose another location for the default local FS based datasources or switch to S3-based default datasources.<br />
+This process is quite straight forward and self-explaining.</p>
+<h2 id="validate-datasources-are-correctly-configured">Validate datasources are correctly configured<a class="headerlink" href="#validate-datasources-are-correctly-configured" title="Permanent link">&para;</a></h2>
+<p>In order to double check everything is working correctly, you might perform following checks:</p>
+<ul>
+<li>Change your account avatar: it insures the <code>binaries</code> implicit DS runs OK</li>
+<li>Upload an image: this checks the <code>thumbs</code> implicit DS</li>
+<li>Turn versioning on for a workspace and modify a file: this validates <code>versions</code> implicit DS</li>
+<li>Create a Cell with no root folder</li>
+<li>Add a few files in both <code>My Files</code> and <code>Common Files</code> folder: you can then double check that the crorresponding buckets for instance in your S3 account contain the expected tree structure.</li>
+</ul>
+<h2 id="legacy-version-v21-change-default-location-still-using-local-file-system">Legacy (version &lt; v2.1) - Change default location still using local file system<a class="headerlink" href="#legacy-version-v21-change-default-location-still-using-local-file-system" title="Permanent link">&para;</a></h2>
+<p>The update process in Pydio Cells is quite robust and easy to run. We strongly advise that you use the latest version (see above).</p>
+<p>Yet, if you are stuck with an older version, we still leave here this legacy procedure as a hint for you to change the default layout.</p>
+<p>It can be quite tricky and could lead to an unstable system, so you have to understand what is hapenning and follow exactly the below steps.</p>
+<h3 id="my-files-and-cells-data">My Files and Cells Data<a class="headerlink" href="#my-files-and-cells-data" title="Permanent link">&para;</a></h3>
+<p>It is quite easy to tweak these:</p>
+<h4 id="enterprise-distribution">Enterprise Distribution<a class="headerlink" href="#enterprise-distribution" title="Permanent link">&para;</a></h4>
+<p>You just have to edit the default template path by going to:
+<code>Admin console &gt;&gt; show advanced parameters &gt;&gt; Left column menu &gt;&gt; Data management &gt;&gt; Template Path</code></p>
+<p>If you have created new datasources, you might just then impact the default template paths to use you newly created DS, for instance:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span>
+<span class="normal"><a href="#__codelineno-0-2">2</a></span>
+<span class="normal"><a href="#__codelineno-0-3">3</a></span>
+<span class="normal"><a href="#__codelineno-0-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a># Cells
+<a id="__codelineno-0-2" name="__codelineno-0-2"></a>Path = DataSources.cellsdatanew + &quot;/&quot; + User.Name;
+<a id="__codelineno-0-3" name="__codelineno-0-3"></a># My Files
+<a id="__codelineno-0-4" name="__codelineno-0-4"></a>Path = DataSources.personalnew + &quot;/&quot; + User.Name;
+</code></pre></div></td></tr></table></div>
+<p><em>To use auto-completion: first move your cursor after the dot, then press <code>CTRL + SPACE</code></em></p>
+<p>If you want to mutualise the DS, you might also implement a more complex layout. For instance, you might do the following:</p>
+<ul>
+<li>create a new datasource (let say <code>dynamicws</code>)</li>
+<li>create a temporary workspace that point to it and create 2 folders <code>personal</code> and <code>cellsdata</code> in it</li>
+<li>delete the temporary workspace</li>
+<li>impact the template path to have:</li>
+</ul>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span>
+<span class="normal"><a href="#__codelineno-1-2">2</a></span>
+<span class="normal"><a href="#__codelineno-1-3">3</a></span>
+<span class="normal"><a href="#__codelineno-1-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a># Cells
+<a id="__codelineno-1-2" name="__codelineno-1-2"></a>Path = DataSources.dynamicws + &quot;/cellsdata/&quot; + User.Name;
+<a id="__codelineno-1-3" name="__codelineno-1-3"></a># Personal Files
+<a id="__codelineno-1-4" name="__codelineno-1-4"></a>Path = DataSources.dynamicws + &quot;/personal/&quot; + User.Name;
+</code></pre></div></td></tr></table></div>
+<h4 id="home-distribution">Home distribution<a class="headerlink" href="#home-distribution" title="Permanent link">&para;</a></h4>
+<p>As you cannot edit template paths, the only solution you have is to delete the existing default <code>cellsdata</code> and <code>personal</code> DSs and recreate them where it fits you most. You do not have to change anything else then.</p>
+<h3 id="common-files">Common files<a class="headerlink" href="#common-files" title="Permanent link">&para;</a></h3>
+<p>This is just a default workspace with Read/Write permissions for everyone. You can easily edit the workspace to point to another datasource.</p>
+<h3 id="technical-buckets">Technical buckets<a class="headerlink" href="#technical-buckets" title="Permanent link">&para;</a></h3>
+<p>The trick here is the way the buckets connection info are computed. It was our implementer choice to say:</p>
+<ul>
+<li>we will use a raw s3 bucket to store and retrieve our internal technical stuff (typically thumbnails)  </li>
+<li>these buckets do not need to be real datasources (they do not need neither index nor sync mechanism)</li>
+<li>yet, as each defined datasource has an <code>object</code> service that might expose more than one bucket, let use one of these</li>
+<li>so let's define a default datasource, retrieve its object service and assume it also exposes the additionnal buckets we need.</li>
+</ul>
+<p>In a fresh vanilla install, the default datasource is <code>pydiods1</code> that exposes the <code>&lt;CELLS_WORKING_DIR&gt;/data/pydiods1</code> folder of your file system. The underlying object service exposes <strong>all</strong> then folders that are in<code>&lt;CELLS_WORKING_DIR&gt;/data/</code> as S3 buckets. So we just create the <code>thumbs</code>, <code>versions</code>, and <code>binaries</code> folders during installation.</p>
+<p>If you were to change this, you can:</p>
+<ul>
+<li>create a new datasource that points towards the desired path (for instance <code>defaultds</code>)</li>
+<li>adapt your <code>pydio.json</code> file to have something like:</li>
+</ul>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span>
+<span class="normal"><a href="#__codelineno-2-2">2</a></span>
+<span class="normal"><a href="#__codelineno-2-3">3</a></span>
+<span class="normal"><a href="#__codelineno-2-4">4</a></span>
+<span class="normal"><a href="#__codelineno-2-5">5</a></span>
+<span class="normal"><a href="#__codelineno-2-6">6</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="nt">&quot;defaults&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2"></a><span class="w">    </span><span class="nt">&quot;database&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;...&quot;</span><span class="p">,</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3"></a><span class="w">    </span><span class="nt">&quot;datasource&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;defaultds&quot;</span><span class="p">,</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4"></a><span class="w">    </span><span class="nt">&quot;url&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://pydio.example.com&quot;</span><span class="p">,</span>
+<a id="__codelineno-2-5" name="__codelineno-2-5"></a><span class="w">    </span><span class="nt">&quot;urlInternal&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://pydio.example.com:443&quot;</span>
+<a id="__codelineno-2-6" name="__codelineno-2-6"></a><span class="w">  </span><span class="p">},</span>
+</code></pre></div></td></tr></table></div>
+<ul>
+<li>save and restart the app.</li>
+</ul>
+<h2 id="legacy-version-v21-switch-to-amazon-s3">Legacy (version &lt; v2.1) - Switch to Amazon S3<a class="headerlink" href="#legacy-version-v21-switch-to-amazon-s3" title="Permanent link">&para;</a></h2>
+<p><em>One more time you should really use a recent version and do this during installation process rather than following the below procedure <strong>at you own risks</strong></em> </p>
+<p>You can also tune your configuration to rather have all your Datasources and Bucket on S3. We present here a simple setup that introduces well the steps you have to go through. Feel free to then adapt to your specific use case.</p>
+<h3 id="create-the-required-buckets">Create the required buckets<a class="headerlink" href="#create-the-required-buckets" title="Permanent link">&para;</a></h3>
+<p>The main difference here is that you (still) have to manually create your buckets in your S3 administration console before creating the DSs in Cells.</p>
+<p>Note that buckets names in AWS have to be globally unique, so you cannot use the names they have in the local vanilla setup. Let us use for instance:</p>
+<ul>
+<li>com-example-cells-personal</li>
+<li>com-example-cells-cells</li>
+<li>com-example-cells-common</li>
+<li>com-example-cells-thumbs</li>
+<li>com-example-cells-versions</li>
+<li>com-example-cells-binaries</li>
+</ul>
+<p>Note that due to their implicit declaration (see above) via the default DS, the thumb, versions and binaries must be buckets of the <strong>same</strong> storage than the ds that is defined as default DS. Otherwise you will have to tweak the config even a little bit more.</p>
+<h3 id="create-the-new-datasources">Create the new datasources<a class="headerlink" href="#create-the-new-datasources" title="Permanent link">&para;</a></h3>
+<p>Then, using the admin console of the web UI, we create new DSs pointing to these newly created buckets for personnal, cells and common.</p>
 <table>
 <thead>
 <tr>
 <th><strong>default datasource</strong></th>
-<th><strong>default workspaces using the datasource</strong></th>
 <th><strong>NewDatasource</strong></th>
+<th><strong>Usage</strong></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>common files</td>
 <td>pydiods1</td>
-<td>datasourceNew</td>
+<td>s3common</td>
+<td>Common files</td>
 </tr>
 <tr>
-<td>personal files</td>
-<td>my-files</td>
-<td>personalNew</td>
+<td>personal</td>
+<td>s3personal</td>
+<td>My files for users</td>
 </tr>
 <tr>
 <td>cellsdata</td>
-<td><em>see below for details</em></td>
-<td>cellsdataNew</td>
+<td>s3cells</td>
+<td>Root nodes for cells</td>
 </tr>
 </tbody>
 </table>
-<p><strong><em>cellsdata is used for when you create a cell without a root node, it's used for it's default node</em></strong></p>
-<h3 id="change-template-paths-to-point-to-the-new-datasources">Change template paths to point to the new datasources<a class="headerlink" href="#change-template-paths-to-point-to-the-new-datasources" title="Permanent link">&para;</a></h3>
-<p>Template path, by default they look like this.
-<a class="glightbox" href="https://i.imgur.com/c56ifQB.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Screenshot 2018-12-18 at 15.15.08" src="https://i.imgur.com/c56ifQB.png" /></a></p>
-<p><em>You can press CTRL + SPACE to prompt auto-completion, first move your cursor to the dot, on it's right, then press the auto-completion shortcut</em>.</p>
-<p>We need to change the paths to the new datasources to whom they are pointing.</p>
-<p>Let's start with CELLS, the part that we need to modify is this one:</p>
-<table>
-<thead>
-<tr>
-<th><strong>Before</strong></th>
-<th><strong>After</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Path = DataSources.<strong>cellsdata</strong> + "/" + User.Name;</td>
-<td>Path = DataSources.<strong>cellsdataNew</strong> + "/" + User.Name;</td>
-</tr>
-</tbody>
-</table>
-<blockquote>
-<p>For instance if we want to use our new datasources we will change it to this ( you can refer to the array above ):</p>
-</blockquote>
-<p>And for MY-FILES:</p>
-<table>
-<thead>
-<tr>
-<th><strong>Before</strong></th>
-<th><strong>After</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Path = DataSources.<strong>personal</strong> + "/" + User.Name;</td>
-<td>Path = DataSources.<strong>personalNew</strong> + "/" + User.Name;</td>
-</tr>
-</tbody>
-</table>
-<blockquote>
-<p>(the bold part is the datasource name that has to be changed)</p>
-</blockquote>
-<p>Now let's proceed to the next step.</p>
-<p>Inside the <code>pydio.json</code> file that is located in your <code>~/.config/pydio/cells/pydio.json</code> folder ( the <em>~</em> being the home of the user that launched the cells binary )</p>
-<p><a class="glightbox" href="../images//devops/change_default_ds.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="../images//devops/change_default_ds.png" /></a></p>
-<p>Modify the higlighted part (by default it uses the default datasource <code>pydiods1</code>) to your new datasource for instance <code>pydiods1new</code>.</p>
-<h3 id="change-the-workspaces-default-datasource">Change the workspaces default datasource<a class="headerlink" href="#change-the-workspaces-default-datasource" title="Permanent link">&para;</a></h3>
-<p>For the personal-files you must choose the template path and not the datasource by name as seen on the screenshot below:</p>
-<p><a class="glightbox" href="https://i.imgur.com/AsSImrK.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Screenshot 2018-12-18 at 15.29.47" src="https://i.imgur.com/AsSImrK.png" /></a></p>
-<p>For common files you can change the datasource to to the new one.
-For instance by default it uses <code>pydiods1</code>, change it to <code>datasourceNew</code> ( refer to the array at the begining to see the default ds matching it )</p>
-<h3 id="final-step">Final STEP<a class="headerlink" href="#final-step" title="Permanent link">&para;</a></h3>
-<p>You can now delete the default datasources if you wish not to use them.</p>
-<h3 id="troubleshooting">Troubleshooting<a class="headerlink" href="#troubleshooting" title="Permanent link">&para;</a></h3>
+<p>In Home distribution, as you cannot edit the default template path for cellsdata and personal files, you rather have to delete the existing default ds and recreate them <strong>with the exact same name</strong> pointing toward your newly created s3 buckets.</p>
+<h3 id="adapt-the-template-paths-to-point-to-the-new-datasources">Adapt the template paths to point to the new datasources<a class="headerlink" href="#adapt-the-template-paths-to-point-to-the-new-datasources" title="Permanent link">&para;</a></h3>
+<p>Template paths are the mechanism that enable to have dynamic workspaces, typically depending on the name of the loǵged in user for personnal files. In Cells ED you can modify this by going to:<br />
+<code>Admin console &gt;&gt; show advanced parameters &gt;&gt; Left column menu &gt;&gt; Data management &gt;&gt; Template Path</code></p>
+<p>With the above naming, you should then modify the 2 default template path to reather have:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1">1</a></span>
+<span class="normal"><a href="#__codelineno-3-2">2</a></span>
+<span class="normal"><a href="#__codelineno-3-3">3</a></span>
+<span class="normal"><a href="#__codelineno-3-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1"></a># Cells
+<a id="__codelineno-3-2" name="__codelineno-3-2"></a>Path = DataSources.s3cells + &quot;/&quot; + User.Name;
+<a id="__codelineno-3-3" name="__codelineno-3-3"></a># My Files
+<a id="__codelineno-3-4" name="__codelineno-3-4"></a>Path = DataSources.s3personal + &quot;/&quot; + User.Name;
+</code></pre></div></td></tr></table></div>
+<p><em>To use auto-completion: first move your cursor after the dot, then press <code>CTRL + SPACE</code></em></p>
+<h3 id="adapt-config-by-directly-impacting-pydiojson">Adapt config by directly impacting pydio.json<a class="headerlink" href="#adapt-config-by-directly-impacting-pydiojson" title="Permanent link">&para;</a></h3>
+<p>The <code>pydio.json</code> file that is at the root of the <code>CELLS_WORKING_DIR</code> is the main configuration file of your instance/node and is also <em>dynamically</em> updated by the app when an admin make some changes via the admin console. You should rather handle it with extra care and we always advise to:</p>
 <ul>
-<li>if you don't have thumbnails refer to the 1st paragraph about the mandatory buckets, you might have forgotten to create them.</li>
+<li>shutdown cells before editing the file</li>
+<li>do a proper backup of your file before modifying it.</li>
+</ul>
+<p>Thus said, let's proceed to the next step by editing this file:</p>
+<p><a class="glightbox" href="../images//devops/change_default_ds.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="../images//devops/change_default_ds.png" /></a></p>
+<p>Modify the higlighted part, <code>defaults.datasource</code> attribute value, that is <code>pydiods1</code> by default, to your new datasource, in our example <code>s3common</code>.</p>
+<p>Also update the following properties in the <code>services</code> section to use the bucket names you have created for the <em>implicit</em> DSs (thumbs, versions and binaries):</p>
+<p><code>json
+...
+"pydio.docstore-binaries": {
+      "bucket": "binaries",
+      "datasource": "default"
+ },
+ ...
+"pydio.thumbs_store": {
+      "bucket": "thumbs",
+      "datasource": "default"
+ },
+ ...
+ "pydio.versions-store": {
+      "bucket": "versions",
+      "datasource": "default"
+ },</code></p>
+<p>must become (using <em>our</em> names, adapt to your specific context):</p>
+<p><code>json
+...
+"pydio.docstore-binaries": {
+      "bucket": "com-example-cells-binaries",
+      "datasource": "default"
+ },
+ ...
+"pydio.thumbs_store": {
+      "bucket": "com-example-cells-thumbs",
+      "datasource": "default"
+ },
+ ...
+ "pydio.versions-store": {
+      "bucket": "com-example-cells-versions",
+      "datasource": "default"
+ },</code></p>
+<h3 id="final-step">Final STEP<a class="headerlink" href="#final-step" title="Permanent link">&para;</a></h3>
+<p>You should be now fully setup. Just restart the app and perform a few tests. If everything works fine, you can now delete the default datasources that you do not use anymore.</p>
+<h2 id="troubleshooting">Troubleshooting<a class="headerlink" href="#troubleshooting" title="Permanent link">&para;</a></h2>
+<p>Note that the above procedure does not include migration of existing data, after restart you will then typically have lost all existing thumbnails that will be blank.</p>
+<p>In order to double check everything is working correctly, you might perform following checks:</p>
+<ul>
+<li>Change your account avatar: it insures the <code>binaries</code> implicit DS runs OK</li>
+<li>Upload an image: this checks the <code>thumbs</code> implicit DS</li>
+<li>Turn versioning on for a workspace and modify a file: this validates <code>versions</code> implicit DS</li>
+<li>Create a Cell with no root folder</li>
+<li>Add a few files in both <code>My Files</code> and <code>Common Files</code> folder: you can then double check that the crorresponding buckets in your S3 account contain the expected tree structure.</li>
 </ul>
 
 
@@ -23185,7 +23817,7 @@ For instance by default it uses <code>pydiods1</code>, change it to <code>dataso
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../acl-use-cases/" class="md-footer__link md-footer__link--prev" aria-label="Previous: ACL use cases">
+          <a href="../no-private-ip-detected-issue/" class="md-footer__link md-footer__link--prev" aria-label="Previous: No private IP detected issue">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -23195,20 +23827,20 @@ For instance by default it uses <code>pydiods1</code>, change it to <code>dataso
                 Previous
               </span>
               <div class="md-ellipsis">
-                ACL use cases
+                No private IP detected issue
               </div>
             </div>
           </a>
         
         
           
-          <a href="../monitoring-cells-using-the-elastic-stack/" class="md-footer__link md-footer__link--next" aria-label="Next: Monitoring Cells using the Elastic stack">
+          <a href="../cleanup-strategies-for-production-instances/" class="md-footer__link md-footer__link--next" aria-label="Next: Cleanup Strategies for Production Instances">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Monitoring Cells using the Elastic stack
+                Cleanup Strategies for Production Instances
               </div>
             </div>
             <div class="md-footer__button md-icon">

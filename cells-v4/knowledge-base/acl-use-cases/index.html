@@ -6,17 +6,17 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Use cases for ACL rules">
+        <meta name="description" content="This article demonstrates common use cases for ACL rules on Pydio Cells.">
       
       
       
         <link rel="canonical" href="https://mkdocs.pydio.com/latest/knowledge-base/acl-use-cases/">
       
       
-        <link rel="prev" href="../../developer-guide/cells-development/security-model/resource-based-security-rules/">
+        <link rel="prev" href="../fully-disabling-cells/">
       
       
-        <link rel="next" href="../changing-the-default-datasource-storage-type/">
+        <link rel="next" href="../no-private-ip-detected-issue/">
       
       
       <link rel="icon" href="https://forum.pydio.com/favicon.ico">
@@ -350,7 +350,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
+        <a href="../install-cells-on-debian-ubuntu/" class="md-tabs__link">
           
   
   
@@ -595,6 +595,8 @@
       
         
       
+        
+      
     
     
     
@@ -745,6 +747,29 @@
   
   <span class="md-ellipsis">
     Amazon AMI
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../admin-guide/quick-start/cells-installation/advanced-setups/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Advanced setups
     
   </span>
   
@@ -22389,6 +22414,38 @@
       
         
       
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
     
     
     
@@ -22427,6 +22484,167 @@
             Knowledge base
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../install-cells-on-debian-ubuntu/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Install Cells on Debian/Ubuntu
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../install-cells-on-centos-rhel/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Install Cells on CentOS/RHEL
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../install-cells-on-macosx/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Install Cells on MacOSX
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../install-cells-on-windows/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Install Cells on Windows
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../install-cells-on-raspberry/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Install Cells on Raspberry
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../changing-token-lifespan/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Changing Token Lifespan
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../fully-disabling-cells/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Fully disabling Cells
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
             
               
                 
@@ -22491,18 +22709,18 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#deny-access-to-a-workspace-to-a-list-of-ip" class="md-nav__link">
+  <a href="#deny-access-on-a-workspace-to-a-list-of-ip" class="md-nav__link">
     <span class="md-ellipsis">
-      Deny Access to a workspace to a list of IP
+      Deny Access on a workspace to a list of IP
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#allow-access-only-to-a-specific-ipsrange" class="md-nav__link">
+  <a href="#allow-access-for-a-specific-ip-range" class="md-nav__link">
     <span class="md-ellipsis">
-      Allow access only to a specific IPs/range
+      Allow access for a specific IP range
     </span>
   </a>
   
@@ -22514,27 +22732,42 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#datetime-restrictions" class="md-nav__link">
-    <span class="md-ellipsis">
-      Date/Time Restrictions
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#rest-method-restrictions" class="md-nav__link">
-    <span class="md-ellipsis">
-      REST method Restrictions
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#acls-values" class="md-nav__link">
     <span class="md-ellipsis">
-      ACLs values:
+      ACLs values
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ACLs values">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#actions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Actions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#query-context" class="md-nav__link">
+    <span class="md-ellipsis">
+      Query Context
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conditions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conditions
     </span>
   </a>
   
@@ -22544,6 +22777,29 @@
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../no-private-ip-detected-issue/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    No private IP detected issue
+    
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -22579,12 +22835,58 @@
   
   
     <li class="md-nav__item">
-      <a href="../monitoring-cells-using-the-elastic-stack/" class="md-nav__link">
+      <a href="../cleanup-strategies-for-production-instances/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Monitoring Cells using the Elastic stack
+    Cleanup Strategies for Production Instances
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../installing-clamav-on-a-server/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Installing ClamAV on a server
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../migrate-a-cells-instance-to-a-new-server/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Migrate a Cells instance to a new server
     
   </span>
   
@@ -22648,35 +22950,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../running-cells-behind-a-caddy-reverse-proxy/" class="md-nav__link">
+      <a href="../running-cells-behind-a-caddy2-reverse-proxy/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Running Cells behind a Caddy reverse proxy
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../running-your-cells-docker-container-behind-a-reverse-proxy/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Running your Cells Docker container behind a reverse proxy
+    Running Cells behind a Caddy2 reverse proxy
     
   </span>
   
@@ -22717,12 +22996,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../running-a-cells-container-behind-with-traefik-reverse-proxy/" class="md-nav__link">
+      <a href="../running-a-cells-container-behind-a-traefik-reverse-proxy/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Running a Cells container behind with Traefik reverse proxy
+    Running a Cells container behind a Traefik reverse proxy
     
   </span>
   
@@ -22786,12 +23065,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../cells-using-the-cells-command-line-tool/" class="md-nav__link">
+      <a href="../datasources-workspaces-layout-recommendations/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    [Cells] Using the Cells command line tool
+    Datasources & Workspaces Layout Recommendations
     
   </span>
   
@@ -22809,12 +23088,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../cells-managing-resources-ownership/" class="md-nav__link">
+      <a href="../managing-resources-ownership/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    [Cells] Managing resources ownership
+    Managing resources ownership
     
   </span>
   
@@ -22832,87 +23111,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../cells-using-webdav-clients/" class="md-nav__link">
+      <a href="../using-webdav-clients/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    [Cells] Using Webdav clients
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-      
-        
-      
-        
-      
-    
-    
-    
-      
-      
-        
-          
-          
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_15" >
-        
-          
-          <label class="md-nav__link" for="__nav_5_15" id="__nav_5_15_label" tabindex="">
-            
-  
-  
-  <span class="md-ellipsis">
-    Cells sso with oauth2
-    
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_15_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_5_15">
-            <span class="md-nav__icon md-icon"></span>
-            Cells sso with oauth2
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../cells_sso_with_oauth2/cells-enterprise-add-github-as-an-authentication-source/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    [Cells Enterprise] Add Github as an authentication source
+    Using WebDAV clients
     
   </span>
   
@@ -22930,12 +23134,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../cells_sso_with_oauth2/cells-enterprise-add-google-as-an-authentication-source/" class="md-nav__link">
+      <a href="../using-aws-cognito-as-an-identity-provider/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    [Cells Enterprise] Add Google as an authentication source
+    Using AWS Cognito as an Identity Provider
     
   </span>
   
@@ -22946,9 +23150,162 @@
 
               
             
-          </ul>
-        </nav>
-      
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../connect-to-pydio-cells-via-microsoft-identity/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Connect to Pydio Cells via Microsoft Identity
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../using-github-as-an-identity-provider/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Using Github as an Identity Provider
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../using-google-as-an-identity-provider/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Using Google as an Identity Provider
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../connect-to-pydio-cells-via-on-premise-adfs-server/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Connect to Pydio Cells via On-Premise ADFS server
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../connect-to-pydio-cells-via-simplesaml-php/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Connect to Pydio Cells via SimpleSAML PHP
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../using-pydio-cells-as-an-identity-provider-for-wordpress/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Using Pydio Cells as an Identity Provider for WordPress
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../setup-cells-server-for-cellssync/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Setup Cells Server for CellsSync
+    
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -22996,18 +23353,18 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#deny-access-to-a-workspace-to-a-list-of-ip" class="md-nav__link">
+  <a href="#deny-access-on-a-workspace-to-a-list-of-ip" class="md-nav__link">
     <span class="md-ellipsis">
-      Deny Access to a workspace to a list of IP
+      Deny Access on a workspace to a list of IP
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#allow-access-only-to-a-specific-ipsrange" class="md-nav__link">
+  <a href="#allow-access-for-a-specific-ip-range" class="md-nav__link">
     <span class="md-ellipsis">
-      Allow access only to a specific IPs/range
+      Allow access for a specific IP range
     </span>
   </a>
   
@@ -23019,27 +23376,42 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#datetime-restrictions" class="md-nav__link">
-    <span class="md-ellipsis">
-      Date/Time Restrictions
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#rest-method-restrictions" class="md-nav__link">
-    <span class="md-ellipsis">
-      REST method Restrictions
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#acls-values" class="md-nav__link">
     <span class="md-ellipsis">
-      ACLs values:
+      ACLs values
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ACLs values">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#actions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Actions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#query-context" class="md-nav__link">
+    <span class="md-ellipsis">
+      Query Context
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conditions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conditions
     </span>
   </a>
   
@@ -23061,59 +23433,63 @@
 
 
 
-  <h1>ACL use cases</h1>
-
-<p>This how-to will display some real life use cases of the ACL feature.</p>
-<p>At the bottom of this page you can find a glossary of all the possible values for the settings.</p>
+<p>This chapter presents some real-life use cases of the ACL feature. At the bottom of the page, you can find a more complete glossary.</p>
+<p>For a deeper understanding on how Security Policy work you might also refer <a href="en/docs/cells/v4/secure-your-data">to the corresponding section of our administration guide</a>.</p>
 <h2 id="ip-restrictions">IP Restrictions<a class="headerlink" href="#ip-restrictions" title="Permanent link">&para;</a></h2>
-<h3 id="deny-access-to-a-workspace-to-a-list-of-ip">Deny Access to a workspace to a list of IP<a class="headerlink" href="#deny-access-to-a-workspace-to-a-list-of-ip" title="Permanent link">&para;</a></h3>
-<p>This is an example on how to restrict access to a <strong><em>workspace</em></strong> to a list of specific IP,
-you could apply this rule to Cells, Share links and so on.</p>
+<h3 id="deny-access-on-a-workspace-to-a-list-of-ip">Deny Access on a workspace to a list of IP<a class="headerlink" href="#deny-access-on-a-workspace-to-a-list-of-ip" title="Permanent link">&para;</a></h3>
+<p>This is an example on how to deny access to a given <strong><em>workspace</em></strong> for a list of specific IPs.<br />
+You can also apply this rule to Cells, Share links and so on.</p>
 <ul>
-<li>Create a New Policy (<strong>Policy Type</strong>: <code>Context-based ACLs</code> you can put a <strong>Name</strong> and a <strong>Description</strong> of your choice)</li>
+<li>Create a New Policy (<strong>Policy Type</strong>: <code>Context-based ACLs</code>. Put the <strong>Name</strong> and <strong>Description</strong> of your choice)</li>
 </ul>
 <p><a class="glightbox" href="../images//cells/acls_example/1.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="../images//cells/acls_example/1.png" /></a></p>
 <p><a class="glightbox" href="../images//cells/acls_example/2.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="../images//cells/acls_example/2.png" /></a></p>
 <ul>
-<li>Then put default rights (They are mandatory otherwise other users will not have access. It will give <strong>read/write</strong> to everyone, but with the next rule we are going to filter them to a specific condition in your case IP)</li>
+<li>Then define default permissions: they are mandatory otherwise other users will not have access. So we give <strong>read/write</strong> to everyone before adding a restriction based on IPs for specific requests.</li>
 </ul>
 <p><a class="glightbox" href="../images//cells/acls_example/3.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="../images//cells/acls_example/3.png" /></a></p>
 <ul>
-<li>Now we are going to define the <em>IP restriction rule</em>, let's add a policy</li>
+<li>Now, let's add a policy to define the <em>IP restriction rule</em>:</li>
 </ul>
 <p><a class="glightbox" href="../images//cells/acls_example/4.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="../images//cells/acls_example/4.png" /></a></p>
 <ul>
-<li>Give it a <strong>Label</strong>, <strong>effect</strong> <code>Deny</code>, <strong>Actions</strong> <code>Read Write</code> (you can set access as you wish) (as seen in screenshot 5)</li>
+<li>Give it a <strong>Label</strong>, <strong>Effect</strong>: <code>Deny</code>, <strong>Actions</strong>: <code>Read/Write</code>, as seen in screenshot 5:</li>
 </ul>
 <p><a class="glightbox" href="../images//cells/acls_example/5.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="../images//cells/acls_example/5.png" /></a></p>
 <ul>
-<li>Now add a condition and choose <code>RemoteAddress</code> </li>
+<li>Add a condition and choose <code>RemoteAddress</code>:</li>
 </ul>
 <p><a class="glightbox" href="../images//cells/acls_example/6.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="../images//cells/acls_example/6.png" /></a></p>
 <ul>
-<li>Then write the condition (it's using JSON)</li>
+<li>Write the condition, using JSON: in our example we explicitly define some IPs.</li>
 </ul>
 <p><a class="glightbox" href="../images//cells/acls_example/7.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="../images//cells/acls_example/7.png" /></a></p>
-<p>So basically we want every IP that matches the list to be denied access (read and write as it is defined).</p>
 <ul>
-<li>Now let's apply this rule (you can choose, <strong>user</strong>, <strong>group</strong> or <strong>role</strong>. (In this example we chose a <strong>group</strong>)</li>
+<li>
+<p>Save</p>
+</li>
+<li>
+<p>We can now apply the newly created rule. In our example, we apply it on a <strong>group</strong>. But you can also choose <strong>user</strong>, <strong>group</strong>, <strong>role</strong>, etc.</p>
+</li>
 </ul>
 <p><a class="glightbox" href="../images//cells/acls_example/8.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="../images//cells/acls_example/8.png" /></a></p>
 <ul>
-<li>Select the rule (the label was defined in the First Step)</li>
+<li>Select the rule, using the label you have defined earlier</li>
 </ul>
 <p><a class="glightbox" href="../images//cells/acls_example/9.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="../images//cells/acls_example/9.png" /></a></p>
 <ul>
-<li>Once the rule is selected save the changes</li>
+<li>Once the rule is selected, save the changes:</li>
 </ul>
 <p><a class="glightbox" href="../images//cells/acls_example/10.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="../images//cells/acls_example/10.png" /></a></p>
-<p><strong>You could also do the opposite of this rule and only give access to a list of IP by using <code>StringNotMatchCondition</code></strong></p>
-<h3 id="allow-access-only-to-a-specific-ipsrange">Allow access only to a specific IPs/range<a class="headerlink" href="#allow-access-only-to-a-specific-ipsrange" title="Permanent link">&para;</a></h3>
+<h3 id="allow-access-for-a-specific-ip-range">Allow access for a specific IP range<a class="headerlink" href="#allow-access-for-a-specific-ip-range" title="Permanent link">&para;</a></h3>
+<p>You could also do the opposite and only give access to a list of IP by using <code>StringNotMatchCondition</code>.</p>
+<p><em>IMPORTANT: Security policies, as provided by Pydio Cells, are both "Deny By Default" and "First Deny Wins". It means that, when no policy is defined, the resources are not available. It also means that if we have 2 rules that are applied to the same resource for the same subject, if one gives access and the other forbids it, the <strong>resource is not available</strong></em>.</p>
+<p>Thus to allow access, you only have to define <strong>one</strong> rule that explicitely gives the access for the required IP range:</p>
 <ul>
 <li>Create a New Policy (Policy Type: <code>Context-based ACLs</code>)</li>
-<li>Create the first rule that will <strong>Allow Access</strong> to specific <strong>IP addresses</strong> or a <strong>range</strong></li>
+<li>Create a rule that <strong>allows access</strong> to specific <strong>IP addresses</strong> or a <strong>range</strong>.</li>
 </ul>
-<p>Allow:</p>
+<p>Corresponding JSON can then be something like:</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span>
 <span class="normal"><a href="#__codelineno-0-2">2</a></span>
 <span class="normal"><a href="#__codelineno-0-3">3</a></span>
@@ -23126,53 +23502,120 @@ you could apply this rule to Cells, Share links and so on.</p>
 <a id="__codelineno-0-5" name="__codelineno-0-5"></a><span class="w">  </span><span class="p">}</span>
 <a id="__codelineno-0-6" name="__codelineno-0-6"></a><span class="p">}</span>
 </code></pre></div></td></tr></table></div>
-<p><em>In this case we want every IP belonging to the sub network 192.168.2.0 to have R/W Access</em>
-<em>You an add multiple IP/ranges by separating the with a pipe <code>192.168.0.*|192.168.3.2|etc....</code></em></p>
-<ul>
-<li>Now define the <strong>Deny Access</strong> rule.
-Deny:</li>
-</ul>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span>
-<span class="normal"><a href="#__codelineno-1-2">2</a></span>
-<span class="normal"><a href="#__codelineno-1-3">3</a></span>
-<span class="normal"><a href="#__codelineno-1-4">4</a></span>
-<span class="normal"><a href="#__codelineno-1-5">5</a></span>
-<span class="normal"><a href="#__codelineno-1-6">6</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="p">{</span>
-<a id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="w">  </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;StringMatchCondition&quot;</span><span class="p">,</span>
-<a id="__codelineno-1-3" name="__codelineno-1-3"></a><span class="w">  </span><span class="nt">&quot;options&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-1-4" name="__codelineno-1-4"></a><span class="w">    </span><span class="nt">&quot;matches&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;0.0.0.0/24&quot;</span>
-<a id="__codelineno-1-5" name="__codelineno-1-5"></a><span class="w">  </span><span class="p">}</span>
-<a id="__codelineno-1-6" name="__codelineno-1-6"></a><span class="p">}</span>
-</code></pre></div></td></tr></table></div>
-<p><em>This rule is just written as a default, Access will be denied to anyone but the addresses set with the first rule</em></p>
-<h2 id="datetime-restrictions">Date/Time Restrictions<a class="headerlink" href="#datetime-restrictions" title="Permanent link">&para;</a></h2>
-<!--TODO-->
+<p>Note that you can also add multiple <em>string conditions</em> by separating them with a pipe <code>|</code> character. For instance:</p>
+<p><code>192.168.0.*|192.168.3.2|...</code></p>
+<!-- TODO 
 
-<h2 id="rest-method-restrictions">REST method Restrictions<a class="headerlink" href="#rest-method-restrictions" title="Permanent link">&para;</a></h2>
-<!--TODO-->
+## Date/Time Restrictions
 
-<h2 id="acls-values">ACLs values:<a class="headerlink" href="#acls-values" title="Permanent link">&para;</a></h2>
-<p>Actions:
-| Action | Effect | Example|
-|--------- |------- | ------- |
-| Read | read a resource | for instance with a workspace it means that it's displayed in the list and readable |
-| Write | write a resource | for instance with a workspace you can upload resources or modify existing resources |</p>
-<p>Query Context:
-| Query| Effect| Description |
-| ------- | ------- | ------- |
-| Remote Address| The client's remote address | this context is about the remote ip that requests access to the resource (usually a client)
-| Request Method | REST Methods | the context will be about a REST method such as (PUT, GET, DELETE, etc....)
-| Request URI | A Pydio Cell's endpoint | the context is about Cells Endpoints |
-| Http Protocol | | this context will be about the http protocol (http/https) |
-| UserAgent | The agent type that requests | this context is about the UserAgent such as (browsers, mobile apps, etc...)</p>
-<p>Conditions:
-|Type   |Options   | Example  |  Description |
-|-----------------------|------------------|-----------------------|----- |
-| StringMatchCondition| <code>"matches</code>  | <code>"matches": "192.168.0.1"</code> | condition is true if there is a match|
-| StringNotMatchCondition  | <code>"matches</code>  | <code>"matches": "192.168.2.1"</code>  | condition is true if there is no match|
-| DateAfterCondition  | <code>"matches"</code> | <code>"matches": "2018-02-28T23:59+0100"</code> | condition is true if date is after the one defined in the match |
-| WithinPeriodCondition| <code>"matches"</code> |<code>"matches": "2018-02-01T00:00+0100/2018-04-01T00:00+0100"</code> | condition is true if date is within the range of match |
-| OfficeHoursCondition | <code>"matches"</code> | <code>"matches": "Monday-Friday/09:00/18:30"</code> | condition is true if date &amp; time are within the match |</p>
+## REST method Restrictions
+
+-->
+
+<h2 id="acls-values">ACLs values<a class="headerlink" href="#acls-values" title="Permanent link">&para;</a></h2>
+<h3 id="actions">Actions<a class="headerlink" href="#actions" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Action</th>
+<th>Effect</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Read</td>
+<td>read a resource</td>
+<td>e.g. with a workspace, it means that the workspace is displayed in the various lists and browsable</td>
+</tr>
+<tr>
+<td>Write</td>
+<td>write a resource</td>
+<td>e.g. with a workspace, you can upload new or modify existing resources</td>
+</tr>
+</tbody>
+</table>
+<h3 id="query-context">Query Context<a class="headerlink" href="#query-context" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Query</th>
+<th>Effect</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Remote Address</td>
+<td>The client's remote address</td>
+<td>Remote IP presented by the request that accesses a resource</td>
+</tr>
+<tr>
+<td>Request Method</td>
+<td>REST Methods</td>
+<td>The type of the current REST method (PUT, GET, DELETE, etc.)</td>
+</tr>
+<tr>
+<td>Request URI</td>
+<td>A Pydio Cell's endpoint</td>
+<td>The <code>path</code> part of the URL, to restrict current rule to a subset of end-points</td>
+</tr>
+<tr>
+<td>HTTP Protocol</td>
+<td></td>
+<td>Protocol used by current request: mainly HTTP or HTTPS</td>
+</tr>
+<tr>
+<td>UserAgent</td>
+<td>Type of the client agent</td>
+<td>Such as browsers, mobile apps, etc.</td>
+</tr>
+</tbody>
+</table>
+<h1 id="conditions">Conditions<a class="headerlink" href="#conditions" title="Permanent link">&para;</a></h1>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Options</th>
+<th>Example</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>StringMatchCondition</td>
+<td><code>"matches</code></td>
+<td><code>"matches": "192.168.0.1"</code></td>
+<td>condition is true if there is a match</td>
+</tr>
+<tr>
+<td>StringNotMatchCondition</td>
+<td><code>"matches</code></td>
+<td><code>"matches": "192.168.2.1"</code></td>
+<td>condition is true if there is no match</td>
+</tr>
+<tr>
+<td>DateAfterCondition</td>
+<td><code>"matches"</code></td>
+<td><code>"matches": "2018-02-28T23:59+0100"</code></td>
+<td>condition is true if date is after the one defined in the match</td>
+</tr>
+<tr>
+<td>WithinPeriodCondition</td>
+<td><code>"matches"</code></td>
+<td><code>"matches": "2018-02-01T00:00+0100/2018-04-01T00:00+0100"</code></td>
+<td>condition is true if date is within the range of match</td>
+</tr>
+<tr>
+<td>OfficeHoursCondition</td>
+<td><code>"matches"</code></td>
+<td><code>"matches": "Monday-Friday/09:00/18:30"</code></td>
+<td>condition is true if date &amp; time are within the match</td>
+</tr>
+</tbody>
+</table>
+<p><em>Note: under the hood, Cells uses we internally use <a href="https://github.com/ory/ladon">LADON</a>, you might find  it useful to refer to their documentation, typically on <a href="https://github.com/ory/ladon#conditions">conditions</a> to gain a deeper understanding of what you can do and how</em>.</p>
 
 
 
@@ -23211,7 +23654,7 @@ Deny:</li>
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../../developer-guide/cells-development/security-model/resource-based-security-rules/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Resource based security rules">
+          <a href="../fully-disabling-cells/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Fully disabling Cells">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -23221,20 +23664,20 @@ Deny:</li>
                 Previous
               </span>
               <div class="md-ellipsis">
-                Resource based security rules
+                Fully disabling Cells
               </div>
             </div>
           </a>
         
         
           
-          <a href="../changing-the-default-datasource-storage-type/" class="md-footer__link md-footer__link--next" aria-label="Next: Changing the default datasource storage type">
+          <a href="../no-private-ip-detected-issue/" class="md-footer__link md-footer__link--next" aria-label="Next: No private IP detected issue">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Changing the default datasource storage type
+                No private IP detected issue
               </div>
             </div>
             <div class="md-footer__button md-icon">
