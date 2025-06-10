@@ -56,11 +56,12 @@ jobs:
 
       - name: Copy docs to docs repo
         run: |
+          ls -lah 
           cp -r admin-guide docs
           cp -r cellsflows docs
           cp -r developer-guide docs
           cp -r knowledge-base docs
-          cp -r faq docs
+          cp -r F.A.Q docs
           cp index.md docs
 
       - name: Debug contents
