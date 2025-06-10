@@ -52,9 +52,9 @@ jobs:
           cp main-config/mkdocs.yml .
           cp main-config/requirements.txt .
           mkdir -p resources docs/assets overrides
-          cp main-config/resources/* resources/ || echo "resources not found"
+          cp -r main-config/resources/* resources/ || echo "resources not found"
           cp main-config/docs/assets/custom.css docs/assets/ || echo "custom.css not found"
-          cp main-config/overrides/* overrides/ || echo "404.html not found"
+          cp -r main-config/overrides/* overrides/ || echo "error in copping onverrides"
           rm -rf main-config
 
       - name: Copy docs to docs repo
