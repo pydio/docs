@@ -57,6 +57,7 @@ jobs:
       - name: Copy docs to docs repo
         run: |
           ls -lah 
+          cp resources/pydio-favicon.png
           cp -r admin-guide docs
           cp -r cellsflows docs
           cp -r developer-guide docs
