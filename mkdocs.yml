@@ -7,7 +7,7 @@ repo_url: https://github.com/pydio/docs
 theme:
   name: material
   custom_dir: overrides
-  favicon: https://forum.pydio.com/favicon.ico
+  favicon: pydio-favicon.png
   logo: https://pydio.com/sites/all/themes/pydio_theme/images/pydio-logo-grey-coral-sm.png
   static_templates:
     - 404.html

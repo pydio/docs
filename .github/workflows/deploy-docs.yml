@@ -63,6 +63,7 @@ jobs:
           cp -r cellsflows docs
           cp -r developer-guide docs
           cp -r knowledge-base docs
+          cp resources/pydio-favicon.png
 
       - name: Debug contents
         run: |
