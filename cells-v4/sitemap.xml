@@ -5,10 +5,6 @@
          <lastmod>2025-06-11</lastmod>
     </url>
     <url>
-         <loc>https://mkdocs.pydio.com/latest/F.A.Q/faq/</loc>
-         <lastmod>2025-06-11</lastmod>
-    </url>
-    <url>
          <loc>https://mkdocs.pydio.com/latest/admin-guide/quick-start/index/</loc>
          <lastmod>2025-06-11</lastmod>
     </url>
@@ -2857,47 +2853,47 @@
          <lastmod>2025-06-11</lastmod>
     </url>
     <url>
-         <loc>https://mkdocs.pydio.com/latest/knowledge-base/access_control/changing-token-lifespan/</loc>
+         <loc>https://mkdocs.pydio.com/latest/knowledge-base/access-control/changing-token-lifespan/</loc>
          <lastmod>2025-06-11</lastmod>
     </url>
     <url>
-         <loc>https://mkdocs.pydio.com/latest/knowledge-base/access_control/fully-disabling-cells/</loc>
+         <loc>https://mkdocs.pydio.com/latest/knowledge-base/access-control/fully-disabling-cells/</loc>
          <lastmod>2025-06-11</lastmod>
     </url>
     <url>
-         <loc>https://mkdocs.pydio.com/latest/knowledge-base/access_control/acl-use-cases/</loc>
+         <loc>https://mkdocs.pydio.com/latest/knowledge-base/access-control/acl-use-cases/</loc>
          <lastmod>2025-06-11</lastmod>
     </url>
     <url>
-         <loc>https://mkdocs.pydio.com/latest/knowledge-base/access_control/managing-resources-ownership/</loc>
+         <loc>https://mkdocs.pydio.com/latest/knowledge-base/access-control/managing-resources-ownership/</loc>
          <lastmod>2025-06-11</lastmod>
     </url>
     <url>
-         <loc>https://mkdocs.pydio.com/latest/knowledge-base/cells_in_production/changing-the-default-datasource-storage-type/</loc>
+         <loc>https://mkdocs.pydio.com/latest/knowledge-base/cells-in-production/changing-the-default-datasource-storage-type/</loc>
          <lastmod>2025-06-11</lastmod>
     </url>
     <url>
-         <loc>https://mkdocs.pydio.com/latest/knowledge-base/cells_in_production/cleanup-strategies-for-production-instances/</loc>
+         <loc>https://mkdocs.pydio.com/latest/knowledge-base/cells-in-production/cleanup-strategies-for-production-instances/</loc>
          <lastmod>2025-06-11</lastmod>
     </url>
     <url>
-         <loc>https://mkdocs.pydio.com/latest/knowledge-base/cells_in_production/installing-clamav-on-a-server/</loc>
+         <loc>https://mkdocs.pydio.com/latest/knowledge-base/cells-in-production/installing-clamav-on-a-server/</loc>
          <lastmod>2025-06-11</lastmod>
     </url>
     <url>
-         <loc>https://mkdocs.pydio.com/latest/knowledge-base/cells_in_production/migrate-a-cells-instance-to-a-new-server/</loc>
+         <loc>https://mkdocs.pydio.com/latest/knowledge-base/cells-in-production/migrate-a-cells-instance-to-a-new-server/</loc>
          <lastmod>2025-06-11</lastmod>
     </url>
     <url>
-         <loc>https://mkdocs.pydio.com/latest/knowledge-base/cells_in_production/datasources-workspaces-layout-recommendations/</loc>
+         <loc>https://mkdocs.pydio.com/latest/knowledge-base/cells-in-production/datasources-workspaces-layout-recommendations/</loc>
          <lastmod>2025-06-11</lastmod>
     </url>
     <url>
-         <loc>https://mkdocs.pydio.com/latest/knowledge-base/client_applications/using-webdav-clients/</loc>
+         <loc>https://mkdocs.pydio.com/latest/knowledge-base/client-applications/using-webdav-clients/</loc>
          <lastmod>2025-06-11</lastmod>
     </url>
     <url>
-         <loc>https://mkdocs.pydio.com/latest/knowledge-base/client_applications/setup-cells-server-for-cellssync/</loc>
+         <loc>https://mkdocs.pydio.com/latest/knowledge-base/client-applications/setup-cells-server-for-cellssync/</loc>
          <lastmod>2025-06-11</lastmod>
     </url>
     <url>
@@ -2953,31 +2949,31 @@
          <lastmod>2025-06-11</lastmod>
     </url>
     <url>
-         <loc>https://mkdocs.pydio.com/latest/knowledge-base/identity_management/using-aws-cognito-as-an-identity-provider/</loc>
+         <loc>https://mkdocs.pydio.com/latest/knowledge-base/identity-management/using-aws-cognito-as-an-identity-provider/</loc>
          <lastmod>2025-06-11</lastmod>
     </url>
     <url>
-         <loc>https://mkdocs.pydio.com/latest/knowledge-base/identity_management/connect-to-pydio-cells-via-microsoft-identity/</loc>
+         <loc>https://mkdocs.pydio.com/latest/knowledge-base/identity-management/connect-to-pydio-cells-via-microsoft-identity/</loc>
          <lastmod>2025-06-11</lastmod>
     </url>
     <url>
-         <loc>https://mkdocs.pydio.com/latest/knowledge-base/identity_management/using-github-as-an-identity-provider/</loc>
+         <loc>https://mkdocs.pydio.com/latest/knowledge-base/identity-management/using-github-as-an-identity-provider/</loc>
          <lastmod>2025-06-11</lastmod>
     </url>
     <url>
-         <loc>https://mkdocs.pydio.com/latest/knowledge-base/identity_management/using-google-as-an-identity-provider/</loc>
+         <loc>https://mkdocs.pydio.com/latest/knowledge-base/identity-management/using-google-as-an-identity-provider/</loc>
          <lastmod>2025-06-11</lastmod>
     </url>
     <url>
-         <loc>https://mkdocs.pydio.com/latest/knowledge-base/identity_management/connect-to-pydio-cells-via-on-premise-adfs-server/</loc>
+         <loc>https://mkdocs.pydio.com/latest/knowledge-base/identity-management/connect-to-pydio-cells-via-on-premise-adfs-server/</loc>
          <lastmod>2025-06-11</lastmod>
     </url>
     <url>
-         <loc>https://mkdocs.pydio.com/latest/knowledge-base/identity_management/connect-to-pydio-cells-via-simplesaml-php/</loc>
+         <loc>https://mkdocs.pydio.com/latest/knowledge-base/identity-management/connect-to-pydio-cells-via-simplesaml-php/</loc>
          <lastmod>2025-06-11</lastmod>
     </url>
     <url>
-         <loc>https://mkdocs.pydio.com/latest/knowledge-base/identity_management/using-pydio-cells-as-an-identity-provider-for-wordpress/</loc>
+         <loc>https://mkdocs.pydio.com/latest/knowledge-base/identity-management/using-pydio-cells-as-an-identity-provider-for-wordpress/</loc>
          <lastmod>2025-06-11</lastmod>
     </url>
 </urlset>
