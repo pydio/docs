@@ -1,10 +1,11 @@
 ---
-slug: index
-title: Introduction
-description: Quickly deploying Pydio Cells on Docker.
-menu: Docker
+title: Cells Installation
+abstract: Getting started with Pydio Cells using pre-compiled binaries or cloud images.
+menu: Cells Installation
 language: und
-weight: 0
+weight: 2
+menu_name: menu-admin-guide-v7-enterprise
+slug: cells-installation
 ---
 
 ### Select your installation type

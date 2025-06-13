@@ -4,7 +4,7 @@ title: Requirements
 description: List of requirements needed to start Pydio Cells on your server.
 menu: Requirements
 language: und
-weight: 0
+weight: 1
 menu_name: menu-admin-guide-v7-enterprise
 
 ---

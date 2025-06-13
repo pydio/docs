@@ -4,7 +4,7 @@ title: Sharing Features
 description: Understanding Pydio Cells' sharing features.
 menu: Sharing Features
 language: und
-weight: 5
+weight: 4
 menu_name: menu-admin-guide-v7-enterprise
 
 ---
