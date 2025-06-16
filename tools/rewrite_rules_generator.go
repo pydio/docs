@@ -16,8 +16,9 @@ func generateRewriteRule(incomingURI, redirectURI, newDomain string) string {
 		incomingClean = "/" + incomingClean
 	}
 	// Escape special characters for Apache regex (e.g., dots, slashes)
-	incomingEscaped := strings.ReplaceAll(incomingClean, ".", "\\.")
-	incomingEscaped = strings.ReplaceAll(incomingEscaped, "/", "\\/")
+	//incomingEscaped := strings.ReplaceAll(incomingClean, ".", "\\.")
+	//incomingEscaped = strings.ReplaceAll(incomingEscaped, "/", "\\/")
+	incomingEscaped := incomingClean
 
 	// Construct full redirect URL: new-domain + redirect-uri
 	redirectClean := strings.TrimSpace(redirectURI)
