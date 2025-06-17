@@ -6,17 +6,15 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Developer Guide Introductory Page">
       
       
-      
-        <link rel="canonical" href="https://mkdocs.pydio.com/latest/developer-guide/introduction/">
-      
-      
-        <link rel="prev" href="../index/">
+        <link rel="canonical" href="https://mkdocs.pydio.com/latest/developer-guide/index/">
       
       
-        <link rel="next" href="../what-s-new-in-pydio-8/">
+        <link rel="prev" href="../../admin-guide/pydio-advanced-configuration/configure-mail-digest/">
+      
+      
+        <link rel="next" href="../introduction/">
       
       
       <link rel="icon" href="../../pydio-favicon.png">
@@ -24,7 +22,7 @@
     
     
       
-        <title>Introduction - Pydio Documentation</title>
+        <title>developer-guide - Pydio Documentation</title>
       
     
     
@@ -84,11 +82,6 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
-        
-        <a href="#introduction" class="md-skip">
-          Skip to content
-        </a>
-      
     </div>
     <div data-md-component="announce">
       
@@ -134,7 +127,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Introduction
+              developer-guide
             
           </span>
         </div>
@@ -288,7 +281,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="../index/" class="md-tabs__link">
+        <a href="./" class="md-tabs__link">
           
   
   
@@ -2652,7 +2645,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../index/" class="md-nav__link ">
+            <a href="./" class="md-nav__link md-nav__link--active">
               
   
   
@@ -2665,7 +2658,7 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="">
+              <label class="md-nav__link md-nav__link--active" for="__nav_3" id="__nav_3_label" tabindex="">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
@@ -2684,30 +2677,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Introduction
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../introduction/" class="md-nav__link">
         
   
   
@@ -2718,33 +2691,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#introduction" class="md-nav__link">
-    <span class="md-ellipsis">
-      Introduction
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -4308,23 +4254,6 @@
   
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#introduction" class="md-nav__link">
-    <span class="md-ellipsis">
-      Introduction
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -4342,12 +4271,39 @@
   
 
 
-  <h1>Introduction</h1>
+  <h1>developer-guide</h1>
 
-<h3 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">&para;</a></h3>
-<p>[Pydio 8] This document is targetted as a broad audience: it will describe the most simple usages of the Pydio REST API, teach you how to write a simple Pydio plugin by following an example, and digg down to the internals of the Pydio code to put you quickly on track for hacking and contributing. </p>
-<p>As such, this reading is highly recommended if you want either to customize your installation or if you want to develop a full-featured plugin. You should be basically comfortable with XML and XPath syntaxes, as well as PHP if you want to add server-side functions, and JavaScript if you want to add client-side behaviours.</p>
-<p>[:summary]</p>
+<ul>
+<li><strong><a href=".././going-deeper/index/">Going Deeper</a></strong></li>
+<li><a href="../going-deeper/internal-data-model">Internal Data Model</a></li>
+<li><a href="../going-deeper/plugin-architecture">Plugin Architecture</a></li>
+<li><a href="../going-deeper/setting-up-your-dev-environment">Setting up your dev environment</a></li>
+<li><a href="../going-deeper/technologies-overview">Technologies overview</a></li>
+<li><a href="../going-deeper/understanding-xml-registry">Understanding XML Registry</a></li>
+<li><a href=".././introduction">Introduction</a></li>
+<li><strong><a href=".././server-component/index/">Server component</a></strong></li>
+<li><a href="../server-component/core-classes">Core Classes</a></li>
+<li><a href="../server-component/hooks-event-driven-model">Hooks: event-driven model</a></li>
+<li><strong><a href=".././pydio-api/index/">Pydio API</a></strong></li>
+<li><a href="../pydio-api/introduction-to-pydio-apis">Introduction to Pydio APIs</a></li>
+<li><a href="../pydio-api/api-v2-summary">Api V2 summary</a></li>
+<li><a href="../pydio-api/filesystem-api-v1">FileSystem API (v1)</a></li>
+<li><a href="../pydio-api/provisioning-api-v1">Provisioning API (v1)</a></li>
+<li><a href="../pydio-api/lifecycle-api-v1">Lifecycle API (v1)</a></li>
+<li><a href="../pydio-api/other-access-drivers-v1">Other Access Drivers (v1)</a></li>
+<li><a href="../pydio-api/other-plugins-api-v1">Other plugins API (v1)</a></li>
+<li><strong><a href=".././web-application/index/">Web Application</a></strong></li>
+<li><a href="../web-application/architecture">Architecture</a></li>
+<li><a href="../web-application/core-js-classes">Core JS Classes</a></li>
+<li><a href="../web-application/pydio-forms">Pydio Forms</a></li>
+<li><a href=".././what-s-new-in-pydio-8">What's new in Pydio 8</a></li>
+<li><strong><a href=".././writing-a-plugin/index/">Writing a plugin</a></strong></li>
+<li><a href="../writing-a-plugin/action-skeleton-plugin">Action.skeleton plugin</a></li>
+<li><a href="../writing-a-plugin/contributing-actions">Contributing actions</a></li>
+<li><a href="../writing-a-plugin/declaring-resources">Declaring resources</a></li>
+<li><a href="../writing-a-plugin/manifest-xml-overview">Manifest.xml overview</a></li>
+<li><a href="../writing-a-plugin/modify-the-gui">Modify the GUI</a></li>
+</ul>
 
 
 
