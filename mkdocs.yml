@@ -89,8 +89,8 @@ markdown_extensions:
   - pymdownx.magiclink
   - pymdownx.mark
   - pymdownx.snippets
-  # - pymdownx.tasklist:
-  #     custom_checkbox: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
   - pymdownx.superfences
   - pymdownx.tabbed:
       alternate_style: true
@@ -108,3 +108,5 @@ extra:
     provider: mike
     alias: true
     default: latest
+extra_css:
+  - stylesheets/pydio.css

@@ -25,3 +25,17 @@
   --md-primary-fg-color: #f9f5ec !important;
   --md-typeset-a-color:      #ff6600;  /* Link color */
 }  
+
+
+.md-typeset ul ul ul {
+  margin-left: 1.5em;
+  list-style-type: circle;
+}
+.md-typeset ul ul ul ul {
+  margin-left: 1.5em;
+  list-style-type: square;
+}
+.md-typeset ul ul ul ul ul {
+  margin-left: 1.5em;
+  list-style-type: disc;
+}
