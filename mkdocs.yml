@@ -28,7 +28,7 @@ theme:
     #- navigation.expand  # Keep sections expanded
     - navigation.top  # Add back-to-top button
     - navigation.tracking  # Update URL on scroll
-    - navigation.footer
+    #- navigation.footer
     - search.highlight
     - search.suggest
     - content.zoom
