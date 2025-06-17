@@ -22,7 +22,7 @@ extract_title_from_nav() {
   local dir="$1"
   local nav_file="$dir/.nav.yaml"
   if [[ -f "$nav_file" ]]; then
-    grep -m1 '^title:' "$nav_file" | cut -d':' -f2- | sed 's/^ *//' | sed 's/"//g'
+    grep -m1 '^title:' "$nav_file" | cut -d':' -f2- | sed 's/^ *//' | sed 's/"//g' |sed "s/^['\"]//; s/['\"]$//"
   fi
 }
 
@@ -33,7 +33,7 @@ extract_slug_from_md() {
 
 extract_title_from_md() {
   local file="$1"
-  grep -m1 '^title:' "$file" | cut -d':' -f2- | sed 's/^ *//' | sed 's/"//g'
+  grep -m1 '^title:' "$file" | cut -d':' -f2- | sed 's/^ *//' | sed 's/"//g' | sed "s/^['\"]//; s/['\"]$//"
 }
 
 build_slug_path() {
@@ -71,7 +71,7 @@ generate_toc() {
       parent_slug_path=$(build_slug_path "$(dirname "$item")")
       relative_slug_path="${parent_slug_path#*/}"
       link="../${relative_slug_path}/${slug}"
-      toc+="$(printf "\n%s* [%s](%s)\n" "$indent" "$title" "$link")"
+      toc+="$(printf "\n%s- [%s](%s)\n" "$indent" "$title" "$link")"
 
     elif [[ -d "$item" ]]; then
       title=$(extract_title_from_nav "$item")
@@ -81,7 +81,7 @@ generate_toc() {
       parent_slug_path=$(build_slug_path "$item")
       relative_folder_path="${parent_slug_path#*/}"
       folder_link="../${relative_folder_path}/index/"
-      toc+="$(printf "\n%s* **[%s](%s)**\n" "$indent" "$title" "$folder_link")"
+      toc+="$(printf "\n%s- [%s](%s)\n" "$indent" "$title" "$folder_link")"
       toc+=$(generate_toc "$base_dir" "$(realpath --relative-to="$base_dir" "$item")" $((depth + 1)) "$indent  ")
     fi
   done
