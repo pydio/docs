@@ -62,6 +62,16 @@ generate_toc() {
   for item in "$base_dir/$rel_dir"/*; do
     [[ "$(basename "$item")" =~ ^(images|urlmaps)$ ]] && continue
 
+    # Decide prefix by depth
+    local prefix=""
+    if [[ "$depth" -eq 1 ]]; then
+      prefix="*"
+    elif [[ "$depth" -eq 2 ]]; then
+      prefix="-"
+    else
+      prefix="+"
+    fi
+
     if [[ -f "$item" && "$item" == *.md ]]; then
       [[ "$(basename "$item")" == "index.md" ]] && continue
       title=$(extract_title_from_md "$item")
@@ -71,7 +81,8 @@ generate_toc() {
       parent_slug_path=$(build_slug_path "$(dirname "$item")")
       relative_slug_path="${parent_slug_path#*/}"
       link="../${relative_slug_path}/${slug}"
-      toc+="$(printf "\n%s- [%s](%s)\n" "$indent" "$title" "$link")"
+      link=$(echo "$link" | sed 's|\.\./\./|../|g')
+      toc+="$(printf "\n%s%s [%s](%s)\n" "$indent" "$prefix" "$title" "$link")"
 
     elif [[ -d "$item" ]]; then
       title=$(extract_title_from_nav "$item")
@@ -81,13 +92,15 @@ generate_toc() {
       parent_slug_path=$(build_slug_path "$item")
       relative_folder_path="${parent_slug_path#*/}"
       folder_link="../${relative_folder_path}/index/"
-      toc+="$(printf "\n%s- [%s](%s)\n" "$indent" "$title" "$folder_link")"
-      toc+=$(generate_toc "$base_dir" "$(realpath --relative-to="$base_dir" "$item")" $((depth + 1)) "$indent  ")
+      folder_link=$(echo "$folder_link" | sed 's|\.\./\./|../|g')
+      toc+="$(printf "\n%s%s [%s](%s)\n" "$indent" "$prefix" "$title" "$folder_link")"
+      toc+=$(generate_toc "$base_dir" "$(realpath --relative-to="$base_dir" "$item")" $((depth + 1)) "$indent    ")
     fi
   done
 
   echo "$toc"
 }
+
 
 generate_index() {
   local folder="$1"
