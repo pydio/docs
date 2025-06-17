@@ -153,6 +153,8 @@ git checkout cells-v4
 cd "$LOCAL_REPO_DEVELOPER_GUIDE"
 git checkout cells-v2
 "$SCRIPT_DIR/convertor.sh" ./ "$DEVELOPER_GUIDE" "$CELLS_V4_RELATIVE_URL"
+find "$DEVELOPER_GUIDE" -type f -name "*.md" -exec sed -i "s@](./cells@](../cells@g" "{}" \;
+find "$DEVELOPER_GUIDE" -type f -name "*.md" -exec sed -i "s@](./cec-@](../cec-@g" "{}" \;
 
 cd "$LOCAL_REPO_KB"
 git checkout master
