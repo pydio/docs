@@ -56,6 +56,7 @@ find "$KB" -maxdepth 1 -type f ! -name "p8_*" -exec rm -v {} \;
 
 cd "$GIT_REPO_LOCAL"
 "$SCRIPT_DIR/generate_toc.sh" ./ "$PYDIO_V8_RELATIVE_URL"
+"$SCRIPT_DIR/section_toc_index.sh" ./ 3
 
 git add .
 git commit -m "Add pydio-v8 documentation"
@@ -174,6 +175,7 @@ git checkout cells-flows
 
 cd "$GIT_REPO_LOCAL"
 "$SCRIPT_DIR/generate_toc.sh" ./ "$CELLS_V4_RELATIVE_URL"
+"$SCRIPT_DIR/section_toc_index.sh" ./ 3
 
 git add .
 git commit -m "Add cells-v4 documentation"
