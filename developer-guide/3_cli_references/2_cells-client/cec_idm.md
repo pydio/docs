@@ -44,7 +44,7 @@ DESCRIPTION
 
 ### SEE ALSO
 
-* [./cec](../cec)	 - Connect to a Pydio Cells server using the command line
+* [./cec](./cec)	 - Connect to a Pydio Cells server using the command line
 * [./cec idm list-acls](../cec-idm-list-acls)	 - List ACLs by node UUID
 * [./cec idm list-groups](../cec-idm-list-groups)	 - List groups
 * [./cec idm list-roles](../cec-idm-list-roles)	 - List roles

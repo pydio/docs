@@ -1,3 +1,7 @@
+---
+title: Single-Sign-On Features
+weight: 0
+---
 ## Single Sign On (SSO)
 
 ### What is it?
@@ -6,7 +10,7 @@ Single Sign-On is a service that allows a user to use one login session to acces
 
 ### What does it mean in Pydio Cells?
 
-Pydio Cells can be used as an [Identity Provider](./cells-identity-provider). In other words, any application can use the login session from Pydio Cells to validate access to a user and use its data.
+Pydio Cells can be used as an [Identity Provider](../cells-identity-provider). In other words, any application can use the login session from Pydio Cells to validate access to a user and use its data.
 
 ### What does it mean in Pydio Cells Enterprise Distribution?
 
@@ -14,11 +18,11 @@ On top of that, Cells Ent can integrate with multiple [External Identity Provide
 
 Furthermore, Cells Ent provides a simple way to connect one or many external [LDAP or Active Directory](./ed-binding-ldap) servers.
 
-- [Cells as Identity Provider](../cells-as-identity-provider/)
-- [[Ent] Using SSO with an External Identity Provider](../ent-using-sso-with-an-external-identity-provider/)
-- [[Ent] LDAP / AD](../ent-ldap-ad/)
-- [[Ent] LDAP / AD (Advanced)](../ent-ldap-ad-advanced/)
-- [[Ent] AD + Kerberos Support](../ent-ad-kerberos-support/)
+* [Cells as Identity Provider](../cells-as-identity-provider/)
+* [[Ent] Using SSO with an External Identity Provider](../ent-using-sso-with-an-external-identity-provider/)
+* [[Ent] LDAP / AD](../ent-ldap-ad/)
+* [[Ent] LDAP / AD (Advanced)](../ent-ldap-ad-advanced/)
+* [[Ent] AD + Kerberos Support](../ent-ad-kerberos-support/)
 
 --------------------------------------------------------------------------------------------------------
 _See Also_
