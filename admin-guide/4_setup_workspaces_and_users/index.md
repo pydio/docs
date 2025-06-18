@@ -1,5 +1,6 @@
+<div style="background-color: #fbe9b7;font-size: 14px;">
+<span style="background-color: #fae4a6;padding: 10px;">WARNING</span>
+<span style="padding: 10px;display: inline-block;">This documentation is for Pydio 8 (PHP). Time to move to <a href="https://pydio.com/en/docs/administration-guides">Pydio Cells</a>!</span>
+</div>
 
-- [Introduction](../introduction/)
-- [Groups Admin and Delegation](../groups-admin-and-delegation/)
-- [Inheritance Groups and Users Roles](../inheritance-groups-and-users-roles/)
-- [Action parameters](../action-parameters/)
+[:summary]

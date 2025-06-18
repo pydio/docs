@@ -1,3 +1,7 @@
+<div style="background-color: #fbe9b7;font-size: 14px;">
+<span style="background-color: #fae4a6;padding: 10px;">WARNING</span>
+<span style="padding: 10px;display: inline-block;">This documentation is for Pydio 8 (PHP). Time to move to <a href="https://pydio.com/en/docs/administration-guides">Pydio Cells</a>!</span>
+</div>
 
 Pydio Booster is a unique tool developed to easily boost your installation performance, by overriding inherent limitation of the PHP language:  it is written in Go and runs as a standalone server application that will communicate with the core pydio layer.
 
@@ -8,5 +12,4 @@ Main benefits are :
  - No more need for this complex CRONtab entry (or windows scheduling task) to fully use Pydio Scheduler. Booster will handle the "master" trigger for you.
  - Booster can also take care of the download of the files, removing the burden on the php server.
 
-- [Install Pydio Booster Automatically](../install-pydio-booster-automatically/)
-- [Install Pydio Booster Manually](../install-pydio-booster-manually/)
+[:summary]
