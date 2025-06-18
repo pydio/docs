@@ -55,6 +55,7 @@ jobs:
           cp main-config/resources/* resources/ || echo "resources not found"
           cp main-config/docs/assets/custom.css docs/assets/ || echo "custom.css not found"
           cp main-config/overrides/* overrides/ || echo "404.html not found"
+          cp -r main-config/tools .
           rm -rf main-config
 
       - name: Copy docs to docs repo
@@ -107,6 +108,11 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
+
+      - name: Generate tocs
+        run: |
+          ./tools/gen_toplevel_section_toc.sh docs
+          ./tools/gen_sub_section_toc.sh docs
 
       - name: Validate MkDocs build
         run: |
