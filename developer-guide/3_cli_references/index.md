@@ -1,7 +1,3 @@
----
-title: Command line reference
-weight: 0
----
 This section provides generated documentation for all CLI commands of our static binaries.
 
 - **cells** is the main Pydio Cells server software
@@ -9,7 +5,4 @@ This section provides generated documentation for all CLI commands of our static
 - **cells-sync** is the desktop synchronization client for Windows, Mac and Linux, communicating with Cells server on HTTP/2
 - **cells-enterprise** is the Enterprise Edition of cells
 
-* [Cells Binary](../cells-binary/index)
-* [Cells Client (cec)](../cells-client-cec/index)
-* [Cells Sync](../cells-sync/index)
-* [Cells Enterprise](../cells-enterprise/index)
+[:summary]
