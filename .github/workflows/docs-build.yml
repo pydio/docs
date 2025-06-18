@@ -48,7 +48,7 @@ jobs:
         run: |
           cp main-config/mkdocs.yml .
           cp main-config/requirements.txt .
-          mkdir -p resources overrides
+          mkdir -p resources docs overrides
           cp main-config/resources/* resources/ || echo "resources not found"
           cp main-config/overrides/* overrides/ || echo "404.html not found"
           cp -r main-config/tools .
