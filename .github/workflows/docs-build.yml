@@ -48,7 +48,7 @@ jobs:
         run: |
           cp main-config/mkdocs.yml .
           cp main-config/requirements.txt .
-          mkdir -p resources overrides
+          mkdir -p resources docs overrides
           cp -r main-config/resources/* resources/ || echo "resources not found"
           cp -r main-config/overrides/* overrides/ || echo "error in copping onverrides"
           cp -r main-config/tools .
@@ -56,6 +56,7 @@ jobs:
 
       - name: Copy docs to docs repo
         run: |
+          mkdir -p docs
           ls -lah 
           cp resources/pydio-favicon.png docs
           cp -r admin-guide docs
