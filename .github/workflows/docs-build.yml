@@ -3,10 +3,7 @@ name: Build and Deploy MkDocs Versions with Mike
 on:
   push:
     branches:
-      - 'cells-v4'
-      - 'cells-v5'
       - 'pydio-v8'
-      - 'main' # sync workflow file
 
 
 jobs:
