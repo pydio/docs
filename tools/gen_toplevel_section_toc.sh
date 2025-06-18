@@ -1,7 +1,7 @@
 #!/bin/bash
 
 DOCS_DIR="${1:-docs}"
-MAX_DEPTH="${2:-2}"
+MAX_DEPTH="${2:-3}"
 
 slugify() {
   echo "$1" | iconv -t ascii//TRANSLIT | \

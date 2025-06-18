@@ -7,7 +7,7 @@ SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 LOCAL_REPO_ADMIN_GUIDE="/home/pydio/go/src/github.com/pydio/pydio-doc-admin-guide"
 LOCAL_REPO_DEVELOPER_GUIDE="/home/pydio/go/src/github.com/pydio/pydio-doc-developer-guide"
 LOCAL_REPO_KB="/home/pydio/go/src/github.com/pydio/pydio-doc-howto"
-LOCAL_MKDOCS="/home/pydio/go/src/github.com/pydio/mkdocs"
+LOCAL_MKDOCS="/home/pydio/go/src/github.com/pydio/docs"
 
 GIT_REPO_LOCAL="/tmp/git-docs"
 rm -rf "$GIT_REPO_LOCAL"
@@ -55,8 +55,8 @@ git checkout master
 find "$KB" -maxdepth 1 -type f ! -name "p8_*" -exec rm -v {} \;
 
 cd "$GIT_REPO_LOCAL"
-"$SCRIPT_DIR/generate_toc.sh" ./ "$PYDIO_V8_RELATIVE_URL"
-"$SCRIPT_DIR/section_toc_index.sh" . 3
+# "$SCRIPT_DIR/generate_toc.sh" ./ "$PYDIO_V8_RELATIVE_URL"
+# "$SCRIPT_DIR/section_toc_index.sh" . 3
 
 git add .
 git commit -m "Add pydio-v8 documentation"
@@ -174,8 +174,8 @@ git checkout cells-flows
 
 
 cd "$GIT_REPO_LOCAL"
-"$SCRIPT_DIR/generate_toc.sh" ./ "$CELLS_V4_RELATIVE_URL"
-"$SCRIPT_DIR/section_toc_index.sh" . 3
+# "$SCRIPT_DIR/generate_toc.sh" ./ "$CELLS_V4_RELATIVE_URL"
+# "$SCRIPT_DIR/section_toc_index.sh" . 3
 
 git add .
 git commit -m "Add cells-v4 documentation"

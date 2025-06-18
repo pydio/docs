@@ -2,7 +2,7 @@
 set -x
 source ~/.venv/bin/activate
 
-SOURCE_MKDOCS="/home/pydio/go/src/github.com/pydio/mkdocs"
+SOURCE_MKDOCS="/home/pydio/go/src/github.com/pydio/docs"
 LOCAL_MKDOCS="/tmp/mkdocs"
 GIT_REPO="/tmp/git-docs"
 
@@ -16,6 +16,7 @@ mkdir -p "$LOCAL_MKDOCS/docs"
 cp -r "$SOURCE_MKDOCS/overrides" "$LOCAL_MKDOCS/"
 cp -r "$SOURCE_MKDOCS/resources" "$LOCAL_MKDOCS/"
 cp -r "$SOURCE_MKDOCS/mkdocs.yml" "$LOCAL_MKDOCS/"
+cp -r "$SOURCE_MKDOCS/tools" "$LOCAL_MKDOCS/"
 
 git add .
 git commit -m "add mkdocs stuff"
@@ -25,6 +26,8 @@ cd "$GIT_REPO"
 git checkout cells-v4
 cp -r ./* "$LOCAL_MKDOCS/docs"
 cd "$LOCAL_MKDOCS"
+"$LOCAL_MKDOCS/tools/gen_toplevel_section_toc.sh" docs
+"$LOCAL_MKDOCS/tools/gen_sub_section_toc.sh" docs
 mike deploy  cells-v4 latest
 
 # cd "$GIT_REPO"
@@ -46,6 +49,8 @@ cd "$GIT_REPO"
 git checkout pydio-v8
 cp -r ./* "$LOCAL_MKDOCS/docs"
 cd "$LOCAL_MKDOCS"
+"$LOCAL_MKDOCS/tools/gen_toplevel_section_toc.sh" docs
+"$LOCAL_MKDOCS/tools/gen_sub_section_toc.sh" docs
 mike deploy  pydio-v8
 
 mike set-default cells-v4

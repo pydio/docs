@@ -1,13 +1,13 @@
 #!/bin/bash
 
 DOCS_DIR="$1"
-BASE_URL="$2"
-BASE_URL="${BASE_URL%/}"  # Trim trailing slash
+# BASE_URL="${2:-''}"
+# BASE_URL="${BASE_URL%/}"  # Trim trailing slash
 
-if [[ -z "$DOCS_DIR" || ! -d "$DOCS_DIR" ]]; then
-  echo "❌ Usage: $0 <docs_dir> [base_url]"
-  exit 1
-fi
+# if [[ -z "$DOCS_DIR" || ! -d "$DOCS_DIR" ]]; then
+#   echo "❌ Usage: $0 <docs_dir> [base_url]"
+#   exit 1
+# fi
 
 slugify() {
   echo "$1" | iconv -t ascii//TRANSLIT | \
