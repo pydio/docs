@@ -26,9 +26,13 @@ cd "$GIT_REPO"
 git checkout cells-v4
 cp -r ./* "$LOCAL_MKDOCS/docs"
 cd "$LOCAL_MKDOCS"
+rm -rf ./docs/stylesheets
 "$LOCAL_MKDOCS/tools/gen_toplevel_section_toc.sh" docs
 "$LOCAL_MKDOCS/tools/gen_sub_section_toc.sh" docs
-mike deploy  cells-v4 latest
+ls -lah .
+ls -lah ./docs
+cp -r "$SOURCE_MKDOCS/overrides/assets/stylesheets" docs
+mike deploy cells-v4 latest
 
 # cd "$GIT_REPO"
 # git checkout cells-v3
@@ -49,10 +53,15 @@ cd "$GIT_REPO"
 git checkout pydio-v8
 cp -r ./* "$LOCAL_MKDOCS/docs"
 cd "$LOCAL_MKDOCS"
+ls -lah .
+ls -lah ./docs
+# clean stylesheets 
+rm -rf ./docs/stylesheets
 "$LOCAL_MKDOCS/tools/gen_toplevel_section_toc.sh" docs
 "$LOCAL_MKDOCS/tools/gen_sub_section_toc.sh" docs
-mike deploy  pydio-v8
 
+cp -r "$SOURCE_MKDOCS/overrides/assets/stylesheets" docs
+mike deploy  pydio-v8
 mike set-default cells-v4
 
 
