@@ -3,7 +3,7 @@ site_url: https://mkdocs.pydio.com/
 docs_dir: docs
 site_dir: site
 use_directory_urls: true
-repo_url: https://github.com/pydio/docs
+repo_url: https://github.com/pydio/cells
 theme:
   name: material
   custom_dir: overrides
