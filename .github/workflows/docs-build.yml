@@ -104,10 +104,18 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
+      - name: Clean stylesheets in docs
+        run: |
+          rm -rf docs/stylesheets
+
       - name: Generate tocs
         run: |
           ./tools/gen_toplevel_section_toc.sh docs
           ./tools/gen_sub_section_toc.sh docs
+
+      - name: ReCopy stylesheet
+        run: |
+          cp -r overrides/assets/stylesheets docs
 
       - name: Validate MkDocs build
         run: |
