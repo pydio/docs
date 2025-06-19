@@ -1,0 +1,41 @@
+/* Header */
+.md-header {
+    background-color: #f9f5ec !important;
+    color: #000 !important;
+  }
+  
+  /* Footer */
+.md-footer {
+    background-color: #b1c8d3 !important;
+    color: white;
+  }
+  
+  /* Link hover */
+  a:hover {
+    color: #ff9800;
+  }
+  
+  /* 404 page text */
+  .page-404 {
+    text-align: center;
+    padding: 5rem 1rem;
+  }
+  
+:root {
+  --md-primary-fg-color: #f9f5ec !important;
+  --md-typeset-a-color:      #ff6600;  /* Link color */
+}  
+
+
+.md-typeset ul ul ul {
+  margin-left: 1.5em;
+  list-style-type: circle;
+}
+.md-typeset ul ul ul ul {
+  margin-left: 1.5em;
+  list-style-type: square;
+}
+.md-typeset ul ul ul ul ul {
+  margin-left: 1.5em;
+  list-style-type: disc;
+}
