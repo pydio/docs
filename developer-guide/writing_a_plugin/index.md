@@ -1,5 +1,5 @@
 
-</div>
+
 
 In this section, you will "learn-by-example" how to create your own Pydio plugin to extend the software functionnalities. This can go from adding a simple HTML block on the interface to adding your own API's to Pydio. 
 
