@@ -1,12 +1,5 @@
 [
   {
-    "version": "cells-v5",
-    "title": "Cells v5",
-    "aliases": [
-      "dev"
-    ]
-  },
-  {
     "version": "cells-v4",
     "title": "Cells v4",
     "aliases": [
