@@ -119,7 +119,7 @@ generate_index() {
   toc=$(generate_toc "$folder" "." 1 "")
 
   {
-      awk -v toc="$toc_markdown" '
+      awk -v toc="$toc" '
         {
           if ($0 ~ /\[:toplevel-toc:\]/ && !done) {
             print toc
