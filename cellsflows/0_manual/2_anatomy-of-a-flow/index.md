@@ -4,7 +4,7 @@ Data can be either explicitely loaded from internal Cells services using **Queri
 
 Between each action, **Filters** can transform the message Data, or apply an arbitrary condition. 
 
-[:image:0_overview/anatomy-of-a-job-overview.png]
+![](../../images/0_overview/anatomy-of-a-job-overview.png)
 
 Pages below provide more details about each of the Jobs components.
 

@@ -1,4 +1,4 @@
-[:image:cells-flows.png]
+![](../images/cells-flows.png)
 
 Welcome to Cells Flows Documentation.
 
