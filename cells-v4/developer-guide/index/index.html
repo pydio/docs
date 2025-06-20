@@ -23638,7 +23638,513 @@
 
   <h1>Developer Guide</h1>
 
-
+<ul>
+<li><a href="../developer-guide/introduction/index/">Introduction</a><ul>
+<li><a href="../introduction/main-apis-presentation">Main APIs presentation</a></li>
+<li><a href="../introduction/authentication">Authentication</a></li>
+<li><a href="../introduction/consumers-examples/index/">Consumers Examples</a><ul>
+<li><a href="../introduction/consumers-examples/using-postman">Using Postman</a></li>
+<li><a href="../introduction/consumers-examples/using-curl">Using cURL</a></li>
+</ul>
+</li>
+<li><a href="../introduction/other-apis">Other APIs</a></li>
+</ul>
+</li>
+<li><a href="../developer-guide/clients-sdks/index/">Clients / SDKs</a><ul>
+<li><a href="../clients-sdks/cells-client">Cells Client</a></li>
+<li><a href="../clients-sdks/cells-sdk-for-go">Cells SDK for Go</a></li>
+<li><a href="../clients-sdks/cells-sdk-for-javascript">Cells SDK for JavaScript</a></li>
+<li><a href="../clients-sdks/cells-sdk-for-java">Cells SDK for Java</a></li>
+</ul>
+</li>
+<li><a href="../developer-guide/rest-api/index/">Rest API</a><ul>
+<li><a href="../rest-api/acl-service/index/">ACL Service</a><ul>
+<li><a href="../rest-api/acl-service/post-a-acl">POST /a/acl</a></li>
+<li><a href="../rest-api/acl-service/post-a-acl-bulk-delete">POST /a/acl/bulk/delete</a></li>
+<li><a href="../rest-api/acl-service/put-a-acl">PUT /a/acl</a></li>
+</ul>
+</li>
+<li><a href="../rest-api/activity-service/index/">Activity Service</a><ul>
+<li><a href="../rest-api/activity-service/post-a-activity-stream">POST /a/activity/stream</a></li>
+<li><a href="../rest-api/activity-service/post-a-activity-subscribe">POST /a/activity/subscribe</a></li>
+<li><a href="../rest-api/activity-service/post-a-activity-subscriptions">POST /a/activity/subscriptions</a></li>
+</ul>
+</li>
+<li><a href="../rest-api/admin-tree-service/index/">Admin Tree Service</a><ul>
+<li><a href="../rest-api/admin-tree-service/post-a-tree-admin-list">POST /a/tree/admin/list</a></li>
+<li><a href="../rest-api/admin-tree-service/post-a-tree-admin-stat">POST /a/tree/admin/stat</a></li>
+</ul>
+</li>
+<li><a href="../rest-api/enterprise-audit-service/index/">[Enterprise] Audit Service</a><ul>
+<li><a href="../rest-api/enterprise-audit-service/get-a-audit-data-reports">GET /a/audit/data/reports</a></li>
+<li><a href="../rest-api/enterprise-audit-service/post-a-audit-data-shares">POST /a/audit/data/shares</a></li>
+</ul>
+</li>
+<li><a href="../rest-api/config-service/index/">Config Service</a><ul>
+<li><a href="../rest-api/config-service/delete-a-config-datasource-name">DELETE /a/config/datasource/{Name}</a></li>
+<li><a href="../rest-api/config-service/get-a-config-ctl">GET /a/config/ctl</a></li>
+<li><a href="../rest-api/config-service/get-a-config-datasource">GET /a/config/datasource</a></li>
+<li><a href="../rest-api/config-service/get-a-config-datasource-name">GET /a/config/datasource/{Name}</a></li>
+<li><a href="../rest-api/config-service/get-a-config-discovery">GET /a/config/discovery</a></li>
+<li><a href="../rest-api/config-service/get-a-config-discovery-forms-servicename">GET /a/config/discovery/forms/{ServiceName}</a></li>
+<li><a href="../rest-api/config-service/get-a-config-discovery-openapi">GET /a/config/discovery/openapi</a></li>
+<li><a href="../rest-api/config-service/get-a-config-peers">GET /a/config/peers</a></li>
+<li><a href="../rest-api/config-service/get-a-config-scheduler-actions">GET /a/config/scheduler/actions</a></li>
+<li><a href="../rest-api/config-service/get-a-config-scheduler-actions-actionname">GET /a/config/scheduler/actions/{ActionName}</a></li>
+<li><a href="../rest-api/config-service/get-a-config-sites-filter">GET /a/config/sites/{Filter}</a></li>
+<li><a href="../rest-api/config-service/get-a-config-versioning">GET /a/config/versioning</a></li>
+<li><a href="../rest-api/config-service/get-a-config-versioning-uuid">GET /a/config/versioning/{Uuid}</a></li>
+<li><a href="../rest-api/config-service/get-a-config-virtualnodes">GET /a/config/virtualnodes</a></li>
+<li><a href="../rest-api/config-service/get-a-config-fullpath">GET /a/config/{FullPath}</a></li>
+<li><a href="../rest-api/config-service/post-a-config-buckets">POST /a/config/buckets</a></li>
+<li><a href="../rest-api/config-service/post-a-config-ctl">POST /a/config/ctl</a></li>
+<li><a href="../rest-api/config-service/post-a-config-datasource-name">POST /a/config/datasource/{Name}</a></li>
+<li><a href="../rest-api/config-service/post-a-config-encryption-create">POST /a/config/encryption/create</a></li>
+<li><a href="../rest-api/config-service/post-a-config-encryption-delete">POST /a/config/encryption/delete</a></li>
+<li><a href="../rest-api/config-service/post-a-config-encryption-export">POST /a/config/encryption/export</a></li>
+<li><a href="../rest-api/config-service/post-a-config-encryption-list">POST /a/config/encryption/list</a></li>
+<li><a href="../rest-api/config-service/post-a-config-peers-peeraddress">POST /a/config/peers/{PeerAddress}</a></li>
+<li><a href="../rest-api/config-service/post-a-config-processes">POST /a/config/processes</a></li>
+<li><a href="../rest-api/config-service/post-a-config-registry">POST /a/config/registry</a></li>
+<li><a href="../rest-api/config-service/put-a-config-buckets-bucketname">PUT /a/config/buckets/{BucketName}</a></li>
+<li><a href="../rest-api/config-service/put-a-config-encryption-import">PUT /a/config/encryption/import</a></li>
+<li><a href="../rest-api/config-service/put-a-config-peers-peeraddress">PUT /a/config/peers/{PeerAddress}</a></li>
+<li><a href="../rest-api/config-service/put-a-config-fullpath">PUT /a/config/{FullPath}</a></li>
+</ul>
+</li>
+<li><a href="../rest-api/enterprise-config-service/index/">[Enterprise] Config Service</a><ul>
+<li><a href="../rest-api/enterprise-config-service/delete-a-config-directories-configid">DELETE /a/config/directories/{ConfigId}</a></li>
+<li><a href="../rest-api/enterprise-config-service/delete-a-config-oauth2clients-clientid">DELETE /a/config/oauth2clients/{ClientID}</a></li>
+<li><a href="../rest-api/enterprise-config-service/delete-a-config-oauth2clients-client-id">DELETE /a/config/oauth2clients/{client_id}</a></li>
+<li><a href="../rest-api/enterprise-config-service/delete-a-config-oauth2connectors-id">DELETE /a/config/oauth2connectors/{id}</a></li>
+<li><a href="../rest-api/enterprise-config-service/delete-a-config-versioning-uuid">DELETE /a/config/versioning/{Uuid}</a></li>
+<li><a href="../rest-api/enterprise-config-service/delete-a-config-virtualnodes-uuid">DELETE /a/config/virtualnodes/{Uuid}</a></li>
+<li><a href="../rest-api/enterprise-config-service/get-a-config-directories">GET /a/config/directories</a></li>
+<li><a href="../rest-api/enterprise-config-service/get-a-config-oauth2clients">GET /a/config/oauth2clients</a></li>
+<li><a href="../rest-api/enterprise-config-service/get-a-config-oauth2connectors">GET /a/config/oauth2connectors</a></li>
+<li><a href="../rest-api/enterprise-config-service/get-a-config-sites">GET /a/config/sites</a></li>
+<li><a href="../rest-api/enterprise-config-service/post-a-config-directories-test-ping">POST /a/config/directories-test/ping</a></li>
+<li><a href="../rest-api/enterprise-config-service/post-a-config-directories-test-search">POST /a/config/directories-test/search</a></li>
+<li><a href="../rest-api/enterprise-config-service/post-a-config-versioning-uuid">POST /a/config/versioning/{Uuid}</a></li>
+<li><a href="../rest-api/enterprise-config-service/post-a-config-virtualnodes-uuid">POST /a/config/virtualnodes/{Uuid}</a></li>
+<li><a href="../rest-api/enterprise-config-service/put-a-config-directories-configid">PUT /a/config/directories/{ConfigId}</a></li>
+<li><a href="../rest-api/enterprise-config-service/put-a-config-oauth2clients-clientid">PUT /a/config/oauth2clients/{ClientID}</a></li>
+<li><a href="../rest-api/enterprise-config-service/put-a-config-oauth2clients-client-id">PUT /a/config/oauth2clients/{client_id}</a></li>
+<li><a href="../rest-api/enterprise-config-service/put-a-config-oauth2connectors">PUT /a/config/oauth2connectors</a></li>
+<li><a href="../rest-api/enterprise-config-service/put-a-config-oauth2connectors-id">PUT /a/config/oauth2connectors/{id}</a></li>
+</ul>
+</li>
+<li><a href="../rest-api/enterprise-front-service/index/">[Enterprise] Front Service</a><ul>
+<li><a href="../rest-api/enterprise-front-service/get-a-frontend-auth-state">GET /a/frontend/auth/state</a></li>
+<li><a href="../rest-api/enterprise-front-service/get-a-frontend-login-connectors">GET /a/frontend/login/connectors</a></li>
+</ul>
+</li>
+<li><a href="../rest-api/enterprise-log-service/index/">[Enterprise] Log Service</a><ul>
+<li><a href="../rest-api/enterprise-log-service/post-a-log-audit">POST /a/log/audit</a></li>
+<li><a href="../rest-api/enterprise-log-service/post-a-log-audit-chartdata">POST /a/log/audit/chartdata</a></li>
+<li><a href="../rest-api/enterprise-log-service/post-a-log-audit-export">POST /a/log/audit/export</a></li>
+<li><a href="../rest-api/enterprise-log-service/post-a-log-sys-export">POST /a/log/sys/export</a></li>
+</ul>
+</li>
+<li><a href="../rest-api/enterprise-policy-service/index/">[Enterprise] Policy Service</a><ul>
+<li><a href="../rest-api/enterprise-policy-service/delete-a-policy-uuid">DELETE /a/policy/{Uuid}</a></li>
+<li><a href="../rest-api/enterprise-policy-service/get-a-policy-ipbans">GET /a/policy/ipbans</a></li>
+<li><a href="../rest-api/enterprise-policy-service/get-a-policy-iplists-name">GET /a/policy/iplists/{Name}</a></li>
+<li><a href="../rest-api/enterprise-policy-service/post-a-policy-ipbans">POST /a/policy/ipbans</a></li>
+<li><a href="../rest-api/enterprise-policy-service/post-a-policy-iplists">POST /a/policy/iplists</a></li>
+<li><a href="../rest-api/enterprise-policy-service/put-a-policy">PUT /a/policy</a></li>
+</ul>
+</li>
+<li><a href="../rest-api/enterprise-templates-service/index/">[Enterprise] Templates Service</a><ul>
+<li><a href="../rest-api/enterprise-templates-service/delete-a-templates-meta-templateuuid">DELETE /a/templates/meta/{TemplateUuid}</a></li>
+<li><a href="../rest-api/enterprise-templates-service/delete-a-templates-node-templateuuid">DELETE /a/templates/node/{TemplateUuid}</a></li>
+<li><a href="../rest-api/enterprise-templates-service/get-a-templates-meta">GET /a/templates/meta</a></li>
+<li><a href="../rest-api/enterprise-templates-service/post-a-templates-node">POST /a/templates/node</a></li>
+<li><a href="../rest-api/enterprise-templates-service/put-a-templates-meta">PUT /a/templates/meta</a></li>
+</ul>
+</li>
+<li><a href="../rest-api/enterprise-token-service/index/">[Enterprise] Token Service</a><ul>
+<li><a href="../rest-api/enterprise-token-service/delete-a-auth-tokens-tokenid">DELETE /a/auth/tokens/{TokenId}</a></li>
+<li><a href="../rest-api/enterprise-token-service/post-a-auth-token-impersonate">POST /a/auth/token/impersonate</a></li>
+<li><a href="../rest-api/enterprise-token-service/post-a-auth-token-personal">POST /a/auth/token/personal</a></li>
+<li><a href="../rest-api/enterprise-token-service/post-a-auth-tokens">POST /a/auth/tokens</a></li>
+</ul>
+</li>
+<li><a href="../rest-api/frontend-service/index/">Frontend Service</a><ul>
+<li><a href="../rest-api/frontend-service/get-a-frontend-binaries-binarytype-uuid">GET /a/frontend/binaries/{BinaryType}/{Uuid}</a></li>
+<li><a href="../rest-api/frontend-service/get-a-frontend-bootconf">GET /a/frontend/bootconf</a></li>
+<li><a href="../rest-api/frontend-service/get-a-frontend-messages-lang">GET /a/frontend/messages/{Lang}</a></li>
+<li><a href="../rest-api/frontend-service/get-a-frontend-plugins-lang">GET /a/frontend/plugins/{Lang}</a></li>
+<li><a href="../rest-api/frontend-service/get-a-frontend-settings-menu">GET /a/frontend/settings-menu</a></li>
+<li><a href="../rest-api/frontend-service/get-a-frontend-state">GET /a/frontend/state</a></li>
+<li><a href="../rest-api/frontend-service/post-a-frontend-binaries-binarytype-uuid">POST /a/frontend/binaries/{BinaryType}/{Uuid}</a></li>
+<li><a href="../rest-api/frontend-service/post-a-frontend-enroll">POST /a/frontend/enroll</a></li>
+<li><a href="../rest-api/frontend-service/post-a-frontend-session">POST /a/frontend/session</a></li>
+</ul>
+</li>
+<li><a href="../rest-api/graph-service/index/">Graph Service</a><ul>
+<li><a href="../rest-api/graph-service/get-a-graph-relation-userid">GET /a/graph/relation/{UserId}</a></li>
+<li><a href="../rest-api/graph-service/get-a-graph-state-segment">GET /a/graph/state/{Segment}</a></li>
+<li><a href="../rest-api/graph-service/post-a-graph-recommend">POST /a/graph/recommend</a></li>
+</ul>
+</li>
+<li><a href="../rest-api/install-service/index/">Install Service</a><ul>
+<li><a href="../rest-api/install-service/get-a-install">GET /a/install</a></li>
+<li><a href="../rest-api/install-service/get-a-install-agreement">GET /a/install/agreement</a></li>
+<li><a href="../rest-api/install-service/get-a-install-events">GET /a/install/events</a></li>
+<li><a href="../rest-api/install-service/post-a-install">POST /a/install</a></li>
+<li><a href="../rest-api/install-service/post-a-install-check">POST /a/install/check</a></li>
+</ul>
+</li>
+<li><a href="../rest-api/jobs-service/index/">Jobs Service</a><ul>
+<li><a href="../rest-api/jobs-service/post-a-jobs-tasks-delete">POST /a/jobs/tasks/delete</a></li>
+<li><a href="../rest-api/jobs-service/post-a-jobs-tasks-logs">POST /a/jobs/tasks/logs</a></li>
+<li><a href="../rest-api/jobs-service/post-a-jobs-user">POST /a/jobs/user</a></li>
+<li><a href="../rest-api/jobs-service/put-a-jobs-user">PUT /a/jobs/user</a></li>
+<li><a href="../rest-api/jobs-service/put-a-jobs-user-jobname">PUT /a/jobs/user/{JobName}</a></li>
+</ul>
+</li>
+<li><a href="../rest-api/enterprise-license-service/index/">[Enterprise] License Service</a><ul>
+<li><a href="../rest-api/enterprise-license-service/get-a-license-stats">GET /a/license/stats</a></li>
+<li><a href="../rest-api/enterprise-license-service/put-a-license-update">PUT /a/license/update</a></li>
+</ul>
+</li>
+<li><a href="../rest-api/log-service/index/">Log Service</a><ul>
+<li><a href="../rest-api/log-service/post-a-log-sys">POST /a/log/sys</a></li>
+</ul>
+</li>
+<li><a href="../rest-api/mailer-service/index/">Mailer Service</a><ul>
+<li><a href="../rest-api/mailer-service/post-a-mailer-send">POST /a/mailer/send</a></li>
+</ul>
+</li>
+<li><a href="../rest-api/meta-service/index/">Meta Service</a><ul>
+<li><a href="../rest-api/meta-service/post-a-meta-bulk-get">POST /a/meta/bulk/get</a></li>
+<li><a href="../rest-api/meta-service/post-a-meta-delete-nodepath">POST /a/meta/delete/{NodePath}</a></li>
+<li><a href="../rest-api/meta-service/post-a-meta-get-nodepath">POST /a/meta/get/{NodePath}</a></li>
+<li><a href="../rest-api/meta-service/post-a-meta-set-nodepath">POST /a/meta/set/{NodePath}</a></li>
+</ul>
+</li>
+<li><a href="../rest-api/policy-service/index/">Policy Service</a><ul>
+<li><a href="../rest-api/policy-service/post-a-policy">POST /a/policy</a></li>
+</ul>
+</li>
+<li><a href="../rest-api/role-service/index/">Role Service</a><ul>
+<li><a href="../rest-api/role-service/delete-a-role-uuid">DELETE /a/role/{Uuid}</a></li>
+<li><a href="../rest-api/role-service/get-a-role-uuid">GET /a/role/{Uuid}</a></li>
+<li><a href="../rest-api/role-service/post-a-role">POST /a/role</a></li>
+<li><a href="../rest-api/role-service/put-a-role-uuid">PUT /a/role/{Uuid}</a></li>
+</ul>
+</li>
+<li><a href="../rest-api/enterprise-scheduler-service/index/">[Enterprise] Scheduler Service</a><ul>
+<li><a href="../rest-api/enterprise-scheduler-service/delete-a-scheduler-jobs-jobid">DELETE /a/scheduler/jobs/{JobID}</a></li>
+<li><a href="../rest-api/enterprise-scheduler-service/delete-a-scheduler-templates-actions-templatename">DELETE /a/scheduler/templates/actions/{TemplateName}</a></li>
+<li><a href="../rest-api/enterprise-scheduler-service/delete-a-scheduler-templates-jobs-name">DELETE /a/scheduler/templates/jobs/{Name}</a></li>
+<li><a href="../rest-api/enterprise-scheduler-service/delete-a-scheduler-templates-selectors-templatename">DELETE /a/scheduler/templates/selectors/{TemplateName}</a></li>
+<li><a href="../rest-api/enterprise-scheduler-service/delete-a-scheduler-versions-jobid-versionid">DELETE /a/scheduler/versions/{JobID}/{VersionID}</a></li>
+<li><a href="../rest-api/enterprise-scheduler-service/get-a-scheduler-templates-docs-type">GET /a/scheduler/templates/docs/{Type}</a></li>
+<li><a href="../rest-api/enterprise-scheduler-service/patch-a-scheduler-versions-jobid-versionid">PATCH /a/scheduler/versions/{JobID}/{VersionID}</a></li>
+<li><a href="../rest-api/enterprise-scheduler-service/post-a-scheduler-hooks-hookslug">POST /a/scheduler/hooks/{HookSlug}</a></li>
+<li><a href="../rest-api/enterprise-scheduler-service/post-a-scheduler-templates-actions">POST /a/scheduler/templates/actions</a></li>
+<li><a href="../rest-api/enterprise-scheduler-service/post-a-scheduler-templates-jobs">POST /a/scheduler/templates/jobs</a></li>
+<li><a href="../rest-api/enterprise-scheduler-service/post-a-scheduler-templates-playground">POST /a/scheduler/templates/playground</a></li>
+<li><a href="../rest-api/enterprise-scheduler-service/post-a-scheduler-templates-selectors">POST /a/scheduler/templates/selectors</a></li>
+<li><a href="../rest-api/enterprise-scheduler-service/post-a-scheduler-versions-jobid">POST /a/scheduler/versions/{JobID}</a></li>
+<li><a href="../rest-api/enterprise-scheduler-service/put-a-scheduler-jobs">PUT /a/scheduler/jobs</a></li>
+<li><a href="../rest-api/enterprise-scheduler-service/put-a-scheduler-templates-actions">PUT /a/scheduler/templates/actions</a></li>
+<li><a href="../rest-api/enterprise-scheduler-service/put-a-scheduler-templates-jobs-name">PUT /a/scheduler/templates/jobs/{Name}</a></li>
+<li><a href="../rest-api/enterprise-scheduler-service/put-a-scheduler-templates-selectors">PUT /a/scheduler/templates/selectors</a></li>
+</ul>
+</li>
+<li><a href="../rest-api/search-service/index/">Search Service</a><ul>
+<li><a href="../rest-api/search-service/post-a-search-nodes">POST /a/search/nodes</a></li>
+</ul>
+</li>
+<li><a href="../rest-api/share-service/index/">Share Service</a><ul>
+<li><a href="../rest-api/share-service/delete-a-share-cell-uuid">DELETE /a/share/cell/{Uuid}</a></li>
+<li><a href="../rest-api/share-service/delete-a-share-link-uuid">DELETE /a/share/link/{Uuid}</a></li>
+<li><a href="../rest-api/share-service/get-a-share-cell-uuid">GET /a/share/cell/{Uuid}</a></li>
+<li><a href="../rest-api/share-service/get-a-share-link-uuid">GET /a/share/link/{Uuid}</a></li>
+<li><a href="../rest-api/share-service/post-a-share-resources">POST /a/share/resources</a></li>
+<li><a href="../rest-api/share-service/put-a-share-cell">PUT /a/share/cell</a></li>
+<li><a href="../rest-api/share-service/put-a-share-link">PUT /a/share/link</a></li>
+<li><a href="../rest-api/share-service/put-a-share-policies">PUT /a/share/policies</a></li>
+</ul>
+</li>
+<li><a href="../rest-api/templates-service/index/">Templates Service</a><ul>
+<li><a href="../rest-api/templates-service/get-a-templates">GET /a/templates</a></li>
+</ul>
+</li>
+<li><a href="../rest-api/token-service/index/">Token Service</a><ul>
+<li><a href="../rest-api/token-service/post-a-auth-reset-password">POST /a/auth/reset-password</a></li>
+<li><a href="../rest-api/token-service/post-a-auth-token-document">POST /a/auth/token/document</a></li>
+<li><a href="../rest-api/token-service/post-a-auth-token-revoke">POST /a/auth/token/revoke</a></li>
+<li><a href="../rest-api/token-service/put-a-auth-reset-password-token-userlogin">PUT /a/auth/reset-password-token/{UserLogin}</a></li>
+</ul>
+</li>
+<li><a href="../rest-api/tree-service/index/">Tree Service</a><ul>
+<li><a href="../rest-api/tree-service/get-a-tree-stat-node">GET /a/tree/stat/{Node}</a></li>
+<li><a href="../rest-api/tree-service/post-a-tree-create">POST /a/tree/create</a></li>
+<li><a href="../rest-api/tree-service/post-a-tree-delete">POST /a/tree/delete</a></li>
+<li><a href="../rest-api/tree-service/post-a-tree-restore">POST /a/tree/restore</a></li>
+<li><a href="../rest-api/tree-service/post-a-tree-selection">POST /a/tree/selection</a></li>
+<li><a href="../rest-api/tree-service/post-a-tree-stats">POST /a/tree/stats</a></li>
+</ul>
+</li>
+<li><a href="../rest-api/update-service/index/">Update Service</a><ul>
+<li><a href="../rest-api/update-service/patch-a-update-targetversion">PATCH /a/update/{TargetVersion}</a></li>
+<li><a href="../rest-api/update-service/post-a-update">POST /a/update</a></li>
+</ul>
+</li>
+<li><a href="../rest-api/usermeta-service/index/">UserMeta Service</a><ul>
+<li><a href="../rest-api/usermeta-service/delete-a-user-meta-tags-namespace-tags">DELETE /a/user-meta/tags/{Namespace}/{Tags}</a></li>
+<li><a href="../rest-api/usermeta-service/get-a-user-meta-namespace">GET /a/user-meta/namespace</a></li>
+<li><a href="../rest-api/usermeta-service/get-a-user-meta-tags-namespace">GET /a/user-meta/tags/{Namespace}</a></li>
+<li><a href="../rest-api/usermeta-service/post-a-user-meta-bookmarks">POST /a/user-meta/bookmarks</a></li>
+<li><a href="../rest-api/usermeta-service/post-a-user-meta-search">POST /a/user-meta/search</a></li>
+<li><a href="../rest-api/usermeta-service/post-a-user-meta-tags-namespace">POST /a/user-meta/tags/{Namespace}</a></li>
+<li><a href="../rest-api/usermeta-service/put-a-user-meta-namespace">PUT /a/user-meta/namespace</a></li>
+<li><a href="../rest-api/usermeta-service/put-a-user-meta-update">PUT /a/user-meta/update</a></li>
+</ul>
+</li>
+<li><a href="../rest-api/users-service/index/">Users Service</a><ul>
+<li><a href="../rest-api/users-service/delete-a-user-login">DELETE /a/user/{Login}</a></li>
+<li><a href="../rest-api/users-service/get-a-user-login">GET /a/user/{Login}</a></li>
+<li><a href="../rest-api/users-service/post-a-user">POST /a/user</a></li>
+<li><a href="../rest-api/users-service/put-a-user-roles-login">PUT /a/user/roles/{Login}</a></li>
+<li><a href="../rest-api/users-service/put-a-user-login">PUT /a/user/{Login}</a></li>
+</ul>
+</li>
+<li><a href="../rest-api/workspace-service/index/">Workspace Service</a><ul>
+<li><a href="../rest-api/workspace-service/delete-a-workspace-slug">DELETE /a/workspace/{Slug}</a></li>
+<li><a href="../rest-api/workspace-service/post-a-workspace">POST /a/workspace</a></li>
+<li><a href="../rest-api/workspace-service/put-a-workspace-slug">PUT /a/workspace/{Slug}</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="../developer-guide/command-line-reference/index/">Command line reference</a><ul>
+<li><a href="../command-line-reference/cells-binary/index/">Cells Binary</a><ul>
+<li><a href="../command-line-reference/cells-binary/cells">cells</a></li>
+<li><a href="../command-line-reference/cells-binary/cells-admin">cells admin</a></li>
+<li><a href="../command-line-reference/cells-binary/cells-admin-acl">cells admin acl</a></li>
+<li><a href="../command-line-reference/cells-binary/cells-admin-acl-create">cells admin acl create</a></li>
+<li><a href="../command-line-reference/cells-binary/cells-admin-acl-delete">cells admin acl delete</a></li>
+<li><a href="../command-line-reference/cells-binary/cells-admin-acl-patch-recycle-personal">cells admin acl patch-recycle-personal</a></li>
+<li><a href="../command-line-reference/cells-binary/cells-admin-acl-search">cells admin acl search</a></li>
+<li><a href="../command-line-reference/cells-binary/cells-admin-cert">cells admin cert</a></li>
+<li><a href="../command-line-reference/cells-binary/cells-admin-cert-import">cells admin cert import</a></li>
+<li><a href="../command-line-reference/cells-binary/cells-admin-clean">cells admin clean</a></li>
+<li><a href="../command-line-reference/cells-binary/cells-admin-clean-acls">cells admin clean acls</a></li>
+<li><a href="../command-line-reference/cells-binary/cells-admin-clean-activities">cells admin clean activities</a></li>
+<li><a href="../command-line-reference/cells-binary/cells-admin-clean-logs">cells admin clean logs</a></li>
+<li><a href="../command-line-reference/cells-binary/cells-admin-clean-reset-jobs">cells admin clean reset-jobs</a></li>
+<li><a href="../command-line-reference/cells-binary/cells-admin-clean-resync">cells admin clean resync</a></li>
+<li><a href="../command-line-reference/cells-binary/cells-admin-config">cells admin config</a></li>
+<li><a href="../command-line-reference/cells-binary/cells-admin-config-check">cells admin config check</a></li>
+<li><a href="../command-line-reference/cells-binary/cells-admin-config-copy">cells admin config copy</a></li>
+<li><a href="../command-line-reference/cells-binary/cells-admin-config-db">cells admin config db</a></li>
+<li><a href="../command-line-reference/cells-binary/cells-admin-config-db-add">cells admin config db add</a></li>
+<li><a href="../command-line-reference/cells-binary/cells-admin-config-db-list">cells admin config db list</a></li>
+<li><a href="../command-line-reference/cells-binary/cells-admin-config-db-move">cells admin config db move</a></li>
+<li><a href="../command-line-reference/cells-binary/cells-admin-config-db-set">cells admin config db set</a></li>
+<li><a href="../command-line-reference/cells-binary/cells-admin-config-delete">cells admin config delete</a></li>
+<li><a href="../command-line-reference/cells-binary/cells-admin-config-history">cells admin config history</a></li>
+<li><a href="../command-line-reference/cells-binary/cells-admin-config-list">cells admin config list</a></li>
+<li><a href="../command-line-reference/cells-binary/cells-admin-config-set">cells admin config set</a></li>
+<li><a href="../command-line-reference/cells-binary/cells-admin-datasource">cells admin datasource</a></li>
+<li><a href="../command-line-reference/cells-binary/cells-admin-datasource-capture">cells admin datasource capture</a></li>
+<li><a href="../command-line-reference/cells-binary/cells-admin-datasource-migrate">cells admin datasource migrate</a></li>
+<li><a href="../command-line-reference/cells-binary/cells-admin-datasource-rehash">cells admin datasource rehash</a></li>
+<li><a href="../command-line-reference/cells-binary/cells-admin-datasource-resync">cells admin datasource resync</a></li>
+<li><a href="../command-line-reference/cells-binary/cells-admin-datasource-rethumb">cells admin datasource rethumb</a></li>
+<li><a href="../command-line-reference/cells-binary/cells-admin-datasource-snapshot">cells admin datasource snapshot</a></li>
+<li><a href="../command-line-reference/cells-binary/cells-admin-file">cells admin file</a></li>
+<li><a href="../command-line-reference/cells-binary/cells-admin-file-create-bench">cells admin file create-bench</a></li>
+<li><a href="../command-line-reference/cells-binary/cells-admin-file-ls">cells admin file ls</a></li>
+<li><a href="../command-line-reference/cells-binary/cells-admin-file-meta-put">cells admin file meta-put</a></li>
+<li><a href="../command-line-reference/cells-binary/cells-admin-file-meta-read">cells admin file meta-read</a></li>
+<li><a href="../command-line-reference/cells-binary/cells-admin-user">cells admin user</a></li>
+<li><a href="../command-line-reference/cells-binary/cells-admin-user-create">cells admin user create</a></li>
+<li><a href="../command-line-reference/cells-binary/cells-admin-user-delete">cells admin user delete</a></li>
+<li><a href="../command-line-reference/cells-binary/cells-admin-user-search">cells admin user search</a></li>
+<li><a href="../command-line-reference/cells-binary/cells-admin-user-set-profile">cells admin user set-profile</a></li>
+<li><a href="../command-line-reference/cells-binary/cells-admin-user-set-pwd">cells admin user set-pwd</a></li>
+<li><a href="../command-line-reference/cells-binary/cells-admin-user-token">cells admin user token</a></li>
+<li><a href="../command-line-reference/cells-binary/cells-admin-user-unlock">cells admin user unlock</a></li>
+<li><a href="../command-line-reference/cells-binary/cells-configure">cells configure</a></li>
+<li><a href="../command-line-reference/cells-binary/cells-configure-sites">cells configure sites</a></li>
+<li><a href="../command-line-reference/cells-binary/cells-configure-sites-add">cells configure sites add</a></li>
+<li><a href="../command-line-reference/cells-binary/cells-configure-sites-delete">cells configure sites delete</a></li>
+<li><a href="../command-line-reference/cells-binary/cells-ctl">cells ctl</a></li>
+<li><a href="../command-line-reference/cells-binary/cells-ctl-service-level">cells ctl service-level</a></li>
+<li><a href="../command-line-reference/cells-binary/cells-start">cells start</a></li>
+<li><a href="../command-line-reference/cells-binary/cells-update">cells update</a></li>
+<li><a href="../command-line-reference/cells-binary/cells-version">cells version</a></li>
+</ul>
+</li>
+<li><a href="../command-line-reference/cells-client-cec/index/">Cells Client (cec)</a><ul>
+<li><a href="../command-line-reference/cells-client-cec/cec">cec</a></li>
+<li><a href="../command-line-reference/cells-client-cec/cec-clear">cec clear</a></li>
+<li><a href="../command-line-reference/cells-client-cec/cec-completion">cec completion</a></li>
+<li><a href="../command-line-reference/cells-client-cec/cec-completion-bash">cec completion bash</a></li>
+<li><a href="../command-line-reference/cells-client-cec/cec-completion-zsh">cec completion zsh</a></li>
+<li><a href="../command-line-reference/cells-client-cec/cec-config">cec config</a></li>
+<li><a href="../command-line-reference/cells-client-cec/cec-config-add">cec config add</a></li>
+<li><a href="../command-line-reference/cells-client-cec/cec-config-add-client-auth">cec config add client-auth</a></li>
+<li><a href="../command-line-reference/cells-client-cec/cec-config-add-oauth">cec config add oauth</a></li>
+<li><a href="../command-line-reference/cells-client-cec/cec-config-add-token">cec config add token</a></li>
+<li><a href="../command-line-reference/cells-client-cec/cec-config-check-keyring">cec config check-keyring</a></li>
+<li><a href="../command-line-reference/cells-client-cec/cec-config-ls">cec config ls</a></li>
+<li><a href="../command-line-reference/cells-client-cec/cec-config-rm">cec config rm</a></li>
+<li><a href="../command-line-reference/cells-client-cec/cec-config-use">cec config use</a></li>
+<li><a href="../command-line-reference/cells-client-cec/cec-cp">cec cp</a></li>
+<li><a href="../command-line-reference/cells-client-cec/cec-idm">cec idm</a></li>
+<li><a href="../command-line-reference/cells-client-cec/cec-idm-list-acls">cec idm list-acls</a></li>
+<li><a href="../command-line-reference/cells-client-cec/cec-idm-list-groups">cec idm list-groups</a></li>
+<li><a href="../command-line-reference/cells-client-cec/cec-idm-list-roles">cec idm list-roles</a></li>
+<li><a href="../command-line-reference/cells-client-cec/cec-idm-list-users">cec idm list-users</a></li>
+<li><a href="../command-line-reference/cells-client-cec/cec-idm-list-workspaces">cec idm list-workspaces</a></li>
+<li><a href="../command-line-reference/cells-client-cec/cec-info">cec info</a></li>
+<li><a href="../command-line-reference/cells-client-cec/cec-ls">cec ls</a></li>
+<li><a href="../command-line-reference/cells-client-cec/cec-mkdir">cec mkdir</a></li>
+<li><a href="../command-line-reference/cells-client-cec/cec-mv">cec mv</a></li>
+<li><a href="../command-line-reference/cells-client-cec/cec-rm">cec rm</a></li>
+<li><a href="../command-line-reference/cells-client-cec/cec-scp">cec scp</a></li>
+<li><a href="../command-line-reference/cells-client-cec/cec-share">cec share</a></li>
+<li><a href="../command-line-reference/cells-client-cec/cec-storage">cec storage</a></li>
+<li><a href="../command-line-reference/cells-client-cec/cec-storage-list-datasources">cec storage list-datasources</a></li>
+<li><a href="../command-line-reference/cells-client-cec/cec-storage-resync-ds">cec storage resync-ds</a></li>
+<li><a href="../command-line-reference/cells-client-cec/cec-update">cec update</a></li>
+<li><a href="../command-line-reference/cells-client-cec/cec-version">cec version</a></li>
+</ul>
+</li>
+<li><a href="../command-line-reference/cells-sync/index/">Cells Sync</a><ul>
+<li><a href="../command-line-reference/cells-sync/cells-sync">cells-sync</a></li>
+<li><a href="../command-line-reference/cells-sync/cells-sync-autotest">cells-sync autotest</a></li>
+<li><a href="../command-line-reference/cells-sync/cells-sync-capture">cells-sync capture</a></li>
+<li><a href="../command-line-reference/cells-sync/cells-sync-completion">cells-sync completion</a></li>
+<li><a href="../command-line-reference/cells-sync/cells-sync-completion-bash">cells-sync completion bash</a></li>
+<li><a href="../command-line-reference/cells-sync/cells-sync-completion-fish">cells-sync completion fish</a></li>
+<li><a href="../command-line-reference/cells-sync/cells-sync-completion-powershell">cells-sync completion powershell</a></li>
+<li><a href="../command-line-reference/cells-sync/cells-sync-completion-zsh">cells-sync completion zsh</a></li>
+<li><a href="../command-line-reference/cells-sync/cells-sync-config">cells-sync config</a></li>
+<li><a href="../command-line-reference/cells-sync/cells-sync-config-account">cells-sync config account</a></li>
+<li><a href="../command-line-reference/cells-sync/cells-sync-config-add">cells-sync config add</a></li>
+<li><a href="../command-line-reference/cells-sync/cells-sync-config-delete">cells-sync config delete</a></li>
+<li><a href="../command-line-reference/cells-sync/cells-sync-config-edit">cells-sync config edit</a></li>
+<li><a href="../command-line-reference/cells-sync/cells-sync-doc">cells-sync doc</a></li>
+<li><a href="../command-line-reference/cells-sync/cells-sync-service">cells-sync service</a></li>
+<li><a href="../command-line-reference/cells-sync/cells-sync-start">cells-sync start</a></li>
+<li><a href="../command-line-reference/cells-sync/cells-sync-systray">cells-sync systray</a></li>
+<li><a href="../command-line-reference/cells-sync/cells-sync-version">cells-sync version</a></li>
+<li><a href="../command-line-reference/cells-sync/cells-sync-webview">cells-sync webview</a></li>
+</ul>
+</li>
+<li><a href="../command-line-reference/cells-enterprise/index/">Cells Enterprise</a><ul>
+<li><a href="../command-line-reference/cells-enterprise/cells-enterprise">cells-enterprise</a></li>
+<li><a href="../command-line-reference/cells-enterprise/cells-enterprise-admin">cells-enterprise admin</a></li>
+<li><a href="../command-line-reference/cells-enterprise/cells-enterprise-admin-acl">cells-enterprise admin acl</a></li>
+<li><a href="../command-line-reference/cells-enterprise/cells-enterprise-admin-acl-create">cells-enterprise admin acl create</a></li>
+<li><a href="../command-line-reference/cells-enterprise/cells-enterprise-admin-acl-delete">cells-enterprise admin acl delete</a></li>
+<li><a href="../command-line-reference/cells-enterprise/cells-enterprise-admin-acl-patch-recycle-personal">cells-enterprise admin acl patch-recycle-personal</a></li>
+<li><a href="../command-line-reference/cells-enterprise/cells-enterprise-admin-acl-search">cells-enterprise admin acl search</a></li>
+<li><a href="../command-line-reference/cells-enterprise/cells-enterprise-admin-cert">cells-enterprise admin cert</a></li>
+<li><a href="../command-line-reference/cells-enterprise/cells-enterprise-admin-cert-import">cells-enterprise admin cert import</a></li>
+<li><a href="../command-line-reference/cells-enterprise/cells-enterprise-admin-clean">cells-enterprise admin clean</a></li>
+<li><a href="../command-line-reference/cells-enterprise/cells-enterprise-admin-clean-acls">cells-enterprise admin clean acls</a></li>
+<li><a href="../command-line-reference/cells-enterprise/cells-enterprise-admin-clean-activities">cells-enterprise admin clean activities</a></li>
+<li><a href="../command-line-reference/cells-enterprise/cells-enterprise-admin-clean-logs">cells-enterprise admin clean logs</a></li>
+<li><a href="../command-line-reference/cells-enterprise/cells-enterprise-admin-clean-reset-jobs">cells-enterprise admin clean reset-jobs</a></li>
+<li><a href="../command-line-reference/cells-enterprise/cells-enterprise-admin-clean-resync">cells-enterprise admin clean resync</a></li>
+<li><a href="../command-line-reference/cells-enterprise/cells-enterprise-admin-config">cells-enterprise admin config</a></li>
+<li><a href="../command-line-reference/cells-enterprise/cells-enterprise-admin-config-check">cells-enterprise admin config check</a></li>
+<li><a href="../command-line-reference/cells-enterprise/cells-enterprise-admin-config-copy">cells-enterprise admin config copy</a></li>
+<li><a href="../command-line-reference/cells-enterprise/cells-enterprise-admin-config-db">cells-enterprise admin config db</a></li>
+<li><a href="../command-line-reference/cells-enterprise/cells-enterprise-admin-config-db-add">cells-enterprise admin config db add</a></li>
+<li><a href="../command-line-reference/cells-enterprise/cells-enterprise-admin-config-db-list">cells-enterprise admin config db list</a></li>
+<li><a href="../command-line-reference/cells-enterprise/cells-enterprise-admin-config-db-move">cells-enterprise admin config db move</a></li>
+<li><a href="../command-line-reference/cells-enterprise/cells-enterprise-admin-config-db-set">cells-enterprise admin config db set</a></li>
+<li><a href="../command-line-reference/cells-enterprise/cells-enterprise-admin-config-delete">cells-enterprise admin config delete</a></li>
+<li><a href="../command-line-reference/cells-enterprise/cells-enterprise-admin-config-history">cells-enterprise admin config history</a></li>
+<li><a href="../command-line-reference/cells-enterprise/cells-enterprise-admin-config-list">cells-enterprise admin config list</a></li>
+<li><a href="../command-line-reference/cells-enterprise/cells-enterprise-admin-config-set">cells-enterprise admin config set</a></li>
+<li><a href="../command-line-reference/cells-enterprise/cells-enterprise-admin-datasource">cells-enterprise admin datasource</a></li>
+<li><a href="../command-line-reference/cells-enterprise/cells-enterprise-admin-datasource-capture">cells-enterprise admin datasource capture</a></li>
+<li><a href="../command-line-reference/cells-enterprise/cells-enterprise-admin-datasource-migrate">cells-enterprise admin datasource migrate</a></li>
+<li><a href="../command-line-reference/cells-enterprise/cells-enterprise-admin-datasource-rehash">cells-enterprise admin datasource rehash</a></li>
+<li><a href="../command-line-reference/cells-enterprise/cells-enterprise-admin-datasource-resync">cells-enterprise admin datasource resync</a></li>
+<li><a href="../command-line-reference/cells-enterprise/cells-enterprise-admin-datasource-rethumb">cells-enterprise admin datasource rethumb</a></li>
+<li><a href="../command-line-reference/cells-enterprise/cells-enterprise-admin-datasource-snapshot">cells-enterprise admin datasource snapshot</a></li>
+<li><a href="../command-line-reference/cells-enterprise/cells-enterprise-admin-file">cells-enterprise admin file</a></li>
+<li><a href="../command-line-reference/cells-enterprise/cells-enterprise-admin-file-create-bench">cells-enterprise admin file create-bench</a></li>
+<li><a href="../command-line-reference/cells-enterprise/cells-enterprise-admin-file-ls">cells-enterprise admin file ls</a></li>
+<li><a href="../command-line-reference/cells-enterprise/cells-enterprise-admin-file-meta-put">cells-enterprise admin file meta-put</a></li>
+<li><a href="../command-line-reference/cells-enterprise/cells-enterprise-admin-file-meta-read">cells-enterprise admin file meta-read</a></li>
+<li><a href="../command-line-reference/cells-enterprise/cells-enterprise-admin-jobs">cells-enterprise admin jobs</a></li>
+<li><a href="../command-line-reference/cells-enterprise/cells-enterprise-admin-jobs-templates">cells-enterprise admin jobs templates</a></li>
+<li><a href="../command-line-reference/cells-enterprise/cells-enterprise-admin-jobs-unlock-public">cells-enterprise admin jobs unlock-public</a></li>
+<li><a href="../command-line-reference/cells-enterprise/cells-enterprise-admin-license">cells-enterprise admin license</a></li>
+<li><a href="../command-line-reference/cells-enterprise/cells-enterprise-admin-license-stats">cells-enterprise admin license stats</a></li>
+<li><a href="../command-line-reference/cells-enterprise/cells-enterprise-admin-license-update">cells-enterprise admin license update</a></li>
+<li><a href="../command-line-reference/cells-enterprise/cells-enterprise-admin-user">cells-enterprise admin user</a></li>
+<li><a href="../command-line-reference/cells-enterprise/cells-enterprise-admin-user-create">cells-enterprise admin user create</a></li>
+<li><a href="../command-line-reference/cells-enterprise/cells-enterprise-admin-user-delete">cells-enterprise admin user delete</a></li>
+<li><a href="../command-line-reference/cells-enterprise/cells-enterprise-admin-user-search">cells-enterprise admin user search</a></li>
+<li><a href="../command-line-reference/cells-enterprise/cells-enterprise-admin-user-set-profile">cells-enterprise admin user set-profile</a></li>
+<li><a href="../command-line-reference/cells-enterprise/cells-enterprise-admin-user-set-pwd">cells-enterprise admin user set-pwd</a></li>
+<li><a href="../command-line-reference/cells-enterprise/cells-enterprise-admin-user-token">cells-enterprise admin user token</a></li>
+<li><a href="../command-line-reference/cells-enterprise/cells-enterprise-admin-user-unlock">cells-enterprise admin user unlock</a></li>
+<li><a href="../command-line-reference/cells-enterprise/cells-enterprise-configure">cells-enterprise configure</a></li>
+<li><a href="../command-line-reference/cells-enterprise/cells-enterprise-configure-sites">cells-enterprise configure sites</a></li>
+<li><a href="../command-line-reference/cells-enterprise/cells-enterprise-configure-sites-add">cells-enterprise configure sites add</a></li>
+<li><a href="../command-line-reference/cells-enterprise/cells-enterprise-configure-sites-delete">cells-enterprise configure sites delete</a></li>
+<li><a href="../command-line-reference/cells-enterprise/cells-enterprise-ctl">cells-enterprise ctl</a></li>
+<li><a href="../command-line-reference/cells-enterprise/cells-enterprise-ctl-service-level">cells-enterprise ctl service-level</a></li>
+<li><a href="../command-line-reference/cells-enterprise/cells-enterprise-start">cells-enterprise start</a></li>
+<li><a href="../command-line-reference/cells-enterprise/cells-enterprise-update">cells-enterprise update</a></li>
+<li><a href="../command-line-reference/cells-enterprise/cells-enterprise-version">cells-enterprise version</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="../developer-guide/cells-development/index/">Cells Development</a><ul>
+<li><a href="../cells-development/developing-on-cells/index/">Developing on Cells</a><ul>
+<li><a href="../cells-development/developing-on-cells/setup-dev-environment">Setup dev environment</a></li>
+<li><a href="../cells-development/developing-on-cells/how-to-contribute">How to contribute</a></li>
+<li><a href="../cells-development/developing-on-cells/vendoring">Vendoring</a></li>
+</ul>
+</li>
+<li><a href="../cells-development/microservices/index/">Microservices</a><ul>
+<li><a href="../cells-development/microservices/introduction">Introduction</a></li>
+<li><a href="../cells-development/microservices/discovery">Discovery</a></li>
+<li><a href="../cells-development/microservices/communication">Communication</a></li>
+<li><a href="../cells-development/microservices/api-gateway-model">Api gateway model</a></li>
+<li><a href="../cells-development/microservices/architecture-overview">Architecture overview</a></li>
+</ul>
+</li>
+<li><a href="../cells-development/miscellaneous/index/">Miscellaneous</a><ul>
+<li><a href="../cells-development/miscellaneous/logging">Logging</a></li>
+<li><a href="../cells-development/miscellaneous/tracing">Tracing</a></li>
+<li><a href="../cells-development/miscellaneous/javascript-frontend">Javascript Frontend</a></li>
+</ul>
+</li>
+<li><a href="../cells-development/services-categories/index/">Services categories</a><ul>
+<li><a href="../cells-development/services-categories/identity-managment">Identity managment</a></li>
+<li><a href="../cells-development/services-categories/broker">Broker</a></li>
+<li><a href="../cells-development/services-categories/data">Data</a></li>
+<li><a href="../cells-development/services-categories/scheduler">Scheduler</a></li>
+<li><a href="../cells-development/services-categories/gateway">Gateway</a></li>
+</ul>
+</li>
+<li><a href="../cells-development/security-model/index/">Security model</a><ul>
+<li><a href="../cells-development/security-model/role-based-security-rules">Role based security rules</a></li>
+<li><a href="../cells-development/security-model/resource-based-security-rules">Resource based security rules</a></li>
+</ul>
+</li>
+<li><a href="../cells-development/activity-streams">Activity streams</a></li>
+</ul>
+</li>
+</ul>
 
 
 
