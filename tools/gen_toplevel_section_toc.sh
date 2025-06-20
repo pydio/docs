@@ -43,7 +43,11 @@ build_slug_path() {
   while [[ "$path" != "$DOCS_DIR" && "$path" != "." && "$path" != "/" ]]; do
     slug=$(extract_slug_from_nav "$path")
     [[ -z "$slug" ]] && slug=$(basename "$path")
-    slug_parts=("$slug" "${slug_parts[@]}")
+    #slug_parts=("$slug" "${slug_parts[@]}")
+    # Prevent repeating slugs (only add if not same as previous)
+    if [[ "${#slug_parts[@]}" -eq 0 || "$slug" != "${slug_parts[0]}" ]]; then
+      slug_parts=("$slug" "${slug_parts[@]}")
+    fi
     path=$(dirname "$path")
   done
 
