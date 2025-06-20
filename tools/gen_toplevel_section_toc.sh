@@ -119,12 +119,16 @@ generate_index() {
   toc=$(generate_toc "$folder" "." 1 "")
 
   {
-    echo "---"
-    echo "title: $title"
-    echo "weight: 0"
-    echo "---"
-    echo
-    echo "$toc"
+      awk -v toc="$toc_markdown" '
+        {
+          if ($0 ~ /\[:toplevel-toc:\]/ && !done) {
+            print toc
+            done = 1
+          } else {
+            print
+          }
+        }
+      ' "$index_file"
   } > "$index_file.tmp" && mv "$index_file.tmp" "$index_file"
 
   echo "✅ TOC generated in: $index_file"
