@@ -1,8 +1,0 @@
-RewriteEngine On
-RewriteBase /
-# Redirect root to latest/index/index.html
-RewriteCond %{REQUEST_URI} ^/$
-RewriteRule ^$ latest/index/index.html [R=302,L]
-# Rewrite /cells-vX/ or /pydio-v8/ to /cells-vX/index/index.html or /pydio-v8/index/index.html
-RewriteCond %{REQUEST_URI} ^/(cells-v[0-9]+|pydio-v8)/$
-RewriteRule ^(cells-v[0-9]+|pydio-v8)/$ $1/index/index.html [L]
