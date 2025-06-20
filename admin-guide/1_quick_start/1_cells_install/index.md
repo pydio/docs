@@ -5,7 +5,6 @@ menu: Cells Installation
 language: und
 weight: 2
 menu_name: menu-admin-guide-v7-enterprise
-slug: cells-installation
 ---
 
 ### Select your installation type
