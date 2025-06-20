@@ -23770,7 +23770,7 @@
 <h2 id="structured-storage-best-for-accessing-the-files-directly">Structured Storage: best for accessing the files directly<a class="headerlink" href="#structured-storage-best-for-accessing-the-files-directly" title="Permanent link">&para;</a></h2>
 <h3 id="objects-to-index-synchronization">Objects-to-Index Synchronization<a class="headerlink" href="#objects-to-index-synchronization" title="Permanent link">&para;</a></h3>
 <p>In structured format, the files and folders you see in Cells are exactly the same as the storage contents. Any modification, even going through the Cells interface is always applied on the storage, and then reported to the index throught the real-time synchronization. </p>
-<p>[:image:4_connecting_your_storage/datasource-format-struct.png]</p>
+<p><a class="glightbox" href="../images/4_connecting_your_storage/datasource-format-struct.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/4_connecting_your_storage/datasource-format-struct.png" /></a></p>
 <p>In this configuration, modifying the storage content directly and triggering a manual re-synchronization makes sure that the index is always up-to-date.</p>
 <h3 id="drawbacks">Drawbacks<a class="headerlink" href="#drawbacks" title="Permanent link">&para;</a></h3>
 <p>As Cells is speaking "object" with the storage, the drawback of this configuration is that huge moves (like a folder rename) require first moving all the objects inside the folder to their new name, listening to these move events, factorizing them and finally renaming the folder inside the index. Furthermore, the "move" operation does not really exist in object storages, but always require a copy/delete sequence!</p>
@@ -23781,7 +23781,7 @@
 <h3 id="embracing-the-objects-storage-world">Embracing the "objects storage" world<a class="headerlink" href="#embracing-the-objects-storage-world" title="Permanent link">&para;</a></h3>
 <p>In flat storage, files are stored as basic data blobs named with their internal UUIDs. Folders are not physically present inside the storage. The index service maintains the whole tree of folders and files and will just query the storage when an actual data modification (upload/download) is necessary.
 As a result, tree modifications like "moves" are performed directly inside the index, at best speed. </p>
-<p>[:image:4_connecting_your_storage/datasource-format-flat.png]</p>
+<p><a class="glightbox" href="../../../images/4_connecting_your_storage/datasource-format-flat.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="../../../images/4_connecting_your_storage/datasource-format-flat.png" /></a></p>
 <p>This is exactly what object storage technologies are designed for : serving objects by keys, allowing infinite horizontal scaling possibility.</p>
 <h3 id="backup-restore_1">Backup / Restore<a class="headerlink" href="#backup-restore_1" title="Permanent link">&para;</a></h3>
 <p>For admins, it can be a bit scary to have a look at their storage and see just a bunch of UUID-named files. What if Cells is down, how will I get my folders/files back? A command line tool is provided to backup a flat datasource index directly inside a dedicated DB file on the storage. This DB file can later on be read by Cells to initialize a new datasource with the saved index data.</p>
