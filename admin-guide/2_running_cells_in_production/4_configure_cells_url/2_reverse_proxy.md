@@ -26,11 +26,11 @@ _**Warning**: if you intend to use CellsSync client together with your server in
 
 In our knowledge base we have a growing number of comprehensive guides to setup various proxies with Cells:
 
-- [Running Cells behind **Apache2** proxy](/en/docs/kb/deployment/running-cells-behind-apache-reverse-proxy)
-- [Reverse proxy with **Caddy**](/en/docs/kb/deployment/running-cells-behind-caddy-reverse-proxy)
-- [Reverse proxy with **Nginx**](/en/docs/kb/deployment/running-cells-behind-nginx-reverse-proxy)
-- [Docker and **Traefik**](/en/docs/kb/deployment/running-your-cells-docker-behind-traefik-reverse-proxy)
-- [Reverse proxy with a Apache your **Docker** instance](/en/docs/kb/deployment/running-your-cells-docker-container-behind-reverse-proxy)
+- [Running Cells behind **Apache2** proxy](https://pydio.com/en/docs/kb/deployment/running-cells-behind-apache-reverse-proxy)
+- [Reverse proxy with **Caddy**](https://pydio.com/en/docs/kb/deployment/running-cells-behind-caddy-reverse-proxy)
+- [Reverse proxy with **Nginx**](https://pydio.com/en/docs/kb/deployment/running-cells-behind-nginx-reverse-proxy)
+- [Docker and **Traefik**](https://pydio.com/en/docs/kb/deployment/running-your-cells-docker-behind-traefik-reverse-proxy)
+- [Reverse proxy with a Apache your **Docker** instance](https://pydio.com/en/docs/kb/deployment/running-your-cells-docker-container-behind-reverse-proxy)
 
 ### More details
 
