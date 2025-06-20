@@ -217,7 +217,7 @@ This section provides a full-spectrum overview of Cells installation, configurat
 
 > Notice: the menu item is clickable if an corresponding `index.md` exists
 
-> WARNING: Don't add `slug` to frontmatter of a `index.md` file
+> WARNING: Don't add `slug` to frontmatter of an `index.md` file
 
 > Notice: Adding a new topbar section, it's require addition copy line in .github/workflows/deploy-docs.yml file
 
