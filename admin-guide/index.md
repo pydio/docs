@@ -5,4 +5,4 @@ weight: 0
 
 Documentation for administrators
 
-[:section-toc:]
+[:toplevel-toc:]
