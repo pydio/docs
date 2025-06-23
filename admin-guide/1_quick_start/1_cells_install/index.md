@@ -100,50 +100,50 @@ Get started quickly with Cells static binaries, or pick an image for your cloud 
 
     ## Using pre-built binaries
 
-     - Download latest build from [pydio.com](https://pydio.com/en/download) 
-     - Make it executable 
-     - Setup with <code>$ ./cells configure</code> (you will be asked for DB access)
-     - Start with <code>$ ./cells start</code> and open your browser at <a href="https://localhost:8080" target="_blank">https://localhost:8080</a> 
+    Download latest build from [pydio.com](https://pydio.com/en/download) and make it executable, then run 
 
-    _Voilà_!
+    ```sh
+    $ ./cells configure # you will be asked for DB Credentials
+    $ ./cells start
+    ```
+    Open your browser at <a href="https://localhost:8080" target="_blank">https://localhost:8080</a, _voilà_!
 
     [Detailed Instructions](./1_static_binaries.md){ .md-button .md-button--primary }
 
 === "[<img src="../../../images/logos-os/docker.png" width="60">]()"
 
-    Pydio Cells needs a MySQL/MariaDB Database [with a privileged user](https://pydio.com/en/docs/cells/v4/requirements).
+    ## Using Docker Images
 
-    Launching a test instance is as simple as:
+    Our images are hosted on Docker Hub: 
 
     ```sh
     docker run -d --network=host pydio/cells
     ```
 
-    [Read more about single container and docker compose deployments](./2_docker.md)
+    [Docker / Docker Compose instructions](./2_docker.md){ .md-button .md-button--primary }
 
 === "[<img src="../../../images/logos-os/ovf.png" width="60">]()"
 
-    The Cells Enterprise Appliance package follows the OVF standard. 
+    ## Using OVF Image
 
     Download the [latest OVF image](https://download.pydio.com/latest/cells-enterprise/release/{latest}/ovf/Cells-Enterprise-OVF-{latest}.zip).
 
-    [Read more about our OVF Image details](./5_ovf.md)
+    [OVF Image Details](./5_ovf.md){ .md-button .md-button--primary }
 
 === "[<img src="../../../images/logos-os/amazon.png" width="60">]()"
 
-    You can find a ready-to-use Amazon Machine Image (AMI) for Cells Enterprise Distribution [on the Amazon Web Services Marketplace](https://aws.amazon.com/marketplace/pp/B08CNGR8ZP).
+    An Amazon Machine Image (AMI) for Cells Enterprise Distribution is available on [on the Amazon Web Services Marketplace](https://aws.amazon.com/marketplace/pp/B08CNGR8ZP).
 
-    This appliance is based on [Amazon Linux 2023 (AL2023) OS](https://aws.amazon.com/linux/amazon-linux-2023) and has been enriched with necessary third parties and configuration to provide an easy to run instance of the Cells server out of the box.
-
-    [Read more about our AMI Image](./7_AMI.md)
+    [AMI Image Instructions](./7_AMI.md){ .md-button .md-button--primary }
 
 === "[<img src="../../../images/logos-os/logo-kubernetes.png" width="50">]()"
 
-    <ol class="install-steps numbering">
-    <li><p>Add the Pydio Cells Helm Chart repository<br> <code>$ helm repo add cells https://download.pydio.com/pub/charts/helm</code></p></li>
-    <li><p>Run the install command<br> <code>$ helm install cells cells/cells --namespace cells --create-namespace</code></li>
-    <li><p>The output will tell you how to access your app once the deployment is ready. It can take a few minutes.</p></li>
-    </ol>
+    ## Kubernetes Deployment
 
-    [See detailed Cluster deployment instructions](../../../run-cells-in-production/deploying-cells-in-a-distributed-environment/kubernetes-quick-install)
+    Pydio Cells Helm Chart is available at https://download.pydio.com/pub/charts/helm. Add this repository and run
+    ```sh
+        $ helm install cells cells/cells --namespace cells --create-namespace
+    ```
+
+    [Detailed Clustered Deployment Instructions](../../../run-cells-in-production/deploying-cells-in-a-distributed-environment/kubernetes-quick-install){ .md-button .md-button--primary }
 
