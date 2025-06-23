@@ -106,7 +106,7 @@ Get started quickly with Cells static binaries, or pick an image for your cloud 
     $ ./cells configure # you will be asked for DB Credentials
     $ ./cells start
     ```
-    Open your browser at <a href="https://localhost:8080" target="_blank">https://localhost:8080</a, _voilà_!
+    Open your browser at <a href="https://localhost:8080" target="_blank">https://localhost:8080</a>, _et voilà_!
 
     [Detailed Instructions](./1_static_binaries.md){ .md-button .md-button--primary }
 
