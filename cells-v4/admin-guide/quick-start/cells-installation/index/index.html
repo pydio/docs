@@ -23649,6 +23649,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#using-pre-built-binaries" class="md-nav__link">
+    <span class="md-ellipsis">
+      Using pre-built binaries
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -23759,16 +23768,15 @@ ol span.geshifilter {
 <div class="tabbed-set tabbed-alternate" data-tabs="1:5"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><input id="__tabbed_1_4" name="__tabbed_1" type="radio" /><input id="__tabbed_1_5" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1"><a href=""><img src="../../../images/logos-os/binaries.png" width="60" ></a></label><label for="__tabbed_1_2"><a href=""><img src="../../../images/logos-os/docker.png" width="60"></a></label><label for="__tabbed_1_3"><a href=""><img src="../../../images/logos-os/ovf.png" width="60"></a></label><label for="__tabbed_1_4"><a href=""><img src="../../../images/logos-os/amazon.png" width="60"></a></label><label for="__tabbed_1_5"><a href=""><img src="../../../images/logos-os/logo-kubernetes.png" width="50"></a></label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<p><em>These instructions will get you started quickly with Cells binaries. Apply commands similary on either <code>cells</code> of <code>cells-enterprise</code> binary.</em></p>
-<p><ol class="install-steps">
-<li><p><strong>Get your database access information</strong> (see <a href="./requirements">Requirements</a>). Login as non-root user.</p></li>
-<li><p><a href="/en/download" target="_blank"><strong>Download the binary</strong></a> for your server architecture. Make it executable:<br> <code>$ chmod +x ./cells</code></p></li>
-<li><p><strong>Configure Cells</strong> using web or command line installer (see below):<br> <code>$ ./cells configure</code></p></li>
-<li><p><strong>Start Cells</strong>. Web installer restarts automatically, otherwise use: <code>$ ./cells start</code></p></li>
-<li><p><strong>Open your web browser</strong> at <a href="https://localhost:8080" target="_blank"><a href="https://localhost:8080">https://localhost:8080</a></a> <br> (or https://[server ip or domain]:8080).</p></li>
-</ol></p>
-<p>And <em>voilà</em>!</p>
-<p><a class="md-button md-button--primary" href="../install-static-binaries/">Read more about the installers</a></p>
+<h2 id="using-pre-built-binaries">Using pre-built binaries<a class="headerlink" href="#using-pre-built-binaries" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Download latest build from <a href="https://pydio.com/en/download">pydio.com</a> </li>
+<li>Make it executable </li>
+<li>Setup with <code>$ ./cells configure</code> (you will be asked for DB access)</li>
+<li>Start with <code>$ ./cells start</code> and open your browser at <a href="https://localhost:8080" target="_blank"><a href="https://localhost:8080">https://localhost:8080</a></a> </li>
+</ul>
+<p><em>Voilà</em>!</p>
+<p><a class="md-button md-button--primary" href="../install-static-binaries/">Detailed Instructions</a></p>
 </div>
 <div class="tabbed-block">
 <p>Pydio Cells needs a MySQL/MariaDB Database <a href="https://pydio.com/en/docs/cells/v4/requirements">with a privileged user</a>.</p>
