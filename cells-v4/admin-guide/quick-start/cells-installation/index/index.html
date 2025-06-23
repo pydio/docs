@@ -616,8 +616,6 @@
       
         
       
-        
-      
     
     
     
@@ -722,29 +720,6 @@
   
   <span class="md-ellipsis">
     Open Virtual Format
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../vmware/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    VMWare
     
   </span>
   
@@ -23658,6 +23633,33 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#using-docker-images" class="md-nav__link">
+    <span class="md-ellipsis">
+      Using Docker Images
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using-ovf-image" class="md-nav__link">
+    <span class="md-ellipsis">
+      Using OVF Image
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kubernetes-deployment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kubernetes Deployment
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -23769,39 +23771,36 @@ ol span.geshifilter {
 <div class="tabbed-content">
 <div class="tabbed-block">
 <h2 id="using-pre-built-binaries">Using pre-built binaries<a class="headerlink" href="#using-pre-built-binaries" title="Permanent link">&para;</a></h2>
-<ul>
-<li>Download latest build from <a href="https://pydio.com/en/download">pydio.com</a> </li>
-<li>Make it executable </li>
-<li>Setup with <code>$ ./cells configure</code> (you will be asked for DB access)</li>
-<li>Start with <code>$ ./cells start</code> and open your browser at <a href="https://localhost:8080" target="_blank"><a href="https://localhost:8080">https://localhost:8080</a></a> </li>
-</ul>
-<p><em>Voilà</em>!</p>
+<p>Download latest build from <a href="https://pydio.com/en/download">pydio.com</a> and make it executable, then run </p>
+<p><div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span>
+<span class="normal"><a href="#__codelineno-0-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a>$<span class="w"> </span>./cells<span class="w"> </span>configure<span class="w"> </span><span class="c1"># you will be asked for DB Credentials</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2"></a>$<span class="w"> </span>./cells<span class="w"> </span>start
+</code></pre></div></td></tr></table></div>
+Open your browser at <a href="https://localhost:8080" target="_blank"><a href="https://localhost:8080">https://localhost:8080</a>&lt;/a, <em>voilà</em>!</p>
 <p><a class="md-button md-button--primary" href="../install-static-binaries/">Detailed Instructions</a></p>
 </div>
 <div class="tabbed-block">
-<p>Pydio Cells needs a MySQL/MariaDB Database <a href="https://pydio.com/en/docs/cells/v4/requirements">with a privileged user</a>.</p>
-<p>Launching a test instance is as simple as:</p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a>docker<span class="w"> </span>run<span class="w"> </span>-d<span class="w"> </span>--network<span class="o">=</span>host<span class="w"> </span>pydio/cells
+<h2 id="using-docker-images">Using Docker Images<a class="headerlink" href="#using-docker-images" title="Permanent link">&para;</a></h2>
+<p>Our images are hosted on Docker Hub: </p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a>docker<span class="w"> </span>run<span class="w"> </span>-d<span class="w"> </span>--network<span class="o">=</span>host<span class="w"> </span>pydio/cells
 </code></pre></div></td></tr></table></div>
-<p><a href="../docker/">Read more about single container and docker compose deployments</a></p>
+<p><a class="md-button md-button--primary" href="../docker/">Docker / Docker Compose instructions</a></p>
 </div>
 <div class="tabbed-block">
-<p>The Cells Enterprise Appliance package follows the OVF standard. </p>
+<h2 id="using-ovf-image">Using OVF Image<a class="headerlink" href="#using-ovf-image" title="Permanent link">&para;</a></h2>
 <p>Download the <a href="https://download.pydio.com/latest/cells-enterprise/release/{latest}/ovf/Cells-Enterprise-OVF-{latest}.zip">latest OVF image</a>.</p>
-<p><a href="../open-virtual-format/">Read more about our OVF Image details</a></p>
+<p><a class="md-button md-button--primary" href="../open-virtual-format/">OVF Image Details</a></p>
 </div>
 <div class="tabbed-block">
-<p>You can find a ready-to-use Amazon Machine Image (AMI) for Cells Enterprise Distribution <a href="https://aws.amazon.com/marketplace/pp/B08CNGR8ZP">on the Amazon Web Services Marketplace</a>.</p>
-<p>This appliance is based on <a href="https://aws.amazon.com/linux/amazon-linux-2023">Amazon Linux 2023 (AL2023) OS</a> and has been enriched with necessary third parties and configuration to provide an easy to run instance of the Cells server out of the box.</p>
-<p><a href="../amazon-ami/">Read more about our AMI Image</a></p>
+<p>An Amazon Machine Image (AMI) for Cells Enterprise Distribution is available on <a href="https://aws.amazon.com/marketplace/pp/B08CNGR8ZP">on the Amazon Web Services Marketplace</a>.</p>
+<p><a class="md-button md-button--primary" href="../amazon-ami/">AMI Image Instructions</a></p>
 </div>
 <div class="tabbed-block">
-<p><ol class="install-steps numbering">
-<li><p>Add the Pydio Cells Helm Chart repository<br> <code>$ helm repo add cells <a href="https://download.pydio.com/pub/charts/helm">https://download.pydio.com/pub/charts/helm</a></code></p></li>
-<li><p>Run the install command<br> <code>$ helm install cells cells/cells --namespace cells --create-namespace</code></li>
-<li><p>The output will tell you how to access your app once the deployment is ready. It can take a few minutes.</p></li>
-</ol></p>
-<p><a href="../../../run-cells-in-production/deploying-cells-in-a-distributed-environment/kubernetes-quick-install">See detailed Cluster deployment instructions</a></p>
+<h2 id="kubernetes-deployment">Kubernetes Deployment<a class="headerlink" href="#kubernetes-deployment" title="Permanent link">&para;</a></h2>
+<p>Pydio Cells Helm Chart is available at <a href="https://download.pydio.com/pub/charts/helm">https://download.pydio.com/pub/charts/helm</a>. Add this repository and run
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="w">    </span>$<span class="w"> </span>helm<span class="w"> </span>install<span class="w"> </span>cells<span class="w"> </span>cells/cells<span class="w"> </span>--namespace<span class="w"> </span>cells<span class="w"> </span>--create-namespace
+</code></pre></div></td></tr></table></div></p>
+<p><a class="md-button md-button--primary" href="../../../run-cells-in-production/deploying-cells-in-a-distributed-environment/kubernetes-quick-install">Detailed Clustered Deployment Instructions</a></p>
 </div>
 </div>
 </div>
