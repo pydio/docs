@@ -98,19 +98,16 @@ Get started quickly with Cells static binaries, or pick an image for your cloud 
 
 === "[<img src="../../../images/logos-os/binaries.png" width="60" >]()"
 
-    _These instructions will get you started quickly with Cells binaries. Apply commands similary on either `cells` of `cells-enterprise` binary._
+    ## Using pre-built binaries
 
-    <ol class="install-steps">
-    <li><p><strong>Get your database access information</strong> (see <a href="./requirements">Requirements</a>). Login as non-root user.</p></li>
-    <li><p><a href="/en/download" target="_blank"><strong>Download the binary</strong></a> for your server architecture. Make it executable:<br> <code>$ chmod +x ./cells</code></p></li>
-    <li><p><strong>Configure Cells</strong> using web or command line installer (see below):<br> <code>$ ./cells configure</code></p></li>
-    <li><p><strong>Start Cells</strong>. Web installer restarts automatically, otherwise use: <code>$ ./cells start</code></p></li>
-    <li><p><strong>Open your web browser</strong> at <a href="https://localhost:8080" target="_blank">https://localhost:8080</a> <br> (or https://[server ip or domain]:8080).</p></li>
-    </ol>
+     - Download latest build from [pydio.com](https://pydio.com/en/download) 
+     - Make it executable 
+     - Setup with <code>$ ./cells configure</code> (you will be asked for DB access)
+     - Start with <code>$ ./cells start</code> and open your browser at <a href="https://localhost:8080" target="_blank">https://localhost:8080</a> 
 
-    And _voilà_!
+    _Voilà_!
 
-    [Read more about the installers](./1_static_binaries.md){ .md-button .md-button--primary }
+    [Detailed Instructions](./1_static_binaries.md){ .md-button .md-button--primary }
 
 === "[<img src="../../../images/logos-os/docker.png" width="60">]()"
 
