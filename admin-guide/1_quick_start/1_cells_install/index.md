@@ -110,7 +110,7 @@ Get started quickly with Cells static binaries, or pick an image for your cloud 
 
     And _voilà_!
 
-    [Read more about the installers](./1_static_binaries.md) (command-line or web-based)
+    [Read more about the installers](./1_static_binaries.md){ .md-button .md-button--primary }
 
 === "[<img src="../../../images/logos-os/docker.png" width="60">]()"
 
@@ -131,15 +131,6 @@ Get started quickly with Cells static binaries, or pick an image for your cloud 
     Download the [latest OVF image](https://download.pydio.com/latest/cells-enterprise/release/{latest}/ovf/Cells-Enterprise-OVF-{latest}.zip).
 
     [Read more about our OVF Image details](./5_ovf.md)
-
-=== "[<img src="../../../images/logos-os/vmware.png" width="60">]()"
-
-    The Pydio Cells image for VMWare is based on Rocky Linux 9. It has been enriched with necessary third party software and pre-configured to provide an easy to run instance of the Cells server out of the box.  
-    It is known to run in VSphere ecosystems and in standalone ESXi hosts.
-
-    Download the [latest VMWare image](https://download.pydio.com/latest/cells-enterprise/release/{latest}/vmware/Cells-Enterprise-VMWare-{latest}.zip). An MD5 file is also available at the same location for integrity verification.
-
-    [Read more about our VMWare Image details](./6_VMWare.md)
 
 === "[<img src="../../../images/logos-os/amazon.png" width="60">]()"
 
