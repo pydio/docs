@@ -122,4 +122,4 @@ _All requests done from Cells-Sync have the header `Content-Type` set to `applic
 --------------------------------------------------------------------------------------------------------
 _See Also_
 
-[Running Cells Behind a reverse proxy](en/docs/cells/v4/configure-cells-reverse-proxy)
+[Running Cells Behind a reverse proxy](/en/docs/cells/v4/configure-cells-reverse-proxy)
