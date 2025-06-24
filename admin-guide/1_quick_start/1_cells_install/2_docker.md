@@ -48,7 +48,6 @@ Where:
 Below is a vanilla configuration to run Pydio Cells with `docker compose`:
 
 ```yaml
-version: '3.7'
 services:
 
   cells:
