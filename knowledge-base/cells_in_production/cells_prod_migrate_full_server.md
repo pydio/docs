@@ -6,7 +6,7 @@ language: und
 category: Cells in Production
 
 ---
-This How-To comes in addition to [the public documentation about how to manage Backup](https://pydio.com/en/docs/cells/v4/backup-recover) with Pydio Cells.
+This How-To comes in addition to [the public documentation about how to manage Backup](https://docs.pydio.com/en/docs/cells/v4/backup-recover) with Pydio Cells.
 
 ## Prepare the new machine
 

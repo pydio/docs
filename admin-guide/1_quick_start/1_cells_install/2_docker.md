@@ -13,7 +13,7 @@ The [Pydio Cells image](https://hub.docker.com/r/pydio/cells/) is a container de
 
 ## Run as stand-alone container
 
-Pydio Cells needs a MySQL/MariaDB Database [with a privileged user](https://pydio.com/en/docs/cells/v4/requirements).
+Pydio Cells needs a MySQL/MariaDB Database [with a privileged user](https://docs.pydio.com/en/docs/cells/v4/requirements).
 
 Launch a test instance with:
 
@@ -140,7 +140,7 @@ We gather some [relevant sample configuration](https://github.com/pydio/cells/tr
 
 The Cells Sync Desktop Application might require an additional port, for example if you run behind a reverse proxy that performs TLS termination. In such case:
 
-- First read this, [Setup Cells Server for Cells Sync](https://pydio.com/en/docs/kb/client-applications/setup-cells-server-cellssync)
+- First read this, [Setup Cells Server for Cells Sync](https://docs.pydio.com/en/docs/kb/client-applications/setup-cells-server-cellssync)
 - Make sure to start a container with this env set `CELLS_GRPC_EXTERNAL`
 - Expose the port that you previously set with `CELLS_GRPC_EXTERNAL`
 

@@ -6,7 +6,7 @@ language: und
 category: Cells in Production
 
 ---
-This article explains how to install ClamAV software, to be used in conjunction with [Cells Flows job for antivirus scan](https://pydio.com/en/docs/cells-flows/scan-antivirus).
+This article explains how to install ClamAV software, to be used in conjunction with [Cells Flows job for antivirus scan](https://docs.pydio.com/en/docs/cells-flows/scan-antivirus).
 
 From the [Clam AV website](https://www.clamav.net/documents/introduction):
 

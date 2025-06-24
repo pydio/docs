@@ -94,4 +94,4 @@ On your desktop, if you update from 0.9.2 or below, CellsSync will automatically
 If you encounter errors such as:
 
 - `/oidc/.well-known 404` this error might indicate that the `EXTERNAL_URL` on Cells was not set, please refer to the following [article](./configure-cells-reverse-proxy) on how to configure this paremeter.
-- `transport is closing` or `server closed the stream without sending trailers`: This might be related to the reverse-proxy **grpc** configuration. [see knowledge base](https://pydio.com/en/docs/kb/deployment)
+- `transport is closing` or `server closed the stream without sending trailers`: This might be related to the reverse-proxy **grpc** configuration. [see knowledge base](https://docs.pydio.com/en/docs/kb/deployment)
