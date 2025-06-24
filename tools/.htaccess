@@ -1,6 +1,10 @@
 # Generated .htaccess for URL redirects
 RewriteEngine On
 RewriteBase /
+RewriteRule ^en/docs/administration-guides$ https://docs.pydio.com/cells-v4/admin-guide/index/ [R=301,L]
+RewriteRule ^en/docs/knowledge-base$ https://docs.pydio.com/cells-v4/knowledge-base/index/  [R=301,L]
+RewriteRule ^en/docs/developer-guide$ https://docs.pydio.com/cells-v4/developer-guide/index/  [R=301,L]
+RewriteRule ^en/docs/legacy-documentation$ https://docs.pydio.com/pydio-v8/index/ [R=301,L]
 RewriteRule ^en/docs/cells/v4/requirements$ https://docs.pydio.com/cells-v4/admin-guide/quick-start/requirements [R=301,L]
 RewriteRule ^en/docs/cells/v4/install-static-binaries$ https://docs.pydio.com/cells-v4/admin-guide/quick-start/cells-installation/install-static-binaries [R=301,L]
 RewriteRule ^en/docs/cells/v4/docker$ https://docs.pydio.com/cells-v4/admin-guide/quick-start/cells-installation/docker [R=301,L]
