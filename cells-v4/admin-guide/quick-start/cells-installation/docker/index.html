@@ -23882,7 +23882,7 @@
 
 <p>The <a href="https://hub.docker.com/r/pydio/cells/">Pydio Cells image</a> is a container designed to be used in a Docker environment. It only contains what is strictly necessary to run your server.</p>
 <h2 id="run-as-stand-alone-container">Run as stand-alone container<a class="headerlink" href="#run-as-stand-alone-container" title="Permanent link">&para;</a></h2>
-<p>Pydio Cells needs a MySQL/MariaDB Database <a href="https://pydio.com/en/docs/cells/v4/requirements">with a privileged user</a>.</p>
+<p>Pydio Cells needs a MySQL/MariaDB Database <a href="https://docs.pydio.com/en/docs/cells/v4/requirements">with a privileged user</a>.</p>
 <p>Launch a test instance with:</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a>docker<span class="w"> </span>run<span class="w"> </span>-d<span class="w"> </span>--network<span class="o">=</span>host<span class="w"> </span>pydio/cells
 </code></pre></div></td></tr></table></div>
@@ -24038,7 +24038,7 @@
 <h3 id="cells-sync">Cells Sync<a class="headerlink" href="#cells-sync" title="Permanent link">&para;</a></h3>
 <p>The Cells Sync Desktop Application might require an additional port, for example if you run behind a reverse proxy that performs TLS termination. In such case:</p>
 <ul>
-<li>First read this, <a href="https://pydio.com/en/docs/kb/client-applications/setup-cells-server-cellssync">Setup Cells Server for Cells Sync</a></li>
+<li>First read this, <a href="https://docs.pydio.com/en/docs/kb/client-applications/setup-cells-server-cellssync">Setup Cells Server for Cells Sync</a></li>
 <li>Make sure to start a container with this env set <code>CELLS_GRPC_EXTERNAL</code></li>
 <li>Expose the port that you previously set with <code>CELLS_GRPC_EXTERNAL</code></li>
 </ul>
