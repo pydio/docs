@@ -23743,7 +23743,7 @@
   <h1>Recovering a Flat Storage Datasource with Cells Fuse</h1>
 
 <p>The flat format storage is highly recommended to get the best performance. Switching to an "object storage" provides an unprecedented level of flexibility and scalability, but it can be daunting to see UUIDs instead of the original filenames.</p>
-<p>The <a href="https://docs.pydio.com/cells-v4/admin-guide/connect-your-storage/datasource-format/flat-storage-best-for-performances/">"snaphsot" feature</a> creates an index of the data for better long-term archiving. With that snapshot and the corresponding UUID files, Cells can easily recreate a datasource with the original files/folders tree.</p>
+<p>The <a href="/cells-v4/admin-guide/connect-your-storage/datasource-format/flat-storage-best-for-performances/">"snaphsot" feature</a> creates an index of the data for better long-term archiving. With that snapshot and the corresponding UUID files, Cells can easily recreate a datasource with the original files/folders tree.</p>
 <p>But what if you simply want to explore the storage "offline", without a Cells instance running, or without wanting to recreate a brand new datasource just to find a file inside a backup? Meet Cells Fuse.</p>
 <h2 id="cells-fuse-command-line">Cells Fuse command line<a class="headerlink" href="#cells-fuse-command-line" title="Permanent link">&para;</a></h2>
 <p>Cells Fuse is a dedicated tool used to directly interact with a snapshot database to search for a given file, retrieve its content, or event mount the whole tree as a FUSE volume on the machine. <em>This feature is only supported on Linux</em> (MacOSX can use MacFUSE, but requires a manual build of the binary).</p>

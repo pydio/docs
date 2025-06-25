@@ -23749,11 +23749,11 @@
 <li><strong>Google Cloud Storage</strong>: compatible with Google's cloud storage solution [Ent only].</li>
 <li><strong>Azure Blob Storage</strong>: compatible with Azure's blob storage solution [Ent only].</li>
 </ul>
-<p>In the article <a href="https://docs.pydio.com/cells-v4/admin-guide/connect-your-storage/datasource-format/index">Detailed structure of a datasource</a>, a detailed view of how each service on datasource interacts.</p>
+<p>In the article <a href="/cells-v4/admin-guide/connect-your-storage/datasource-format/index">Detailed structure of a datasource</a>, a detailed view of how each service on datasource interacts.</p>
 <h3 id="flat-vs-structured-storage-format">Flat vs. Structured Storage Format<a class="headerlink" href="#flat-vs-structured-storage-format" title="Permanent link">&para;</a></h3>
 <p>Starting with Cells v3, the default storage format is "flat": while indexes maintain the tree of files and folders in the database, actual data is stored as blobs on the storage. Using this format, you are not supposed to modify the storage directly (without going through Cells). </p>
 <p>If you need to be able to modify data directly on the storage, you will have to use "structured" storage format, and manually trigger a resynchronization to see the modifications appear and be usable. This operation can be done with a REST api call or with the CLI. Interacting with the data via the standard clients (Cells Web interface, <a href="https://github.com/pydio/cells-client">Cells-client CLI</a> or CellsSync) you should never care about re-indexation.</p>
-<p>Read more about the <a href="https://docs.pydio.com/cells-v4/admin-guide/connect-your-storage/datasource-format/index">datasource format</a> in the next chapter.</p>
+<p>Read more about the <a href="/cells-v4/admin-guide/connect-your-storage/datasource-format/index">datasource format</a> in the next chapter.</p>
 
 
 

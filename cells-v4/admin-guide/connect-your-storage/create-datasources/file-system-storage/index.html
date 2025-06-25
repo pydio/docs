@@ -23706,7 +23706,7 @@
 <ul>
 <li><strong>The path must be absolute</strong> on the chosen peer: it must start from the root of the chosen server.<br />
   Once you have chosen a peer, note that the system automatically discovers the available directories and presents them in a popup list.</li>
-<li>Due to the internal implementation of the file-system-based Object service (see <a href="https://docs.pydio.com/cells-v4/admin-guide/connect-your-storage/datasources-overview/">previous chapter</a>):</li>
+<li>Due to the internal implementation of the file-system-based Object service (see <a href="/cells-v4/admin-guide/connect-your-storage/datasources-overview/">previous chapter</a>):</li>
 <li>The leaf folder is exposed as an Amazon S3 bucket, <strong>it must comply with the Bucket naming rules</strong>, which are the same as the DNS sub-domains naming rules: technical names that must be lower case and without spaces.</li>
 <li>The path must be at least two levels deep (defining e.g. <code>/tmp</code> as a datasource does not work).</li>
 <li>The user owning the process that starts the app (usually the <code>pydio</code> user) must have read and write permissions on this folder <strong>and on the parent folder</strong>.</li>
