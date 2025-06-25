@@ -32,9 +32,9 @@ sudo setcap 'cap_net_bind_service=+ep' /path/to/your/cells/binary
 
 ### 0.0.0.0 address
 
-If you are behind a reverse proxy and get `404: this page is not served on this interface` when trying to access the web UI, you can try to use the `0.0.0.0` generic IP address in your [Binding Address](https://docs.pydio.com/cells-v4/admin-guide/quick-start/glossary).
+If you are behind a reverse proxy and get `404: this page is not served on this interface` when trying to access the web UI, you can try to use the `0.0.0.0` generic IP address in your [Binding Address](/cells-v4/admin-guide/quick-start/glossary).
 
-This basically tells to the [Cells Gateway](https://docs.pydio.com/cells-v4/admin-guide/quick-start/glossary) of the application to accept all requests on this port.
+This basically tells to the [Cells Gateway](/cells-v4/admin-guide/quick-start/glossary) of the application to accept all requests on this port.
 
 In contrary, if you give a specific valid IP or a domain name in the Binding Address, the Cells Gateway checks the "HOST" header of the incoming requests. If the header does not **exactly** matches with the DN or IP of the Binding Address, the server throw a 404 file not found error.
 

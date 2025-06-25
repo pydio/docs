@@ -51,4 +51,4 @@ When **Trigger** conditions are met (based on events, schedule or when you run m
 
 ![](../images/0_overview/tasks-logs.png)
 
-Learn more about the [Anatomy of a Flow](https://docs.pydio.com/cells-v4/cellsflows/cells-flows-manual/anatomy-of-a-flow/index/) to get started quickly in the next section!
+Learn more about the [Anatomy of a Flow](/cells-v4/cellsflows/cells-flows-manual/anatomy-of-a-flow/index/) to get started quickly in the next section!

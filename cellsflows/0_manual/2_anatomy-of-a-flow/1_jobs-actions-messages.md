@@ -12,7 +12,7 @@ menu_name: menu-admin-guide-v6-enterprise
 
 Basic building blocks of Cells Flows jobs are **Actions**. They provide a wide range of tools to either process file contents, transform arbitrary data, communicate with external tools or even simply print something to the task log to monitor the good processing of a running task. 
 
-See the [list of available actions](/cells-v4/cellsflows/actions/index/) and get inspired!
+See the [list of available actions](../../../actions/index/) and get inspired!
 
 ## Chaining Actions
 

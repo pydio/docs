@@ -8,7 +8,7 @@ weight: 3
 menu_name: menu-admin-guide-v7-enterprise
 
 ---
-[Cells Gateway](https://docs.pydio.com/cells-v4/admin-guide/quick-start/glossary) provides multiple ways for enabling TLS support. It is highly recommended to make sure all communications are encrypted between the client applications and the server (HTTPS).
+[Cells Gateway](/cells-v4/admin-guide/quick-start/glossary) provides multiple ways for enabling TLS support. It is highly recommended to make sure all communications are encrypted between the client applications and the server (HTTPS).
 
 TLS configuration can be changed by using the `cells configure sites` command.
 

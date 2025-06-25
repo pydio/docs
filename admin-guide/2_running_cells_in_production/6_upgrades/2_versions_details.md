@@ -30,7 +30,7 @@ For a TLS setup with Let's Encrypt, the domain name *must* be used with the stan
 
 ### 4 - CellsSync client compatibility
 
-An important change introduced in v4 creates a compatibility issue between specific server versions and CellsSync versions. Please refer to the [Connect Desktop Sync](https://docs.pydio.com/cells-v4/admin-guide/quick-start/connect-desktop-sync/connect-desktop-sync) section to learn more. 
+An important change introduced in v4 creates a compatibility issue between specific server versions and CellsSync versions. Please refer to the [Connect Desktop Sync](/cells-v4/admin-guide/quick-start/connect-desktop-sync/connect-desktop-sync) section to learn more. 
 
 _**TL;DR:**_ 
 

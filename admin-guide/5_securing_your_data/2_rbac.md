@@ -13,7 +13,7 @@ menu_name: menu-admin-guide-v7-enterprise
 The role abstraction is used by the system when defining authorizations and policies. Basically, a role is a simple container for an **Access Control List** (ACL). 
 An ACL is a set of permissions that either grants access to any Node of the tree, or stores specific configurations attached to the corresponding roles (like Actions and Parameters custom values).
 
-Nodes permissions are creating e.g. when assigning Read/Write to a Workspace or a Cell or a specific folder. They can be set manually (Read, Write), or computed dynamically at runtime by a Security Policy (see [Security Policies section](https://docs.pydio.com/cells-v4/admin-guide/secure-your-data/ent-dynamic-access-control/using-security-policies/)).
+Nodes permissions are creating e.g. when assigning Read/Write to a Workspace or a Cell or a specific folder. They can be set manually (Read, Write), or computed dynamically at runtime by a Security Policy (see [Security Policies section](/cells-v4/admin-guide/secure-your-data/ent-dynamic-access-control/using-security-policies/)).
 
 ### Admin-defined Roles
 
@@ -79,7 +79,7 @@ Policies are a powerful feature of Pydio Cells used to dynamically assign ACLs d
 
 ![](../images/5_securing_your_data/rbac/rbac-workspaces-dynamic-policy.png)
 
-See the [Security Policies](https://docs.pydio.com/cells-v4/admin-guide/secure-your-data/role-based-access-control/?h=dynam#ent-dynamic-acls-with-policies) section to learn more.
+See the [Security Policies](/cells-v4/admin-guide/secure-your-data/role-based-access-control/?h=dynam#ent-dynamic-acls-with-policies) section to learn more.
 
 ### [Ent] Policies inheritance and Cells
 

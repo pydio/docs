@@ -30,7 +30,7 @@ You can select any shape (in the screenshot above you can see the 3 different ki
 
 ### Video annotations
 
-You need to first enable the annotations, to do so ([enable advanced parameters](https://docs.pydio.com/cells-v4/admin-guide/advanced/advanced-configurations/)) and browse to **Application Parameters >> Available Plugins**.
+You need to first enable the annotations, to do so ([enable advanced parameters](/cells-v4/admin-guide/advanced/advanced-configurations/)) and browse to **Application Parameters >> Available Plugins**.
 
 Search for **video**:
 

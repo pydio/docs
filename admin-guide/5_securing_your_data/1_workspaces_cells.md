@@ -49,4 +49,4 @@ _See Also_
 
 - [Creating a simple workspace in the Quick Admin Tour](https://docs.pydio.com/en/docs/cells/v4/quick-admin-tour)
 - [Datasources overview](https://docs.pydio.com/en/docs/cells/v4/datasources-overview)
-- [Assigning workspaces accesses via Users, Groups and Roles](https://docs.pydio.com/cells-v4/admin-guide/secure-your-data/role-based-access-control/)
+- [Assigning workspaces accesses via Users, Groups and Roles](/cells-v4/admin-guide/secure-your-data/role-based-access-control/)

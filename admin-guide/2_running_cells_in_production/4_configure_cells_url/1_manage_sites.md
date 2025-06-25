@@ -8,7 +8,7 @@ weight: 1
 menu_name: menu-admin-guide-v7-enterprise
 
 ---
-A site is a secure access route configuration in the [Cells Gateway](https://docs.pydio.com/cells-v4/admin-guide/quick-start/glossary).
+A site is a secure access route configuration in the [Cells Gateway](/cells-v4/admin-guide/quick-start/glossary).
 
 The default configuration will get Cells up and running quickly with a direct access on a server or on a local machine. You can extend to wider network 
 and/or secure that access with Sites.
