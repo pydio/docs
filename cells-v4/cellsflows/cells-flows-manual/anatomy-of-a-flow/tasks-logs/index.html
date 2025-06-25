@@ -23732,7 +23732,7 @@
 <p><strong>Note</strong>: the task list is refreshed automatically, but as logs are sent internally in an asynchronous way, logs may take some time to appear just after a task has run.</p>
 <h2 id="printing-information-to-logger">Printing Information to Logger<a class="headerlink" href="#printing-information-to-logger" title="Permanent link">&para;</a></h2>
 <p>When creating your own custom job, it is very often useful to <strong>print out some informative or debugging data</strong> to check if you are correctly configuring your actions, queries or others. </p>
-<p>The <a href="./empty-action"><strong>Empty Action</strong></a> is a good tool that you can insert here and there inside your flow, to print out the contents of the current messages passing along. Create a new action and select "Empty Action" in the action picker screen:</p>
+<p>The <a href="https://docs.pydio.com/en/docs/cells-flows/empty-action"><strong>Empty Action</strong></a> is a good tool that you can insert here and there inside your flow, to print out the contents of the current messages passing along. Create a new action and select "Empty Action" in the action picker screen:</p>
 <p><a class="glightbox" href="../../../images/0_overview/logs-action-empty-select.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="../../../images/0_overview/logs-action-empty-select.png" /></a></p>
 <p>Then use the action parameter to type any message you want to print out. Notice that you can use Golang Templates here to print out a specific part of the action input!</p>
 <p><a class="glightbox" href="../../../images/0_overview/logs-action-empty-parameters.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="../../../images/0_overview/logs-action-empty-parameters.png" /></a></p>
@@ -23741,7 +23741,7 @@
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="nx">Logger</span><span class="p">.</span><span class="nx">Info</span><span class="p">(</span><span class="s2">&quot;My log message&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">anyObject</span><span class="p">,</span><span class="w"> </span><span class="nx">anyValue</span><span class="p">)</span>
 </code></pre></div></td></tr></table></div>
 <h2 id="using-logs-for-debugging-flows">Using Logs for Debugging Flows<a class="headerlink" href="#using-logs-for-debugging-flows" title="Permanent link">&para;</a></h2>
-<p>Switching logs to DEBUG level is a nice way to monitor very closely all messages that are transferred from one action to another during a given Flow run. See the <a href="./debugging-tools">Debugging Tools</a> page to learn more about this.</p>
+<p>Switching logs to DEBUG level is a nice way to monitor very closely all messages that are transferred from one action to another during a given Flow run. See the <a href="https://docs.pydio.com/en/docs/cells-flows/debugging-tools">Debugging Tools</a> page to learn more about this.</p>
 
 
 

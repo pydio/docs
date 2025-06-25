@@ -2,3010 +2,3010 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://mkdocs.pydio.com/latest/index/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/admin-guide/index/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/admin-guide/quick-start/index/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/admin-guide/quick-start/requirements/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/admin-guide/quick-start/quick-admin-tour/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/admin-guide/quick-start/sharing-features/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/admin-guide/quick-start/connect-desktop-sync/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/admin-guide/quick-start/mobile-apps/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/admin-guide/quick-start/glossary/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/admin-guide/quick-start/cells-installation/index/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/admin-guide/quick-start/cells-installation/install-static-binaries/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/admin-guide/quick-start/cells-installation/docker/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/admin-guide/quick-start/cells-installation/open-virtual-format/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/admin-guide/quick-start/cells-installation/amazon-ami/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/admin-guide/quick-start/cells-installation/advanced-setups/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/admin-guide/quick-start/add-collaboration-tools/index/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/admin-guide/quick-start/add-collaboration-tools/ent-only-office/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/admin-guide/quick-start/add-collaboration-tools/collabora-online/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/admin-guide/run-cells-in-production/index/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/admin-guide/run-cells-in-production/configuring-mongo-storage/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/admin-guide/run-cells-in-production/configuring-email-delivery/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/admin-guide/run-cells-in-production/troubleshooting/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/admin-guide/run-cells-in-production/best-practices/index/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/admin-guide/run-cells-in-production/best-practices/recommended-architectures/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/admin-guide/run-cells-in-production/best-practices/create-a-dedicated-mysql-user/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/admin-guide/run-cells-in-production/best-practices/create-a-service-user/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/admin-guide/run-cells-in-production/best-practices/linux-service/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/admin-guide/run-cells-in-production/best-practices/working-directories/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/admin-guide/run-cells-in-production/best-practices/system-logs/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/admin-guide/run-cells-in-production/configuring-cells-urls/index/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/admin-guide/run-cells-in-production/configuring-cells-urls/manage-sites/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/admin-guide/run-cells-in-production/configuring-cells-urls/configure-cells-with-a-reverse-proxy/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/admin-guide/run-cells-in-production/configuring-cells-urls/configure-tls/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/admin-guide/run-cells-in-production/upgrades/index/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/admin-guide/run-cells-in-production/upgrades/software-upgrades/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/admin-guide/run-cells-in-production/upgrades/major-versions-upgrade-informations/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/admin-guide/run-cells-in-production/operational-maintenance/index/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/admin-guide/run-cells-in-production/operational-maintenance/truncate-logs-audits/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/admin-guide/run-cells-in-production/operational-maintenance/purge-activities-notifications/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/admin-guide/run-cells-in-production/operational-maintenance/monitoring-tools/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/admin-guide/run-cells-in-production/operational-maintenance/backup-recover/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/admin-guide/run-cells-in-production/deploying-cells-in-a-distributed-environment/index/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/admin-guide/run-cells-in-production/deploying-cells-in-a-distributed-environment/kubernetes-quick-install/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/admin-guide/run-cells-in-production/deploying-cells-in-a-distributed-environment/going-stateless/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/admin-guide/run-cells-in-production/deploying-cells-in-a-distributed-environment/external-services/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/admin-guide/run-cells-in-production/deploying-cells-in-a-distributed-environment/configuring-with-urls/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/admin-guide/run-cells-in-production/deploying-cells-in-a-distributed-environment/deploying-cells-nodes/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/admin-guide/run-cells-in-production/deploying-cells-in-a-distributed-environment/migrating-from-single-node/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/admin-guide/run-cells-in-production/deploying-cells-in-a-distributed-environment/k8s-advanced-parameters/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/admin-guide/run-cells-in-production/deploying-cells-in-a-distributed-environment/providing-ha-with-docker-compose/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/admin-guide/connect-your-users/index/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/admin-guide/connect-your-users/manage-users/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/admin-guide/connect-your-users/users-teams-visibility/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/admin-guide/connect-your-users/ent-group-tenancy/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/admin-guide/connect-your-users/ent-admin-delegation/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/admin-guide/connect-your-users/single-sign-on-features/index/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/admin-guide/connect-your-users/single-sign-on-features/cells-as-identity-provider/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/admin-guide/connect-your-users/single-sign-on-features/ent-using-sso-with-an-external-identity-provider/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/admin-guide/connect-your-users/single-sign-on-features/ent-ldap-ad/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/admin-guide/connect-your-users/single-sign-on-features/ent-ldap-ad-advanced/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/admin-guide/connect-your-users/single-sign-on-features/ent-ad-kerberos-support/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/admin-guide/connect-your-users/additional-apis/index/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/admin-guide/connect-your-users/additional-apis/webdav-server-access/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/admin-guide/connect-your-users/additional-apis/ent-sftp-access/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/admin-guide/connect-your-users/additional-apis/personal-access-tokens/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/admin-guide/connect-your-storage/index/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/admin-guide/connect-your-storage/datasources-overview/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/admin-guide/connect-your-storage/versioning-policies/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/admin-guide/connect-your-storage/encryption/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/admin-guide/connect-your-storage/metadata/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/admin-guide/connect-your-storage/ent-enable-image-and-video-annotations/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/admin-guide/connect-your-storage/ent-assign-quotas/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/admin-guide/connect-your-storage/ent-shard-with-template-path/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/admin-guide/connect-your-storage/datasource-format/index/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/admin-guide/connect-your-storage/datasource-format/structured-storage-best-for-accessing-the-files-directly/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/admin-guide/connect-your-storage/datasource-format/flat-storage-best-for-performances/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/admin-guide/connect-your-storage/datasource-format/recovering-a-flat-storage-datasource-with-cells-fuse/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/admin-guide/connect-your-storage/datasource-format/switching-datasource-storage-formats/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/admin-guide/connect-your-storage/create-datasources/index/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/admin-guide/connect-your-storage/create-datasources/common-options/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/admin-guide/connect-your-storage/create-datasources/file-system-storage/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/admin-guide/connect-your-storage/create-datasources/mounts-nas/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/admin-guide/connect-your-storage/create-datasources/s3-compatible-storage/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/admin-guide/connect-your-storage/create-datasources/ent-google-cloud-storage/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/admin-guide/connect-your-storage/create-datasources/ent-azure-blob-storage/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/admin-guide/secure-your-data/index/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/admin-guide/secure-your-data/workspaces-cells/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/admin-guide/secure-your-data/role-based-access-control/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/admin-guide/secure-your-data/ux-actions-parameters/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/admin-guide/secure-your-data/ent-dynamic-access-control/index/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/admin-guide/secure-your-data/ent-dynamic-access-control/using-security-policies/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/admin-guide/secure-your-data/ent-dynamic-access-control/rules-conditions/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/admin-guide/secure-your-data/ent-hardening-security/index/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/admin-guide/secure-your-data/ent-hardening-security/ent-password-complexity/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/admin-guide/secure-your-data/ent-hardening-security/ent-multi-factor-authentication/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/admin-guide/secure-your-data/ent-hardening-security/ent-ip-ban/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/admin-guide/secure-your-data/ent-audits-compliance/index/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/admin-guide/secure-your-data/ent-audits-compliance/ent-viewing-and-exporting-audit-logs/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/admin-guide/secure-your-data/ent-audits-compliance/ent-visualize-shared-resources/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/admin-guide/secure-your-data/ent-audits-compliance/ent-explore-storage-usage/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/admin-guide/secure-your-data/ent-audits-compliance/ent-adding-terms-of-service/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/admin-guide/customize-interface/index/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/admin-guide/customize-interface/ent-logos-and-wording/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/admin-guide/customize-interface/ent-brand-theme/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/admin-guide/customize-interface/ent-email-templates/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/admin-guide/customize-interface/ent-easytransfer-layout/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/admin-guide/customize-interface/ent-using-smartform/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/admin-guide/advanced/index/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/admin-guide/advanced/migrate-pydio-8-to-cells/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/admin-guide/advanced/scheduler-cells-flows/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/admin-guide/advanced/yaml-json-installation/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/admin-guide/advanced/pydio-cells-internals/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/admin-guide/advanced/advanced-configurations/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/index/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/cells-flows-manual/index/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/cells-flows-manual/introduction-to-cells-flows/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/cells-flows-manual/demo-of-a-simple-flow-video/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/cells-flows-manual/anatomy-of-a-flow/index/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/cells-flows-manual/anatomy-of-a-flow/actions-and-messages/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/cells-flows-manual/anatomy-of-a-flow/data-types-queries-filters/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/cells-flows-manual/anatomy-of-a-flow/triggers/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/cells-flows-manual/anatomy-of-a-flow/parameters/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/cells-flows-manual/anatomy-of-a-flow/tasks-logs/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/cells-flows-manual/building-your-own-flows/index/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/cells-flows-manual/building-your-own-flows/business-requirements/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/cells-flows-manual/building-your-own-flows/debugging-tools/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/cells-flows-manual/building-your-own-flows/parallelism-and-concurrency/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/cells-flows-manual/building-your-own-flows/runtime-parameters-and-variables/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/cells-flows-manual/building-your-own-flows/combining-multiple-triggers/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/cells-flows-manual/providing-end-user-interactions/index/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/cells-flows-manual/providing-end-user-interactions/webhooks-buttons/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/cells-flows-manual/providing-end-user-interactions/smart-forms/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/cells-flows-manual/scripting-capabilities/index/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/cells-flows-manual/scripting-capabilities/using-golang-templates/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/cells-flows-manual/scripting-capabilities/templates-functions/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/cells-flows-manual/scripting-capabilities/anko-pseudo-script/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/cells-flows-manual/scripting-capabilities/using-javascript/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/cells-flows-manual/scripting-capabilities/live-playground/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/cells-flows-manual/scripting-capabilities/scripting-cheatsheet/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/cells-flows-manual/managing-flows/index/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/cells-flows-manual/managing-flows/creating-renaming-and-deleting/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/cells-flows-manual/managing-flows/import-export-json-file/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/cells-flows-manual/managing-flows/templates-and-presets/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/cells-flows-manual/managing-flows/flows-versioning/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/preset-flows/index/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/preset-flows/intelligent-file-management/index/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/preset-flows/intelligent-file-management/detect-metadata-change/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/preset-flows/intelligent-file-management/move-files-automatically/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/preset-flows/intelligent-file-management/personal-files-preset/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/preset-flows/efficient-system-maintenance/index/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/preset-flows/efficient-system-maintenance/backup-personal-files/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/preset-flows/efficient-system-maintenance/disable-links-older/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/preset-flows/efficient-system-maintenance/empty-all-recycles/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/preset-flows/efficient-system-maintenance/purge-activities/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/preset-flows/efficient-system-maintenance/purge-files-activities/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/preset-flows/efficient-system-maintenance/purge-users-notifications/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/preset-flows/efficient-system-maintenance/truncate-logs/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/preset-flows/efficient-system-maintenance/unlock-public-links/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/preset-flows/efficient-system-maintenance/capture-snapshots/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/preset-flows/efficient-system-maintenance/check-software-updates/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/preset-flows/efficient-system-maintenance/daily-snapshots-flat/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/preset-flows/automated-identity-and-access-management/index/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/preset-flows/automated-identity-and-access-management/import-users-csv/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/preset-flows/automated-identity-and-access-management/list-locked-users/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/preset-flows/automated-identity-and-access-management/modify-a-user-login/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/preset-flows/automated-identity-and-access-management/batch-create-links/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/preset-flows/automated-identity-and-access-management/role-for-each-workspace/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/preset-flows/automated-identity-and-access-management/batch-delete-link/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/preset-flows/automated-identity-and-access-management/ws-first-connection/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/preset-flows/automated-identity-and-access-management/clear-otp-setup/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/preset-flows/data-analysis-insights-and-reporting/index/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/preset-flows/data-analysis-insights-and-reporting/export-audits-report/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/preset-flows/data-analysis-insights-and-reporting/export-users-permissions/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/preset-flows/data-analysis-insights-and-reporting/folder-content-report/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/preset-flows/data-analysis-insights-and-reporting/purge-files-older/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/preset-flows/data-analysis-insights-and-reporting/read-license-stats/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/preset-flows/data-analysis-insights-and-reporting/storage-usage/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/preset-flows/workflow-automation/index/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/preset-flows/workflow-automation/smartform-submission/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/preset-flows/workflow-automation/validation-workflow/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/preset-flows/workflow-automation/create-smartform/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/preset-flows/data-formatting-and-conversion/index/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/preset-flows/data-formatting-and-conversion/pdf-thumbnails/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/preset-flows/data-formatting-and-conversion/recompute-hashes/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/preset-flows/data-formatting-and-conversion/scan-with-antivirus/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/preset-flows/data-formatting-and-conversion/tika-contents-extraction/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/preset-flows/data-formatting-and-conversion/users-pdf-actions/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/preset-flows/data-formatting-and-conversion/broken-thumbnails/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/preset-flows/data-formatting-and-conversion/convert-tools/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/actions/index/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/actions/files-folders-operations/index/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/actions/files-folders-operations/user-metadata/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/actions/files-folders-operations/copy-move/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/actions/files-folders-operations/delete-files/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/actions/files-folders-operations/resources-exist/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/actions/files-folders-operations/store-internal-meta/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/actions/files-folders-operations/create-folder/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/actions/files-folders-operations/write-to-file/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/actions/files-folders-operations/read-from-file/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/actions/files-folders-operations/json-snapshot/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/actions/files-folders-operations/synchronize-folders/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/actions/archives-operations/index/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/actions/archives-operations/create-archive/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/actions/archives-operations/extract-archive/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/actions/scheduler-tools-internals/index/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/actions/scheduler-tools-internals/message-variable-error/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/actions/scheduler-tools-internals/clear-action/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/actions/scheduler-tools-internals/trigger-another-flow/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/actions/scheduler-tools-internals/advanced-logging-artifacts/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/actions/scheduler-tools-internals/empty-action/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/actions/scheduler-tools-internals/sort-input/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/actions/scheduler-tools-internals/anko-script/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/actions/scheduler-tools-internals/javascript/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/actions/scheduler-tools-internals/sleep/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/actions/upload-download-to-external-servers/index/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/actions/upload-download-to-external-servers/http-get/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/actions/upload-download-to-external-servers/ftp-put/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/actions/upload-download-to-external-servers/scp-put/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/actions/upload-download-to-external-servers/webhook/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/actions/atomic-commands-and-scripts/index/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/actions/atomic-commands-and-scripts/capture-datasource/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/actions/atomic-commands-and-scripts/resynchronize/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/actions/atomic-commands-and-scripts/grpc-request/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/actions/atomic-commands-and-scripts/shell-command/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/actions/contents-processing/index/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/actions/contents-processing/docx-replacement/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/actions/contents-processing/create-thumbs/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/actions/contents-processing/compute-hash/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/actions/contents-processing/clamav-scan/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/actions/contents-processing/cells-convert-tools/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/actions/contents-processing/gotenberg-pdf-previews/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/actions/contents-processing/doconv-extractor/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/actions/contents-processing/markdown-actions/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/actions/contents-processing/pdf-actions/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/actions/contents-processing/tika-extractor/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/actions/contents-processing/clean-thumbs/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/actions/contents-processing/extract-exif/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/actions/identity-management/index/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/actions/identity-management/user-permissions/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/actions/identity-management/set-user-attribute/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/actions/identity-management/remove-users/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/actions/identity-management/workspace-roots/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/actions/identity-management/modify-workspace/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/actions/identity-management/load-or-create-cell/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/actions/identity-management/modify-cell/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/actions/identity-management/save-delete-cell/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/actions/identity-management/context-user/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/actions/identity-management/delete-identity-data/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/actions/identity-management/create-link/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/actions/identity-management/delete-link/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/actions/identity-management/persist-identity-data/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/actions/identity-management/add-remove-user-role/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/actions/notifications-and-emails/index/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/actions/notifications-and-emails/send-email/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/actions/notifications-and-emails/send-notification/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/actions/notifications-and-emails/email-digest/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/actions/extract-load-transform/index/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/actions/extract-load-transform/docstore-query/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/actions/extract-load-transform/data-transformation/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/actions/extract-load-transform/sync-directories/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/actions/extract-load-transform/import-from-csv/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/actions/extract-load-transform/load-sql-schema/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/actions/extract-load-transform/flush-sql-schema/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/actions/extract-load-transform/select-sql-data/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/actions/extract-load-transform/modify-sql-data/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/actions/internal-actions/index/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/actions/internal-actions/prune-tokens/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/actions/internal-actions/write-to-file-v1/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/actions/internal-actions/read-from-file-v1/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/actions/internal-actions/reset-policies/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/actions/internal-actions/file-versioning/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/actions/internal-actions/backup-versions/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/actions/internal-actions/prune-versions/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/actions/internal-actions/upgrade-datasource-format/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/actions/internal-actions/fake-users/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/actions/internal-actions/sync-directories/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/actions/internal-actions/global-meta-from-p8/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/actions/internal-actions/legacy-meta-from-p8/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/actions/internal-actions/sync-workspaces/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/actions/internal-actions/sync-shares/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/actions/internal-actions/expired-acls-clean-up/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/actions/internal-actions/user-data-clean-up/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/actions/internal-actions/prune-jobs/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/actions/internal-actions/set-datasource-attribute/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/filters-queries/index/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/filters-queries/datasource-selector/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/filters-queries/files-folders-selector/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/filters-queries/users-selector/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/filters-queries/roles-selector/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/filters-queries/workspaces-selector/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/filters-queries/acl-selector/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/filters-queries/task-message-filter/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/filters-queries/request-metadata-filter/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/filters-queries/arbitrary-data-selector/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/filters-queries/job-trigger-filter/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/template-functions/index/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/template-functions/cells/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/template-functions/go/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/template-functions/gval/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/template-functions/humanize/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/cellsflows/template-functions/sprig/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/index/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/introduction/index/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/introduction/main-apis-presentation/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/introduction/authentication/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/introduction/other-apis/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/introduction/consumers-examples/index/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/introduction/consumers-examples/using-postman/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/introduction/consumers-examples/using-curl/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/clients-sdks/index/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/clients-sdks/cells-client/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/clients-sdks/cells-sdk-for-go/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/clients-sdks/cells-sdk-for-javascript/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/clients-sdks/cells-sdk-for-java/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/index/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/acl-service/index/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/acl-service/post-a-acl/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/acl-service/post-a-acl-bulk-delete/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/acl-service/put-a-acl/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/activity-service/index/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/activity-service/post-a-activity-stream/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/activity-service/post-a-activity-subscribe/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/activity-service/post-a-activity-subscriptions/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/admin-tree-service/index/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/admin-tree-service/post-a-tree-admin-list/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/admin-tree-service/post-a-tree-admin-stat/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/enterprise-audit-service/index/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/enterprise-audit-service/get-a-audit-data-reports/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/enterprise-audit-service/post-a-audit-data-shares/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/config-service/index/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/config-service/delete-a-config-datasource-name/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/config-service/get-a-config-ctl/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/config-service/get-a-config-datasource/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/config-service/get-a-config-datasource-name/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/config-service/get-a-config-discovery/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/config-service/get-a-config-discovery-forms-servicename/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/config-service/get-a-config-discovery-openapi/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/config-service/get-a-config-peers/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/config-service/get-a-config-scheduler-actions/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/config-service/get-a-config-scheduler-actions-actionname/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/config-service/get-a-config-sites-filter/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/config-service/get-a-config-versioning/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/config-service/get-a-config-versioning-uuid/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/config-service/get-a-config-virtualnodes/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/config-service/get-a-config-fullpath/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/config-service/post-a-config-buckets/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/config-service/post-a-config-ctl/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/config-service/post-a-config-datasource-name/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/config-service/post-a-config-encryption-create/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/config-service/post-a-config-encryption-delete/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/config-service/post-a-config-encryption-export/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/config-service/post-a-config-encryption-list/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/config-service/post-a-config-peers-peeraddress/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/config-service/post-a-config-processes/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/config-service/post-a-config-registry/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/config-service/put-a-config-buckets-bucketname/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/config-service/put-a-config-encryption-import/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/config-service/put-a-config-peers-peeraddress/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/config-service/put-a-config-fullpath/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/enterprise-config-service/index/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/enterprise-config-service/delete-a-config-directories-configid/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/enterprise-config-service/delete-a-config-oauth2clients-clientid/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/enterprise-config-service/delete-a-config-oauth2clients-client-id/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/enterprise-config-service/delete-a-config-oauth2connectors-id/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/enterprise-config-service/delete-a-config-versioning-uuid/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/enterprise-config-service/delete-a-config-virtualnodes-uuid/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/enterprise-config-service/get-a-config-directories/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/enterprise-config-service/get-a-config-oauth2clients/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/enterprise-config-service/get-a-config-oauth2connectors/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/enterprise-config-service/get-a-config-sites/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/enterprise-config-service/post-a-config-directories-test-ping/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/enterprise-config-service/post-a-config-directories-test-search/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/enterprise-config-service/post-a-config-versioning-uuid/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/enterprise-config-service/post-a-config-virtualnodes-uuid/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/enterprise-config-service/put-a-config-directories-configid/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/enterprise-config-service/put-a-config-oauth2clients-clientid/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/enterprise-config-service/put-a-config-oauth2clients-client-id/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/enterprise-config-service/put-a-config-oauth2connectors/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/enterprise-config-service/put-a-config-oauth2connectors-id/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/enterprise-front-service/index/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/enterprise-front-service/get-a-frontend-auth-state/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/enterprise-front-service/get-a-frontend-login-connectors/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/enterprise-log-service/index/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/enterprise-log-service/post-a-log-audit/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/enterprise-log-service/post-a-log-audit-chartdata/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/enterprise-log-service/post-a-log-audit-export/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/enterprise-log-service/post-a-log-sys-export/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/enterprise-policy-service/index/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/enterprise-policy-service/delete-a-policy-uuid/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/enterprise-policy-service/get-a-policy-ipbans/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/enterprise-policy-service/get-a-policy-iplists-name/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/enterprise-policy-service/post-a-policy-ipbans/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/enterprise-policy-service/post-a-policy-iplists/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/enterprise-policy-service/put-a-policy/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/enterprise-templates-service/index/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/enterprise-templates-service/delete-a-templates-meta-templateuuid/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/enterprise-templates-service/delete-a-templates-node-templateuuid/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/enterprise-templates-service/get-a-templates-meta/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/enterprise-templates-service/post-a-templates-node/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/enterprise-templates-service/put-a-templates-meta/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/enterprise-token-service/index/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/enterprise-token-service/delete-a-auth-tokens-tokenid/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/enterprise-token-service/post-a-auth-token-impersonate/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/enterprise-token-service/post-a-auth-token-personal/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/enterprise-token-service/post-a-auth-tokens/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/frontend-service/index/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/frontend-service/get-a-frontend-binaries-binarytype-uuid/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/frontend-service/get-a-frontend-bootconf/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/frontend-service/get-a-frontend-messages-lang/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/frontend-service/get-a-frontend-plugins-lang/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/frontend-service/get-a-frontend-settings-menu/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/frontend-service/get-a-frontend-state/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/frontend-service/post-a-frontend-binaries-binarytype-uuid/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/frontend-service/post-a-frontend-enroll/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/frontend-service/post-a-frontend-session/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/graph-service/index/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/graph-service/get-a-graph-relation-userid/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/graph-service/get-a-graph-state-segment/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/graph-service/post-a-graph-recommend/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/install-service/index/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/install-service/get-a-install/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/install-service/get-a-install-agreement/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/install-service/get-a-install-events/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/install-service/post-a-install/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/install-service/post-a-install-check/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/jobs-service/index/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/jobs-service/post-a-jobs-tasks-delete/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/jobs-service/post-a-jobs-tasks-logs/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/jobs-service/post-a-jobs-user/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/jobs-service/put-a-jobs-user/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/jobs-service/put-a-jobs-user-jobname/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/enterprise-license-service/index/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/enterprise-license-service/get-a-license-stats/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/enterprise-license-service/put-a-license-update/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/log-service/index/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/log-service/post-a-log-sys/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/mailer-service/index/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/mailer-service/post-a-mailer-send/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/meta-service/index/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/meta-service/post-a-meta-bulk-get/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/meta-service/post-a-meta-delete-nodepath/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/meta-service/post-a-meta-get-nodepath/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/meta-service/post-a-meta-set-nodepath/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/policy-service/index/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/policy-service/post-a-policy/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/role-service/index/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/role-service/delete-a-role-uuid/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/role-service/get-a-role-uuid/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/role-service/post-a-role/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/role-service/put-a-role-uuid/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/enterprise-scheduler-service/index/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/enterprise-scheduler-service/delete-a-scheduler-jobs-jobid/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/enterprise-scheduler-service/delete-a-scheduler-templates-actions-templatename/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/enterprise-scheduler-service/delete-a-scheduler-templates-jobs-name/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/enterprise-scheduler-service/delete-a-scheduler-templates-selectors-templatename/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/enterprise-scheduler-service/delete-a-scheduler-versions-jobid-versionid/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/enterprise-scheduler-service/get-a-scheduler-templates-docs-type/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/enterprise-scheduler-service/patch-a-scheduler-versions-jobid-versionid/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/enterprise-scheduler-service/post-a-scheduler-hooks-hookslug/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/enterprise-scheduler-service/post-a-scheduler-templates-actions/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/enterprise-scheduler-service/post-a-scheduler-templates-jobs/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/enterprise-scheduler-service/post-a-scheduler-templates-playground/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/enterprise-scheduler-service/post-a-scheduler-templates-selectors/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/enterprise-scheduler-service/post-a-scheduler-versions-jobid/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/enterprise-scheduler-service/put-a-scheduler-jobs/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/enterprise-scheduler-service/put-a-scheduler-templates-actions/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/enterprise-scheduler-service/put-a-scheduler-templates-jobs-name/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/enterprise-scheduler-service/put-a-scheduler-templates-selectors/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/search-service/index/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/search-service/post-a-search-nodes/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/share-service/index/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/share-service/delete-a-share-cell-uuid/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/share-service/delete-a-share-link-uuid/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/share-service/get-a-share-cell-uuid/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/share-service/get-a-share-link-uuid/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/share-service/post-a-share-resources/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/share-service/put-a-share-cell/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/share-service/put-a-share-link/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/share-service/put-a-share-policies/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/templates-service/index/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/templates-service/get-a-templates/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/token-service/index/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/token-service/post-a-auth-reset-password/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/token-service/post-a-auth-token-document/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/token-service/post-a-auth-token-revoke/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/token-service/put-a-auth-reset-password-token-userlogin/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/tree-service/index/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/tree-service/get-a-tree-stat-node/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/tree-service/post-a-tree-create/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/tree-service/post-a-tree-delete/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/tree-service/post-a-tree-restore/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/tree-service/post-a-tree-selection/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/tree-service/post-a-tree-stats/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/update-service/index/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/update-service/patch-a-update-targetversion/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/update-service/post-a-update/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/usermeta-service/index/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/usermeta-service/delete-a-user-meta-tags-namespace-tags/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/usermeta-service/get-a-user-meta-namespace/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/usermeta-service/get-a-user-meta-tags-namespace/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/usermeta-service/post-a-user-meta-bookmarks/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/usermeta-service/post-a-user-meta-search/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/usermeta-service/post-a-user-meta-tags-namespace/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/usermeta-service/put-a-user-meta-namespace/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/usermeta-service/put-a-user-meta-update/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/users-service/index/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/users-service/delete-a-user-login/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/users-service/get-a-user-login/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/users-service/post-a-user/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/users-service/put-a-user-roles-login/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/users-service/put-a-user-login/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/workspace-service/index/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/workspace-service/delete-a-workspace-slug/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/workspace-service/post-a-workspace/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/rest-api/workspace-service/put-a-workspace-slug/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/index/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-binary/index/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-binary/cells/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-binary/cells-admin/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-binary/cells-admin-acl/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-binary/cells-admin-acl-create/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-binary/cells-admin-acl-delete/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-binary/cells-admin-acl-patch-recycle-personal/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-binary/cells-admin-acl-search/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-binary/cells-admin-cert/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-binary/cells-admin-cert-import/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-binary/cells-admin-clean/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-binary/cells-admin-clean-acls/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-binary/cells-admin-clean-activities/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-binary/cells-admin-clean-logs/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-binary/cells-admin-clean-reset-jobs/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-binary/cells-admin-clean-resync/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-binary/cells-admin-config/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-binary/cells-admin-config-check/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-binary/cells-admin-config-copy/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-binary/cells-admin-config-db/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-binary/cells-admin-config-db-add/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-binary/cells-admin-config-db-list/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-binary/cells-admin-config-db-move/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-binary/cells-admin-config-db-set/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-binary/cells-admin-config-delete/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-binary/cells-admin-config-history/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-binary/cells-admin-config-list/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-binary/cells-admin-config-set/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-binary/cells-admin-datasource/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-binary/cells-admin-datasource-capture/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-binary/cells-admin-datasource-migrate/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-binary/cells-admin-datasource-rehash/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-binary/cells-admin-datasource-resync/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-binary/cells-admin-datasource-rethumb/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-binary/cells-admin-datasource-snapshot/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-binary/cells-admin-file/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-binary/cells-admin-file-create-bench/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-binary/cells-admin-file-ls/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-binary/cells-admin-file-meta-put/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-binary/cells-admin-file-meta-read/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-binary/cells-admin-user/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-binary/cells-admin-user-create/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-binary/cells-admin-user-delete/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-binary/cells-admin-user-search/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-binary/cells-admin-user-set-profile/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-binary/cells-admin-user-set-pwd/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-binary/cells-admin-user-token/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-binary/cells-admin-user-unlock/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-binary/cells-configure/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-binary/cells-configure-sites/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-binary/cells-configure-sites-add/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-binary/cells-configure-sites-delete/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-binary/cells-ctl/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-binary/cells-ctl-service-level/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-binary/cells-start/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-binary/cells-update/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-binary/cells-version/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-client-cec/index/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-client-cec/cec/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-client-cec/cec-clear/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-client-cec/cec-completion/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-client-cec/cec-completion-bash/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-client-cec/cec-completion-zsh/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-client-cec/cec-config/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-client-cec/cec-config-add/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-client-cec/cec-config-add-client-auth/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-client-cec/cec-config-add-oauth/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-client-cec/cec-config-add-token/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-client-cec/cec-config-check-keyring/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-client-cec/cec-config-ls/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-client-cec/cec-config-rm/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-client-cec/cec-config-use/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-client-cec/cec-cp/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-client-cec/cec-idm/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-client-cec/cec-idm-list-acls/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-client-cec/cec-idm-list-groups/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-client-cec/cec-idm-list-roles/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-client-cec/cec-idm-list-users/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-client-cec/cec-idm-list-workspaces/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-client-cec/cec-info/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-client-cec/cec-ls/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-client-cec/cec-mkdir/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-client-cec/cec-mv/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-client-cec/cec-rm/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-client-cec/cec-scp/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-client-cec/cec-share/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-client-cec/cec-storage/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-client-cec/cec-storage-list-datasources/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-client-cec/cec-storage-resync-ds/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-client-cec/cec-update/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-client-cec/cec-version/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-sync/index/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-sync/cells-sync/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-sync/cells-sync-autotest/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-sync/cells-sync-capture/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-sync/cells-sync-completion/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-sync/cells-sync-completion-bash/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-sync/cells-sync-completion-fish/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-sync/cells-sync-completion-powershell/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-sync/cells-sync-completion-zsh/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-sync/cells-sync-config/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-sync/cells-sync-config-account/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-sync/cells-sync-config-add/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-sync/cells-sync-config-delete/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-sync/cells-sync-config-edit/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-sync/cells-sync-doc/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-sync/cells-sync-service/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-sync/cells-sync-start/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-sync/cells-sync-systray/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-sync/cells-sync-version/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-sync/cells-sync-webview/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-enterprise/index/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-enterprise/cells-enterprise/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-enterprise/cells-enterprise-admin/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-enterprise/cells-enterprise-admin-acl/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-enterprise/cells-enterprise-admin-acl-create/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-enterprise/cells-enterprise-admin-acl-delete/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-enterprise/cells-enterprise-admin-acl-patch-recycle-personal/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-enterprise/cells-enterprise-admin-acl-search/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-enterprise/cells-enterprise-admin-cert/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-enterprise/cells-enterprise-admin-cert-import/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-enterprise/cells-enterprise-admin-clean/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-enterprise/cells-enterprise-admin-clean-acls/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-enterprise/cells-enterprise-admin-clean-activities/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-enterprise/cells-enterprise-admin-clean-logs/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-enterprise/cells-enterprise-admin-clean-reset-jobs/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-enterprise/cells-enterprise-admin-clean-resync/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-enterprise/cells-enterprise-admin-config/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-enterprise/cells-enterprise-admin-config-check/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-enterprise/cells-enterprise-admin-config-copy/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-enterprise/cells-enterprise-admin-config-db/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-enterprise/cells-enterprise-admin-config-db-add/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-enterprise/cells-enterprise-admin-config-db-list/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-enterprise/cells-enterprise-admin-config-db-move/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-enterprise/cells-enterprise-admin-config-db-set/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-enterprise/cells-enterprise-admin-config-delete/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-enterprise/cells-enterprise-admin-config-history/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-enterprise/cells-enterprise-admin-config-list/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-enterprise/cells-enterprise-admin-config-set/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-enterprise/cells-enterprise-admin-datasource/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-enterprise/cells-enterprise-admin-datasource-capture/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-enterprise/cells-enterprise-admin-datasource-migrate/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-enterprise/cells-enterprise-admin-datasource-rehash/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-enterprise/cells-enterprise-admin-datasource-resync/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-enterprise/cells-enterprise-admin-datasource-rethumb/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-enterprise/cells-enterprise-admin-datasource-snapshot/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-enterprise/cells-enterprise-admin-file/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-enterprise/cells-enterprise-admin-file-create-bench/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-enterprise/cells-enterprise-admin-file-ls/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-enterprise/cells-enterprise-admin-file-meta-put/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-enterprise/cells-enterprise-admin-file-meta-read/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-enterprise/cells-enterprise-admin-jobs/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-enterprise/cells-enterprise-admin-jobs-templates/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-enterprise/cells-enterprise-admin-jobs-unlock-public/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-enterprise/cells-enterprise-admin-license/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-enterprise/cells-enterprise-admin-license-stats/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-enterprise/cells-enterprise-admin-license-update/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-enterprise/cells-enterprise-admin-user/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-enterprise/cells-enterprise-admin-user-create/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-enterprise/cells-enterprise-admin-user-delete/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-enterprise/cells-enterprise-admin-user-search/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-enterprise/cells-enterprise-admin-user-set-profile/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-enterprise/cells-enterprise-admin-user-set-pwd/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-enterprise/cells-enterprise-admin-user-token/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-enterprise/cells-enterprise-admin-user-unlock/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-enterprise/cells-enterprise-configure/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-enterprise/cells-enterprise-configure-sites/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-enterprise/cells-enterprise-configure-sites-add/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-enterprise/cells-enterprise-configure-sites-delete/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-enterprise/cells-enterprise-ctl/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-enterprise/cells-enterprise-ctl-service-level/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-enterprise/cells-enterprise-start/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-enterprise/cells-enterprise-update/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/command-line-reference/cells-enterprise/cells-enterprise-version/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/cells-development/index/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/cells-development/activity-streams/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/cells-development/developing-on-cells/index/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/cells-development/developing-on-cells/setup-dev-environment/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/cells-development/developing-on-cells/how-to-contribute/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/cells-development/developing-on-cells/vendoring/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/cells-development/microservices/index/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/cells-development/microservices/introduction/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/cells-development/microservices/discovery/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/cells-development/microservices/communication/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/cells-development/microservices/api-gateway-model/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/cells-development/microservices/architecture-overview/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/cells-development/miscellaneous/index/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/cells-development/miscellaneous/logging/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/cells-development/miscellaneous/tracing/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/cells-development/miscellaneous/javascript-frontend/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/cells-development/services-categories/index/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/cells-development/services-categories/identity-managment/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/cells-development/services-categories/broker/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/cells-development/services-categories/data/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/cells-development/services-categories/scheduler/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/cells-development/services-categories/gateway/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/cells-development/security-model/index/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/cells-development/security-model/role-based-security-rules/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/developer-guide/cells-development/security-model/resource-based-security-rules/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/knowledge-base/index/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/knowledge-base/access-control/index/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/knowledge-base/access-control/changing-token-lifespan/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/knowledge-base/access-control/fully-disabling-cells/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/knowledge-base/access-control/acl-use-cases/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/knowledge-base/access-control/managing-resources-ownership/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/knowledge-base/cells-in-production/index/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/knowledge-base/cells-in-production/changing-the-default-datasource-storage-type/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/knowledge-base/cells-in-production/cleanup-strategies-for-production-instances/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/knowledge-base/cells-in-production/installing-clamav-on-a-server/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/knowledge-base/cells-in-production/migrate-a-cells-instance-to-a-new-server/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/knowledge-base/cells-in-production/datasources-workspaces-layout-recommendations/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/knowledge-base/client-applications/index/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/knowledge-base/client-applications/using-webdav-clients/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/knowledge-base/client-applications/setup-cells-server-for-cellssync/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/knowledge-base/deployment/index/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/knowledge-base/deployment/install-cells-on-debian-ubuntu/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/knowledge-base/deployment/install-cells-on-centos-rhel/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/knowledge-base/deployment/install-cells-on-macosx/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/knowledge-base/deployment/install-cells-on-windows/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/knowledge-base/deployment/install-cells-on-raspberry/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/knowledge-base/deployment/no-private-ip-detected-issue/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/knowledge-base/deployment/monitoring-cells-with-prometheus-grafana/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/knowledge-base/deployment/running-cells-behind-an-apache-reverse-proxy/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/knowledge-base/deployment/running-cells-behind-a-caddy2-reverse-proxy/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/knowledge-base/deployment/running-cells-behind-a-nginx-reverse-proxy/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/knowledge-base/deployment/running-a-cells-container-behind-a-traefik-reverse-proxy/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/knowledge-base/deployment/running-cells-as-a-service-with-supervisor/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/knowledge-base/deployment/running-cells-as-a-service-with-systemd/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/knowledge-base/identity-management/index/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/knowledge-base/identity-management/using-aws-cognito-as-an-identity-provider/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/knowledge-base/identity-management/connect-to-pydio-cells-via-microsoft-identity/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/knowledge-base/identity-management/using-github-as-an-identity-provider/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/knowledge-base/identity-management/using-google-as-an-identity-provider/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/knowledge-base/identity-management/connect-to-pydio-cells-via-on-premise-adfs-server/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/knowledge-base/identity-management/connect-to-pydio-cells-via-simplesaml-php/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.pydio.com/latest/knowledge-base/identity-management/using-pydio-cells-as-an-identity-provider-for-wordpress/</loc>
-         <lastmod>2025-06-24</lastmod>
+         <lastmod>2025-06-25</lastmod>
     </url>
 </urlset>

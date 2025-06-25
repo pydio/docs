@@ -23792,17 +23792,17 @@
 
 <h2 id="the-basic-building-blocks">The basic building blocks<a class="headerlink" href="#the-basic-building-blocks" title="Permanent link">&para;</a></h2>
 <p>Basic building blocks of Cells Flows jobs are <strong>Actions</strong>. They provide a wide range of tools to either process file contents, transform arbitrary data, communicate with external tools or even simply print something to the task log to monitor the good processing of a running task. </p>
-<p>See the <a href="./actions">list of available actions</a> and get inspired!</p>
+<p>See the <a href="https://docs.pydio.com/cells-v4/cellsflows/actions/index/">list of available actions</a> and get inspired!</p>
 <h2 id="chaining-actions">Chaining Actions<a class="headerlink" href="#chaining-actions" title="Permanent link">&para;</a></h2>
 <p>Actions are chained together with simple connectors : every action can be chained to one or more actions, sending its <em>output</em> as <em>input</em> to the next sequence of actions for further processing.</p>
 <p><a class="glightbox" href="../../../images/0_overview/anatomy-actions.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="../../../images/0_overview/anatomy-actions.png" /></a></p>
-<p>Connecting one action to 2 or more actions will start running these in parallel (see <a href="./parallelism-and-concurrency">Parallelism &amp; Concurrency</a>).</p>
+<p>Connecting one action to 2 or more actions will start running these in parallel (see <a href="https://docs.pydio.com/en/docs/cells/v4/parallelism-and-concurrency">Parallelism &amp; Concurrency</a>).</p>
 <h2 id="handling-data-flow">Handling Data flow<a class="headerlink" href="#handling-data-flow" title="Permanent link">&para;</a></h2>
 <h3 id="inputoutput-messages">Input/Output messages<a class="headerlink" href="#inputoutput-messages" title="Permanent link">&para;</a></h3>
 <p>Every action receives a "Message" in its <strong>input</strong>, that contains information of various types: </p>
 <ul>
-<li><strong>Data loaded or generated</strong> during the previous steps of the sequence, like one or more Nodes (file or folder), a given User, Role, Workspace, etc. or an arbitrary String/JSON message. See the <a href="./data-types-queries-filters">Data Types</a> section to learn more.</li>
-<li><strong>Job-context information</strong> like job and task identifiers, current context that triggered the job (username, http request metadata, etc), and job-level <a href="./parameters">parameters</a>.</li>
+<li><strong>Data loaded or generated</strong> during the previous steps of the sequence, like one or more Nodes (file or folder), a given User, Role, Workspace, etc. or an arbitrary String/JSON message. See the <a href="https://docs.pydio.com/en/docs/cells-flows/data-types-queries-filters">Data Types</a> section to learn more.</li>
+<li><strong>Job-context information</strong> like job and task identifiers, current context that triggered the job (username, http request metadata, etc), and job-level <a href="https://docs.pydio.com/en/docs/cells-flows/parameters">parameters</a>.</li>
 </ul>
 <p>Each action handles input message differently depending on its purpose, and optionally passes on a copy or modified version of this input as <strong>output</strong> for the next chained actions (see below).</p>
 <h3 id="feeding-messages-data">Feeding messages data<a class="headerlink" href="#feeding-messages-data" title="Permanent link">&para;</a></h3>
@@ -23813,7 +23813,7 @@
 <p>You may need to explicitely load some data to feed a given sequence of actions. This is done using <strong>Queries</strong> that allows you to select rows (like you would in an SQL database) based on various criteria.  One can for example <em>list all files under a certain path</em>, or <em>list all Workspaces updated since a certain period</em>, etc.</p>
 <p><strong>Filtering Data</strong> </p>
 <p>Once some data is passed along from one action to another, you can perform dynamic filtering to e.g. reduce the amount of data to process, or continue the sequence only if received data meets certain conditions.</p>
-<p>You will learn more about <a href="./data-types-queries-filters">Data Types</a> in the following section.</p>
+<p>You will learn more about <a href="https://docs.pydio.com/en/docs/cells-flows/data-types-queries-filters">Data Types</a> in the following section.</p>
 <h2 id="actions-parameters">Actions Parameters<a class="headerlink" href="#actions-parameters" title="Permanent link">&para;</a></h2>
 <p>Most action come with their own set of Parameters. Parameters are editable and can be scripted using Golang Templating to be dynamically computed at runtime based on previous message input, job-level parameters values and many other things. </p>
 

@@ -23906,27 +23906,27 @@
 
 <p>DataSources can be seen as "mount points" to attach actual storage to the application. Cells datasource can connect to various storage types. Each of them have specific options that are described in the following pages:</p>
 <ul>
-<li><a href="./file-system-storage">File System</a></li>
-<li><a href="./s3-compatible-storage">S3-Compatible Object Storage</a></li>
-<li><a href="./google-cloud-storage">Google Cloud Storage</a></li>
-<li><a href="./azure-blob-storage">Azure Blob Storage</a></li>
+<li><a href="https://docs.pydio.com/cells-v4/admin-guide/connect-your-storage/create-datasources/file-system-storage/">File System</a></li>
+<li><a href="https://docs.pydio.com/cells-v4/admin-guide/connect-your-storage/create-datasources/s3-compatible-storage/">S3-Compatible Object Storage</a></li>
+<li><a href="https://docs.pydio.com/cells-v4/admin-guide/connect-your-storage/create-datasources/ent-google-cloud-storage/">Google Cloud Storage</a></li>
+<li><a href="https://docs.pydio.com/cells-v4/admin-guide/connect-your-storage/create-datasources/ent-azure-blob-storage/">Azure Blob Storage</a></li>
 </ul>
 <p>Appart from this connector type, all datasources share common options regarding how data is structured by Cells, generic Lifecycle features for data management, and some advanced settings for ETags management.</p>
 <h2 id="creating-a-datasource">Creating a datasource<a class="headerlink" href="#creating-a-datasource" title="Permanent link">&para;</a></h2>
 <h3 id="required-options">Required Options<a class="headerlink" href="#required-options" title="Permanent link">&para;</a></h3>
 <h4 id="format">Format<a class="headerlink" href="#format" title="Permanent link">&para;</a></h4>
-<p>When you create a datasource, you must first select the way Cells organizes data inside the storage. Please refer to <a href="./datasource-format">Datasource Format</a> to have a good understanding of this feature. Quickly put, Flat Storage is better for performances, while Structured Storage is required if you wish to keep files and folders visible at the storage layer (internal datasources are specifically used for storing Thumbnails and Versions, and should not be used for your actual business data).</p>
+<p>When you create a datasource, you must first select the way Cells organizes data inside the storage. Please refer to <a href="https://docs.pydio.com/cells-v4/admin-guide/connect-your-storage/datasource-format/index/">Datasource Format</a> to have a good understanding of this feature. Quickly put, Flat Storage is better for performances, while Structured Storage is required if you wish to keep files and folders visible at the storage layer (internal datasources are specifically used for storing Thumbnails and Versions, and should not be used for your actual business data).</p>
 <p><a class="glightbox" href="../../../images/4_connecting_your_storage/datasource_common_options/0_create_datasource.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="../../../images/4_connecting_your_storage/datasource_common_options/0_create_datasource.png" /></a></p>
 <h4 id="identifier">Identifier<a class="headerlink" href="#identifier" title="Permanent link">&para;</a></h4>
 <p>Datasource identifier uniquely identifies your datasource within Cells. In the "global" tree, all files located inside this datasource will see their path start with <code>datasource-id</code>. Please note that this ID must be <strong>alphanumeric</strong> only, and as it is seen as an S3-BucketName internally, it must be a DNS-compliant name.</p>
 <h3 id="data-lifecycle">Data Lifecycle<a class="headerlink" href="#data-lifecycle" title="Permanent link">&para;</a></h3>
 <h4 id="versioning">Versioning<a class="headerlink" href="#versioning" title="Permanent link">&para;</a></h4>
-<p>Setting up a versioning policy enables you to configure how Cells act with file versioning, how many versions are kept, how long we keep the old versions and many other options. You can create your own <a href="./versioning-policies">versioning policies</a> and configure how you want to handle your versions.</p>
+<p>Setting up a versioning policy enables you to configure how Cells act with file versioning, how many versions are kept, how long we keep the old versions and many other options. You can create your own <a href="https://docs.pydio.com/cells-v4/admin-guide/connect-your-storage/versioning-policies/">versioning policies</a> and configure how you want to handle your versions.</p>
 <blockquote>
 <p>File versions are stored inside the <strong>Internal DataSource</strong> named <code>versions</code></p>
 </blockquote>
 <h4 id="encryption">Encryption<a class="headerlink" href="#encryption" title="Permanent link">&para;</a></h4>
-<p><a href="./encryption">Encryption</a> at rest can be used to make sure files are never stored in clear format inside the storage. All files will be encrypted with a key and only be readable when decrypted with the same key.</p>
+<p><a href="https://docs.pydio.com/cells-v4/admin-guide/connect-your-storage/encryption/">Encryption</a> at rest can be used to make sure files are never stored in clear format inside the storage. All files will be encrypted with a key and only be readable when decrypted with the same key.</p>
 <p>WARNING: Keys are stored in the default database and if they ever get lost the encrypted data could not be recovered.</p>
 <h3 id="advanced-options">Advanced Options<a class="headerlink" href="#advanced-options" title="Permanent link">&para;</a></h3>
 <p>Advanced options should be used for specific cases and generally touched with care!</p>
