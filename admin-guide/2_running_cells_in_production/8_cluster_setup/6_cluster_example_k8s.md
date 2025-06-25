@@ -41,7 +41,7 @@ Helm commands will automatically use the kubeconfig configuration.
 
 ## Install using Helm
 
-Refer to the [quick install page](./kubernetes-quick-install) for more information.
+Refer to the [quick install page](/kubernetes-quick-install) for more information.
 
 The cells helm charts can be used to deploy a ReplicaSet of Cells stateless servers. Using helm3 you can add the Cells Helm repo as follows :
 

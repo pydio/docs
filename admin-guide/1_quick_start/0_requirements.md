@@ -78,7 +78,7 @@ If you do not have a Mongo DB available yet, **you can add it later** as Cells p
 
 **Supported Mongo Versions:** MongoDB has currently been tested with v5, v6 and v7.
 
-Learn more about the [reasons to provide a MongoDB here](./configuring-mongo-storage).
+Learn more about the [reasons to provide a MongoDB here](https://docs.pydio.com/en/docs/cells/v4/configuring-mongo-storage).
 
 ## Network requirements
 

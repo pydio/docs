@@ -98,7 +98,7 @@ You now have Pydio Cells running as a daemon and auto-restarting after server re
 
 ## For CentOS
 
-On a RHEL/CentOS system and assuming you have followed our [recommended best practices](./install-cells-centosrhel) during installation, here is a config sample that will run Cells as a service.
+On a RHEL/CentOS system and assuming you have followed our [recommended best practices](https://docs.pydio.com/en/docs/kb/access-control/install-cells-centosrhel) during installation, here is a config sample that will run Cells as a service.
 
 This configuration is based on a system that has, among others, a **pydio** Unix account. Please adapt to your custom setup if necessary.
 

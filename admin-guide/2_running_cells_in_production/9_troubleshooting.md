@@ -16,7 +16,7 @@ You can find more use cases and solution in [our FAQ](https://docs.pydio.com/en/
 
 ### Unable to bind port 443
 
-_You have configured the [Binding Address](./glossary) with port 443 and enabled redirection of port 80. You get an error page "Unable to connect" when you try to connect_.
+_You have configured the [Binding Address](https://docs.pydio.com/en/docs/cells/v4/glossary) with port 443 and enabled redirection of port 80. You get an error page "Unable to connect" when you try to connect_.
 
 Check the error log, if you see such an error:
 
@@ -32,9 +32,9 @@ sudo setcap 'cap_net_bind_service=+ep' /path/to/your/cells/binary
 
 ### 0.0.0.0 address
 
-If you are behind a reverse proxy and get `404: this page is not served on this interface` when trying to access the web UI, you can try to use the `0.0.0.0` generic IP address in your [Binding Address](./glossary).
+If you are behind a reverse proxy and get `404: this page is not served on this interface` when trying to access the web UI, you can try to use the `0.0.0.0` generic IP address in your [Binding Address](https://docs.pydio.com/cells-v4/admin-guide/quick-start/glossary).
 
-This basically tells to the [Cells Gateway](./glossary) of the application to accept all requests on this port.
+This basically tells to the [Cells Gateway](https://docs.pydio.com/cells-v4/admin-guide/quick-start/glossary) of the application to accept all requests on this port.
 
 In contrary, if you give a specific valid IP or a domain name in the Binding Address, the Cells Gateway checks the "HOST" header of the incoming requests. If the header does not **exactly** matches with the DN or IP of the Binding Address, the server throw a 404 file not found error.
 
@@ -86,7 +86,7 @@ sudo apt-get install libc6
 
 ### Cannot list workspaces
 
-If you are getting an error when you attempt to list the workspaces then your server might be running behind a reverse proxy, in this case you must use **TLS** on **Cells** and on the **reverse proxy**, please refer to our dedicated documentation [Running Cells Behind a reverse Proxy](./configure-cells-reverse-proxy).
+If you are getting an error when you attempt to list the workspaces then your server might be running behind a reverse proxy, in this case you must use **TLS** on **Cells** and on the **reverse proxy**, please refer to our dedicated documentation [Running Cells Behind a reverse Proxy](https://docs.pydio.com/en/docs/cells/v4/configure-cells-reverse-proxy).
 
 ### I do see not my workspaces
 

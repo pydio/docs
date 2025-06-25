@@ -18,7 +18,7 @@ Run the following command,
 ./cells configure sites
 ```
 
-Select an active site or add a new [site](./manage-sites) and set the reverse-proxy URL in the [External URL](./glossary) field.
+Select an active site or add a new [site](https://docs.pydio.com/en/docs/cells/v4/manage-sites) and set the reverse-proxy URL in the [External URL](https://docs.pydio.com/cells-v4/admin-guide/quick-start/glossary) field.
 
 _**Warning**: if you intend to use CellsSync client together with your server instance, you cannot use TLS Offloading on your reverse proxy. The communication between the sync client and the server is done via gRPC on HTTP/2 and this will not work if you drop from HTTPS to HTTP between your reverse proxy and your Cells instance. Furthermore, note that your proxy has to support this protocol._
 

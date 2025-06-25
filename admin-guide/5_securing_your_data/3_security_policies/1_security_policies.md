@@ -115,7 +115,7 @@ Pre-defined policies provide some Conditions examples:
 
 Policies 2 and 3 remind us that **effect is always "Deny By Default"**: if we do not set at least one rule that can be evaluated to `Allow`, accesses will never be opened to the workspace!
 
-See [Next Chapter](./rules-conditions) to learn more about Conditions. 
+See [Next Chapter](https://docs.pydio.com/cells-v4/admin-guide/secure-your-data/ent-dynamic-access-control/rules-conditions/) to learn more about Conditions. 
 
 ### Create / Edit Policies
 

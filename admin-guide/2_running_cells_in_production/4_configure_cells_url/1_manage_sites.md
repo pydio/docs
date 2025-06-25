@@ -8,7 +8,7 @@ weight: 1
 menu_name: menu-admin-guide-v7-enterprise
 
 ---
-A site is a secure access route configuration in the [Cells Gateway](./glossary).
+A site is a secure access route configuration in the [Cells Gateway](https://docs.pydio.com/cells-v4/admin-guide/quick-start/glossary).
 
 The default configuration will get Cells up and running quickly with a direct access on a server or on a local machine. You can extend to wider network 
 and/or secure that access with Sites.
@@ -21,7 +21,7 @@ and/or secure that access with Sites.
 
 1. **Bind Address(s)**: one or more `<ip/hostname:port>` to bind Cells to local host's network interfaces addresses. URL can be used in case of a TLS setup with Let's Encrypt.
 
-2. **TLS Settings**: [TLS configuration](./configure-tls) for HTTPS support (TLS, Let's Encrypt, External URL)
+2. **TLS Settings**: [TLS configuration](https://docs.pydio.com/en/docs/cells/v4/configure-tls) for HTTPS support (TLS, Let's Encrypt, External URL)
 
 3. **External URL**: Accept traffic coming to this url and redirect to one of the bind address.
     Typically if the app is behind a reverse-proxy or inside a container with ports mapping.
@@ -74,5 +74,5 @@ We indicate all this to Cells using the command and the following parameters:
 
 When using multiple sites, you can use the Sites URL to make Cells behave differently depending on the site accessed. See for example:
 
- - [Authentication Connectors](./ent-using-sso-external-identity-provider): display different ways of authenticating on different URLs.  
- - [Security Policies](./ent-security-policies): use the URL in the context of the security policies to restrict access to the www site to specific IPs.
+ - [Authentication Connectors](https://docs.pydio.com/en/docs/cells/v4/ent-using-sso-external-identity-provider): display different ways of authenticating on different URLs.  
+ - [Security Policies](https://docs.pydio.com/en/docs/cells/v4/ent-security-policies): use the URL in the context of the security policies to restrict access to the www site to specific IPs.

@@ -6,7 +6,7 @@ language: und
 category: Deployment
 
 ---
-_This guide explains how to install and configure Cells on an Debian-like system. It contains strongly opinionated choices and best practices. It explains the steps required for a production-ready and reasonnably secured server. For a simple test, you should rather visit our [quick start page](./quick-start)_.
+_This guide explains how to install and configure Cells on an Debian-like system. It contains strongly opinionated choices and best practices. It explains the steps required for a production-ready and reasonnably secured server. For a simple test, you should rather visit our [quick start page](https://docs.pydio.com/en/docs/kb/access-control/quick-start)_.
 
 **Use case**
 

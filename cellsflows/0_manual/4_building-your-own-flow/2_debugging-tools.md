@@ -8,7 +8,7 @@ description: "This page describes the tools needed to inspect all messages that 
 menu_name: menu-admin-guide-v6-enterprise
 
 ---
-As explained in the first section of [Anatomy of a Flow](./anatomy-flow), a core concept of the workflow is how the "data" transits from one action to another inside ActionMessages. 
+As explained in the first section of [Anatomy of a Flow](https://docs.pydio.com/en/docs/cells-flows/anatomy-flow), a core concept of the workflow is how the "data" transits from one action to another inside ActionMessages. 
 
 As soon as your Flow grows, you will want to try it with specific inputs to see if it's working properly.
 

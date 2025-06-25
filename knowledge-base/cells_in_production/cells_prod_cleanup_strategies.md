@@ -30,7 +30,7 @@ We list here most of the best practices that we usually setup when configuring a
 
 ### Datasources
 
-Before diving into the technical part, let's have a look at the way your documents are stored on the server. As explained in the [admin documentation](), your business data is stored in various datasources.
+Before diving into the technical part, let's have a look at the way your documents are stored on the server. As explained in the [admin documentation](https://docs.pydio.com/cells-v4/admin-guide/connect-your-storage/index/), your business data is stored in various datasources.
 
 At installation time you can choose to use block storage for this. Typically, if you decide to use AWS S3, you won't hit any limit but your costs will grow with the amount of data stored.
 

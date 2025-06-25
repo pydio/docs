@@ -16,9 +16,9 @@ You must first make sure to upgrade Cells to at least version 4.
 
 We also assume that you have read the previous sections of this chapter:  
 
- - [Going Stateless](./going-stateless) provides an overview of our clustering concepts,  
- - [Configuring with URLS](./configuring-urls) explains how to point Cells configuration toward the correct underlying services,   
- - [External Services](./external-services) explains how to set up all required cluster third-party services that will allow easy replication of the Cells image.  
+ - [Going Stateless](https://docs.pydio.com/en/docs/cells/v4/going-stateless) provides an overview of our clustering concepts,  
+ - [Configuring with URLS](https://docs.pydio.com/en/docs/cells/v4/configuring-urls) explains how to point Cells configuration toward the correct underlying services,   
+ - [External Services](https://docs.pydio.com/en/docs/cells/v4/external-services) explains how to set up all required cluster third-party services that will allow easy replication of the Cells image.  
 
 ## Migrating on-file services data from Bolt/BleveDB to MongoDB
 

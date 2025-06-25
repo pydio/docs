@@ -14,7 +14,7 @@ Sometimes it is necessary to grant some non-administrative users some administra
 
 Typically, you may wish to provide your Ops team a monitoring entry into the system (logs, updates required status, services healths, etc...), without giving them the full fledge "super-user" role that would allow users and data modification.
 
-Similarly, if you are using the [Group Tenancy](./ent-group-tenancy) feature, you can decide that a "Group Administrator" has the right to manage users inside her group, while not being allowed to see all the other pages of the Cells Admin Console. 
+Similarly, if you are using the [Group Tenancy](/ent-group-tenancy) feature, you can decide that a "Group Administrator" has the right to manage users inside her group, while not being allowed to see all the other pages of the Cells Admin Console. 
 
 ## Feature Activation
 

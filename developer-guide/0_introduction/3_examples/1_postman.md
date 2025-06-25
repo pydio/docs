@@ -59,7 +59,7 @@ You can now query any endpoint that you have access to.
 
 ### API Call
 
-This example calls the TreeService endpoint [POST /a/tree/stats](./post-atreestats), that provides a way to list files and folders ("nodes") on the server.
+This example calls the TreeService endpoint [POST /a/tree/stats](https://docs.pydio.com/en/docs/cells-flows/post-atreestats), that provides a way to list files and folders ("nodes") on the server.
 
 Example:
 

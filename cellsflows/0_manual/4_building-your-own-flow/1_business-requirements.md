@@ -31,7 +31,7 @@ Examples :
 
 ### Decomposing into Atomic Actions
 
-Probably the first thing you have identified is the actual action you want to perform during your workflow! CellsFlows provides many [ready-to-use "atomic" actions](./actions-and-messages) that try to keep as simple as possible, to provide the most flexibility. As every action always take the same Input and Output formats, they can be composed as needed. Sometimes, you will only need to use one action, but sometimes the operations you want to do will have to be decomposed into a sequence of action. 
+Probably the first thing you have identified is the actual action you want to perform during your workflow! CellsFlows provides many [ready-to-use "atomic" actions](https://docs.pydio.com/en/docs/cells-flows/actions-and-messages) that try to keep as simple as possible, to provide the most flexibility. As every action always take the same Input and Output formats, they can be composed as needed. Sometimes, you will only need to use one action, but sometimes the operations you want to do will have to be decomposed into a sequence of action. 
 
 For example, updating a User attributes is done by an action, but this action does not actually persist the changes in the database. Another action "Persist Idm Changes" (as Identity Management) must be chained to the first one and configured to persist the "Users". 
 

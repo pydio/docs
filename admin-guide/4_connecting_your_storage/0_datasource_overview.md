@@ -27,7 +27,7 @@ Datasource can be seen as a driver to access your data. It can currently be conn
 - **Google Cloud Storage**: compatible with Google's cloud storage solution [Ent only].
 - **Azure Blob Storage**: compatible with Azure's blob storage solution [Ent only].
 
-In the article [Detailed structure of a datasource](./services-involved), a detailed view of how each service on datasource interacts.
+In the article [Detailed structure of a datasource](https://docs.pydio.com/cells-v4/admin-guide/connect-your-storage/datasource-format/index), a detailed view of how each service on datasource interacts.
 
 ### Flat vs. Structured Storage Format 
 
@@ -35,5 +35,5 @@ Starting with Cells v3, the default storage format is "flat": while indexes main
 
 If you need to be able to modify data directly on the storage, you will have to use "structured" storage format, and manually trigger a resynchronization to see the modifications appear and be usable. This operation can be done with a REST api call or with the CLI. Interacting with the data via the standard clients (Cells Web interface, [Cells-client CLI](https://github.com/pydio/cells-client) or CellsSync) you should never care about re-indexation.
 
-Read more about the [datasource format](./datasource-format) in the next chapter.
+Read more about the [datasource format](https://docs.pydio.com/cells-v4/admin-guide/connect-your-storage/datasource-format/index) in the next chapter.
 
