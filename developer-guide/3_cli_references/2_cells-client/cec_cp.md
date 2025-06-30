@@ -64,7 +64,7 @@ EXAMPLE
 
 ### SEE ALSO
 
-* [./cec](./cec)	 - Connect to a Pydio Cells server using the command line
+* [./cec](../cec)	 - Connect to a Pydio Cells server using the command line
 
 
 ---

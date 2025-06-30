@@ -39,7 +39,7 @@ Display the active connection's info: user, server and authentication type
 
 ### SEE ALSO
 
-* [./cec](./cec)	 - Connect to a Pydio Cells server using the command line
+* [./cec](../cec)	 - Connect to a Pydio Cells server using the command line
 
 
 ---

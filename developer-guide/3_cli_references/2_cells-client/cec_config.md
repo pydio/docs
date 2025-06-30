@@ -39,7 +39,7 @@ Manage authentication profiles
 
 ### SEE ALSO
 
-* [./cec](./cec)	 - Connect to a Pydio Cells server using the command line
+* [./cec](../cec)	 - Connect to a Pydio Cells server using the command line
 * [./cec config add](../cec-config-add)	 - Configure a new connection to a running server and persist credentials locally
 * [./cec config check-keyring](../cec-config-check-keyring)	 - Try to store and retrieve a dummy value in the local keyring to test it
 * [./cec config ls](../cec-config-ls)	 - List the current authentication profiles

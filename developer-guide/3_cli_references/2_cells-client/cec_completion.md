@@ -83,7 +83,7 @@ DESCRIPTION
 
 ### SEE ALSO
 
-* [./cec](./cec)	 - Connect to a Pydio Cells server using the command line
+* [./cec](../cec)	 - Connect to a Pydio Cells server using the command line
 * [./cec completion bash](../cec-completion-bash)	 - 
 * [./cec completion zsh](../cec-completion-zsh)	 - 
 
