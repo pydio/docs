@@ -59,7 +59,7 @@ Using `gval` to compute a percentage and compare it to a threshold value. Here t
 {{gval "$[0].Stats.Free / $[0].Stats.Total * 100 > $[1]" .LastOutput.JsonAsValue.Map .JobParameters.Threshold}}
 ```
 
-**The exhaustive list of available functions [is available here](https://docs.pydio.com/en/docs/cells-flows/template-functions).**
+**The exhaustive list of available functions [is available here](https://docs.pydio.com/cells-v4/cellsflows/cells-flows-manual/scripting-capabilities/templates-functions/).**
 
 ## Advanced scripting with Anko
 

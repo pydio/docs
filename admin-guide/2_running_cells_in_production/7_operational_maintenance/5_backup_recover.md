@@ -66,7 +66,7 @@ To backup datasources, we must backup configuration, files and indexes. The inde
 
 For "structured storage" datasource, indexes can be rebuilt automatically. But indexes are really important for "flat storage" datasources, as files are stored as blob inside the storage, and if loosing indexes does not loose any actual data, it will loose the files and folders names and structure! Specific tools are provided to dump DB index directly into your storage (inside a specific file) to secure your backup/recovery processes.
 
-You can find [more details about datasources here](/docs/cells/v4/datasource-format). It is a good read to understand how data is actually stored inside the storage.
+You can find [more details about datasources here](https://docs.pydio.com/cells-v4/admin-guide/connect-your-storage/datasource-format/index/). It is a good read to understand how data is actually stored inside the storage.
 
 #### S3 datasource
 
@@ -126,6 +126,6 @@ If you want to uninstall Cells, you need to :
 
 - Stop cells service
 - Drop the database cells
-- Empty the [Working Directories](/docs/cells/v4/working-directories)
+- Empty the [Working Directories](https://docs.pydio.com/cells-v4/admin-guide/run-cells-in-production/best-practices/working-directories/)
 
 _**WARNING**: be careful not to remove the parent 'pydio' folder, other applications, typically the Cells Sync Client, have their working default directory as siblings of the `cells` folder and store configuration and data inside it_.

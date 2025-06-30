@@ -15,7 +15,7 @@ The v4 version of this tools is meant to be used with a remote Cells server that
 
 ## Usage
 
-Use the `cec --help` command to know about available commands. You can also find the [complete documentation for each command on our website](https://docs.pydio.com/en/docs/developer-guide/cells-client-cec)
+Use the `cec --help` command to know about available commands. You can also find the [complete documentation for each command on our website](https://docs.pydio.com/cells-v4/developer-guide/command-line-reference/cells-client-cec/index/)
 
 Below are a few interesting commands for manipulating files:
 

@@ -8,7 +8,7 @@ category: Access Control
 ---
 This chapter presents some real-life use cases of the ACL feature. At the bottom of the page, you can find a more complete glossary.
 
-For a deeper understanding on how Security Policy work you might also refer [to the corresponding section of our administration guide](../../admin-guide/secure-your-data/index/).
+For a deeper understanding on how Security Policy work you might also refer [to the corresponding section of our administration guide](https://docs.pydio.com/cells-v4/admin-guide/secure-your-data/index/).
 
 ## IP Restrictions
 

@@ -20,7 +20,7 @@ Actions are chained together with simple connectors : every action can be chaine
 
 ![](../../images/0_overview/anatomy-actions.png)
 
-Connecting one action to 2 or more actions will start running these in parallel (see [Parallelism & Concurrency](https://docs.pydio.com/en/docs/cells/v4/parallelism-and-concurrency)).
+Connecting one action to 2 or more actions will start running these in parallel (see [Parallelism & Concurrency](https://docs.pydio.com/cells-v4/cellsflows/cells-flows-manual/building-your-own-flows/parallelism-and-concurrency/)).
 
 ## Handling Data flow
 

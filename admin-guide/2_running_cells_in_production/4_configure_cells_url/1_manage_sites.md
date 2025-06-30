@@ -75,4 +75,4 @@ We indicate all this to Cells using the command and the following parameters:
 When using multiple sites, you can use the Sites URL to make Cells behave differently depending on the site accessed. See for example:
 
  - [Authentication Connectors](https://docs.pydio.com/en/docs/cells/v4/ent-using-sso-external-identity-provider): display different ways of authenticating on different URLs.  
- - [Security Policies](https://docs.pydio.com/en/docs/cells/v4/ent-security-policies): use the URL in the context of the security policies to restrict access to the www site to specific IPs.
+ - [Security Policies](https://docs.pydio.com/cells-v4/admin-guide/secure-your-data/ent-dynamic-access-control/using-security-policies/): use the URL in the context of the security policies to restrict access to the www site to specific IPs.

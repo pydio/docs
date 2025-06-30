@@ -20,7 +20,7 @@ Click on **Enable Public Links** to generate a unique URL providing public acces
 
 ![](../images/1_quick_start/sharing_features/public_link_1.png)
 
-**Note**: The generated link URL is computed from your current web access. If you are using multiple URLs to access to Cells, you can force Cells to use only one of them for all public links. Go to Cells Console > Main Settings panel and also refer to [Configure Cells URL](./configure-cells-urls) in this documentation.
+**Note**: The generated link URL is computed from your current web access. If you are using multiple URLs to access to Cells, you can force Cells to use only one of them for all public links. Go to Cells Console > Main Settings panel and also refer to [Configure Cells URL](/cells-v4/admin-guide/run-cells-in-production/configuring-cells-urls/index/) in this documentation.
 
 Once a link is enabled, you can fine-tuned and restrict its accesses with various configurations described below
 

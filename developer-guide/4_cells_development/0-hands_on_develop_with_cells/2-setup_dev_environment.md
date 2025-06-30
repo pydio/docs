@@ -18,7 +18,7 @@ The following is required to develop on Cells backend and frontend
 
 ### Building binary
 
-Before trying to set up a development environment, you should first install a packaged binary version of the application. You can find a step by step guide in the [Quick Start section of the admin guide](https://docs.pydio.com/en/docs/cells/v2/quick-start).
+Before trying to set up a development environment, you should first install a packaged binary version of the application. You can find a step by step guide in the [Quick Start section of the admin guide](https://docs.pydio.com/cells-v4/admin-guide/quick-start/index/).
 
 It helps insuring that your system meets the necessary requirements and let you resolve potential problems that are not directly bound to the fact that you build the code on your machine.
 

@@ -66,5 +66,5 @@ The BULK ACTIONS button allows you to select all users in page to delete them at
 --------------
 _See Also_
 
-- [Using SSO features to bind to external directories](https://docs.pydio.com/en/docs/cells/v4/external-services/single-sign-features)
-- [Managing permissions on Users, Groups and Roles](https://docs.pydio.com/en/docs/cells/v4/external-services/users-roles-and-groups)
+- [Using SSO features to bind to external directories](https://docs.pydio.com/cells-v4/admin-guide/connect-your-users/single-sign-on-features/index/)
+- [Managing permissions on Users, Groups and Roles](https://docs.pydio.com/cells-v4/developer-guide/cells-development/security-model/role-based-security-rules/)

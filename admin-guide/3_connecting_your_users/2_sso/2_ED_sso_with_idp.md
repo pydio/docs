@@ -48,6 +48,6 @@ _See also_:
 - [Security Assertion Markup Language (SAML)](http://docs.oasis-open.org/security/saml/Post2.0/sstc-saml-tech-overview-2.0-cd-02.html)
 - [Google authentication with Cells](/cells-v4/knowledge-base/identity-management/using-google-as-an-identity-provider/) (OIDC)
 - [Github authentication with Cells](/cells-v4/knowledge-base/identity-management/using-github-as-an-identity-provider/) (OIDC)
-- [Azure ADFS](https://docs.pydio.com/en/docs/kb/identity-management/using-azure-adfs-identity-provider)
+- [Azure ADFS](https://docs.pydio.com/cells-v4/knowledge-base/identity-management/connect-to-pydio-cells-via-on-premise-adfs-server/)
 - [ADFS on-premise server](/cells-v4/knowledge-base/identity-management/connect-to-pydio-cells-via-on-premise-adfs-server/)
 - [SimpleSAML](/cells-v4/knowledge-base/identity-management/connect-to-pydio-cells-via-simplesaml-php/) PHP server (SAML)

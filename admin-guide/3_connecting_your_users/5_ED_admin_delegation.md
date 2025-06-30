@@ -14,7 +14,7 @@ Sometimes it is necessary to grant some non-administrative users some administra
 
 Typically, you may wish to provide your Ops team a monitoring entry into the system (logs, updates required status, services healths, etc...), without giving them the full fledge "super-user" role that would allow users and data modification.
 
-Similarly, if you are using the [Group Tenancy](/ent-group-tenancy) feature, you can decide that a "Group Administrator" has the right to manage users inside her group, while not being allowed to see all the other pages of the Cells Admin Console. 
+Similarly, if you are using the [Group Tenancy](https://docs.pydio.com/cells-v4/admin-guide/connect-your-users/ent-group-tenancy/) feature, you can decide that a "Group Administrator" has the right to manage users inside her group, while not being allowed to see all the other pages of the Cells Admin Console. 
 
 ## Feature Activation
 
@@ -22,7 +22,7 @@ First, you must make sure that your Cells Connect / Cells Enterprise License is 
 
 ![](../images/3_connecting_your_users/admin-delegation/01-delegation-license.png)
 
-If you cannot see this, please [Contact Sales](/en/pricing/contact).
+If you cannot see this, please [Contact Sales](https://pydio.com/en/contact).
 
 If this feature is active, you can edit any user or role and go to the "Application Pages" menu: here you can see that the "Admin Console" access can be toggled, as would be any workspaces. 
 

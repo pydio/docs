@@ -43,7 +43,7 @@ cells.example.com {
 
 > Note that Caddy default is to redirect the http traffic towards port 443 (default port for https).
 
-If you are running the Enterprise Distribution and want [to enable Prometheus](https://docs.pydio.com/en/docs/kb/access-control/monitoring-cells-prometheus-grafana), you might want to add these 2 directives in the main block (**before** the reverse proxy directive for Cells):
+If you are running the Enterprise Distribution and want [to enable Prometheus](https://docs.pydio.com/cells-v4/knowledge-base/deployment/monitoring-cells-with-prometheus-grafana/), you might want to add these 2 directives in the main block (**before** the reverse proxy directive for Cells):
 
 ```conf
 https://cells.example.com {

@@ -34,7 +34,7 @@ Then use the action parameter to type any message you want to print out. Notice 
 
 You can also use the toggles to send this message to the Application Log. In that case, it will be appended to the standard syslog of Pydio Cells.
 
-When using [Anko Scripting](/anko-pseudo-script), use the `Logger` object that is made available in the script scope with Info(), Warn() or Debug() functions.
+When using [Anko Scripting](https://docs.pydio.com/cells-v4/cellsflows/cells-flows-manual/scripting-capabilities/anko-pseudo-script/), use the `Logger` object that is made available in the script scope with Info(), Warn() or Debug() functions.
 
 ```javascript
 Logger.Info("My log message", anyObject, anyValue)
