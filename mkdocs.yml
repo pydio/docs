@@ -8,7 +8,7 @@ theme:
   name: material
   custom_dir: overrides
   favicon: pydio-favicon.png
-  logo: pydio-logo-grey-coral-sm.png
+  logo: pydio-grey-coral.svg
   static_templates:
     - 404.html
   palette:
