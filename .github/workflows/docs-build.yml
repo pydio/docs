@@ -56,6 +56,8 @@ jobs:
 
       - name: Copy docs to docs repo
         run: |
+          cp resources/pydio-favicon.png docs
+          cp resources/pydio-grey-coral.svg docs        
           cp -r admin-guide docs
           cp -r developer-guide docs
           cp -r knowledge-base docs
