@@ -23914,7 +23914,7 @@ So be careful to really use: <code>rsync -avr --delete &lt;source folder&gt; &lt
 </ol>
 <p>To backup datasources, we must backup configuration, files and indexes. The index and the content of the <code>.minio.sys</code> folder can be automatically restored after data restoration by running a resync from the admin interface. But including this folder in your backups will gain quite some time on restoration.</p>
 <p>For "structured storage" datasource, indexes can be rebuilt automatically. But indexes are really important for "flat storage" datasources, as files are stored as blob inside the storage, and if loosing indexes does not loose any actual data, it will loose the files and folders names and structure! Specific tools are provided to dump DB index directly into your storage (inside a specific file) to secure your backup/recovery processes.</p>
-<p>You can find <a href="/docs/cells/v4/datasource-format">more details about datasources here</a>. It is a good read to understand how data is actually stored inside the storage.</p>
+<p>You can find <a href="https://docs.pydio.com/cells-v4/admin-guide/connect-your-storage/datasource-format/index/">more details about datasources here</a>. It is a good read to understand how data is actually stored inside the storage.</p>
 <h4 id="s3-datasource">S3 datasource<a class="headerlink" href="#s3-datasource" title="Permanent link">&para;</a></h4>
 <p>This is one of the main advantage of using a S3 backend for your datasources: this system is fully decoupled from your Pydio Cells instance.
 You should be able to directly manage your backup policies via your S3 provider manager interface.</p>
@@ -23957,7 +23957,7 @@ Typically, on Linux:</p>
 <ul>
 <li>Stop cells service</li>
 <li>Drop the database cells</li>
-<li>Empty the <a href="/docs/cells/v4/working-directories">Working Directories</a></li>
+<li>Empty the <a href="https://docs.pydio.com/cells-v4/admin-guide/run-cells-in-production/best-practices/working-directories/">Working Directories</a></li>
 </ul>
 <p><em><strong>WARNING</strong>: be careful not to remove the parent 'pydio' folder, other applications, typically the Cells Sync Client, have their working default directory as siblings of the <code>cells</code> folder and store configuration and data inside it</em>.</p>
 

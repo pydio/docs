@@ -23775,7 +23775,7 @@ Display file size in a human readable format (e.g. 56MB):
 <p>Using <code>gval</code> to compute a percentage and compare it to a threshold value. Here the LastOutput contains a json struct with storage statistics:
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-6-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1"></a>{{gval &quot;$[0].Stats.Free / $[0].Stats.Total * 100 &gt; $[1]&quot; .LastOutput.JsonAsValue.Map .JobParameters.Threshold}}
 </code></pre></div></td></tr></table></div></p>
-<p><strong>The exhaustive list of available functions <a href="https://docs.pydio.com/en/docs/cells-flows/template-functions">is available here</a>.</strong></p>
+<p><strong>The exhaustive list of available functions <a href="https://docs.pydio.com/cells-v4/cellsflows/cells-flows-manual/scripting-capabilities/templates-functions/">is available here</a>.</strong></p>
 <h2 id="advanced-scripting-with-anko">Advanced scripting with Anko<a class="headerlink" href="#advanced-scripting-with-anko" title="Permanent link">&para;</a></h2>
 <p>When Golang templating is not enough, you might want to write complex scripts to parse specific values, create ACLs or other things like that. <a href="https://docs.pydio.com/en/docs/cells-flows/anko-script">Anko Script</a> action provides a pseudo-go language to perform such advanced data transformation. </p>
 <p>Detailed documentation is not yet available for this scripting language, please contact us if you need to write your own action!</p>

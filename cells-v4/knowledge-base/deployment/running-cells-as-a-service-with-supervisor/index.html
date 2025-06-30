@@ -87,7 +87,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#configuration-for-debianubuntu-based-systems" class="md-skip">
+        <a href="#usage" class="md-skip">
           Skip to content
         </a>
       
@@ -23333,26 +23333,11 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#configuration-for-debianubuntu-based-systems" class="md-nav__link">
-    <span class="md-ellipsis">
-      Configuration for Debian/Ubuntu based systems
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Configuration for Debian/Ubuntu based systems">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
   <a href="#usage" class="md-nav__link">
     <span class="md-ellipsis">
       Usage
     </span>
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -23681,26 +23666,11 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#configuration-for-debianubuntu-based-systems" class="md-nav__link">
-    <span class="md-ellipsis">
-      Configuration for Debian/Ubuntu based systems
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Configuration for Debian/Ubuntu based systems">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
   <a href="#usage" class="md-nav__link">
     <span class="md-ellipsis">
       Usage
     </span>
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -23736,86 +23706,143 @@
 
 <p>On UNIX-like operating systems, you can use <a href="http://supervisord.org">Supervisor</a> to run your Pydio Cells instance as a service: this enables for instance automated application relaunch after a server reboot.</p>
 <p>To install Supervisor on Debian-like systems for instance, you can do:</p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span>
-<span class="normal"><a href="#__codelineno-0-2">2</a></span>
-<span class="normal"><a href="#__codelineno-0-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a>sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>supervisor
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-0-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-0-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-0-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-0-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-0-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-0-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-0-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-0-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-0-10">10</a></span>
+<span class="normal"><a href="#__codelineno-0-11">11</a></span>
+<span class="normal"><a href="#__codelineno-0-12">12</a></span>
+<span class="normal"><a href="#__codelineno-0-13">13</a></span>
+<span class="normal"><a href="#__codelineno-0-14">14</a></span>
+<span class="normal"><a href="#__codelineno-0-15">15</a></span>
+<span class="normal"><a href="#__codelineno-0-16">16</a></span>
+<span class="normal"><a href="#__codelineno-0-17">17</a></span>
+<span class="normal"><a href="#__codelineno-0-18">18</a></span>
+<span class="normal"><a href="#__codelineno-0-19">19</a></span>
+<span class="normal"><a href="#__codelineno-0-20">20</a></span>
+<span class="normal"><a href="#__codelineno-0-21">21</a></span>
+<span class="normal"><a href="#__codelineno-0-22">22</a></span>
+<span class="normal"><a href="#__codelineno-0-23">23</a></span>
+<span class="normal"><a href="#__codelineno-0-24">24</a></span>
+<span class="normal"><a href="#__codelineno-0-25">25</a></span>
+<span class="normal"><a href="#__codelineno-0-26">26</a></span>
+<span class="normal"><a href="#__codelineno-0-27">27</a></span>
+<span class="normal"><a href="#__codelineno-0-28">28</a></span>
+<span class="normal"><a href="#__codelineno-0-29">29</a></span>
+<span class="normal"><a href="#__codelineno-0-30">30</a></span>
+<span class="normal"><a href="#__codelineno-0-31">31</a></span>
+<span class="normal"><a href="#__codelineno-0-32">32</a></span>
+<span class="normal"><a href="#__codelineno-0-33">33</a></span>
+<span class="normal"><a href="#__codelineno-0-34">34</a></span>
+<span class="normal"><a href="#__codelineno-0-35">35</a></span>
+<span class="normal"><a href="#__codelineno-0-36">36</a></span>
+<span class="normal"><a href="#__codelineno-0-37">37</a></span>
+<span class="normal"><a href="#__codelineno-0-38">38</a></span>
+<span class="normal"><a href="#__codelineno-0-39">39</a></span>
+<span class="normal"><a href="#__codelineno-0-40">40</a></span>
+<span class="normal"><a href="#__codelineno-0-41">41</a></span>
+<span class="normal"><a href="#__codelineno-0-42">42</a></span>
+<span class="normal"><a href="#__codelineno-0-43">43</a></span>
+<span class="normal"><a href="#__codelineno-0-44">44</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a>sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>supervisor
 <a id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="c1"># Enable and start the service</span>
 <a id="__codelineno-0-3" name="__codelineno-0-3"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span><span class="nb">enable</span><span class="w"> </span>--now<span class="w"> </span>supervisor
-</code></pre></div></td></tr></table></div>
-<h2 id="configuration-for-debianubuntu-based-systems">Configuration for Debian/Ubuntu based systems<a class="headerlink" href="#configuration-for-debianubuntu-based-systems" title="Permanent link">&para;</a></h2>
-<p><em>Note: this configuration assumes you have done a vanilla setup by following our install guides. Adapt to your specific setup if necessary.</em></p>
-<p>You must then declare the path to your <code>cells</code> binary file in a supervisor configuration file:</p>
-<ul>
-<li>Create a <code>/etc/supervisor/conf.d/cells.conf</code> file</li>
-<li>Add this after having replaced the <code>&lt;path-to-binary&gt;</code> and <code>&lt;user-launching-cells&gt;</code> place holders by their respective values depending on your setup:</li>
-</ul>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1"> 1</a></span>
-<span class="normal"><a href="#__codelineno-1-2"> 2</a></span>
-<span class="normal"><a href="#__codelineno-1-3"> 3</a></span>
-<span class="normal"><a href="#__codelineno-1-4"> 4</a></span>
-<span class="normal"><a href="#__codelineno-1-5"> 5</a></span>
-<span class="normal"><a href="#__codelineno-1-6"> 6</a></span>
-<span class="normal"><a href="#__codelineno-1-7"> 7</a></span>
-<span class="normal"><a href="#__codelineno-1-8"> 8</a></span>
-<span class="normal"><a href="#__codelineno-1-9"> 9</a></span>
-<span class="normal"><a href="#__codelineno-1-10">10</a></span>
-<span class="normal"><a href="#__codelineno-1-11">11</a></span>
-<span class="normal"><a href="#__codelineno-1-12">12</a></span>
-<span class="normal"><a href="#__codelineno-1-13">13</a></span>
-<span class="normal"><a href="#__codelineno-1-14">14</a></span>
-<span class="normal"><a href="#__codelineno-1-15">15</a></span>
-<span class="normal"><a href="#__codelineno-1-16">16</a></span>
-<span class="normal"><a href="#__codelineno-1-17">17</a></span>
-<span class="normal"><a href="#__codelineno-1-18">18</a></span>
-<span class="normal"><a href="#__codelineno-1-19">19</a></span>
-<span class="normal"><a href="#__codelineno-1-20">20</a></span>
-<span class="normal"><a href="#__codelineno-1-21">21</a></span>
-<span class="normal"><a href="#__codelineno-1-22">22</a></span>
-<span class="normal"><a href="#__codelineno-1-23">23</a></span>
-<span class="normal"><a href="#__codelineno-1-24">24</a></span>
-<span class="normal"><a href="#__codelineno-1-25">25</a></span>
-<span class="normal"><a href="#__codelineno-1-26">26</a></span>
-<span class="normal"><a href="#__codelineno-1-27">27</a></span>
-<span class="normal"><a href="#__codelineno-1-28">28</a></span>
-<span class="normal"><a href="#__codelineno-1-29">29</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a>[program:cells]
-<a id="__codelineno-1-2" name="__codelineno-1-2"></a>command=&lt;path-to-binary&gt; start
-<a id="__codelineno-1-3" name="__codelineno-1-3"></a>directory=&lt;path-to-cells-working-dir&gt;       ; directory to cwd to before exec (def no cwd)
-<a id="__codelineno-1-4" name="__codelineno-1-4"></a>;umask=022                                   ; umask for process (default None)
-<a id="__codelineno-1-5" name="__codelineno-1-5"></a>;priority=999                                ; the relative start priority (default 999)
-<a id="__codelineno-1-6" name="__codelineno-1-6"></a>autostart=true                               ; start at supervisord start (default: true)
-<a id="__codelineno-1-7" name="__codelineno-1-7"></a>autorestart=unexpected                       ; whether/when to restart (default: unexpected)
-<a id="__codelineno-1-8" name="__codelineno-1-8"></a>startsecs=15                                 ; number of secs prog must stay running (def. 1)
-<a id="__codelineno-1-9" name="__codelineno-1-9"></a>startretries=5                               ; max # of serial start failures (default 3)
-<a id="__codelineno-1-10" name="__codelineno-1-10"></a>exitcodes=0,2                                ; &#39;expected&#39; exit codes for process (default 0,2)
-<a id="__codelineno-1-11" name="__codelineno-1-11"></a>stopsignal=QUIT                              ; signal used to kill process (default TERM)
-<a id="__codelineno-1-12" name="__codelineno-1-12"></a>stopwaitsecs=10                              ; max num secs to wait b4 SIGKILL (default 10)
-<a id="__codelineno-1-13" name="__codelineno-1-13"></a>stopasgroup=false                            ; send stop signal to the UNIX process group (default false)
-<a id="__codelineno-1-14" name="__codelineno-1-14"></a>;killasgroup=false                           ; SIGKILL the UNIX process group (def false)
-<a id="__codelineno-1-15" name="__codelineno-1-15"></a>user=&lt;user-launching-cells&gt;                  ; setuid to this UNIX account to run the program
-<a id="__codelineno-1-16" name="__codelineno-1-16"></a>
-<a id="__codelineno-1-17" name="__codelineno-1-17"></a>redirect_stderr=true                         ; redirect proc stderr to stdout (default false)
-<a id="__codelineno-1-18" name="__codelineno-1-18"></a>stdout_logfile=&lt;path-to-cells-working-dir&gt;/logs/cells.log
-<a id="__codelineno-1-19" name="__codelineno-1-19"></a>stdout_logfile_maxbytes=1MB                  ; max # logfile bytes b4 rotation (default 50MB)
-<a id="__codelineno-1-20" name="__codelineno-1-20"></a>stdout_logfile_backups=10                    ; # of stdout logfile backups (default 10)
-<a id="__codelineno-1-21" name="__codelineno-1-21"></a>stdout_capture_maxbytes=1MB                  ; number of bytes in &#39;capturemode&#39; (default 0)
-<a id="__codelineno-1-22" name="__codelineno-1-22"></a>;stdout_events_enabled=false                 ; emit events on stdout writes (default false)
-<a id="__codelineno-1-23" name="__codelineno-1-23"></a>stderr_logfile=&lt;path-to-cells-working-dir&gt;/logs/cells_err.log        ; stderr log path, NONE for none; default AUTO
-<a id="__codelineno-1-24" name="__codelineno-1-24"></a>;stderr_logfile_maxbytes=1MB                 ; max # logfile bytes b4 rotation (default 50MB)
-<a id="__codelineno-1-25" name="__codelineno-1-25"></a>;stderr_logfile_backups=10                   ; # of stderr logfile backups (default 10)
-<a id="__codelineno-1-26" name="__codelineno-1-26"></a>;stderr_capture_maxbytes=1MB                 ; number of bytes in &#39;capturemode&#39; (default 0)
-<a id="__codelineno-1-27" name="__codelineno-1-27"></a>;stderr_events_enabled=false                 ; emit events on stderr writes (default false)
-<a id="__codelineno-1-28" name="__codelineno-1-28"></a>;environment=TMPDIR=&quot;/tmp&quot;,B=&quot;2&quot;             ; process environment additions (def no adds)
-<a id="__codelineno-1-29" name="__codelineno-1-29"></a>;serverurl=AUTO                              ; override serverurl computation (childutils)
+<a id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="sb">```</span>https://docs.pydio.com/cells-v4/knowledge-base/deployment/monitoring-cells-with-prometheus-grafana/
+<a id="__codelineno-0-5" name="__codelineno-0-5"></a>
+<a id="__codelineno-0-6" name="__codelineno-0-6"></a><span class="c1">## Configuration for Debian/Ubuntu based systems</span>
+<a id="__codelineno-0-7" name="__codelineno-0-7"></a>
+<a id="__codelineno-0-8" name="__codelineno-0-8"></a>_Note:<span class="w"> </span>this<span class="w"> </span>configuration<span class="w"> </span>assumes<span class="w"> </span>you<span class="w"> </span>have<span class="w"> </span><span class="k">done</span><span class="w"> </span>a<span class="w"> </span>vanilla<span class="w"> </span>setup<span class="w"> </span>by<span class="w"> </span>following<span class="w"> </span>our<span class="w"> </span>install<span class="w"> </span>guides.<span class="w"> </span>Adapt<span class="w"> </span>to<span class="w"> </span>your<span class="w"> </span>specific<span class="w"> </span>setup<span class="w"> </span><span class="k">if</span><span class="w"> </span>necessary._
+<a id="__codelineno-0-9" name="__codelineno-0-9"></a>
+<a id="__codelineno-0-10" name="__codelineno-0-10"></a>You<span class="w"> </span>must<span class="w"> </span><span class="k">then</span><span class="w"> </span><span class="nb">declare</span><span class="w"> </span>the<span class="w"> </span>path<span class="w"> </span>to<span class="w"> </span>your<span class="w"> </span><span class="sb">`</span>cells<span class="sb">`</span><span class="w"> </span>binary<span class="w"> </span>file<span class="w"> </span><span class="k">in</span><span class="w"> </span>a<span class="w"> </span>supervisor<span class="w"> </span>configuration<span class="w"> </span>file:
+<a id="__codelineno-0-11" name="__codelineno-0-11"></a>
+<a id="__codelineno-0-12" name="__codelineno-0-12"></a>-<span class="w"> </span>Create<span class="w"> </span>a<span class="w"> </span><span class="sb">`</span>/etc/supervisor/conf.d/cells.conf<span class="sb">`</span><span class="w"> </span>file
+<a id="__codelineno-0-13" name="__codelineno-0-13"></a>-<span class="w"> </span>Add<span class="w"> </span>this<span class="w"> </span>after<span class="w"> </span>having<span class="w"> </span>replaced<span class="w"> </span>the<span class="w"> </span><span class="sb">`</span>&lt;path-to-binary&gt;<span class="sb">`</span><span class="w"> </span>and<span class="w"> </span><span class="sb">`</span>&lt;user-launching-cells&gt;<span class="sb">`</span><span class="w"> </span>place<span class="w"> </span>holders<span class="w"> </span>by<span class="w"> </span>their<span class="w"> </span>respective<span class="w"> </span>values<span class="w"> </span>depending<span class="w"> </span>on<span class="w"> </span>your<span class="w"> </span>setup:
+<a id="__codelineno-0-14" name="__codelineno-0-14"></a>
+<a id="__codelineno-0-15" name="__codelineno-0-15"></a><span class="sb">```</span>conf
+<a id="__codelineno-0-16" name="__codelineno-0-16"></a><span class="o">[</span>program:cells<span class="o">]</span>
+<a id="__codelineno-0-17" name="__codelineno-0-17"></a><span class="nv">command</span><span class="o">=</span>&lt;path-to-binary&gt;<span class="w"> </span>start
+<a id="__codelineno-0-18" name="__codelineno-0-18"></a><span class="nv">directory</span><span class="o">=</span>&lt;path-to-cells-working-dir&gt;<span class="w">       </span><span class="p">;</span><span class="w"> </span>directory<span class="w"> </span>to<span class="w"> </span>cwd<span class="w"> </span>to<span class="w"> </span>before<span class="w"> </span><span class="nb">exec</span><span class="w"> </span><span class="o">(</span>def<span class="w"> </span>no<span class="w"> </span>cwd<span class="o">)</span>
+<a id="__codelineno-0-19" name="__codelineno-0-19"></a><span class="p">;</span><span class="nv">umask</span><span class="o">=</span><span class="m">022</span><span class="w">                                   </span><span class="p">;</span><span class="w"> </span><span class="nb">umask</span><span class="w"> </span><span class="k">for</span><span class="w"> </span>process<span class="w"> </span><span class="o">(</span>default<span class="w"> </span>None<span class="o">)</span>
+<a id="__codelineno-0-20" name="__codelineno-0-20"></a><span class="p">;</span><span class="nv">priority</span><span class="o">=</span><span class="m">999</span><span class="w">                                </span><span class="p">;</span><span class="w"> </span>the<span class="w"> </span>relative<span class="w"> </span>start<span class="w"> </span>priority<span class="w"> </span><span class="o">(</span>default<span class="w"> </span><span class="m">999</span><span class="o">)</span>
+<a id="__codelineno-0-21" name="__codelineno-0-21"></a><span class="nv">autostart</span><span class="o">=</span><span class="nb">true</span><span class="w">                               </span><span class="p">;</span><span class="w"> </span>start<span class="w"> </span>at<span class="w"> </span>supervisord<span class="w"> </span>start<span class="w"> </span><span class="o">(</span>default:<span class="w"> </span><span class="nb">true</span><span class="o">)</span>
+<a id="__codelineno-0-22" name="__codelineno-0-22"></a><span class="nv">autorestart</span><span class="o">=</span>unexpected<span class="w">                       </span><span class="p">;</span><span class="w"> </span>whether/when<span class="w"> </span>to<span class="w"> </span>restart<span class="w"> </span><span class="o">(</span>default:<span class="w"> </span>unexpected<span class="o">)</span>
+<a id="__codelineno-0-23" name="__codelineno-0-23"></a><span class="nv">startsecs</span><span class="o">=</span><span class="m">15</span><span class="w">                                 </span><span class="p">;</span><span class="w"> </span>number<span class="w"> </span>of<span class="w"> </span>secs<span class="w"> </span>prog<span class="w"> </span>must<span class="w"> </span>stay<span class="w"> </span>running<span class="w"> </span><span class="o">(</span>def.<span class="w"> </span><span class="m">1</span><span class="o">)</span>
+<a id="__codelineno-0-24" name="__codelineno-0-24"></a><span class="nv">startretries</span><span class="o">=</span><span class="m">5</span><span class="w">                               </span><span class="p">;</span><span class="w"> </span>max<span class="w"> </span><span class="c1"># of serial start failures (default 3)</span>
+<a id="__codelineno-0-25" name="__codelineno-0-25"></a><span class="nv">exitcodes</span><span class="o">=</span><span class="m">0</span>,2<span class="w">                                </span><span class="p">;</span><span class="w"> </span><span class="s1">&#39;expected&#39;</span><span class="w"> </span><span class="nb">exit</span><span class="w"> </span>codes<span class="w"> </span><span class="k">for</span><span class="w"> </span>process<span class="w"> </span><span class="o">(</span>default<span class="w"> </span><span class="m">0</span>,2<span class="o">)</span>
+<a id="__codelineno-0-26" name="__codelineno-0-26"></a><span class="nv">stopsignal</span><span class="o">=</span>QUIT<span class="w">                              </span><span class="p">;</span><span class="w"> </span>signal<span class="w"> </span>used<span class="w"> </span>to<span class="w"> </span><span class="nb">kill</span><span class="w"> </span>process<span class="w"> </span><span class="o">(</span>default<span class="w"> </span>TERM<span class="o">)</span>
+<a id="__codelineno-0-27" name="__codelineno-0-27"></a><span class="nv">stopwaitsecs</span><span class="o">=</span><span class="m">10</span><span class="w">                              </span><span class="p">;</span><span class="w"> </span>max<span class="w"> </span>num<span class="w"> </span>secs<span class="w"> </span>to<span class="w"> </span><span class="nb">wait</span><span class="w"> </span>b4<span class="w"> </span>SIGKILL<span class="w"> </span><span class="o">(</span>default<span class="w"> </span><span class="m">10</span><span class="o">)</span>
+<a id="__codelineno-0-28" name="__codelineno-0-28"></a><span class="nv">stopasgroup</span><span class="o">=</span><span class="nb">false</span><span class="w">                            </span><span class="p">;</span><span class="w"> </span>send<span class="w"> </span>stop<span class="w"> </span>signal<span class="w"> </span>to<span class="w"> </span>the<span class="w"> </span>UNIX<span class="w"> </span>process<span class="w"> </span>group<span class="w"> </span><span class="o">(</span>default<span class="w"> </span><span class="nb">false</span><span class="o">)</span>
+<a id="__codelineno-0-29" name="__codelineno-0-29"></a><span class="p">;</span><span class="nv">killasgroup</span><span class="o">=</span><span class="nb">false</span><span class="w">                           </span><span class="p">;</span><span class="w"> </span>SIGKILL<span class="w"> </span>the<span class="w"> </span>UNIX<span class="w"> </span>process<span class="w"> </span>group<span class="w"> </span><span class="o">(</span>def<span class="w"> </span><span class="nb">false</span><span class="o">)</span>
+<a id="__codelineno-0-30" name="__codelineno-0-30"></a><span class="nv">user</span><span class="o">=</span>&lt;user-launching-cells&gt;<span class="w">                  </span><span class="p">;</span><span class="w"> </span>setuid<span class="w"> </span>to<span class="w"> </span>this<span class="w"> </span>UNIX<span class="w"> </span>account<span class="w"> </span>to<span class="w"> </span>run<span class="w"> </span>the<span class="w"> </span>program
+<a id="__codelineno-0-31" name="__codelineno-0-31"></a>
+<a id="__codelineno-0-32" name="__codelineno-0-32"></a><span class="nv">redirect_stderr</span><span class="o">=</span><span class="nb">true</span><span class="w">                         </span><span class="p">;</span><span class="w"> </span>redirect<span class="w"> </span>proc<span class="w"> </span>stderr<span class="w"> </span>to<span class="w"> </span>stdout<span class="w"> </span><span class="o">(</span>default<span class="w"> </span><span class="nb">false</span><span class="o">)</span>
+<a id="__codelineno-0-33" name="__codelineno-0-33"></a><span class="nv">stdout_logfile</span><span class="o">=</span>&lt;path-to-cells-working-dir&gt;/logs/cells.log
+<a id="__codelineno-0-34" name="__codelineno-0-34"></a><span class="nv">stdout_logfile_maxbytes</span><span class="o">=</span>1MB<span class="w">                  </span><span class="p">;</span><span class="w"> </span>max<span class="w"> </span><span class="c1"># logfile bytes b4 rotation (default 50MB)</span>
+<a id="__codelineno-0-35" name="__codelineno-0-35"></a><span class="nv">stdout_logfile_backups</span><span class="o">=</span><span class="m">10</span><span class="w">                    </span><span class="p">;</span><span class="w"> </span><span class="c1"># of stdout logfile backups (default 10)</span>
+<a id="__codelineno-0-36" name="__codelineno-0-36"></a><span class="nv">stdout_capture_maxbytes</span><span class="o">=</span>1MB<span class="w">                  </span><span class="p">;</span><span class="w"> </span>number<span class="w"> </span>of<span class="w"> </span>bytes<span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="s1">&#39;capturemode&#39;</span><span class="w"> </span><span class="o">(</span>default<span class="w"> </span><span class="m">0</span><span class="o">)</span>
+<a id="__codelineno-0-37" name="__codelineno-0-37"></a><span class="p">;</span><span class="nv">stdout_events_enabled</span><span class="o">=</span><span class="nb">false</span><span class="w">                 </span><span class="p">;</span><span class="w"> </span>emit<span class="w"> </span>events<span class="w"> </span>on<span class="w"> </span>stdout<span class="w"> </span>writes<span class="w"> </span><span class="o">(</span>default<span class="w"> </span><span class="nb">false</span><span class="o">)</span>
+<a id="__codelineno-0-38" name="__codelineno-0-38"></a><span class="nv">stderr_logfile</span><span class="o">=</span>&lt;path-to-cells-working-dir&gt;/logs/cells_err.log<span class="w">        </span><span class="p">;</span><span class="w"> </span>stderr<span class="w"> </span>log<span class="w"> </span>path,<span class="w"> </span>NONE<span class="w"> </span><span class="k">for</span><span class="w"> </span>none<span class="p">;</span><span class="w"> </span>default<span class="w"> </span>AUTO
+<a id="__codelineno-0-39" name="__codelineno-0-39"></a><span class="p">;</span><span class="nv">stderr_logfile_maxbytes</span><span class="o">=</span>1MB<span class="w">                 </span><span class="p">;</span><span class="w"> </span>max<span class="w"> </span><span class="c1"># logfile bytes b4 rotation (default 50MB)</span>
+<a id="__codelineno-0-40" name="__codelineno-0-40"></a><span class="p">;</span><span class="nv">stderr_logfile_backups</span><span class="o">=</span><span class="m">10</span><span class="w">                   </span><span class="p">;</span><span class="w"> </span><span class="c1"># of stderr logfile backups (default 10)</span>
+<a id="__codelineno-0-41" name="__codelineno-0-41"></a><span class="p">;</span><span class="nv">stderr_capture_maxbytes</span><span class="o">=</span>1MB<span class="w">                 </span><span class="p">;</span><span class="w"> </span>number<span class="w"> </span>of<span class="w"> </span>bytes<span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="s1">&#39;capturemode&#39;</span><span class="w"> </span><span class="o">(</span>default<span class="w"> </span><span class="m">0</span><span class="o">)</span>
+<a id="__codelineno-0-42" name="__codelineno-0-42"></a><span class="p">;</span><span class="nv">stderr_events_enabled</span><span class="o">=</span><span class="nb">false</span><span class="w">                 </span><span class="p">;</span><span class="w"> </span>emit<span class="w"> </span>events<span class="w"> </span>on<span class="w"> </span>stderr<span class="w"> </span>writes<span class="w"> </span><span class="o">(</span>default<span class="w"> </span><span class="nb">false</span><span class="o">)</span>
+<a id="__codelineno-0-43" name="__codelineno-0-43"></a><span class="p">;</span><span class="nv">environment</span><span class="o">=</span><span class="nv">TMPDIR</span><span class="o">=</span><span class="s2">&quot;/tmp&quot;</span>,B<span class="o">=</span><span class="s2">&quot;2&quot;</span><span class="w">             </span><span class="p">;</span><span class="w"> </span>process<span class="w"> </span>environment<span class="w"> </span>additions<span class="w"> </span><span class="o">(</span>def<span class="w"> </span>no<span class="w"> </span>adds<span class="o">)</span>
+<a id="__codelineno-0-44" name="__codelineno-0-44"></a><span class="p">;</span><span class="nv">serverurl</span><span class="o">=</span>AUTO<span class="w">                              </span><span class="p">;</span><span class="w"> </span>override<span class="w"> </span>serverurl<span class="w"> </span>computation<span class="w"> </span><span class="o">(</span>childutils<span class="o">)</span>
 </code></pre></div></td></tr></table></div>
 <p>Reload Supervisor configuration with:</p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a>sudo<span class="w"> </span>supervisorctl<span class="w"> </span>reread
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a>sudo<span class="w"> </span>supervisorctl<span class="w"> </span>reread
 </code></pre></div></td></tr></table></div>
 <p><em>Note: this triggers a reload of all <code>*.conf</code> files located within the <code>/etc/supervisor/conf.d</code> directory</em>.</p>
 <p>Then enact the changes with:</p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1"></a>sudo<span class="w"> </span>supervisorctl<span class="w"> </span>update
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a>sudo<span class="w"> </span>supervisorctl<span class="w"> </span>update
 </code></pre></div></td></tr></table></div>
 <h3 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">&para;</a></h3>
 <p>You can now monitor your program with <code>supervisorctl</code></p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-3-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-3-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-3-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-3-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-3-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-3-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-3-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-3-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-3-10">10</a></span>
+<span class="normal"><a href="#__codelineno-3-11">11</a></span>
+<span class="normal"><a href="#__codelineno-3-12">12</a></span>
+<span class="normal"><a href="#__codelineno-3-13">13</a></span>
+<span class="normal"><a href="#__codelineno-3-14">14</a></span>
+<span class="normal"><a href="#__codelineno-3-15">15</a></span>
+<span class="normal"><a href="#__codelineno-3-16">16</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1"></a>$<span class="w"> </span>sudo<span class="w"> </span>supervisorctl
+<a id="__codelineno-3-2" name="__codelineno-3-2"></a>cells<span class="w">                             </span>RUNNING<span class="w">   </span>pid<span class="w"> </span><span class="m">3365</span>,<span class="w"> </span>uptime<span class="w"> </span><span class="m">1</span>:10:26
+<a id="__codelineno-3-3" name="__codelineno-3-3"></a>
+<a id="__codelineno-3-4" name="__codelineno-3-4"></a><span class="c1"># You can now manage Cells service life cycle:</span>
+<a id="__codelineno-3-5" name="__codelineno-3-5"></a>supervisor&gt;<span class="w"> </span>stop<span class="w"> </span>cells
+<a id="__codelineno-3-6" name="__codelineno-3-6"></a>long_script:<span class="w"> </span>stopped
+<a id="__codelineno-3-7" name="__codelineno-3-7"></a>supervisor&gt;<span class="w"> </span>start<span class="w"> </span>cells
+<a id="__codelineno-3-8" name="__codelineno-3-8"></a>long_script:<span class="w"> </span>started
+<a id="__codelineno-3-9" name="__codelineno-3-9"></a>supervisor&gt;<span class="w"> </span>restart<span class="w"> </span>cells
+<a id="__codelineno-3-10" name="__codelineno-3-10"></a>long_script:<span class="w"> </span>stopped
+<a id="__codelineno-3-11" name="__codelineno-3-11"></a>long_script:<span class="w"> </span>started
+<a id="__codelineno-3-12" name="__codelineno-3-12"></a><span class="c1"># To check the status:</span>
+<a id="__codelineno-3-13" name="__codelineno-3-13"></a>supervisor&gt;<span class="w"> </span>status
+<a id="__codelineno-3-14" name="__codelineno-3-14"></a>cells<span class="w">                             </span>RUNNING<span class="w">   </span>pid<span class="w"> </span><span class="m">3365</span>,<span class="w"> </span>uptime<span class="w"> </span><span class="m">1</span>:13:07
+<a id="__codelineno-3-15" name="__codelineno-3-15"></a><span class="c1"># To leave supervisor </span>
+<a id="__codelineno-3-16" name="__codelineno-3-16"></a>supervisor&gt;<span class="w"> </span>quit
+</code></pre></div></td></tr></table></div>
+<p>You now have Pydio Cells running as a daemon and auto-restarting after server reboot.</p>
+<h2 id="for-centos">For CentOS<a class="headerlink" href="#for-centos" title="Permanent link">&para;</a></h2>
+<p>On a RHEL/CentOS system and assuming you have followed our <a href="https://docs.pydio.com/cells-v4/knowledge-base/deployment/install-cells-on-centos-rhel/">recommended best practices</a> during installation, here is a config sample that will run Cells as a service.</p>
+<p>This configuration is based on a system that has, among others, a <strong>pydio</strong> Unix account. Please adapt to your custom setup if necessary.</p>
+<ul>
+<li>Install supervisor: <code>sudo yum install supervisor</code></li>
+<li>Create a new file <code>/etc/supervisord.d/cells.ini</code> with following content:</li>
+</ul>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-4-2"> 2</a></span>
 <span class="normal"><a href="#__codelineno-4-3"> 3</a></span>
@@ -23831,88 +23858,48 @@
 <span class="normal"><a href="#__codelineno-4-13">13</a></span>
 <span class="normal"><a href="#__codelineno-4-14">14</a></span>
 <span class="normal"><a href="#__codelineno-4-15">15</a></span>
-<span class="normal"><a href="#__codelineno-4-16">16</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1"></a>$<span class="w"> </span>sudo<span class="w"> </span>supervisorctl
-<a id="__codelineno-4-2" name="__codelineno-4-2"></a>cells<span class="w">                             </span>RUNNING<span class="w">   </span>pid<span class="w"> </span><span class="m">3365</span>,<span class="w"> </span>uptime<span class="w"> </span><span class="m">1</span>:10:26
-<a id="__codelineno-4-3" name="__codelineno-4-3"></a>
-<a id="__codelineno-4-4" name="__codelineno-4-4"></a><span class="c1"># You can now manage Cells service life cycle:</span>
-<a id="__codelineno-4-5" name="__codelineno-4-5"></a>supervisor&gt;<span class="w"> </span>stop<span class="w"> </span>cells
-<a id="__codelineno-4-6" name="__codelineno-4-6"></a>long_script:<span class="w"> </span>stopped
-<a id="__codelineno-4-7" name="__codelineno-4-7"></a>supervisor&gt;<span class="w"> </span>start<span class="w"> </span>cells
-<a id="__codelineno-4-8" name="__codelineno-4-8"></a>long_script:<span class="w"> </span>started
-<a id="__codelineno-4-9" name="__codelineno-4-9"></a>supervisor&gt;<span class="w"> </span>restart<span class="w"> </span>cells
-<a id="__codelineno-4-10" name="__codelineno-4-10"></a>long_script:<span class="w"> </span>stopped
-<a id="__codelineno-4-11" name="__codelineno-4-11"></a>long_script:<span class="w"> </span>started
-<a id="__codelineno-4-12" name="__codelineno-4-12"></a><span class="c1"># To check the status:</span>
-<a id="__codelineno-4-13" name="__codelineno-4-13"></a>supervisor&gt;<span class="w"> </span>status
-<a id="__codelineno-4-14" name="__codelineno-4-14"></a>cells<span class="w">                             </span>RUNNING<span class="w">   </span>pid<span class="w"> </span><span class="m">3365</span>,<span class="w"> </span>uptime<span class="w"> </span><span class="m">1</span>:13:07
-<a id="__codelineno-4-15" name="__codelineno-4-15"></a><span class="c1"># To leave supervisor </span>
-<a id="__codelineno-4-16" name="__codelineno-4-16"></a>supervisor&gt;<span class="w"> </span>quit
-</code></pre></div></td></tr></table></div>
-<p>You now have Pydio Cells running as a daemon and auto-restarting after server reboot.</p>
-<h2 id="for-centos">For CentOS<a class="headerlink" href="#for-centos" title="Permanent link">&para;</a></h2>
-<p>On a RHEL/CentOS system and assuming you have followed our <a href="https://docs.pydio.com/en/docs/kb/access-control/install-cells-centosrhel">recommended best practices</a> during installation, here is a config sample that will run Cells as a service.</p>
-<p>This configuration is based on a system that has, among others, a <strong>pydio</strong> Unix account. Please adapt to your custom setup if necessary.</p>
-<ul>
-<li>Install supervisor: <code>sudo yum install supervisor</code></li>
-<li>Create a new file <code>/etc/supervisord.d/cells.ini</code> with following content:</li>
-</ul>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-5-1"> 1</a></span>
-<span class="normal"><a href="#__codelineno-5-2"> 2</a></span>
-<span class="normal"><a href="#__codelineno-5-3"> 3</a></span>
-<span class="normal"><a href="#__codelineno-5-4"> 4</a></span>
-<span class="normal"><a href="#__codelineno-5-5"> 5</a></span>
-<span class="normal"><a href="#__codelineno-5-6"> 6</a></span>
-<span class="normal"><a href="#__codelineno-5-7"> 7</a></span>
-<span class="normal"><a href="#__codelineno-5-8"> 8</a></span>
-<span class="normal"><a href="#__codelineno-5-9"> 9</a></span>
-<span class="normal"><a href="#__codelineno-5-10">10</a></span>
-<span class="normal"><a href="#__codelineno-5-11">11</a></span>
-<span class="normal"><a href="#__codelineno-5-12">12</a></span>
-<span class="normal"><a href="#__codelineno-5-13">13</a></span>
-<span class="normal"><a href="#__codelineno-5-14">14</a></span>
-<span class="normal"><a href="#__codelineno-5-15">15</a></span>
-<span class="normal"><a href="#__codelineno-5-16">16</a></span>
-<span class="normal"><a href="#__codelineno-5-17">17</a></span>
-<span class="normal"><a href="#__codelineno-5-18">18</a></span>
-<span class="normal"><a href="#__codelineno-5-19">19</a></span>
-<span class="normal"><a href="#__codelineno-5-20">20</a></span>
-<span class="normal"><a href="#__codelineno-5-21">21</a></span>
-<span class="normal"><a href="#__codelineno-5-22">22</a></span>
-<span class="normal"><a href="#__codelineno-5-23">23</a></span>
-<span class="normal"><a href="#__codelineno-5-24">24</a></span>
-<span class="normal"><a href="#__codelineno-5-25">25</a></span>
-<span class="normal"><a href="#__codelineno-5-26">26</a></span>
-<span class="normal"><a href="#__codelineno-5-27">27</a></span>
-<span class="normal"><a href="#__codelineno-5-28">28</a></span>
-<span class="normal"><a href="#__codelineno-5-29">29</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1"></a>[program:cells]
-<a id="__codelineno-5-2" name="__codelineno-5-2"></a>command=/opt/pydio/bin/cells start
-<a id="__codelineno-5-3" name="__codelineno-5-3"></a>directory=/home/pydio       ; directory to cwd to before exec (def no cwd)
-<a id="__codelineno-5-4" name="__codelineno-5-4"></a>;umask=022                     ; umask for process (default None)
-<a id="__codelineno-5-5" name="__codelineno-5-5"></a>;priority=999                  ; the relative start priority (default 999)
-<a id="__codelineno-5-6" name="__codelineno-5-6"></a>autostart=true                ; start at supervisord start (default: true)
-<a id="__codelineno-5-7" name="__codelineno-5-7"></a>autorestart=unexpected        ; whether/when to restart (default: unexpected)
-<a id="__codelineno-5-8" name="__codelineno-5-8"></a>startsecs=15                   ; number of secs prog must stay running (def. 1)
-<a id="__codelineno-5-9" name="__codelineno-5-9"></a>startretries=5                ; max # of serial start failures (default 3)
-<a id="__codelineno-5-10" name="__codelineno-5-10"></a>exitcodes=0,2                 ; &#39;expected&#39; exit codes for process (default 0,2)
-<a id="__codelineno-5-11" name="__codelineno-5-11"></a>stopsignal=QUIT               ; signal used to kill process (default TERM)
-<a id="__codelineno-5-12" name="__codelineno-5-12"></a>stopwaitsecs=10               ; max num secs to wait b4 SIGKILL (default 10)
-<a id="__codelineno-5-13" name="__codelineno-5-13"></a>stopasgroup=false             ; send stop signal to the UNIX process group (default false)
-<a id="__codelineno-5-14" name="__codelineno-5-14"></a>;killasgroup=false             ; SIGKILL the UNIX process group (def false)
-<a id="__codelineno-5-15" name="__codelineno-5-15"></a>user=pydio                 ; setuid to this UNIX account to run the program
-<a id="__codelineno-5-16" name="__codelineno-5-16"></a>
-<a id="__codelineno-5-17" name="__codelineno-5-17"></a>redirect_stderr=true          ; redirect proc stderr to stdout (default false)
-<a id="__codelineno-5-18" name="__codelineno-5-18"></a>stdout_logfile=/var/cells/logs/cells.log
-<a id="__codelineno-5-19" name="__codelineno-5-19"></a>stdout_logfile_maxbytes=1MB   ; max # logfile bytes b4 rotation (default 50MB)
-<a id="__codelineno-5-20" name="__codelineno-5-20"></a>stdout_logfile_backups=10     ; # of stdout logfile backups (default 10)
-<a id="__codelineno-5-21" name="__codelineno-5-21"></a>stdout_capture_maxbytes=1MB   ; number of bytes in &#39;capturemode&#39; (default 0)
-<a id="__codelineno-5-22" name="__codelineno-5-22"></a>;stdout_events_enabled=false   ; emit events on stdout writes (default false)
-<a id="__codelineno-5-23" name="__codelineno-5-23"></a>stderr_logfile=/var/cells/logs/cells_err.log        ; stderr log path, NONE for none; default AUTO
-<a id="__codelineno-5-24" name="__codelineno-5-24"></a>;stderr_logfile_maxbytes=1MB   ; max # logfile bytes b4 rotation (default 50MB)
-<a id="__codelineno-5-25" name="__codelineno-5-25"></a>;stderr_logfile_backups=10     ; # of stderr logfile backups (default 10)
-<a id="__codelineno-5-26" name="__codelineno-5-26"></a>;stderr_capture_maxbytes=1MB   ; number of bytes in &#39;capturemode&#39; (default 0)
-<a id="__codelineno-5-27" name="__codelineno-5-27"></a>;stderr_events_enabled=false   ; emit events on stderr writes (default false)
-<a id="__codelineno-5-28" name="__codelineno-5-28"></a>;environment=TMPDIR=&quot;/tmp&quot;,B=&quot;2&quot;       ; process environment additions (def no adds)
-<a id="__codelineno-5-29" name="__codelineno-5-29"></a>;serverurl=AUTO                ; override serverurl computation (childutils)
+<span class="normal"><a href="#__codelineno-4-16">16</a></span>
+<span class="normal"><a href="#__codelineno-4-17">17</a></span>
+<span class="normal"><a href="#__codelineno-4-18">18</a></span>
+<span class="normal"><a href="#__codelineno-4-19">19</a></span>
+<span class="normal"><a href="#__codelineno-4-20">20</a></span>
+<span class="normal"><a href="#__codelineno-4-21">21</a></span>
+<span class="normal"><a href="#__codelineno-4-22">22</a></span>
+<span class="normal"><a href="#__codelineno-4-23">23</a></span>
+<span class="normal"><a href="#__codelineno-4-24">24</a></span>
+<span class="normal"><a href="#__codelineno-4-25">25</a></span>
+<span class="normal"><a href="#__codelineno-4-26">26</a></span>
+<span class="normal"><a href="#__codelineno-4-27">27</a></span>
+<span class="normal"><a href="#__codelineno-4-28">28</a></span>
+<span class="normal"><a href="#__codelineno-4-29">29</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1"></a>[program:cells]
+<a id="__codelineno-4-2" name="__codelineno-4-2"></a>command=/opt/pydio/bin/cells start
+<a id="__codelineno-4-3" name="__codelineno-4-3"></a>directory=/home/pydio       ; directory to cwd to before exec (def no cwd)
+<a id="__codelineno-4-4" name="__codelineno-4-4"></a>;umask=022                     ; umask for process (default None)
+<a id="__codelineno-4-5" name="__codelineno-4-5"></a>;priority=999                  ; the relative start priority (default 999)
+<a id="__codelineno-4-6" name="__codelineno-4-6"></a>autostart=true                ; start at supervisord start (default: true)
+<a id="__codelineno-4-7" name="__codelineno-4-7"></a>autorestart=unexpected        ; whether/when to restart (default: unexpected)
+<a id="__codelineno-4-8" name="__codelineno-4-8"></a>startsecs=15                   ; number of secs prog must stay running (def. 1)
+<a id="__codelineno-4-9" name="__codelineno-4-9"></a>startretries=5                ; max # of serial start failures (default 3)
+<a id="__codelineno-4-10" name="__codelineno-4-10"></a>exitcodes=0,2                 ; &#39;expected&#39; exit codes for process (default 0,2)
+<a id="__codelineno-4-11" name="__codelineno-4-11"></a>stopsignal=QUIT               ; signal used to kill process (default TERM)
+<a id="__codelineno-4-12" name="__codelineno-4-12"></a>stopwaitsecs=10               ; max num secs to wait b4 SIGKILL (default 10)
+<a id="__codelineno-4-13" name="__codelineno-4-13"></a>stopasgroup=false             ; send stop signal to the UNIX process group (default false)
+<a id="__codelineno-4-14" name="__codelineno-4-14"></a>;killasgroup=false             ; SIGKILL the UNIX process group (def false)
+<a id="__codelineno-4-15" name="__codelineno-4-15"></a>user=pydio                 ; setuid to this UNIX account to run the program
+<a id="__codelineno-4-16" name="__codelineno-4-16"></a>
+<a id="__codelineno-4-17" name="__codelineno-4-17"></a>redirect_stderr=true          ; redirect proc stderr to stdout (default false)
+<a id="__codelineno-4-18" name="__codelineno-4-18"></a>stdout_logfile=/var/cells/logs/cells.log
+<a id="__codelineno-4-19" name="__codelineno-4-19"></a>stdout_logfile_maxbytes=1MB   ; max # logfile bytes b4 rotation (default 50MB)
+<a id="__codelineno-4-20" name="__codelineno-4-20"></a>stdout_logfile_backups=10     ; # of stdout logfile backups (default 10)
+<a id="__codelineno-4-21" name="__codelineno-4-21"></a>stdout_capture_maxbytes=1MB   ; number of bytes in &#39;capturemode&#39; (default 0)
+<a id="__codelineno-4-22" name="__codelineno-4-22"></a>;stdout_events_enabled=false   ; emit events on stdout writes (default false)
+<a id="__codelineno-4-23" name="__codelineno-4-23"></a>stderr_logfile=/var/cells/logs/cells_err.log        ; stderr log path, NONE for none; default AUTO
+<a id="__codelineno-4-24" name="__codelineno-4-24"></a>;stderr_logfile_maxbytes=1MB   ; max # logfile bytes b4 rotation (default 50MB)
+<a id="__codelineno-4-25" name="__codelineno-4-25"></a>;stderr_logfile_backups=10     ; # of stderr logfile backups (default 10)
+<a id="__codelineno-4-26" name="__codelineno-4-26"></a>;stderr_capture_maxbytes=1MB   ; number of bytes in &#39;capturemode&#39; (default 0)
+<a id="__codelineno-4-27" name="__codelineno-4-27"></a>;stderr_events_enabled=false   ; emit events on stderr writes (default false)
+<a id="__codelineno-4-28" name="__codelineno-4-28"></a>;environment=TMPDIR=&quot;/tmp&quot;,B=&quot;2&quot;       ; process environment additions (def no adds)
+<a id="__codelineno-4-29" name="__codelineno-4-29"></a>;serverurl=AUTO                ; override serverurl computation (childutils)
 </code></pre></div></td></tr></table></div>
 <ul>
 <li>Enable and launch Supervisor with Systemd <code>systemctl enable supervisor &amp;&amp; systemctl start supervisor</code></li>

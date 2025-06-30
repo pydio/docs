@@ -23844,11 +23844,11 @@
 <p>A bind address requires a binding PORT which will be the port your application will listen to (use standard port for Let's Encrypt), and a binding HOST that will either be a <em>Network Interface IP</em>, hostname (or domain name in the case of Let's Encrypt). If you have connection issue after upgrade, make sure to edit sites to bind to e.g. <code>0.0.0.0:8080</code> instead of <code>domain.name:8080</code> (using <code>cells configure sites</code> or by simply editing the <code>pydio.json</code> file). </p>
 <p>For a TLS setup with Let's Encrypt, the domain name <em>must</em> be used with the standard port 443 (other addresses <em>can</em> be used for alternate access only), as required by the ACME challenge.</p>
 <h3 id="4-cellssync-client-compatibility">4 - CellsSync client compatibility<a class="headerlink" href="#4-cellssync-client-compatibility" title="Permanent link">&para;</a></h3>
-<p>An important change introduced in v4 creates a compatibility issue between specific server versions and CellsSync versions. Please refer to the <a href="/cells-v4/admin-guide/quick-start/connect-desktop-sync/connect-desktop-sync">Connect Desktop Sync</a> section to learn more. </p>
+<p>An important change introduced in v4 creates a compatibility issue between specific server versions and CellsSync versions. Please refer to the <a href="https://docs.pydio.com/cells-v4/admin-guide/quick-start/connect-desktop-sync/">Connect Desktop Sync</a> section to learn more. </p>
 <p><em><strong>TL;DR:</strong></em> </p>
 <ul>
 <li>If you do not plan to upgrade, do not upgrade Cells Sync either. </li>
-<li>If you do upgrade to v4, do upgrade Cells Sync, and you will also have to launch <a href="../../developer-guide/cells-admin-datasource-rehash">a specific processing</a> on your server datasources.</li>
+<li>If you do upgrade to v4, do upgrade Cells Sync, and you will also have to launch <a href="https://docs.pydio.com/cells-v4/developer-guide/command-line-reference/cells-binary/cells-admin-datasource-rehash/">a specific processing</a> on your server datasources.</li>
 </ul>
 <h3 id="5-collation-issues-at-upgrade">5 - Collation issues at upgrade<a class="headerlink" href="#5-collation-issues-at-upgrade" title="Permanent link">&para;</a></h3>
 <p>While upgrading to Cells v4 from an older version, you might get this warning:</p>

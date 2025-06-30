@@ -23970,7 +23970,7 @@ Fields "Nodes", "Users", "Roles", "Workspaces" are the most commonly used by act
 or as a shortcut (as first Node, first User, etc... are passed by default as <code>Node</code>, <code>User</code>,... fields to the template): 
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1"></a>{{.Node.Path}}
 </code></pre></div></td></tr></table></div></p>
-<p>See the detailed section about <a href="https://docs.pydio.com/en/docs/cells-flows/scripting-capabilities">Scripting Capabilities</a> to learn more. </p>
+<p>See the detailed section about <a href="https://docs.pydio.com/cells-v4/cellsflows/cells-flows-manual/scripting-capabilities/index/">Scripting Capabilities</a> to learn more. </p>
 <h2 id="loading-data">Loading Data<a class="headerlink" href="#loading-data" title="Permanent link">&para;</a></h2>
 <h3 id="input-data-provided-by-events">Input data provided by Events<a class="headerlink" href="#input-data-provided-by-events" title="Permanent link">&para;</a></h3>
 <p>When triggering jobs on events, the data associated with that event will be implicitely appended to the first action Input.</p>
@@ -23982,7 +23982,7 @@ or as a shortcut (as first Node, first User, etc... are passed by default as <co
 <p>When Queries return many results, you may either choose to pass all the results along <strong>as a bulk</strong> to one specific action, or to <strong>fan out each result as a unique message</strong> passed to many instances of the same action. In the later case, multiple action instances will be triggered in parallel, each one processing one of the result.</p>
 <p>Example1: collecting data to spin one action with N results: 
 <a class="glightbox" href="../../../images/0_overview/anatomy-query-collect.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="../../../images/0_overview/anatomy-query-collect.png" /></a></p>
-<p>Example2: collecting data and spinning N actions in parallel. You can cead more about <a href="https://docs.pydio.com/en/docs/cells-flows/parallelism-and-concurrency">Parallelism and Concurrency</a> and how to make the most out of this powerful feature.</p>
+<p>Example2: collecting data and spinning N actions in parallel. You can cead more about <a href="https://docs.pydio.com/cells-v4/cellsflows/cells-flows-manual/building-your-own-flows/parallelism-and-concurrency/">Parallelism and Concurrency</a> and how to make the most out of this powerful feature.</p>
 <p><a class="glightbox" href="../../../images/0_overview/anatomy-query-fan-out.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="../../../images/0_overview/anatomy-query-fan-out.png" /></a></p>
 <p>Sometimes you have a message that contains N results and you actually want to trigger N actions instead. You can use the "<strong>Fan Out</strong>" flag of the selector, without any criteria, to just split the result into N messages =&gt; N actions. </p>
 <p><a class="glightbox" href="../../../images/0_overview/anatomy-query-fan-out-flag.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="../../../images/0_overview/anatomy-query-fan-out-flag.png" /></a></p>
@@ -24016,7 +24016,7 @@ or as a shortcut (as first Node, first User, etc... are passed by default as <co
    <a class="glightbox" href="../../../images/0_overview/anatomy-filter-or.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="../../../images/0_overview/anatomy-filter-or.png" /></a></p>
 </li>
 </ul>
-<p>See all the available building blocks for creating Queries and Filters <a href="https://docs.pydio.com/en/docs/cells-flows/filters-queries">in the dedicated section</a>.</p>
+<p>See all the available building blocks for creating Queries and Filters <a href="https://docs.pydio.com/cells-v4/cellsflows/filters-queries/index/">in the dedicated section</a>.</p>
 
 
 

@@ -23913,7 +23913,7 @@
 <h3 id="datasource-hashing-version">Datasource Hashing Version<a class="headerlink" href="#datasource-hashing-version" title="Permanent link">&para;</a></h3>
 <p>Cells v3 and before were previously relying on the storage eTag feature, and the Sync client would on its side compute a hash in the same format (md5). We now use an internal hashing mechanism, which brings consistency accross all storages, all upload methods (direct PUT or multipart), and datasource encryption status. </p>
 <p>If you are upgrading from Cells v3 to v4, file hashes in all datasources <strong>will not be automatically recomputed</strong>, as it is a I/O and CPU intensive operation: you may want to schedule it when it suits you best. </p>
-<p>To trigger this operation, please use the following command (<a href="../../developer-guide/cells-admin-datasource-rehash">more info here</a>) </p>
+<p>To trigger this operation, please use the following command (<a href="https://docs.pydio.com/cells-v4/developer-guide/command-line-reference/cells-binary/cells-admin-datasource-rehash/">more info here</a>) </p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a>$ cells admin datasource rehash -u admin --datasource {YOUR_DATASOURCE_NAME}
 </code></pre></div></td></tr></table></div>
 <p>This will:</p>
@@ -23960,8 +23960,8 @@
 <h2 id="troubleshooting">Troubleshooting<a class="headerlink" href="#troubleshooting" title="Permanent link">&para;</a></h2>
 <p>If you encounter errors such as:</p>
 <ul>
-<li><code>/oidc/.well-known 404</code> this error might indicate that the <code>EXTERNAL_URL</code> on Cells was not set, please refer to the following <a href="./configure-cells-reverse-proxy">article</a> on how to configure this paremeter.</li>
-<li><code>transport is closing</code> or <code>server closed the stream without sending trailers</code>: This might be related to the reverse-proxy <strong>grpc</strong> configuration. <a href="https://docs.pydio.com/en/docs/kb/deployment">see knowledge base</a></li>
+<li><code>/oidc/.well-known 404</code> this error might indicate that the <code>EXTERNAL_URL</code> on Cells was not set, please refer to the following <a href="https://docs.pydio.com/cells-v4/admin-guide/run-cells-in-production/configuring-cells-urls/configure-cells-with-a-reverse-proxy/">article</a> on how to configure this paremeter.</li>
+<li><code>transport is closing</code> or <code>server closed the stream without sending trailers</code>: This might be related to the reverse-proxy <strong>grpc</strong> configuration. <a href="https://docs.pydio.com/cells-v4/knowledge-base/deployment/index/">see knowledge base</a></li>
 </ul>
 
 
