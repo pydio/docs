@@ -59,6 +59,7 @@ jobs:
           mkdir -p docs
           ls -lah 
           cp resources/pydio-favicon.png docs
+          cp resources/pydio-grey-coral.svg docs
           cp -r admin-guide docs
           cp -r cellsflows docs
           cp -r developer-guide docs
