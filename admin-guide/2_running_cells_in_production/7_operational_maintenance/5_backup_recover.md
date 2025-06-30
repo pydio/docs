@@ -14,7 +14,7 @@ Take steps to limit time loss and avoid headaches by doing regular backups of yo
 
 This procedure is adapted for simple mono-node installation, in such case, you have to backup 2 sources of data:
 
-- `CELLS_WORKING_DIR` contains the configuration, the log files, some indexes that uses key-value stores (typically for search indexes) and the default data location. If you have followed our recommanded best practices, it is located under `/var/cells` in Linux-like machines. Please refer to the [working directories page](/docs/cells/v4/working-directories) for further details.
+- `CELLS_WORKING_DIR` contains the configuration, the log files, some indexes that uses key-value stores (typically for search indexes) and the default data location. If you have followed our recommanded best practices, it is located under `/var/cells` in Linux-like machines. Please refer to the [working directories page](https://docs.pydio.com/cells-v4/admin-guide/run-cells-in-production/best-practices/working-directories/) for further details.
 . The corresponding database
 
 If you have made a multi-node installation, be aware that you must backup both storage and datasource for each one of your nodes.

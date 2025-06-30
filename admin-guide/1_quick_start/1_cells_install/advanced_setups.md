@@ -227,7 +227,7 @@ These tutorials provide advanced step-by-step guides for bare installation on yo
     ```
 
 === "[<img src="../../../images/logos-os/logo-rhel.png" width="60" >]()"
-    _This guide explains how to configure Cells on a Red-Hat-Enterprise-Linux-like system. It contains strongly opinionated choices and best practices. It guides you through the steps required for a production-ready and reasonnably secured server. For a simple test on a RHEL-like server, you can skim through [our quick start page](../../../index/quick-start) instead_.
+    _This guide explains how to configure Cells on a Red-Hat-Enterprise-Linux-like system. It contains strongly opinionated choices and best practices. It guides you through the steps required for a production-ready and reasonnably secured server. For a simple test on a RHEL-like server, you can skim through [our quick start page](https://docs.pydio.com/cells-v4/admin-guide/quick-start/index/) instead_.
 
     **Usecase**
 
@@ -524,7 +524,7 @@ These tutorials provide advanced step-by-step guides for bare installation on yo
     ```
 
 === "[<img src="../../../images/logos-os/debian.png" width="60" >]()"
-    _This guide explains how to install and configure Cells on an Debian-like system. It contains strongly opinionated choices and best practices. It explains the steps required for a production-ready and reasonnably secured server. For a simple test, you should rather visit our [quick start page](./quick-start)_.
+    _This guide explains how to install and configure Cells on an Debian-like system. It contains strongly opinionated choices and best practices. It explains the steps required for a production-ready and reasonnably secured server. For a simple test, you should rather visit our [quick start page](https://docs.pydio.com/cells-v4/admin-guide/quick-start/index/)_.
 
     **Use case**
 

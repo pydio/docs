@@ -4,6 +4,6 @@ In this section, we provide some real-life examples for making API calls to Cell
 
 [Postman](https://www.postman.com/api-documentation-tool) can be use to better understand the various API requests.
 
-If you want to directly talk to your Cells Server Instance from the command line, typically to perform cron jobs or in your CICD pipe, you most probably want to rather user the [Cells Client](../../cells-client), otherwise we also provide [already packaged SDKs](../../clients-sdks/index/)
+If you want to directly talk to your Cells Server Instance from the command line, typically to perform cron jobs or in your CICD pipe, you most probably want to rather user the [Cells Client](https://docs.pydio.com/cells-v4/developer-guide/clients-sdks/cells-client/), otherwise we also provide [already packaged SDKs](https://docs.pydio.com/cells-v4/developer-guide/clients-sdks/index/)
 
 [:summary]
