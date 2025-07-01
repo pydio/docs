@@ -57,6 +57,7 @@ plugins:
   - meta
   - search
   - awesome-nav
+  - sitemap
   - glightbox:
       touchNavigation: true
       zoomable: true
