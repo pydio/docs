@@ -6,9 +6,11 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
+        <meta name="description" content="This article shows how to configure Keycloak as an IdP for Pydio Cells, including client setup, attribute mapping, and common troubleshooting.">
       
       
-        <link rel="canonical" href="https://docs.pydio.com/latest/knowledge-base/identity-management/oidc_keycloak/">
+      
+        <link rel="canonical" href="https://docs.pydio.com/latest/knowledge-base/identity-management/configure-keycloak-sso/">
       
       
         <link rel="prev" href="../using-google-as-an-identity-provider/">
@@ -22,7 +24,7 @@
     
     
       
-        <title>Oidc keycloak - Pydio Documentation</title>
+        <title>Using Keycloak as an Identity Provider - Pydio Documentation</title>
       
     
     
@@ -134,7 +136,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Oidc keycloak
+              Using Keycloak as an Identity Provider
             
           </span>
         </div>
@@ -23415,6 +23417,119 @@
                 
   
   
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Using Keycloak as an Identity Provider
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Using Keycloak as an Identity Provider
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#s1-register-a-new-oidc-client-in-keycloak" class="md-nav__link">
+    <span class="md-ellipsis">
+      S1. Register a New OIDC Client in Keycloak
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="S1. Register a New OIDC Client in Keycloak">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#client-credentials" class="md-nav__link">
+    <span class="md-ellipsis">
+      Client Credentials
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#s2-create-a-new-connector-in-pydio-cells" class="md-nav__link">
+    <span class="md-ellipsis">
+      S2. Create a New Connector in Pydio Cells
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="S2. Create a New Connector in Pydio Cells">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#complete-the-connector-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Complete the Connector Configuration
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
   
   
     <li class="md-nav__item">
@@ -23498,119 +23613,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-    
-  
-  
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Oidc keycloak
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
-        
-  
-  
-  <span class="md-ellipsis">
-    Oidc keycloak
-    
-  </span>
-  
-
-      </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#s1-register-a-new-oidc-client-in-keycloak" class="md-nav__link">
-    <span class="md-ellipsis">
-      S1. Register a New OIDC Client in Keycloak
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="S1. Register a New OIDC Client in Keycloak">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#client-credentials" class="md-nav__link">
-    <span class="md-ellipsis">
-      Client Credentials
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#s2-create-a-new-connector-in-pydio-cells" class="md-nav__link">
-    <span class="md-ellipsis">
-      S2. Create a New Connector in Pydio Cells
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="S2. Create a New Connector in Pydio Cells">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#complete-the-connector-configuration" class="md-nav__link">
-    <span class="md-ellipsis">
-      Complete the Connector Configuration
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -23887,7 +23889,6 @@
   
 
 
-<hr />
 <h1 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">&para;</a></h1>
 <p><strong>Keycloak</strong> is a robust, open-source Identity and Access Management (IAM) tool that implements popular SSO standards like <strong>SAML</strong> and <strong>OpenID Connect (OIDC)</strong>.<br />
 It’s widely trusted for secure authentication in on-premise deployments, enabling organizations to centralize user identity and integrate easily with various services.</p>
@@ -24105,6 +24106,9 @@ Always configure <strong>automatic time synchronization</strong> on both the Key
 
 
 
+
+  
+  
 
 
 
