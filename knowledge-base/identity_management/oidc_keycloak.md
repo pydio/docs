@@ -1,12 +1,10 @@
-
 ---
 slug: configure-keycloak-sso
-title: Using Keycloak as an Identity Provider"
-description: "This article shows how to configure Keycloak as an IdP for Pydio Cells, including client setup, attribute mapping, and common troubleshooting.
+title: "Using Keycloak as an Identity Provider"
+description: "This article shows how to configure Keycloak as an IdP for Pydio Cells, including client setup, attribute mapping, and common troubleshooting."
 language: en
 category: Identity Management
 weight: 2
-
 ---
 
 # Introduction
