@@ -20,7 +20,7 @@ This step-by-step guide will help you:
 * Understand how to fix session-related issues and debug your configuration.
 
 
-## S1. Register a New OIDC Client in Keycloak
+## S1 Register a New OIDC Client in Keycloak
 
 To enable SSO, first register a new client that represents Pydio Cells in your Keycloak instance.
 
@@ -71,7 +71,7 @@ Enabling `Cells Authentication` generates a **Client Secret**. Pydio Cells uses 
 
 
 
-## S2. Create a New Connector in Pydio Cells
+## S2 Create a New Connector in Pydio Cells
 
 Inside Pydio Cells, create a new OIDC Connector to link your Cells instance to Keycloak.
 
