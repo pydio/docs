@@ -3,12 +3,12 @@ slug: introduction-to-cells-flows
 title: "Introduction to Cells Flows"
 language: und
 menu: "Introduction"
-description: "Cells Flows is a powerful drag-and-drop tool that allows you to easily automate tasks in Pydio Pydio Cells."
+description: "Cells Flows is a powerful drag-and-drop tool that allows you to easily automate tasks in Pydio Cells."
 weight: 1
 menu_name: menu-admin-guide-v6-enterprise
 
 ---
-Cells Flows is a powerful drag-and-drop tool that allows you to easily automate tasks in Pydio Pydio Cells.
+Cells Flows is a powerful drag-and-drop tool that allows you to easily automate tasks in Pydio Cells.
 
 ## Why should I use Cells Flows? 
 
