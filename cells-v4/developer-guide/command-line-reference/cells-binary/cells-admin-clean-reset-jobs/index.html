@@ -23866,44 +23866,67 @@
 Please ensure that the server is running. </p>
 <p>EXAMPLE</p>
 <p>$ ./cells admin clean reset-jobs</p>
-<p>+----+----------------------+--------------------------------+
-  | #  |       SERVICE        |             LABEL              |
-  +----+----------------------+--------------------------------+
-  |  1 | pydio.grpc.jobs      | Extract image thumbnails and   |
-  |    |                      | Exif data                      |
-  |  2 | pydio.grpc.jobs      | Clean jobs and tasks in        |
-  |    |                      | scheduler                      |
-  |  3 | pydio.grpc.jobs      | Clean or transfer user data on |
-  |    |                      | deletion                       |
-  |  4 | pydio.grpc.jobs      | Clean orphan files after 24h   |
-  |  5 | pydio.grpc.jobs      | Clean expired ACLs after 10    |
-  |    |                      | days                           |
-  |  6 | pydio.grpc.versions  | Event Based Job for            |
-  |    |                      | replicating data for           |
-  |    |                      | versioning                     |
-  |  7 | pydio.grpc.activity  | Users activities digest        |
-  |  8 | pydio.grpc.mailer    | Flush Mails Queue              |
-  |  9 | pydio.grpc.oauth     | Prune revoked tokens and       |
-  |    |                      | expired reset password keys    |
-  +----+----------------------+--------------------------------+</p>
-<p>Select a job number to reset it in the scheduler: 9</p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a>./cells admin clean reset-jobs [flags]
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-0-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-0-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-0-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-0-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-0-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-0-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-0-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-0-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-0-10">10</a></span>
+<span class="normal"><a href="#__codelineno-0-11">11</a></span>
+<span class="normal"><a href="#__codelineno-0-12">12</a></span>
+<span class="normal"><a href="#__codelineno-0-13">13</a></span>
+<span class="normal"><a href="#__codelineno-0-14">14</a></span>
+<span class="normal"><a href="#__codelineno-0-15">15</a></span>
+<span class="normal"><a href="#__codelineno-0-16">16</a></span>
+<span class="normal"><a href="#__codelineno-0-17">17</a></span>
+<span class="normal"><a href="#__codelineno-0-18">18</a></span>
+<span class="normal"><a href="#__codelineno-0-19">19</a></span>
+<span class="normal"><a href="#__codelineno-0-20">20</a></span>
+<span class="normal"><a href="#__codelineno-0-21">21</a></span>
+<span class="normal"><a href="#__codelineno-0-22">22</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a>  +----+----------------------+--------------------------------+
+<a id="__codelineno-0-2" name="__codelineno-0-2"></a>  | #  |       SERVICE        |             LABEL              |
+<a id="__codelineno-0-3" name="__codelineno-0-3"></a>  +----+----------------------+--------------------------------+
+<a id="__codelineno-0-4" name="__codelineno-0-4"></a>  |  1 | pydio.grpc.jobs      | Extract image thumbnails and   |
+<a id="__codelineno-0-5" name="__codelineno-0-5"></a>  |    |                      | Exif data                      |
+<a id="__codelineno-0-6" name="__codelineno-0-6"></a>  |  2 | pydio.grpc.jobs      | Clean jobs and tasks in        |
+<a id="__codelineno-0-7" name="__codelineno-0-7"></a>  |    |                      | scheduler                      |
+<a id="__codelineno-0-8" name="__codelineno-0-8"></a>  |  3 | pydio.grpc.jobs      | Clean or transfer user data on |
+<a id="__codelineno-0-9" name="__codelineno-0-9"></a>  |    |                      | deletion                       |
+<a id="__codelineno-0-10" name="__codelineno-0-10"></a>  |  4 | pydio.grpc.jobs      | Clean orphan files after 24h   |
+<a id="__codelineno-0-11" name="__codelineno-0-11"></a>  |  5 | pydio.grpc.jobs      | Clean expired ACLs after 10    |
+<a id="__codelineno-0-12" name="__codelineno-0-12"></a>  |    |                      | days                           |
+<a id="__codelineno-0-13" name="__codelineno-0-13"></a>  |  6 | pydio.grpc.versions  | Event Based Job for            |
+<a id="__codelineno-0-14" name="__codelineno-0-14"></a>  |    |                      | replicating data for           |
+<a id="__codelineno-0-15" name="__codelineno-0-15"></a>  |    |                      | versioning                     |
+<a id="__codelineno-0-16" name="__codelineno-0-16"></a>  |  7 | pydio.grpc.activity  | Users activities digest        |
+<a id="__codelineno-0-17" name="__codelineno-0-17"></a>  |  8 | pydio.grpc.mailer    | Flush Mails Queue              |
+<a id="__codelineno-0-18" name="__codelineno-0-18"></a>  |  9 | pydio.grpc.oauth     | Prune revoked tokens and       |
+<a id="__codelineno-0-19" name="__codelineno-0-19"></a>  |    |                      | expired reset password keys    |
+<a id="__codelineno-0-20" name="__codelineno-0-20"></a>  +----+----------------------+--------------------------------+
+<a id="__codelineno-0-21" name="__codelineno-0-21"></a>
+<a id="__codelineno-0-22" name="__codelineno-0-22"></a>  Select a job number to reset it in the scheduler: 9
+</code></pre></div></td></tr></table></div>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a>./cells admin clean reset-jobs [flags]
 </code></pre></div></td></tr></table></div>
 <h3 id="options">Options<a class="headerlink" href="#options" title="Permanent link">&para;</a></h3>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a>  -h, --help   help for reset-jobs
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a>  -h, --help   help for reset-jobs
 </code></pre></div></td></tr></table></div>
 <h3 id="options-inherited-from-parent-commands">Options inherited from parent commands<a class="headerlink" href="#options-inherited-from-parent-commands" title="Permanent link">&para;</a></h3>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span>
-<span class="normal"><a href="#__codelineno-2-2">2</a></span>
-<span class="normal"><a href="#__codelineno-2-3">3</a></span>
-<span class="normal"><a href="#__codelineno-2-4">4</a></span>
-<span class="normal"><a href="#__codelineno-2-5">5</a></span>
-<span class="normal"><a href="#__codelineno-2-6">6</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a>      --advertise_address string     Default advertise address (default &quot;127.0.0.1&quot;)
-<a id="__codelineno-2-2" name="__codelineno-2-2"></a>      --broker string                Pub/sub service for events between services (default &quot;grpc://:8030&quot;)
-<a id="__codelineno-2-3" name="__codelineno-2-3"></a>      --config string                Configuration storage URL. Supported schemes: etcd|etcd+tls|file|grpc|mem|vault|vaults (default &quot;file:///home/teamcity/.config/pydio/cells/pydio.json&quot;)
-<a id="__codelineno-2-4" name="__codelineno-2-4"></a>      --discovery string             Registry and pub/sub (default &quot;grpc://:8030&quot;)
-<a id="__codelineno-2-5" name="__codelineno-2-5"></a>      --grpc_client_timeout string   Default timeout for long-running GRPC calls, expressed as a golang duration (default &quot;60m&quot;)
-<a id="__codelineno-2-6" name="__codelineno-2-6"></a>      --registry string              Registry used to contact services (default &quot;grpc://:8030&quot;)
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1">1</a></span>
+<span class="normal"><a href="#__codelineno-3-2">2</a></span>
+<span class="normal"><a href="#__codelineno-3-3">3</a></span>
+<span class="normal"><a href="#__codelineno-3-4">4</a></span>
+<span class="normal"><a href="#__codelineno-3-5">5</a></span>
+<span class="normal"><a href="#__codelineno-3-6">6</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1"></a>      --advertise_address string     Default advertise address (default &quot;127.0.0.1&quot;)
+<a id="__codelineno-3-2" name="__codelineno-3-2"></a>      --broker string                Pub/sub service for events between services (default &quot;grpc://:8030&quot;)
+<a id="__codelineno-3-3" name="__codelineno-3-3"></a>      --config string                Configuration storage URL. Supported schemes: etcd|etcd+tls|file|grpc|mem|vault|vaults (default &quot;file:///home/teamcity/.config/pydio/cells/pydio.json&quot;)
+<a id="__codelineno-3-4" name="__codelineno-3-4"></a>      --discovery string             Registry and pub/sub (default &quot;grpc://:8030&quot;)
+<a id="__codelineno-3-5" name="__codelineno-3-5"></a>      --grpc_client_timeout string   Default timeout for long-running GRPC calls, expressed as a golang duration (default &quot;60m&quot;)
+<a id="__codelineno-3-6" name="__codelineno-3-6"></a>      --registry string              Registry used to contact services (default &quot;grpc://:8030&quot;)
 </code></pre></div></td></tr></table></div>
 <h3 id="see-also">SEE ALSO<a class="headerlink" href="#see-also" title="Permanent link">&para;</a></h3>
 <ul>
