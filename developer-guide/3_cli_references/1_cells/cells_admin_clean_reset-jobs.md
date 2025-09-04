@@ -23,6 +23,7 @@ EXAMPLE
 
   $ ./cells admin clean reset-jobs
 
+```
   +----+----------------------+--------------------------------+
   | #  |       SERVICE        |             LABEL              |
   +----+----------------------+--------------------------------+
@@ -46,6 +47,7 @@ EXAMPLE
 
   Select a job number to reset it in the scheduler: 9
 
+```
  
 
 ```
