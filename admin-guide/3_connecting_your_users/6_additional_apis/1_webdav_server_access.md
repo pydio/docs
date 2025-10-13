@@ -40,4 +40,4 @@ Following clients have been tested and are known to work with Pydio Cells:
 - Ubuntu (and other Linux distributions)
 - Cyberduck client (Windows and MacOS client)
 
-You can find a short setup guide for each one of them in our [knowledge base](https://pydio.com/en/docs/kb/client-applications/using-webdav-clients).
+You can find a short setup guide for each one of them in our [knowledge base](https://docs.pydio.com/en/docs/kb/client-applications/using-webdav-clients).

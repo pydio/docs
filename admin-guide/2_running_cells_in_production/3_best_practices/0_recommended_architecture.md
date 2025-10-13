@@ -64,7 +64,7 @@ Additionally, running Cells in a dedicated server may allow you to isolate the s
 
 ### D - Cluster High Availability (HA) Setup
 
-Reaching full HA and zero-downtime can be done by deploying Cells in an auto-scalable, auto-healing cluster. This approach is detailed in the [Deploying Cells in a Distributed Environment](./deploying-cells-distributed-environment) section.
+Reaching full HA and zero-downtime can be done by deploying Cells in an auto-scalable, auto-healing cluster. This approach is detailed in the [Deploying Cells in a Distributed Environment](https://docs.pydio.com/cells-v4/admin-guide/run-cells-in-production/deploying-cells-in-a-distributed-environment/index/) section.
 
 ### Comparision between setups
 

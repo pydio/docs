@@ -8,7 +8,7 @@ weight: 1
 menu_name: menu-admin-guide-v7-enterprise
 
 ---
-If you went through the [Quick Admin Tour](./quick-admin-tour), you should already be familiar with the Workspaces concept. Basically a pointer to anywhere in the global tree aggregated by all Data Sources, they define the basic units to grant or restrict permissions, but also customize actions in the interface. These feature will be described in the next sections.
+If you went through the [Quick Admin Tour](https://docs.pydio.com/en/docs/cells/v4/quick-admin-tour), you should already be familiar with the Workspaces concept. Basically a pointer to anywhere in the global tree aggregated by all Data Sources, they define the basic units to grant or restrict permissions, but also customize actions in the interface. These feature will be described in the next sections.
 
 This section will go through the advanced features of Workspaces and explain the difference with 'Cells'.
 
@@ -38,7 +38,7 @@ To define a workspace, one must point to at least one location in the DataSource
 
 ### Cells : sandboxed workspaces for the users
 
-As described in the [Sharing Features](./sharing-features) section, Cells are a simple way for users to share data with other users, either by opening them partial access to their personal data, or by creating cells from scratch to start collaborating in a fresh folder. 
+As described in the [Sharing Features](https://docs.pydio.com/en/docs/cells/v4/sharing-features) section, Cells are a simple way for users to share data with other users, either by opening them partial access to their personal data, or by creating cells from scratch to start collaborating in a fresh folder. 
 
 In fact, Cells are more or less "just workspaces" that can be managed by users, whereas only administrators can manage workspaces. They have the same abilities for aggregating data with multiple paths. Users can create cells based on an existing folders and later on share more data into that same Cells. 
 
@@ -47,6 +47,6 @@ Difference is subtle but important. Workspaces are created by administrators, th
 ------
 _See Also_
 
-- [Creating a simple workspace in the Quick Admin Tour](./quick-admin-tour)
-- [Datasources overview](./datasources-overview)
-- [Assigning workspaces accesses via Users, Groups and Roles](./users-roles-and-groups)
+- [Creating a simple workspace in the Quick Admin Tour](https://docs.pydio.com/en/docs/cells/v4/quick-admin-tour)
+- [Datasources overview](https://docs.pydio.com/en/docs/cells/v4/datasources-overview)
+- [Assigning workspaces accesses via Users, Groups and Roles](/cells-v4/admin-guide/secure-your-data/role-based-access-control/)

@@ -87,7 +87,7 @@ or as a shortcut (as first Node, first User, etc... are passed by default as `No
 {{.Node.Path}}
 ```
 
-See the detailed section about [Scripting Capabilities](./scripting-capabilities) to learn more. 
+See the detailed section about [Scripting Capabilities](https://docs.pydio.com/cells-v4/cellsflows/cells-flows-manual/scripting-capabilities/index/) to learn more. 
 
 
 ## Loading Data
@@ -111,7 +111,7 @@ When Queries return many results, you may either choose to pass all the results 
 Example1: collecting data to spin one action with N results: 
 ![](../../images/0_overview/anatomy-query-collect.png)
 
-Example2: collecting data and spinning N actions in parallel. You can cead more about [Parallelism and Concurrency](./parallelism-and-concurrency) and how to make the most out of this powerful feature.
+Example2: collecting data and spinning N actions in parallel. You can cead more about [Parallelism and Concurrency](https://docs.pydio.com/cells-v4/cellsflows/cells-flows-manual/building-your-own-flows/parallelism-and-concurrency/) and how to make the most out of this powerful feature.
 
 ![](../../images/0_overview/anatomy-query-fan-out.png)
 
@@ -154,4 +154,4 @@ Although queries and filters are "typed" components ("Files/Folders" does not of
  - Select/filter all Nodes that are named "possible1" OR "possible2"
    ![](../../images/0_overview/anatomy-filter-or.png)
 
-See all the available building blocks for creating Queries and Filters [in the dedicated section](./filters-queries).
+See all the available building blocks for creating Queries and Filters [in the dedicated section](https://docs.pydio.com/cells-v4/cellsflows/filters-queries/index/).

@@ -62,7 +62,7 @@ Cells v3 and before were previously relying on the storage eTag feature, and the
 
 If you are upgrading from Cells v3 to v4, file hashes in all datasources **will not be automatically recomputed**, as it is a I/O and CPU intensive operation: you may want to schedule it when it suits you best. 
 
-To trigger this operation, please use the following command ([more info here](../../developer-guide/cells-admin-datasource-rehash)) 
+To trigger this operation, please use the following command ([more info here](https://docs.pydio.com/cells-v4/developer-guide/command-line-reference/cells-binary/cells-admin-datasource-rehash/)) 
 
 ```
 $ cells admin datasource rehash -u admin --datasource {YOUR_DATASOURCE_NAME}
@@ -93,5 +93,5 @@ On your desktop, if you update from 0.9.2 or below, CellsSync will automatically
 
 If you encounter errors such as:
 
-- `/oidc/.well-known 404` this error might indicate that the `EXTERNAL_URL` on Cells was not set, please refer to the following [article](./configure-cells-reverse-proxy) on how to configure this paremeter.
-- `transport is closing` or `server closed the stream without sending trailers`: This might be related to the reverse-proxy **grpc** configuration. [see knowledge base](https://pydio.com/en/docs/kb/deployment)
+- `/oidc/.well-known 404` this error might indicate that the `EXTERNAL_URL` on Cells was not set, please refer to the following [article](https://docs.pydio.com/cells-v4/admin-guide/run-cells-in-production/configuring-cells-urls/configure-cells-with-a-reverse-proxy/) on how to configure this paremeter.
+- `transport is closing` or `server closed the stream without sending trailers`: This might be related to the reverse-proxy **grpc** configuration. [see knowledge base](https://docs.pydio.com/cells-v4/knowledge-base/deployment/index/)

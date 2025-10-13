@@ -5,4 +5,4 @@ This section provides generated documentation for all CLI commands of our static
 - **cells-sync** is the desktop synchronization client for Windows, Mac and Linux, communicating with Cells server on HTTP/2
 - **cells-enterprise** is the Enterprise Edition of cells
 
-
+[:summary]

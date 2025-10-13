@@ -22,7 +22,7 @@ The most standard driver you can use is actually the **File System datasource**:
 
 - **The path must be absolute** on the chosen peer: it must start from the root of the chosen server.  
   Once you have chosen a peer, note that the system automatically discovers the available directories and presents them in a popup list.
-- Due to the internal implementation of the file-system-based Object service (see [previous chapter](./datasources-overview)):
+- Due to the internal implementation of the file-system-based Object service (see [previous chapter](/cells-v4/admin-guide/connect-your-storage/datasources-overview/)):
   - The leaf folder is exposed as an Amazon S3 bucket, **it must comply with the Bucket naming rules**, which are the same as the DNS sub-domains naming rules: technical names that must be lower case and without spaces.
   - The path must be at least two levels deep (defining e.g. `/tmp` as a datasource does not work).
   - The user owning the process that starts the app (usually the `pydio` user) must have read and write permissions on this folder **and on the parent folder**.

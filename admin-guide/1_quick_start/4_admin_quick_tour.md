@@ -57,4 +57,4 @@ A final note: as seen above, a datasource can expose a part of your local file s
 --------------
 _See Also_
 
-- [Datasources Overview](./datasources-overview) to learn more about Datasources.
+- [Datasources Overview](/cells-v4/admin-guide/connect-your-storage/datasources-overview/) to learn more about Datasources.

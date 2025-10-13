@@ -8,9 +8,9 @@ description: "Modify input data using Javascript"
 menu_name: menu-admin-guide-v6-enterprise
 
 ---
-The powerful [Anko](./anko-pseudo-script) scripting language provides access to internals and golang standard libraries for interacting with Cells engine, but has a complex and non-intuitive syntax.
+The powerful [Anko](https://docs.pydio.com/en/docs/cells-flows/anko-pseudo-script) scripting language provides access to internals and golang standard libraries for interacting with Cells engine, but has a complex and non-intuitive syntax.
 
-The [Javascript action](./javascript) provides a simpler way to write your own piece of script using the Javascript language. It is interpreted by a simple EcmaScript5 engine, and is more suited to manipulate structured data you may have loaded from a file or an external API. 
+The [Javascript action](https://docs.pydio.com/en/docs/cells-flows/javascript) provides a simpler way to write your own piece of script using the Javascript language. It is interpreted by a simple EcmaScript5 engine, and is more suited to manipulate structured data you may have loaded from a file or an external API. 
 
 
 ## Usage

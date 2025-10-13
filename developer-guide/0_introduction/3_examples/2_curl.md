@@ -17,7 +17,7 @@ The Authorization flow first requires you to request a temporary authorization c
 
 ### Client Parameters
 
-We assume here that you have created a dedicated Client inside Cells. Check [Create OAuth2 Client](./authentication) for more info.
+We assume here that you have created a dedicated Client inside Cells. Check [Create OAuth2 Client](https://docs.pydio.com/cells-v4/developer-guide/introduction/authentication/) for more info.
 
 | Parameter      | value                                    |
 | -------------- | ---------------------------------------- |
@@ -28,7 +28,7 @@ We assume here that you have created a dedicated Client inside Cells. Check [Cre
 | Grant Types    | Authorization Code                       |
 | Response Types | Code, Token, IDToken                     |
 
-You can also use the default client(which is Public) [see](./authentication):
+You can also use the default client(which is Public) [see](https://docs.pydio.com/cells-v4/developer-guide/introduction/authentication/):
 
 | Parameter      | value                                    |
 | -------------- | ---------------------------------------- |

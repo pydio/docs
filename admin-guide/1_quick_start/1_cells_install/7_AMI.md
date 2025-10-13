@@ -8,7 +8,7 @@ weight: 5
 menu_name: menu-admin-guide-v7-enterprise
 
 ---
-We expose below the specificities of the AMI custom setup. For further details, please refer to the other sections of this [administration guide](https://pydio.com/en/docs/administration-guides).
+We expose below the specificities of the AMI custom setup. For further details, please refer to the other sections of this [administration guide](https://docs.pydio.com/en/docs/administration-guides).
 
 ## Cells Ent AMI on AWS Marketplace
 

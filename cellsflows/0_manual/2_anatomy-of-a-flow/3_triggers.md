@@ -40,4 +40,4 @@ You can simply start a manual or scheduled job using the RUN NOW button in the t
 
 ## WebHooks
 
-WebHooks are a powerful way for enabling users interaction with you admin-defined Flow. See the [Dedicated Section](./webhooks-buttons) to learn more about WebHooks.
+WebHooks are a powerful way for enabling users interaction with you admin-defined Flow. See the [Dedicated Section](https://docs.pydio.com/en/docs/cells-flows/webhooks-buttons) to learn more about WebHooks.

@@ -17,7 +17,7 @@ As described in the main contribution rules, we use Github only for "qualified b
 
 So, what should I do in case of:
 
-- Install or upgrade issue? Search the [F.A.Q](https://pydio.com/en/docs/faq) or [READ THE DOCS](https://pydio.com/en/docs)
+- Install or upgrade issue? [READ THE DOCS](https://docs.pydio.com)
 - No answer yet? Search the [FORUM](https://forum.pydio.com/)
 - Still stuck? It's time to ask the community via the [FORUM](https://forum.pydio.com/)
 

@@ -8,7 +8,7 @@ weight: 1
 menu_name: menu-admin-guide-v7-enterprise
 
 ---
-Cells binary is self-contained and can be easily updated / upgraded. Use the in-app tool, the command-line, or simply replace the existing binary by the [latest binary](/en/download). All necessary migrations will be performed on version-change detection. Downgrading is not possible though, as downward migrations are generally not implemented.
+Cells binary is self-contained and can be easily updated / upgraded. Use the in-app tool, the command-line, or simply replace the existing binary by the [latest binary](https://pydio.com/en/download). All necessary migrations will be performed on version-change detection. Downgrading is not possible though, as downward migrations are generally not implemented.
 
 ## In-App Tool
 

@@ -47,4 +47,4 @@ and for the `prometheus.yml` configuration append this instruction.
 
 ![](../../images/2_running_cells_in_production/monitoring_tools/grafana_dashboard.png)
 
-Please refer to the knowledge base for [more information about the Prometheus/Grafana](/en/docs/kb/deployment/monitoring-cells-prometheus-grafana) configuration.
+Please refer to the knowledge base for [more information about the Prometheus/Grafana](https://docs.pydio.com/en/docs/kb/deployment/monitoring-cells-prometheus-grafana) configuration.

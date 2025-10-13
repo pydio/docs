@@ -10,10 +10,10 @@ menu_name: menu-admin-guide-v7-enterprise
 ---
 DataSources can be seen as "mount points" to attach actual storage to the application. Cells datasource can connect to various storage types. Each of them have specific options that are described in the following pages:
 
- - [File System](./file-system-storage)
- - [S3-Compatible Object Storage](./s3-compatible-storage)
- - [Google Cloud Storage](./google-cloud-storage)
- - [Azure Blob Storage](./azure-blob-storage)
+ - [File System](/cells-v4/admin-guide/connect-your-storage/create-datasources/file-system-storage/)
+ - [S3-Compatible Object Storage](/cells-v4/admin-guide/connect-your-storage/create-datasources/s3-compatible-storage/)
+ - [Google Cloud Storage](/cells-v4/admin-guide/connect-your-storage/create-datasources/ent-google-cloud-storage/)
+ - [Azure Blob Storage](/cells-v4/admin-guide/connect-your-storage/create-datasources/ent-azure-blob-storage/)
 
 Appart from this connector type, all datasources share common options regarding how data is structured by Cells, generic Lifecycle features for data management, and some advanced settings for ETags management.
 
@@ -23,7 +23,7 @@ Appart from this connector type, all datasources share common options regarding 
 
 #### Format
 
-When you create a datasource, you must first select the way Cells organizes data inside the storage. Please refer to [Datasource Format](./datasource-format) to have a good understanding of this feature. Quickly put, Flat Storage is better for performances, while Structured Storage is required if you wish to keep files and folders visible at the storage layer (internal datasources are specifically used for storing Thumbnails and Versions, and should not be used for your actual business data).
+When you create a datasource, you must first select the way Cells organizes data inside the storage. Please refer to [Datasource Format](/cells-v4/admin-guide/connect-your-storage/datasource-format/index/) to have a good understanding of this feature. Quickly put, Flat Storage is better for performances, while Structured Storage is required if you wish to keep files and folders visible at the storage layer (internal datasources are specifically used for storing Thumbnails and Versions, and should not be used for your actual business data).
 
 ![](../../images/4_connecting_your_storage/datasource_common_options/0_create_datasource.png)
 
@@ -35,13 +35,13 @@ Datasource identifier uniquely identifies your datasource within Cells. In the "
 
 #### Versioning
 
-Setting up a versioning policy enables you to configure how Cells act with file versioning, how many versions are kept, how long we keep the old versions and many other options. You can create your own [versioning policies](./versioning-policies) and configure how you want to handle your versions.
+Setting up a versioning policy enables you to configure how Cells act with file versioning, how many versions are kept, how long we keep the old versions and many other options. You can create your own [versioning policies](/cells-v4/admin-guide/connect-your-storage/versioning-policies/) and configure how you want to handle your versions.
 
 > File versions are stored inside the **Internal DataSource** named `versions`
 
 #### Encryption
 
-[Encryption](./encryption) at rest can be used to make sure files are never stored in clear format inside the storage. All files will be encrypted with a key and only be readable when decrypted with the same key.
+[Encryption](/cells-v4/admin-guide/connect-your-storage/encryption/) at rest can be used to make sure files are never stored in clear format inside the storage. All files will be encrypted with a key and only be readable when decrypted with the same key.
 
 WARNING: Keys are stored in the default database and if they ever get lost the encrypted data could not be recovered.
 

@@ -59,10 +59,10 @@ Using `gval` to compute a percentage and compare it to a threshold value. Here t
 {{gval "$[0].Stats.Free / $[0].Stats.Total * 100 > $[1]" .LastOutput.JsonAsValue.Map .JobParameters.Threshold}}
 ```
 
-**The exhaustive list of available functions [is available here](./template-functions).**
+**The exhaustive list of available functions [is available here](https://docs.pydio.com/cells-v4/cellsflows/cells-flows-manual/scripting-capabilities/templates-functions/).**
 
 ## Advanced scripting with Anko
 
-When Golang templating is not enough, you might want to write complex scripts to parse specific values, create ACLs or other things like that. [Anko Script](./anko-script) action provides a pseudo-go language to perform such advanced data transformation. 
+When Golang templating is not enough, you might want to write complex scripts to parse specific values, create ACLs or other things like that. [Anko Script](https://docs.pydio.com/en/docs/cells-flows/anko-script) action provides a pseudo-go language to perform such advanced data transformation. 
 
 Detailed documentation is not yet available for this scripting language, please contact us if you need to write your own action!

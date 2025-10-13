@@ -10,7 +10,7 @@ menu_name: menu-admin-guide-v7-enterprise
 ---
 The flat format storage is highly recommended to get the best performance. Switching to an "object storage" provides an unprecedented level of flexibility and scalability, but it can be daunting to see UUIDs instead of the original filenames.
 
-The ["snaphsot" feature](./flat-storage-best-performances) creates an index of the data for better long-term archiving. With that snapshot and the corresponding UUID files, Cells can easily recreate a datasource with the original files/folders tree.
+The ["snaphsot" feature](/cells-v4/admin-guide/connect-your-storage/datasource-format/flat-storage-best-for-performances/) creates an index of the data for better long-term archiving. With that snapshot and the corresponding UUID files, Cells can easily recreate a datasource with the original files/folders tree.
 
 But what if you simply want to explore the storage "offline", without a Cells instance running, or without wanting to recreate a brand new datasource just to find a file inside a backup? Meet Cells Fuse.
 

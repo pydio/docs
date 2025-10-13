@@ -1,63 +1,60 @@
-### Select your installation type
-
-Get started quickly with Cells static binaries, or pick an image for your cloud environment. 
-
-<div class="install-logos">
-<a class="logo" href="./install-static-binaries">
-    <div class="logo-img"><img src="https://github.com/pydio/pydio-doc-admin-guide/blob/cells-v4/images/logos-os/binaries.png?raw=true"/></div>
-    <div class="logo-title">Binaries</div>
-</a>
-<a class="logo" href="./docker">
-    <div class="logo-img"><img src="https://github.com/pydio/pydio-doc-admin-guide/blob/cells-v4/images/logos-os/docker.png?raw=true"/></div>
-    <div class="logo-title">Docker</div>
-</a>
-<a class="logo" href="./open-virtual-format">
-    <div class="logo-img"><img src="https://github.com/pydio/pydio-doc-admin-guide/blob/cells-v4/images/logos-os/ovf.png?raw=true"/></div>
-    <div class="logo-title">OVF</div>
-</a>
-<a class="logo" href="./vmware">
-    <div class="logo-img"><img src="https://github.com/pydio/pydio-doc-admin-guide/blob/cells-v4/images/logos-os/vmware.png?raw=true"/></div>
-    <div class="logo-title">VMWare</div>
-</a>
-<a class="logo" href="./amazon-ami">
-    <div class="logo-img"><img src="https://github.com/pydio/pydio-doc-admin-guide/blob/cells-v4/images/logos-os/amazon.png?raw=true"/></div>
-    <div class="logo-title">Amazon AMI</div>
-</a>
-<a class="logo" href="./kubernetes-quick-install">
-    <div class="logo-img"><img style="height: 70px" src="https://github.com/pydio/pydio-doc-admin-guide/blob/cells-v4/images/logos-os/logo-kubernetes.png?raw=true"/></div>
-    <div class="logo-title">Kubernetes</div>
-</a>
-</div>
-
-### Advanced step-by-step guides
-
-These tutorials provide advanced step-by-step guides for bare installation on your OS/Cloud of choice, from RaspberryPi to Kubernetes Cluster!
-
-<div class="install-logos">
-<a class="logo" href="/en/docs/kb/deployment/install-cells-raspberry">
-    <div class="logo-img"><img style="height: 70px" src="https://github.com/pydio/pydio-doc-admin-guide/blob/cells-v4/images/logos-os/logo-raspberrypi.png?raw=true"/></div>
-    <div class="logo-title">Raspberry Pi</div>
-</a>
-<a class="logo" href="/en/docs/kb/deployment/install-cells-centosrhel">
-    <div class="logo-img"><img style="height: 70px" src="https://github.com/pydio/pydio-doc-admin-guide/blob/cells-v4/images/logos-os/logo-rhel.png?raw=true"/></div>
-    <div class="logo-title">RHEL Distros</div>
-</a>
-<a class="logo" href="/en/docs/kb/deployment/install-cells-debianubuntu">
-    <div class="logo-img"><img src="https://github.com/pydio/pydio-doc-admin-guide/blob/cells-v4/images/logos-os/debian.png?raw=true"/></div>
-    <div class="logo-title">Debian/Ubuntu</div>
-</a>
-<a class="logo" href="/en/docs/kb/deployment/install-cells-macosx">
-    <div class="logo-img"><img src="https://github.com/pydio/pydio-doc-admin-guide/blob/cells-v4/images/logos-os/macos.png?raw=true"/></div>
-    <div class="logo-title">Mac OSX</div>
-</a>
-<a class="logo" href="/en/docs/kb/deployment/install-cells-windows">
-    <div class="logo-img"><img src="https://github.com/pydio/pydio-doc-admin-guide/blob/cells-v4/images/logos-os/windows.png?raw=true"/></div>
-    <div class="logo-title">Windows</div>
-</a>
-</div>
-
+---
+title: Cells Installation
+abstract: Getting started with Pydio Cells using pre-compiled binaries or cloud images.
+menu: Cells Installation
+language: und
+weight: 2
+menu_name: menu-admin-guide-v7-enterprise
+---
 
 <style type="text/css">
+ol.install-steps {
+padding-left: 0 !important;
+list-style: none;
+counter-reset: my-awesome-counter;
+padding: 0;
+margin:0;
+}
+ol.install-steps li {
+counter-increment: my-awesome-counter;
+border-left: 2px solid #08cc99;
+display:flex;
+align-items: baseline;
+background-color: #ecf8f6;
+padding: 16px 20px;
+margin: 20px 0 !important;
+}
+
+ol.install-steps li::before {
+content: counter(my-awesome-counter) ". ";
+color: #44d2ab;
+font-weight: bold;
+margin-right: 10px;
+font-size: 22px;
+}
+
+
+ol.install-steps li p {
+display: inline;
+margin: 0 !important;
+font-size: 18px !important;
+}
+
+ol.install-steps li code {
+    font-size: 16px !important;
+    display: block;
+    margin: 0px 0 !important;
+    padding: 6px !important;
+    background-color: rgb(42 42 53 / 95%) !important;
+    color: white !important;
+    width: 270px;
+    margin-top: 6px !important;
+}
+
+ol span.geshifilter {
+    display: inherit;
+}
+
 .install-logos {
     display: flex;
     flex-wrap: wrap;
@@ -93,4 +90,60 @@ These tutorials provide advanced step-by-step guides for bare installation on yo
 }
 
 </style>
+
+
+### Select your installation type
+
+Get started quickly with Cells static binaries, or pick an image for your cloud environment. 
+
+=== "[<img src="../../../images/logos-os/binaries.png" width="60" >]()"
+
+    ## Using pre-built binaries
+
+    Download latest build from [pydio.com](https://pydio.com/en/download) and make it executable, then run 
+
+    ```sh
+    $ ./cells configure # you will be asked for DB Credentials
+    $ ./cells start
+    ```
+    Open your browser at <a href="https://localhost:8080" target="_blank">https://localhost:8080</a>, _et voilà_!
+
+    [Detailed Instructions](./1_static_binaries.md){ .md-button .md-button--primary }
+
+=== "[<img src="../../../images/logos-os/docker.png" width="60">]()"
+
+    ## Using Docker Images
+
+    Our images are hosted on Docker Hub: 
+
+    ```sh
+    docker run -d --network=host pydio/cells
+    ```
+
+    [Docker / Docker Compose instructions](./2_docker.md){ .md-button .md-button--primary }
+
+=== "[<img src="../../../images/logos-os/ovf.png" width="60">]()"
+
+    ## Using OVF Image
+
+    Download the [latest OVF image](https://download.pydio.com/latest/cells-enterprise/release/{latest}/ovf/Cells-Enterprise-OVF-{latest}.zip).
+
+    [OVF Image Details](./5_ovf.md){ .md-button .md-button--primary }
+
+=== "[<img src="../../../images/logos-os/amazon.png" width="60">]()"
+
+    An Amazon Machine Image (AMI) for Cells Enterprise Distribution is available on [on the Amazon Web Services Marketplace](https://aws.amazon.com/marketplace/pp/B08CNGR8ZP).
+
+    [AMI Image Instructions](./7_AMI.md){ .md-button .md-button--primary }
+
+=== "[<img src="../../../images/logos-os/logo-kubernetes.png" width="50">]()"
+
+    ## Kubernetes Deployment
+
+    Pydio Cells Helm Chart is available at https://download.pydio.com/pub/charts/helm. Add this repository and run
+    ```sh
+        $ helm install cells cells/cells --namespace cells --create-namespace
+    ```
+
+    [Detailed Clustered Deployment Instructions](../../../run-cells-in-production/deploying-cells-in-a-distributed-environment/kubernetes-quick-install){ .md-button .md-button--primary }
 

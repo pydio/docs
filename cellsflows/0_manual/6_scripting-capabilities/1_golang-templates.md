@@ -44,7 +44,7 @@ The templating language contains a rich set of control structures to render text
 
 ### Input Data
 
-If you went through the [Actions and Messages](./actions-and-messages) and [Data Types](./data-types-queries-filters), you are already familiar with the data structure you may expect in the parameters.
+If you went through the [Actions and Messages](https://docs.pydio.com/cells-v4/cellsflows/actions/index/) and [Data Types](https://docs.pydio.com/en/docs/cells-flows/data-types-queries-filters), you are already familiar with the data structure you may expect in the parameters.
 
 Below is a sample of the data passed as template data: 
 

@@ -20,7 +20,7 @@ Pre-defined jobs are carefully crafted by Pydio Team to be easy to use, with pre
 
 The most common approach to create your own job is to start from a Preset and modify it to suit your need.
 
-You can see the whole list of [Preset Flows here](./preset-flows).
+You can see the whole list of [Preset Flows here](https://docs.pydio.com/cells-v4/cellsflows/preset-flows/index/).
 
 ### Creating an empty Job
 

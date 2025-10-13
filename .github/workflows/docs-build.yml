@@ -3,10 +3,7 @@ name: Build and Deploy MkDocs Versions with Mike
 on:
   push:
     branches:
-      - 'cells-v4'
       - 'cells-v5'
-      - 'pydio-v8'
-      - 'main' # sync workflow file
 
 
 jobs:
@@ -14,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout pydio/docs (pushed branch)
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           fetch-depth: 0
           ref: ${{ github.ref_name }}
@@ -31,38 +28,42 @@ jobs:
           ref: main
           path: main-config
 
-      - name: Sync workflow file to cells-v4 and cells-v5
-        if: github.ref_name == 'main' && contains(github.event.commits.*.added, '.github/workflows/build-docs.yaml') || contains(github.event.commits.*.modified, '.github/workflows/build-docs.yaml')
-        run: |
-          git config user.name "GitHub Action"
-          git config user.email "action@github.com"
-          for branch in cells-v4 cells-v5 pydio-v8; do
-            git checkout $branch || git checkout -b $branch
-            mkdir -p .github/workflows
-            cp .github/workflows/build-docs.yaml .github/workflows/
-            git add .github/workflows/build-docs.yaml
-            git commit -m "Sync build-docs.yaml from main to $branch" || echo "No changes to commit"
-            git push origin $branch
-          done
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      # - name: Sync workflow file to cells-v4 and cells-v5
+      #   if: github.ref_name == 'main' && contains(github.event.commits.*.added, '.github/workflows/build-docs.yaml') || contains(github.event.commits.*.modified, '.github/workflows/build-docs.yaml')
+      #   run: |
+      #     git config user.name "GitHub Action"
+      #     git config user.email "action@github.com"
+      #     for branch in cells-v4 cells-v5 pydio-v8; do
+      #       git checkout $branch || git checkout -b $branch
+      #       mkdir -p .github/workflows
+      #       cp .github/workflows/build-docs.yaml .github/workflows/
+      #       git add .github/workflows/build-docs.yaml
+      #       git commit -m "Sync build-docs.yaml from main to $branch" || echo "No changes to commit"
+      #       git push origin $branch
+      #     done
+      #   env:
+      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Copy config and resources from main
         run: |
           cp main-config/mkdocs.yml .
           cp main-config/requirements.txt .
-          mkdir -p resources docs/assets overrides
-          cp main-config/resources/* resources/ || echo "resources not found"
-          cp main-config/docs/assets/custom.css docs/assets/ || echo "custom.css not found"
-          cp main-config/overrides/* overrides/ || echo "404.html not found"
+          mkdir -p resources docs overrides
+          cp -r main-config/resources/* resources/ || echo "resources not found"
+          cp -r main-config/overrides/* overrides/ || echo "error in copping onverrides"
+          cp -r main-config/tools .
           rm -rf main-config
 
       - name: Copy docs to docs repo
         run: |
+          mkdir -p docs
+          ls -lah 
+          cp resources/pydio-favicon.png docs
+          cp resources/pydio-grey-coral.svg docs
           cp -r admin-guide docs
           cp -r cellsflows docs
           cp -r developer-guide docs
-          cp -r knowledge-base docs
+          cp -r knowledge-base docs          
           cp index.md docs
 
       - name: Debug contents
@@ -70,7 +71,6 @@ jobs:
           ls -la .
           ls -la docs/ || echo "docs/ not found"
           ls -la resources/ || echo "resources/ not found"
-          ls -la docs/assets/ || echo "docs/assets/ not found"
           ls -la overrides/ || echo "overrides/ not found"
           cat docs/index.md || echo "index.md not readable"
           cat resources/fix_index.html || echo "fix_index.html not readable"
@@ -97,7 +97,7 @@ jobs:
           python-version: '3.10'
 
       - name: Cache pip
-        uses: actions/cache@v4
+        uses: actions/cache@v5
         with:
           path: ~/.cache/pip
           key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}
@@ -108,6 +108,19 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
+
+      - name: Clean stylesheets in docs
+        run: |
+          rm -rf docs/stylesheets
+
+      - name: Generate tocs
+        run: |
+          ./tools/gen_toplevel_section_toc.sh docs
+          ./tools/gen_sub_section_toc.sh docs
+
+      - name: ReCopy stylesheet
+        run: |
+          cp -r overrides/assets/stylesheets docs
 
       - name: Validate MkDocs build
         run: |
@@ -120,7 +133,7 @@ jobs:
           git config user.email "action@github.com"
           VERSION=${GITHUB_REF_NAME}
           ALIAS=""
-          if [ "$VERSION" = "cells-v4" ]; then
+          if [ "$VERSION" = "cells-4" ]; then
             ALIAS="latest"
           fi
           echo "Deploying $VERSION with alias $ALIAS"

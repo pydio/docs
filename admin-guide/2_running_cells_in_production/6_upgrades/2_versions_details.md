@@ -30,12 +30,12 @@ For a TLS setup with Let's Encrypt, the domain name *must* be used with the stan
 
 ### 4 - CellsSync client compatibility
 
-An important change introduced in v4 creates a compatibility issue between specific server versions and CellsSync versions. Please refer to the [Connect Desktop Sync](./connect-desktop-sync) section to learn more. 
+An important change introduced in v4 creates a compatibility issue between specific server versions and CellsSync versions. Please refer to the [Connect Desktop Sync](https://docs.pydio.com/cells-v4/admin-guide/quick-start/connect-desktop-sync/) section to learn more. 
 
 _**TL;DR:**_ 
 
  - If you do not plan to upgrade, do not upgrade Cells Sync either. 
- - If you do upgrade to v4, do upgrade Cells Sync, and you will also have to launch [a specific processing](../../developer-guide/cells-admin-datasource-rehash) on your server datasources.
+ - If you do upgrade to v4, do upgrade Cells Sync, and you will also have to launch [a specific processing](https://docs.pydio.com/cells-v4/developer-guide/command-line-reference/cells-binary/cells-admin-datasource-rehash/) on your server datasources.
 
 ### 5 - Collation issues at upgrade
 

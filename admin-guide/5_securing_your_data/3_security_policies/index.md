@@ -2,5 +2,4 @@ Sometimes Role-Base Access Control (RBAC) model is not enough. Inspired by Amazo
 
 This chapter describe how Security Policies work and can be used to implement your specific business security rules.
 
-- [Using Security Policies](../using-security-policies/)
-- [Rules Conditions](../rules-conditions/)
+[:summary]
