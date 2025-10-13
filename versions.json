@@ -1,14 +1,19 @@
 [
   {
+    "version": "pydio-v8",
+    "title": "Pydio PHP (EOL)",
+    "aliases": []
+  },
+  {
+    "version": "cells-v5",
+    "title": "cells-v5",
+    "aliases": []
+  },
+  {
     "version": "cells-v4",
     "title": "Cells v4",
     "aliases": [
       "latest"
     ]
-  },
-  {
-    "version": "pydio-v8",
-    "title": "Pydio PHP (EOL)",
-    "aliases": []
   }
 ]
