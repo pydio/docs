@@ -10,83 +10,83 @@ DOCS_DIR="$1"
 # fi
 
 slugify() {
-  echo "$1" | iconv -t ascii//TRANSLIT | \
-    tr '[:upper:]' '[:lower:]' | \
-    sed -E 's/[^a-z0-9]+/-/g' | \
-    sed -E 's/^-+|-+$//g'
+	echo "$1" | iconv -t ascii//TRANSLIT |
+		tr '[:upper:]' '[:lower:]' |
+		sed -E 's/[^a-z0-9]+/-/g' |
+		sed -E 's/^-+|-+$//g'
 }
 
 generate_toc_for_folder() {
-  local folder="$1"
-  local toc_entries=()
+	local folder="$1"
+	local toc_entries=()
 
-  # Process subdirectories
-  for subfolder in "$folder"/*/ ; do
-    [[ ! -d "$subfolder" ]] && continue
-    nav_file="$subfolder.nav.yaml"
-    [[ ! -f "$nav_file" ]] && continue
+	# Process subdirectories
+	for subfolder in "$folder"/*/; do
+		[[ ! -d "$subfolder" ]] && continue
+		nav_file="$subfolder.nav.yaml"
+		[[ ! -f "$nav_file" ]] && continue
 
-    # Extract title, slug, and weight from .nav.yaml
-    title=$(grep -m 1 '^title:' "$nav_file" | cut -d':' -f2- | sed 's/^ *//' | sed 's/^["'\'']\|["'\'']$//g')
-    slug=$(grep -m 1 '^slug:' "$nav_file" | cut -d':' -f2- | sed 's/^ *//')
-    weight=$(grep -m 1 '^weight:' "$nav_file" | cut -d':' -f2- | sed 's/^ *//')
+		# Extract title, slug, and weight from .nav.yaml
+		title=$(grep -m 1 '^title:' "$nav_file" | cut -d':' -f2- | sed 's/^ *//' | sed 's/^["'\'']\|["'\'']$//g')
+		slug=$(grep -m 1 '^slug:' "$nav_file" | cut -d':' -f2- | sed 's/^ *//' | sed 's/^["'\'']\|["'\'']$//g')
+		weight=$(grep -m 1 '^weight:' "$nav_file" | cut -d':' -f2- | sed 's/^ *//' | sed 's/^["'\'']\|["'\'']$//g')
 
-    # Fallbacks
-    [[ -z "$title" ]] && title=$(basename "$subfolder")
-    [[ -z "$slug" ]] && slug=$(slugify "$title")
-    [[ -z "$weight" ]] && weight=100
+		# Fallbacks
+		[[ -z "$title" ]] && title=$(basename "$subfolder")
+		[[ -z "$slug" ]] && slug=$(slugify "$title")
+		[[ -z "$weight" ]] && weight=100
 
-    # Store entry: weight|title|uri_path
-    uri_path="../$slug/"
-    toc_entries+=("$weight|$title|* [$title](${uri_path}index)")
-  done
+		# Store entry: weight|title|uri_path
+		uri_path="../$slug/"
+		toc_entries+=("$weight|$title|* [$title](${uri_path}index)")
+	done
 
-  # Process Markdown files
-  for md in $(find "$folder" -maxdepth 1 -type f -name "*.md" | sort); do
-    [[ ! -f "$md" ]] && continue
-    [[ "$(basename "$md")" == "index.md" ]] && continue
+	# Process Markdown files
+	for md in $(find "$folder" -maxdepth 1 -type f -name "*.md" | sort); do
+		[[ ! -f "$md" ]] && continue
+		[[ "$(basename "$md")" == "index.md" ]] && continue
 
-    title=$(grep -m 1 '^title:' "$md" | cut -d':' -f2- | sed 's/^ *//' | sed 's/^["'\'']\|["'\'']$//g')
-    slug=$(grep -m 1 '^slug:' "$md" | cut -d':' -f2- | sed 's/^ *//')
-    weight=$(grep -m 1 '^weight:' "$md" | cut -d':' -f2- | sed 's/^ *//')
+		title=$(grep -m 1 '^title:' "$md" | cut -d':' -f2- | sed 's/^ *//' | sed 's/^["'\'']\|["'\'']$//g')
+		slug=$(grep -m 1 '^slug:' "$md" | cut -d':' -f2- | sed 's/^ *//' | sed 's/^["'\'']\|["'\'']$//g')
+		weight=$(grep -m 1 '^weight:' "$md" | cut -d':' -f2- | sed 's/^ *//' | sed 's/^["'\'']\|["'\'']$//g')
 
-    [[ -z "$title" ]] && title=$(basename "$md" .md)
-    [[ -z "$slug" ]] && slug=$(slugify "$title")
-    [[ -z "$weight" ]] && weight=100
+		[[ -z "$title" ]] && title=$(basename "$md" .md)
+		[[ -z "$slug" ]] && slug=$(slugify "$title")
+		[[ -z "$weight" ]] && weight=100
 
-    # Store entry: weight|title|uri_path
-    uri_path="../$slug/"
-    toc_entries+=("$weight|$title|* [$title](${uri_path})")
-  done
+		# Store entry: weight|title|uri_path
+		uri_path="../$slug/"
+		toc_entries+=("$weight|$title|* [$title](${uri_path})")
+	done
 
-  # Sort entries by weight (numeric) and title (alphabetical)
-  if [ ${#toc_entries[@]} -gt 0 ]; then
-    printf "%s\n" "${toc_entries[@]}" | sort -t'|' -k1,1n -k2,2 | cut -d'|' -f3
-  fi
+	# Sort entries by weight (numeric) and title (alphabetical)
+	if [ ${#toc_entries[@]} -gt 0 ]; then
+		printf "%s\n" "${toc_entries[@]}" | sort -t'|' -k1,1n -k2,2 | cut -d'|' -f3
+	fi
 }
 
 # Recursively find all index.md
 find "$DOCS_DIR" -type f -name "index.md" | while read -r index_md; do
-  if grep -q '\[:summary\]' "$index_md"; then
-    folder=$(dirname "$index_md")
-    nav_file="$folder/.nav.yaml"
+	if grep -q '\[:summary\]' "$index_md"; then
+		folder=$(dirname "$index_md")
+		nav_file="$folder/.nav.yaml"
 
-    # Extract title from .nav.yaml
-    if [[ -f "$nav_file" ]]; then
-      nav_title=$(grep -m 1 '^title:' "$nav_file" | cut -d':' -f2- | sed 's/^ *//' | sed 's/^["'\'']\|["'\'']$//g')
-    fi
+		# Extract title from .nav.yaml
+		if [[ -f "$nav_file" ]]; then
+			nav_title=$(grep -m 1 '^title:' "$nav_file" | cut -d':' -f2- | sed 's/^ *//' | sed 's/^["'\'']\|["'\'']$//g')
+		fi
 
-    [[ -z "$nav_title" ]] && nav_title=$(basename "$folder")
-    toc_markdown=$(generate_toc_for_folder "$folder")
+		[[ -z "$nav_title" ]] && nav_title=$(basename "$folder")
+		toc_markdown=$(generate_toc_for_folder "$folder")
 
-    # Create new file with frontmatter and processed body
-    {
-      echo "---"
-      echo "title: ${nav_title}"
-      echo "weight: 0"
-      echo "---"
-      
-      awk -v toc="$toc_markdown" '
+		# Create new file with frontmatter and processed body
+		{
+			echo "---"
+			echo "title: ${nav_title}"
+			echo "weight: 0"
+			echo "---"
+
+			awk -v toc="$toc_markdown" '
         {
           if ($0 ~ /\[:summary\]/ && !done) {
             print toc
@@ -96,11 +96,11 @@ find "$DOCS_DIR" -type f -name "index.md" | while read -r index_md; do
           }
         }
       ' "$index_md"
-    } > "$index_md.tmp" && mv "$index_md.tmp" "$index_md"
-sed -i '/^###### Auto generated by Pydio Cells Enterprise Distribution/{s/^###### //; i\
+		} >"$index_md.tmp" && mv "$index_md.tmp" "$index_md"
+		sed -i '/^###### Auto generated by Pydio Cells Enterprise Distribution/{s/^###### //; i\
 ---
 }' "$index_md"
-  fi
+	fi
 done
 
 echo "✅ TOC inserted into all matching index.md files."
