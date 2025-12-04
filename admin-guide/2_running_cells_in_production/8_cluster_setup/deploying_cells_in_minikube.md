@@ -62,7 +62,6 @@ In the `cellsv5-on-minikube/cells` repository, the main `values.yaml` file of th
 
 ``` bash
 minikube start --cpus=4 --memory=8g
-kubectl create namespace cells
 ```
 
 ### 4.2 Add Helm repositories
@@ -74,6 +73,7 @@ helm repo add mongodb https://mongodb.github.io/helm-charts
 helm repo add minio https://charts.min.io/
 helm repo add hashicorp https://helm.releases.hashicorp.com
 helm repo add jetstack https://charts.jetstack.io
+helm repo add hashicorp https://helm.releases.hashicorp.com
 helm repo update
 
 ```
@@ -95,9 +95,9 @@ helm upgrade --install cert-manager jetstack/cert-manager   -n cert-manager --se
 
 ```
 # certificates (optional)
-kubectl apply -n cells -f cert-manager/selfsigned-issuer.yaml
-kubectl apply -n cells -f cert-manager/ca.yaml
-kubectl apply -n cells -f cert-manager/mariadb-cert.yaml
+# kubectl apply -n cells -f cert-manager/selfsigned-issuer.yaml
+# kubectl apply -n cells -f cert-manager/ca.yaml
+# kubectl apply -n cells -f cert-manager/mariadb-cert.yaml
 
 # minio secrets
 kubectl apply -f minio/minio-root-secret.yaml -n cells
@@ -107,9 +107,11 @@ kubectl apply -f minio/minio-user-secret.yaml -n cells
 kubectl apply -f mariadb/mariadb-secret.yaml -n cells
 
 # mongodb secrets
-k apply -f mongodb/mongodb-cells-secret.yaml -n cells
-k apply -f mongodb/mongodb-admin-secret.yaml -n cells
+kubectl apply -f mongodb/mongodb-cells-secret.yaml -n cells
+kubectl apply -f mongodb/mongodb-admin-secret.yaml -n cells
 
+# vault config map
+kubectl apply -f vault/cells-configmap.yaml -n cells
 ```
 
 ### 4.6 Deploy dependencies
@@ -132,10 +134,10 @@ kubectl apply -n cells -f mongodb/values.yaml
 kubectl apply -n cells -f etcd/values.yaml
 
 # nats
-helm upgrade --install nats nats/nats -f nats/values.yaml --namespace cells  --wait
+helm upgrade --install nats nats/nats -f nats/values.yaml -n cells  --wait
 
 # vault 
-In this docs, we use shipped vault chart
+helm install vault hashicorp/vault -f vault/values.yaml -n cells --wait
 ```
 
 ## 4.7 Deploy Pydio Cells v5
@@ -162,12 +164,23 @@ kubectl delete  mutatingwebhookconfiguration cells-vault-agent-injector-cfg
 kubectl delete pvc data-cells-vault-0 -n cells
 ```
 
+Removing old config persisted in etcd
+
+```bash
+kubectl exec statefulsets/etcd -n cells -it -- etcdctl del config
+kubectl exec statefulsets/etcd -n cells -it -- etcdctl del vault
+```
+
+We should purge the databases in sql, no-sql before starting a new cells deployment
+
+
 ## 7 Caveat
 
 - Vault data is not peristed. The master key is lost after a k8s restart. In production, the deployment requires KMS service for vault unsealing process.
-- 10 minutes session timeout. You may have this issue when browsing the web page through a URL different from `ReverseProxyURL` which is set in `cells/cells.yaml`.
+- 10 minutes session timeout/upload failure issue. You may have this issue when browsing the web page through a URL different from `ReverseProxyURL` which is set in `cells/cells.yaml`.
 - All dependencies run in "standalone" mode
 - Cells operates with a single pod
 - Connections between cells and dependencies are not using TLS
 - Mariadb, Redis are deployed using bitnami helm chart with rolling-tag images.
 - **minio helm** chart doesn't create standard users correctly. Currently, cells uses **root** account to connect to minio.
+- minio storage size: 15GB
