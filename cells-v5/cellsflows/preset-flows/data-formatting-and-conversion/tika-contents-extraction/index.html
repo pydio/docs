@@ -85,7 +85,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#install-with-docker" class="md-skip">
+        <a href="#prerequisites" class="md-skip">
           Skip to content
         </a>
       
@@ -6682,6 +6682,15 @@
       Table of contents
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prerequisites
+    </span>
+  </a>
+  
+</li>
       
         <li class="md-nav__item">
   <a href="#install-with-docker" class="md-nav__link">
@@ -23836,6 +23845,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prerequisites
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#install-with-docker" class="md-nav__link">
     <span class="md-ellipsis">
       Install with Docker
@@ -23905,10 +23923,15 @@
 <p><a class="glightbox" href="../../../images/1_preset_flows/capture-tika-contents-extraction.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="../../../images/1_preset_flows/capture-tika-contents-extraction.png" /></a></p>
 <p><a href="https://tika.apache.org/">Apache Tika</a> is an independent, open source, content extractor that supports a very wide range of file formats. It can
 even support OCR for extracting text from images. This flow sends file contents to Tika and gets the textual information to be indexed internally by the Cells search engine.</p>
+<h3 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Index content enabled</strong>. You should enable <strong>index content</strong> in Cells Admin's console &gt; Search engine &gt; index content</li>
+<li>Tika docker image with OCR enabled. The <strong>full</strong> variant include OCR capability e.g: <strong>apache/tika:3.2.3.0-full</strong></li>
+</ul>
 <h3 id="install-with-docker">Install with Docker<a class="headerlink" href="#install-with-docker" title="Permanent link">&para;</a></h3>
-<p>Installing with Docker is as simple as running the following command:
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a>docker run -d -p 9998:9998 apache/tika:latest
-</code></pre></div></td></tr></table></div></p>
+<p>Installing with Docker is as simple as running the following command:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a>docker run -d -p 9998:9998 apache/tika:latest-full
+</code></pre></div></td></tr></table></div>
 <h3 id="how-it-works">How It Works<a class="headerlink" href="#how-it-works" title="Permanent link">&para;</a></h3>
 <p>The Flow assumes you have Tika running and available at a specific URL. Once extracted, the textual content is stored on Cells side to avoid having to resend file to Tika on re-indexation. The Flow is also in charge of cleaning associated metadata on file deletion, and can be triggered manually to re-extract contents from all compatible files (can be handy when first enabling job to run on existing files).</p>
 <p>Tika provides also further metadata extraction, that can be indexed by Cells search engine as well.</p>
