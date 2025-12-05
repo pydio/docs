@@ -87,7 +87,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#1-introduction" class="md-skip">
+        <a href="#introduction" class="md-skip">
           Skip to content
         </a>
       
@@ -1939,22 +1939,22 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1-introduction" class="md-nav__link">
+  <a href="#introduction" class="md-nav__link">
     <span class="md-ellipsis">
-      1. Introduction
+      Introduction
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-why-a-new-helm-chart" class="md-nav__link">
+  <a href="#why-a-new-helm-chart" class="md-nav__link">
     <span class="md-ellipsis">
-      2. Why a New Helm Chart?
+      Why a New Helm Chart?
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="2. Why a New Helm Chart?">
+    <nav class="md-nav" aria-label="Why a New Helm Chart?">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1981,37 +1981,91 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#3-repository-structure" class="md-nav__link">
+  <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
-      3. Repository Structure
+      Prerequisites
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#4-installation-steps" class="md-nav__link">
+  <a href="#repository-structure" class="md-nav__link">
     <span class="md-ellipsis">
-      4. Installation Steps
+      Repository Structure
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="4. Installation Steps">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installation-steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installation Steps
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Installation Steps">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#41-start-minikube" class="md-nav__link">
+  <a href="#start-minikube" class="md-nav__link">
     <span class="md-ellipsis">
-      4.1 Start minikube
+      Start minikube
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#42-add-helm-repositories" class="md-nav__link">
+  <a href="#add-helm-repositories" class="md-nav__link">
     <span class="md-ellipsis">
-      4.2 Add Helm repositories
+      Add Helm repositories
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#create-namespace" class="md-nav__link">
+    <span class="md-ellipsis">
+      Create namespace
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#install-cert-manager-optional" class="md-nav__link">
+    <span class="md-ellipsis">
+      Install cert-manager (optional)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#shared-secrets-between-cells-and-dependencies" class="md-nav__link">
+    <span class="md-ellipsis">
+      Shared secrets between cells and dependencies
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deploy-dependencies" class="md-nav__link">
+    <span class="md-ellipsis">
+      Deploy dependencies
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deploy-pydio-cells-v5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Deploy Pydio Cells v5
     </span>
   </a>
   
@@ -2023,78 +2077,27 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#43-create-namespace" class="md-nav__link">
+  <a href="#access-cells" class="md-nav__link">
     <span class="md-ellipsis">
-      4.3 Create namespace
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="4.3 Create namespace">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#44-install-cert-manager-optional" class="md-nav__link">
-    <span class="md-ellipsis">
-      4.4 Install cert-manager (optional)
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#45-shared-secrets-between-cells-and-dependencies" class="md-nav__link">
-    <span class="md-ellipsis">
-      4.5 Shared secrets between cells and dependencies
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#46-deploy-dependencies" class="md-nav__link">
-    <span class="md-ellipsis">
-      4.6 Deploy dependencies
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#47-deploy-pydio-cells-v5" class="md-nav__link">
-    <span class="md-ellipsis">
-      4.7 Deploy Pydio Cells v5
+      Access Cells
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#5-access-cells" class="md-nav__link">
+  <a href="#reset-cells-deployment" class="md-nav__link">
     <span class="md-ellipsis">
-      5 Access Cells
+      Reset cells deployment
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#6-reset-cells-deployment" class="md-nav__link">
+  <a href="#caveat" class="md-nav__link">
     <span class="md-ellipsis">
-      6 Reset cells deployment
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#7-caveat" class="md-nav__link">
-    <span class="md-ellipsis">
-      7 Caveat
+      Caveat
     </span>
   </a>
   
@@ -23961,22 +23964,22 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1-introduction" class="md-nav__link">
+  <a href="#introduction" class="md-nav__link">
     <span class="md-ellipsis">
-      1. Introduction
+      Introduction
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-why-a-new-helm-chart" class="md-nav__link">
+  <a href="#why-a-new-helm-chart" class="md-nav__link">
     <span class="md-ellipsis">
-      2. Why a New Helm Chart?
+      Why a New Helm Chart?
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="2. Why a New Helm Chart?">
+    <nav class="md-nav" aria-label="Why a New Helm Chart?">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -24003,37 +24006,91 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#3-repository-structure" class="md-nav__link">
+  <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
-      3. Repository Structure
+      Prerequisites
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#4-installation-steps" class="md-nav__link">
+  <a href="#repository-structure" class="md-nav__link">
     <span class="md-ellipsis">
-      4. Installation Steps
+      Repository Structure
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="4. Installation Steps">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installation-steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installation Steps
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Installation Steps">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#41-start-minikube" class="md-nav__link">
+  <a href="#start-minikube" class="md-nav__link">
     <span class="md-ellipsis">
-      4.1 Start minikube
+      Start minikube
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#42-add-helm-repositories" class="md-nav__link">
+  <a href="#add-helm-repositories" class="md-nav__link">
     <span class="md-ellipsis">
-      4.2 Add Helm repositories
+      Add Helm repositories
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#create-namespace" class="md-nav__link">
+    <span class="md-ellipsis">
+      Create namespace
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#install-cert-manager-optional" class="md-nav__link">
+    <span class="md-ellipsis">
+      Install cert-manager (optional)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#shared-secrets-between-cells-and-dependencies" class="md-nav__link">
+    <span class="md-ellipsis">
+      Shared secrets between cells and dependencies
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deploy-dependencies" class="md-nav__link">
+    <span class="md-ellipsis">
+      Deploy dependencies
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deploy-pydio-cells-v5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Deploy Pydio Cells v5
     </span>
   </a>
   
@@ -24045,78 +24102,27 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#43-create-namespace" class="md-nav__link">
+  <a href="#access-cells" class="md-nav__link">
     <span class="md-ellipsis">
-      4.3 Create namespace
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="4.3 Create namespace">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#44-install-cert-manager-optional" class="md-nav__link">
-    <span class="md-ellipsis">
-      4.4 Install cert-manager (optional)
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#45-shared-secrets-between-cells-and-dependencies" class="md-nav__link">
-    <span class="md-ellipsis">
-      4.5 Shared secrets between cells and dependencies
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#46-deploy-dependencies" class="md-nav__link">
-    <span class="md-ellipsis">
-      4.6 Deploy dependencies
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#47-deploy-pydio-cells-v5" class="md-nav__link">
-    <span class="md-ellipsis">
-      4.7 Deploy Pydio Cells v5
+      Access Cells
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#5-access-cells" class="md-nav__link">
+  <a href="#reset-cells-deployment" class="md-nav__link">
     <span class="md-ellipsis">
-      5 Access Cells
+      Reset cells deployment
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#6-reset-cells-deployment" class="md-nav__link">
+  <a href="#caveat" class="md-nav__link">
     <span class="md-ellipsis">
-      6 Reset cells deployment
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#7-caveat" class="md-nav__link">
-    <span class="md-ellipsis">
-      7 Caveat
+      Caveat
     </span>
   </a>
   
@@ -24144,10 +24150,10 @@
   <h1>Deploying Cells in minikube</h1>
 
 <p>A Practical Guide for Testing and Evaluation using the new helm chart <code>1.0.0-beta</code></p>
-<h2 id="1-introduction">1. Introduction<a class="headerlink" href="#1-introduction" title="Permanent link">&para;</a></h2>
+<h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">&para;</a></h2>
 <p>This article walks you through deploying Pydio Cells v5 on a local Minikube cluster for testing or evaluation purposes.
 Version 5 is accompanied by the new Helm chart <code>1.0.0-beta</code>, which significantly improves modularity and flexibility.</p>
-<h2 id="2-why-a-new-helm-chart">2. Why a New Helm Chart?<a class="headerlink" href="#2-why-a-new-helm-chart" title="Permanent link">&para;</a></h2>
+<h2 id="why-a-new-helm-chart">Why a New Helm Chart?<a class="headerlink" href="#why-a-new-helm-chart" title="Permanent link">&para;</a></h2>
 <h3 id="old-chart-013">Old Chart: <code>0.1.3</code><a class="headerlink" href="#old-chart-013" title="Permanent link">&para;</a></h3>
 <ul>
 <li>Dependencies (MariaDB, MinIO, Redis, MongoDB...) were <strong>tightly coupled</strong> inside the chart.</li>
@@ -24155,7 +24161,7 @@ Version 5 is accompanied by the new Helm chart <code>1.0.0-beta</code>, which si
 <li>Hard to replace components, upgrade versions, or adapt to production environments.</li>
 </ul>
 <h3 id="new-chart-100-beta">New Chart: <code>1.0.0-beta</code><a class="headerlink" href="#new-chart-100-beta" title="Permanent link">&para;</a></h3>
-<p>In the new helm chart, the integrated dependencies are still supported. However, in this tuto, we focus to the deployment using external helm charts for dependencies.</p>
+<p>In the new helm chart, the integrated dependencies are still supported. However, in this tutorial, we focus to the deployment using external helm charts for dependencies.</p>
 <table>
 <thead>
 <tr>
@@ -24188,7 +24194,7 @@ Version 5 is accompanied by the new Helm chart <code>1.0.0-beta</code>, which si
 <tr>
 <td><strong>etcd</strong></td>
 <td>Service discovery</td>
-<td>Configuration</td>
+<td>Official value file</td>
 </tr>
 <tr>
 <td><strong>NATS</strong></td>
@@ -24207,7 +24213,13 @@ Version 5 is accompanied by the new Helm chart <code>1.0.0-beta</code>, which si
 </tr>
 </tbody>
 </table>
-<h2 id="3-repository-structure">3. Repository Structure<a class="headerlink" href="#3-repository-structure" title="Permanent link">&para;</a></h2>
+<h2 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Helm – <a href="https://helm.sh/docs/intro/install/">https://helm.sh/docs/intro/install/</a></li>
+<li>kubectl – <a href="https://kubernetes.io/docs/tasks/tools/">https://kubernetes.io/docs/tasks/tools/</a></li>
+<li>Minikube – <a href="https://minikube.sigs.k8s.io/docs/start/">https://minikube.sigs.k8s.io/docs/start/</a></li>
+</ul>
+<h2 id="repository-structure">Repository Structure<a class="headerlink" href="#repository-structure" title="Permanent link">&para;</a></h2>
 <p>Source: <a href="https://github.com/pydio/cells/tree/v5-dev/tools/kubernetes/examples/minikube">https://github.com/pydio/cells/tree/v5-dev/tools/kubernetes/examples/minikube</a></p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-0-2"> 2</a></span>
@@ -24230,11 +24242,11 @@ Version 5 is accompanied by the new Helm chart <code>1.0.0-beta</code>, which si
 <a id="__codelineno-0-10" name="__codelineno-0-10"></a>      cert-manager/      # CA issuer, self-signed root CA, service certificates
 </code></pre></div></td></tr></table></div>
 <p>In the <code>cellsv5-on-minikube/cells</code> repository, the main <code>values.yaml</code> file of the Cells Helm chart is split into several smaller files. This approach simplifies maintenance, makes configuration easier to understand, and avoids dealing with one excessively large values.yaml file.</p>
-<h2 id="4-installation-steps">4. Installation Steps<a class="headerlink" href="#4-installation-steps" title="Permanent link">&para;</a></h2>
-<h3 id="41-start-minikube">4.1 Start minikube<a class="headerlink" href="#41-start-minikube" title="Permanent link">&para;</a></h3>
+<h2 id="installation-steps">Installation Steps<a class="headerlink" href="#installation-steps" title="Permanent link">&para;</a></h2>
+<h3 id="start-minikube">Start minikube<a class="headerlink" href="#start-minikube" title="Permanent link">&para;</a></h3>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a>minikube<span class="w"> </span>start<span class="w"> </span>--cpus<span class="o">=</span><span class="m">4</span><span class="w"> </span>--memory<span class="o">=</span>8g
 </code></pre></div></td></tr></table></div>
-<h3 id="42-add-helm-repositories">4.2 Add Helm repositories<a class="headerlink" href="#42-add-helm-repositories" title="Permanent link">&para;</a></h3>
+<h3 id="add-helm-repositories">Add Helm repositories<a class="headerlink" href="#add-helm-repositories" title="Permanent link">&para;</a></h3>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span>
 <span class="normal"><a href="#__codelineno-2-2">2</a></span>
 <span class="normal"><a href="#__codelineno-2-3">3</a></span>
@@ -24251,13 +24263,13 @@ Version 5 is accompanied by the new Helm chart <code>1.0.0-beta</code>, which si
 <a id="__codelineno-2-7" name="__codelineno-2-7"></a>helm<span class="w"> </span>repo<span class="w"> </span>add<span class="w"> </span>hashicorp<span class="w"> </span>https://helm.releases.hashicorp.com
 <a id="__codelineno-2-8" name="__codelineno-2-8"></a>helm<span class="w"> </span>repo<span class="w"> </span>update
 </code></pre></div></td></tr></table></div>
-<h2 id="43-create-namespace">4.3 Create namespace<a class="headerlink" href="#43-create-namespace" title="Permanent link">&para;</a></h2>
+<h3 id="create-namespace">Create namespace<a class="headerlink" href="#create-namespace" title="Permanent link">&para;</a></h3>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1"></a>kubectl<span class="w"> </span>create<span class="w"> </span>namespace<span class="w"> </span>cells
 </code></pre></div></td></tr></table></div>
-<h3 id="44-install-cert-manager-optional">4.4 Install cert-manager (optional)<a class="headerlink" href="#44-install-cert-manager-optional" title="Permanent link">&para;</a></h3>
+<h3 id="install-cert-manager-optional">Install cert-manager (optional)<a class="headerlink" href="#install-cert-manager-optional" title="Permanent link">&para;</a></h3>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1"></a>helm<span class="w"> </span>upgrade<span class="w"> </span>--install<span class="w"> </span>cert-manager<span class="w"> </span>jetstack/cert-manager<span class="w">   </span>-n<span class="w"> </span>cert-manager<span class="w"> </span>--set<span class="w"> </span><span class="nv">installCRDs</span><span class="o">=</span><span class="nb">true</span><span class="w">  </span>--create-namespace<span class="w"> </span>--wait
 </code></pre></div></td></tr></table></div>
-<h3 id="45-shared-secrets-between-cells-and-dependencies">4.5 Shared secrets between cells and dependencies<a class="headerlink" href="#45-shared-secrets-between-cells-and-dependencies" title="Permanent link">&para;</a></h3>
+<h3 id="shared-secrets-between-cells-and-dependencies">Shared secrets between cells and dependencies<a class="headerlink" href="#shared-secrets-between-cells-and-dependencies" title="Permanent link">&para;</a></h3>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-5-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-5-2"> 2</a></span>
 <span class="normal"><a href="#__codelineno-5-3"> 3</a></span>
@@ -24294,7 +24306,7 @@ Version 5 is accompanied by the new Helm chart <code>1.0.0-beta</code>, which si
 <a id="__codelineno-5-17" name="__codelineno-5-17"></a># vault config map
 <a id="__codelineno-5-18" name="__codelineno-5-18"></a>kubectl apply -f vault/cells-configmap.yaml -n cells
 </code></pre></div></td></tr></table></div>
-<h3 id="46-deploy-dependencies">4.6 Deploy dependencies<a class="headerlink" href="#46-deploy-dependencies" title="Permanent link">&para;</a></h3>
+<h3 id="deploy-dependencies">Deploy dependencies<a class="headerlink" href="#deploy-dependencies" title="Permanent link">&para;</a></h3>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-6-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-6-2"> 2</a></span>
 <span class="normal"><a href="#__codelineno-6-3"> 3</a></span>
@@ -24337,14 +24349,14 @@ Version 5 is accompanied by the new Helm chart <code>1.0.0-beta</code>, which si
 <a id="__codelineno-6-20" name="__codelineno-6-20"></a><span class="c1"># vault </span>
 <a id="__codelineno-6-21" name="__codelineno-6-21"></a>helm<span class="w"> </span>install<span class="w"> </span>vault<span class="w"> </span>hashicorp/vault<span class="w"> </span>-f<span class="w"> </span>vault/values.yaml<span class="w"> </span>-n<span class="w"> </span>cells<span class="w"> </span>--wait
 </code></pre></div></td></tr></table></div>
-<h2 id="47-deploy-pydio-cells-v5">4.7 Deploy Pydio Cells v5<a class="headerlink" href="#47-deploy-pydio-cells-v5" title="Permanent link">&para;</a></h2>
+<h3 id="deploy-pydio-cells-v5">Deploy Pydio Cells v5<a class="headerlink" href="#deploy-pydio-cells-v5" title="Permanent link">&para;</a></h3>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-7-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1"></a>helm<span class="w"> </span>upgrade<span class="w"> </span>--install<span class="w"> </span>cells<span class="w"> </span>cells/cells<span class="w">   </span>-n<span class="w"> </span>cells<span class="w">   </span>--devel<span class="w">   </span>-f<span class="w"> </span>cells/cells.yaml<span class="w">   </span>-f<span class="w"> </span>cells/sql.yaml<span class="w">   </span>-f<span class="w"> </span>cells/redis.yaml<span class="w">   </span>-f<span class="w"> </span>cells/s3.yaml<span class="w">   </span>-f<span class="w"> </span>cells/discovery.yaml<span class="w">   </span>-f<span class="w"> </span>cells/nosql.yaml<span class="w">   </span>-f<span class="w"> </span>cells/broker.yaml<span class="w">   </span>-f<span class="w"> </span>cells/vault.yaml<span class="w">   </span>--wait
 </code></pre></div></td></tr></table></div>
-<h2 id="5-access-cells">5 Access Cells<a class="headerlink" href="#5-access-cells" title="Permanent link">&para;</a></h2>
+<h2 id="access-cells">Access Cells<a class="headerlink" href="#access-cells" title="Permanent link">&para;</a></h2>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-8-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1"></a>kubectl<span class="w"> </span>-n<span class="w"> </span>cells<span class="w"> </span>port-forward<span class="w"> </span>svc/cells<span class="w"> </span><span class="m">8080</span>:8080
 </code></pre></div></td></tr></table></div>
 <p>Then open: <code>http://localhost:8080</code></p>
-<h2 id="6-reset-cells-deployment">6 Reset cells deployment<a class="headerlink" href="#6-reset-cells-deployment" title="Permanent link">&para;</a></h2>
+<h2 id="reset-cells-deployment">Reset cells deployment<a class="headerlink" href="#reset-cells-deployment" title="Permanent link">&para;</a></h2>
 <p>Some resources won't be deleted after <code>helm uninstall cells -n cells</code>. You should remove them manually before starting a new deployment</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-9-1">1</a></span>
 <span class="normal"><a href="#__codelineno-9-2">2</a></span>
@@ -24358,7 +24370,7 @@ Version 5 is accompanied by the new Helm chart <code>1.0.0-beta</code>, which si
 <a id="__codelineno-10-2" name="__codelineno-10-2"></a>kubectl<span class="w"> </span><span class="nb">exec</span><span class="w"> </span>statefulsets/etcd<span class="w"> </span>-n<span class="w"> </span>cells<span class="w"> </span>-it<span class="w"> </span>--<span class="w"> </span>etcdctl<span class="w"> </span>del<span class="w"> </span>vault
 </code></pre></div></td></tr></table></div>
 <p>We should purge the databases in sql, no-sql before starting a new cells deployment</p>
-<h2 id="7-caveat">7 Caveat<a class="headerlink" href="#7-caveat" title="Permanent link">&para;</a></h2>
+<h2 id="caveat">Caveat<a class="headerlink" href="#caveat" title="Permanent link">&para;</a></h2>
 <ul>
 <li>Vault data is not peristed. The master key is lost after a k8s restart. In production, the deployment requires KMS service for vault unsealing process.</li>
 <li>10 minutes session timeout/upload failure issue. You may have this issue when browsing the web page through a URL different from <code>ReverseProxyURL</code> which is set in <code>cells/cells.yaml</code>.</li>
