@@ -48,7 +48,7 @@ In the new helm chart, the integrated dependencies are still supported. However,
 Source: https://github.com/pydio/cells/tree/v5-dev/tools/kubernetes/examples/minikube
 
 ```    
-    cellsv5-on-minikube/
+    minikube/
       cells/             # Cells Helm values (modular: one file per backend system)
       # Dependencies
       mariadb/           # MariaDB Helm chart values
@@ -60,7 +60,9 @@ Source: https://github.com/pydio/cells/tree/v5-dev/tools/kubernetes/examples/min
       cert-manager/      # CA issuer, self-signed root CA, service certificates
 ```
 
-In the `cellsv5-on-minikube/cells` repository, the main `values.yaml` file of the Cells Helm chart is split into several smaller files. This approach simplifies maintenance, makes configuration easier to understand, and avoids dealing with one excessively large values.yaml file.
+In the `minikube/cells` repository, the main `values.yaml` file of the Cells Helm chart is split into several smaller files. This approach simplifies maintenance, makes configuration easier to understand, and avoids dealing with one excessively large values.yaml file.
+
+> NOTICE: Following commands will be run from **minikube** directory
 
 ## Installation Steps
 
