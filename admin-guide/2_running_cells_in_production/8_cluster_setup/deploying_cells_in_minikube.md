@@ -53,7 +53,7 @@ Source: https://github.com/pydio/cells/tree/v5-dev/tools/kubernetes/examples/min
       # Dependencies
       mariadb/           # MariaDB Helm chart values
       redis/             # Redis Helm chart values
-      minio/             # MinIO Helm chart values
+      s3minio/           # MinIO Helm chart values
       mongodb/           # MongoDB operator + MongoDBCommunity CR
       etcd/              # etcd manifest
       nats/              # NATS values
@@ -106,8 +106,8 @@ helm upgrade --install cert-manager jetstack/cert-manager   -n cert-manager --se
 # kubectl apply -n cells -f cert-manager/mariadb-cert.yaml
 
 # minio secrets
-kubectl apply -f minio/minio-root-secret.yaml -n cells
-kubectl apply -f minio/minio-user-secret.yaml -n cells
+kubectl apply -f s3minio/minio-root-secret.yaml -n cells
+kubectl apply -f s3minio/minio-user-secret.yaml -n cells
 
 # mariadb secrets
 kubectl apply -f mariadb/mariadb-secret.yaml -n cells
@@ -130,7 +130,7 @@ helm upgrade --install my-mariadb bitnami/mariadb -n cells -f mariadb/values.yam
 helm upgrade --install my-redis bitnami/redis -n cells -f redis/values.yaml --wait
 
 # minio
-helm upgrade --install cells-minio minio/minio -n cells -f minio/values.yaml --wait
+helm upgrade --install cells-minio minio/minio -n cells -f s3minio/values.yaml --wait
 
 # mongodb
 helm upgrade --install mongodb-operator mongodb/community-operator -n cells --wait
