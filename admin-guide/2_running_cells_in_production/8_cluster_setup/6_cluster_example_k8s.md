@@ -41,8 +41,6 @@ Helm commands will automatically use the kubeconfig configuration.
 
 ## Install using Helm
 
-Refer to the [quick install page](https://docs.pydio.com/cells-v4/admin-guide/run-cells-in-production/deploying-cells-in-a-distributed-environment/kubernetes-quick-install/) for more information.
-
 The cells helm charts can be used to deploy a ReplicaSet of Cells stateless servers. Using helm3 you can add the Cells Helm repo as follows :
 
 ```
@@ -54,23 +52,27 @@ helm install --namespace <namespace> --create-namespace my-cells cells/cells
 
 ## Dependencies
 
+> **v5 change — bundled subcharts are deprecated.**
+> In v5, the recommended path is to point Cells at **externally-managed services** (in-cluster operators, managed cloud services, or your own deployments). The bundled subcharts listed below are still shipped for quick local trials and CI but are no longer maintained as the default deployment target — production setups should configure each backend as an external service via Cells' connection strings and disable the matching subchart.
+
 Each dependency parameter can be configured directly from the command line by adding the name of the dependency as prefix :
 
 ```
 helm install my-cells cells/cells --set mariadb.image.tag=latest ...
 ```
 
-Dependencies can also be ***disabled*** if you want to use your own deployment from another repo. You need to make sure that you set the corrected address of your external service in the cells configuration for cells to be able to reach it. 
+To run against your own deployment, disable the bundled subchart and point Cells at your external service in the configuration:
 
 ```
 helm install my-cells cells/cells --set mariadb.enabled=false
 ```
 
-Cells Chart declares the following **mandatory** dependencies below. They are **all** necessary for a fully functional Cells cluster. You can install equivalent versions if you require by disabling the initial dependency
+Cells Chart declares the following dependencies below. They are **all** necessary for a fully functional Cells cluster — either by enabling the bundled subchart (trials) or by configuring an external equivalent (production)
 
 | Name                                                                     | Repo                                          | Enable            | Parameters list                                                 |
 |--------------------------------------------------------------------------|-----------------------------------------------|-------------------|-----------------------------------------------------------------|
 | [mariadb](https://github.com/bitnami/charts/tree/master/bitnami/mariadb) | [bitnami](https://charts.bitnami.com/bitnami) | `mariadb.enabled` | https://artifacthub.io/packages/helm/bitnami/mariadb#parameters |
+| PostgreSQL (external only) | n/a — supply your own | configure DSN | See [PostgreSQL support](#) — no bundled subchart, must be supplied externally |
 | [redis](https://github.com/bitnami/charts/tree/master/bitnami/redis)     | [bitnami](https://charts.bitnami.com/bitnami) | `redis.enabled`   | https://artifacthub.io/packages/helm/bitnami/redis#parameters   | 
 | [nats](https://github.com/bitnami/charts/tree/master/bitnami/nats)       | [bitnami](https://charts.bitnami.com/bitnami) | `nats.enabled`    | https://artifacthub.io/packages/helm/bitnami/nats#parameters    |
 | [mongodb](https://github.com/bitnami/charts/tree/master/bitnami/mongodb) | [bitnami](https://charts.bitnami.com/bitnami) | `mongodb.enabled` | https://artifacthub.io/packages/helm/bitnami/mongodb#parameters | 
@@ -83,6 +85,13 @@ Cells Chart declares the following **optional** dependencies below
 |---------------------------------------------------------------------------------------------|------------|-------------------|-------------------------------------------------------------------------|
 | [ingress-nginx](https://github.com/kubernetes/ingress-nginx/tree/main/charts/ingress-nginx) | kubernetes | `ingress.enabled` | https://artifacthub.io/packages/helm/ingress-nginx/ingress-nginx#values |
 
+## cells-controller
+
+The chart deploys a dedicated `cells-controller` workload (a single-replica Deployment) alongside the `cells` ReplicaSet. The controller mediates Kubernetes ConfigMaps and Secrets at runtime — Cells pods stay stateless and read their configuration through the controller, which keeps cluster-wide state consistent (TLS certs, dynamic configuration, master keys via Vault, etc.). You should not need to interact with it directly, but be aware that it must be running for installs and upgrades to complete.
+
+## OpenShift
+
+A first OpenShift deployment template is included in the v5 chart. The main differences are around security contexts and route resources; see `tools/kubernetes/cells/` in the Cells repository for the template and the `openshift` value flag in `values.yaml`.
 
 ## Configuration
 
