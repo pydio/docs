@@ -85,6 +85,19 @@ In addition of enriching file info, metadata are use in may others part of Cells
 
 Typically, an admin could define a "Confidential" metadata and let only people with "Admin" status have the right to edit this data. Then the value of this metadata could be used in a security policy to decide whether a document is accessible to the outside network, or outside of office hours, etc.
 
+### v5 — Entity Values store and redesigned info panel
+
+Cells v5 introduces a redesigned metadata pipeline based on a new **Entity Values** store. Existing namespaces are migrated automatically by the v4 → v5 migration framework — no action is required on upgrade. The user-facing differences:
+
+- **Togglable fields**: namespaces can be displayed as quick toggles on the info panel, letting users enable or disable a value with a single click rather than opening the full edit form.
+- **Focus-based editing**: editing a field is now driven by focus rather than an explicit edit mode. The save button on the info panel acts as a global commit for all pending changes on the selected node.
+- **Inline validation**: validation errors are surfaced directly on the affected field with localized messages, and prevent the save action from completing.
+- **Popover tagging**: file tagging is presented as a popover from the file list, so users can tag a file without opening the info panel.
+- **Schema defaults**: when uploading through Personal Team Uploads (PTU), namespace defaults are pre-filled on the upload form based on the schema rather than being left blank.
+- **JSON Display column**: namespaces of type `JSON` now expose a display column, so plugins that attach structured data to files can render a human-readable representation in the file list.
+
+The MetaStore API has also been extended to support patching metadata via Entity Values — see the developer guide for the API reference.
+
 ### [Enterprise] Import/Export Namespaces Definitions
 
 Defining a large number of metadata namespaces can take some time and finetuning. It can be handy to export your namespaces to easily re-insert them in another Pydio Cells instance, or simply for backuping purposes.

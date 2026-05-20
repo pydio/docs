@@ -10,7 +10,7 @@ menu_name: menu-admin-guide-v7-enterprise
 ---
 As explained in the section above, Cells can externalize all storage and services layers to more easily provide a stateless, replicable image. Each of these external services are open source and can themselves be deployed in a highly-available setup. 
 
-This page gathers information about each service and links to the documentation for their installation (that will depend on your cloud). Being a core requirement of Cells, MySQL/MariaDB is not handled here.
+This page gathers information about each service and links to the documentation for their installation (that will depend on your cloud). Cells' primary database — MySQL/MariaDB, or PostgreSQL since v5 — is a core requirement and is not detailed here; see the requirements and installation pages instead.
 
 ## ETCD: distributed configurations and services registry 
 
