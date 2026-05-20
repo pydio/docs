@@ -8,7 +8,7 @@ weight: 0
 menu_name: menu-admin-guide-v7-enterprise
 
 ---
-Cells ships as a set of precompiled static binaries, one for each operating system. The only required dependency is a MySQL database.
+Cells ships as a set of precompiled static binaries, one for each operating system. The only required dependency is a relational database — MySQL/MariaDB or, since v5, PostgreSQL.
 
 ## Hardware/OS
 
@@ -26,9 +26,11 @@ Cells ships as a set of precompiled static binaries, one for each operating syst
 - **Dedicated OS user**: never run Cells as "root" user!
 - **Ulimit**: the number of allowed open files must be greater than **2048**. For production use, a minimum of **8192** is recommended (see `ulimit -n`).
 
-## MySQL/Maria DB versions
+## Supported databases
 
-Supported server versions:
+Cells v5 supports two relational database engines as the primary store:
+
+### MySQL / MariaDB
 
 - [MariaDB version 10.3 and above](https://downloads.mariadb.org/mariadb/repositories)
 - [MySQL version 5.7 and above](https://dev.mysql.com/doc/refman/8.0/en/installing.html) (_**except 8.0.22** that has a bug preventing cells to run correctly_)
@@ -42,13 +44,13 @@ GRANT ALL PRIVILEGES ON cells.* to 'pydio'@'localhost';
 FLUSH PRIVILEGES;
 ```
 
-**Important Settings** 
+**Important Settings**
 
 Always ensure that the database is created with character set and collation set to UTF8.
 
 Make sure not to leave the `max_connections` to its default value (151) for production we advise at least `500`, for a better understanding [see MySQL manual](https://dev.mysql.com/doc/refman/8.0/en/too-many-connections.html).
 
-This can generally be done with a similar instruction : 
+This can generally be done with a similar instruction :
 ```SQL
 mysql -u root
 SET GLOBAL max_connections = 1000;
@@ -57,6 +59,30 @@ SHOW VARIABLES LIKE "max_connections";
 SET GLOBAL max_prepared_stmt_count = 131056;
 SHOW VARIABLES LIKE "max_prepared_stmt_count";
 ```
+
+### PostgreSQL *(new in v5)*
+
+PostgreSQL is now a fully supported primary database. All `idm/`, `data/` and `scheduler/` stores have been tested end-to-end on PostgreSQL.
+
+- **Supported server versions**: PostgreSQL 13 and above.
+- **DSN format** (used in `install.yaml` or via the web installer):
+  ```
+  postgres://pydio:<password>@localhost:5432/cells?sslmode=disable
+  ```
+
+**Creating a database and a privileged user**
+
+```SQL
+CREATE USER pydio WITH ENCRYPTED PASSWORD '<your-password-here>';
+CREATE DATABASE cells WITH OWNER pydio ENCODING 'UTF8';
+GRANT ALL PRIVILEGES ON DATABASE cells TO pydio;
+```
+
+**PostgreSQL-specific notes**
+
+- The v4 → v5 migration disables `AutoMigrate` on a few legacy tables to avoid attempts to alter existing column collations — the migration framework handles these explicitly.
+- Keep the database and the tables on the same UTF-8 collation; mixed collations between server defaults and existing tables have historically caused migration failures.
+- `max_connections` defaults are typically low — for production, raise the limit and tune `pgbouncer` (or your pooler) accordingly.
 
 ## [Optional] Mongo DB
 
