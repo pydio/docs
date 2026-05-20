@@ -8,7 +8,7 @@ weight: 0
 menu_name: menu-admin-guide-v7-enterprise
 
 ---
-Cells ships as a set of precompiled static binaries, one for each operating system. The only required dependency is a relational database — MySQL/MariaDB or, since v5, PostgreSQL.
+Cells ships as a set of precompiled static binaries, one for each operating system. The only required dependency is a relational database — MySQL/MariaDB or, since v5, PostgreSQL, a recommended NoSQL database (MongoDB), and optional backing services for scalability (Redis, NATS, etcd)
 
 ## Hardware/OS
 
