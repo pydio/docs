@@ -10,6 +10,58 @@ menu_name: menu-admin-guide-v7-enterprise
 ---
 This page collects information about noticeable changes to take care when upgrading to Cells new major versions.
 
+## Cells v5
+
+Cells v5 introduces a new runtime (plugin-based, driven by `bootstrap.yaml`), a redesigned cluster/Helm story, PostgreSQL as a first-class primary database, and a comprehensive v4 → v5 migration framework. The upgrade is performed by the In-App Tool, but a few changes require attention.
+
+### 1 — Backup
+
+As for any major version, take a fresh backup of:
+
+- your primary database (MySQL/MariaDB or PostgreSQL);
+- your `CELLS_WORKING_DIR` content (excluding actual user data but **including** the `.minio.sys` folder when present);
+- any external `bootstrap.yaml` you may have customized.
+
+### 2 — Reverse URL is now compulsory behind a reverse proxy *(breaking change)*
+
+In v4, Cells could partially derive the external URL from incoming request headers. In v5 this implicit detection has been removed. Before upgrading, make sure every site that sits behind a reverse proxy has an explicit **External URL** configured — via `./cells configure sites`, the `service.reverseproxyurl` Helm value, or directly in `bootstrap.yaml`. Upgrades will succeed even if it is missing, but the server will refuse forwarded requests until you set it.
+
+### 3 — Database migrations
+
+The v4 → v5 migration framework runs automatically on first startup. It covers:
+
+- SQL schema migrations (idm, data, scheduler stores, including column-name changes);
+- Personal Access Tokens (PaT) — re-encoded to the new storage format;
+- Policies — a default policy is added to grant access to the v2 REST API;
+- Namespaces and user metadata — migrated to the new Entity Values store;
+- Snapshots / datasource initialization — middleware returns `UNAVAILABLE` while migrations are running.
+
+The framework also disables `AutoMigrate` on a small number of legacy tables to avoid attempts to alter existing column collations. Allow a few extra minutes for the first startup, especially on large databases.
+
+> **Tip — PostgreSQL upgraders**: if you are switching from MySQL/MariaDB to PostgreSQL as part of the upgrade, do **not** combine the two operations. Upgrade to v5 on your current engine first, validate, then plan the engine switch as a separate migration.
+
+### 4 — Authentication tokens refreshed
+
+As in v4, Hydra JWKs are regenerated in the DB at upgrade time. Existing authentication tokens are invalidated — users will be logged out and any Personal Access Tokens used by scripts/clients will have to be regenerated.
+
+### 5 — Kubernetes / Helm deployments
+
+If you run Cells on Kubernetes, the v5 chart **deprecates the bundled subcharts** (MariaDB, MongoDB, Redis, NATS, etcd, MinIO, Vault). Bundled subcharts are kept only for quick local trials. Before upgrading a production cluster:
+
+- provision each backend as an external (managed or operator-deployed) service;
+- update your `values.yaml` to disable the matching `.enabled` flag and point Cells at the external service via its connection string;
+- be aware that a dedicated `cells-controller` workload is now deployed alongside the `cells` ReplicaSet — make sure your namespace RBAC allows it to manage ConfigMaps and Secrets.
+
+### 6 — Removed and deprecated features
+
+- **GCS datasources have been removed.** If any of your datasources used the Google Cloud Storage backend, plan a migration (typically to an S3-compatible object store) **before** upgrading.
+- **Structured datasources** are now hidden behind an advanced configuration flag. Existing structured datasources continue to work; new ones must be enabled explicitly.
+- **Legacy config migrations have been deprecated.** Upgrades must go through the v5 migration framework — do not chain manual config migrations from older versions.
+
+### 7 — Collation issues at upgrade *(MySQL/MariaDB)*
+
+The v4 collation warnings described in the v4 section below still apply. If your database carries non-default collations on legacy tables, run the conversion script described in [Cells v4 → step 5](#cells-v4) **before** starting the v5 upgrade — the v5 migration framework explicitly halts when it detects mismatched collations.
+
 ## Cells v4
 
 Major codebase changes for embracing Go Modules, upgrading dependencies, and simplifying microservices framework to ease cluster deployments.  Upgrade is done by In-App Tool, but there are a couple of important notes:
