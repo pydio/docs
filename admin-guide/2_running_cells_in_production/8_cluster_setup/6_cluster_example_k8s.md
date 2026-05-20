@@ -53,7 +53,7 @@ helm install --namespace <namespace> --create-namespace my-cells cells/cells
 ## Dependencies
 
 > **v5 change — bundled subcharts are deprecated.**
-> In v5, the recommended path is to point Cells at **externally-managed services** (in-cluster operators, managed cloud services, or your own deployments). The bundled subcharts listed below are still shipped for quick local trials and CI but are no longer maintained as the default deployment target — production setups should configure each backend as an external service via Cells' connection strings and disable the matching subchart.
+> In v5, the recommended path is to point Cells at **externally-managed services** (in-cluster operators, managed cloud services, or your own deployments). The bundled subcharts listed below are deprecatedand are no longer maintained as the default deployment target — production setups should configure each backend as an external service via Cells' connection strings and disable the matching subchart.
 
 Each dependency parameter can be configured directly from the command line by adding the name of the dependency as prefix :
 
