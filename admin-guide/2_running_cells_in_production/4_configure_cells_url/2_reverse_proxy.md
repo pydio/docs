@@ -12,7 +12,10 @@ Reverse proxies are one of the most common way to secure web servers. You can ma
 
 A simple HTTPS reverse-proxy is fairly easy to set up for basic usage (Web UX, REST API's, Mobile Applications). You just need to make sure that the URL is known to Cells so that it can allow incoming traffic from this address.
 
-Run the following command, 
+> **v5 breaking change — the external URL is now compulsory when running behind a reverse proxy.**
+> In v4, Cells could partially derive the external URL from incoming request headers. In v5 this implicit detection has been removed: the reverse-proxy URL **must** be set explicitly on each site (via `./cells configure sites`, the `service.reverseproxyurl` Helm value, or the corresponding `bootstrap.yaml` site entry) before Cells will accept requests forwarded by your proxy. Upgrading from v4? Set the External URL on every site as part of your pre-flight checks.
+
+Run the following command,
 
 ```
 ./cells configure sites
