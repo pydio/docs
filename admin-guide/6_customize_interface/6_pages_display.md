@@ -29,15 +29,11 @@ Pages are enabled by default. To control which users see them:
 
 ## Authoring
 
-The editor is reachable from the Pages workspace — click **New page** to open it.
+The editor is reachable from any workspace — click **New page** to open it.
 
 - Pages are written in the standard rich-text editor; advanced users can insert raw HTML where needed.
 - Long pages display a Table-of-Contents hint at the top — accept it to insert an auto-generated TOC.
 - Drafts are saved automatically on focus changes, the same way other Cells forms behave in v5.
-
-## Upgrading from v4
-
-The v4 → v5 migration framework takes care of the namespace registration on first start. If you customized Pages namespaces in v4, they are preserved; the v5 display picks them up unchanged.
 
 ## See also
 
