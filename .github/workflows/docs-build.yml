@@ -133,7 +133,7 @@ jobs:
           git config user.email "action@github.com"
           VERSION=${GITHUB_REF_NAME}
           ALIAS=""
-          if [ "$VERSION" = "cells-4" ]; then
+          if [ "$VERSION" = "cells-v4" ]; then
             ALIAS="latest"
           fi
           echo "Deploying $VERSION with alias $ALIAS"
