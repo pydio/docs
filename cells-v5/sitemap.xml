@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://docs.pydio.com/latest//</loc>
+         <loc>https://docs.pydio.com/latest/index/</loc>
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
-         <loc>https://docs.pydio.com/latest/admin-guide/</loc>
+         <loc>https://docs.pydio.com/latest/admin-guide/index/</loc>
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
-         <loc>https://docs.pydio.com/latest/admin-guide/quick-start/</loc>
+         <loc>https://docs.pydio.com/latest/admin-guide/quick-start/index/</loc>
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
@@ -37,7 +37,7 @@
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
-         <loc>https://docs.pydio.com/latest/admin-guide/quick-start/cells-installation/</loc>
+         <loc>https://docs.pydio.com/latest/admin-guide/quick-start/cells-installation/index/</loc>
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
@@ -61,7 +61,7 @@
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
-         <loc>https://docs.pydio.com/latest/admin-guide/quick-start/add-collaboration-tools/</loc>
+         <loc>https://docs.pydio.com/latest/admin-guide/quick-start/add-collaboration-tools/index/</loc>
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
@@ -73,7 +73,7 @@
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
-         <loc>https://docs.pydio.com/latest/admin-guide/run-cells-in-production/</loc>
+         <loc>https://docs.pydio.com/latest/admin-guide/run-cells-in-production/index/</loc>
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
@@ -89,7 +89,7 @@
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
-         <loc>https://docs.pydio.com/latest/admin-guide/run-cells-in-production/best-practices/</loc>
+         <loc>https://docs.pydio.com/latest/admin-guide/run-cells-in-production/best-practices/index/</loc>
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
@@ -117,7 +117,7 @@
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
-         <loc>https://docs.pydio.com/latest/admin-guide/run-cells-in-production/configuring-cells-urls/</loc>
+         <loc>https://docs.pydio.com/latest/admin-guide/run-cells-in-production/configuring-cells-urls/index/</loc>
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
@@ -133,7 +133,7 @@
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
-         <loc>https://docs.pydio.com/latest/admin-guide/run-cells-in-production/upgrades/</loc>
+         <loc>https://docs.pydio.com/latest/admin-guide/run-cells-in-production/upgrades/index/</loc>
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
@@ -149,7 +149,7 @@
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
-         <loc>https://docs.pydio.com/latest/admin-guide/run-cells-in-production/operational-maintenance/</loc>
+         <loc>https://docs.pydio.com/latest/admin-guide/run-cells-in-production/operational-maintenance/index/</loc>
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
@@ -169,7 +169,7 @@
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
-         <loc>https://docs.pydio.com/latest/admin-guide/run-cells-in-production/deploying-cells-in-a-distributed-environment/</loc>
+         <loc>https://docs.pydio.com/latest/admin-guide/run-cells-in-production/deploying-cells-in-a-distributed-environment/index/</loc>
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
@@ -209,7 +209,7 @@
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
-         <loc>https://docs.pydio.com/latest/admin-guide/connect-your-users/</loc>
+         <loc>https://docs.pydio.com/latest/admin-guide/connect-your-users/index/</loc>
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
@@ -233,7 +233,7 @@
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
-         <loc>https://docs.pydio.com/latest/admin-guide/connect-your-users/single-sign-on-features/</loc>
+         <loc>https://docs.pydio.com/latest/admin-guide/connect-your-users/single-sign-on-features/index/</loc>
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
@@ -257,7 +257,7 @@
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
-         <loc>https://docs.pydio.com/latest/admin-guide/connect-your-users/additional-apis/</loc>
+         <loc>https://docs.pydio.com/latest/admin-guide/connect-your-users/additional-apis/index/</loc>
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
@@ -273,7 +273,7 @@
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
-         <loc>https://docs.pydio.com/latest/admin-guide/connect-your-storage/</loc>
+         <loc>https://docs.pydio.com/latest/admin-guide/connect-your-storage/index/</loc>
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
@@ -305,7 +305,7 @@
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
-         <loc>https://docs.pydio.com/latest/admin-guide/connect-your-storage/datasource-format/</loc>
+         <loc>https://docs.pydio.com/latest/admin-guide/connect-your-storage/datasource-format/index/</loc>
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
@@ -325,7 +325,7 @@
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
-         <loc>https://docs.pydio.com/latest/admin-guide/connect-your-storage/create-datasources/</loc>
+         <loc>https://docs.pydio.com/latest/admin-guide/connect-your-storage/create-datasources/index/</loc>
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
@@ -353,7 +353,7 @@
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
-         <loc>https://docs.pydio.com/latest/admin-guide/secure-your-data/</loc>
+         <loc>https://docs.pydio.com/latest/admin-guide/secure-your-data/index/</loc>
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
@@ -369,7 +369,7 @@
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
-         <loc>https://docs.pydio.com/latest/admin-guide/secure-your-data/ent-dynamic-access-control/</loc>
+         <loc>https://docs.pydio.com/latest/admin-guide/secure-your-data/ent-dynamic-access-control/index/</loc>
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
@@ -381,7 +381,7 @@
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
-         <loc>https://docs.pydio.com/latest/admin-guide/secure-your-data/ent-hardening-security/</loc>
+         <loc>https://docs.pydio.com/latest/admin-guide/secure-your-data/ent-hardening-security/index/</loc>
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
@@ -397,7 +397,7 @@
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
-         <loc>https://docs.pydio.com/latest/admin-guide/secure-your-data/ent-audits-compliance/</loc>
+         <loc>https://docs.pydio.com/latest/admin-guide/secure-your-data/ent-audits-compliance/index/</loc>
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
@@ -417,7 +417,7 @@
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
-         <loc>https://docs.pydio.com/latest/admin-guide/customize-interface/</loc>
+         <loc>https://docs.pydio.com/latest/admin-guide/customize-interface/index/</loc>
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
@@ -445,7 +445,7 @@
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
-         <loc>https://docs.pydio.com/latest/admin-guide/advanced/</loc>
+         <loc>https://docs.pydio.com/latest/admin-guide/advanced/index/</loc>
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
@@ -473,11 +473,11 @@
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
-         <loc>https://docs.pydio.com/latest/cellsflows/</loc>
+         <loc>https://docs.pydio.com/latest/cellsflows/index/</loc>
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
-         <loc>https://docs.pydio.com/latest/cellsflows/cells-flows-manual/</loc>
+         <loc>https://docs.pydio.com/latest/cellsflows/cells-flows-manual/index/</loc>
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
@@ -489,7 +489,7 @@
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
-         <loc>https://docs.pydio.com/latest/cellsflows/cells-flows-manual/anatomy-of-a-flow/</loc>
+         <loc>https://docs.pydio.com/latest/cellsflows/cells-flows-manual/anatomy-of-a-flow/index/</loc>
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
@@ -513,7 +513,7 @@
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
-         <loc>https://docs.pydio.com/latest/cellsflows/cells-flows-manual/building-your-own-flows/</loc>
+         <loc>https://docs.pydio.com/latest/cellsflows/cells-flows-manual/building-your-own-flows/index/</loc>
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
@@ -537,7 +537,7 @@
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
-         <loc>https://docs.pydio.com/latest/cellsflows/cells-flows-manual/providing-end-user-interactions/</loc>
+         <loc>https://docs.pydio.com/latest/cellsflows/cells-flows-manual/providing-end-user-interactions/index/</loc>
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
@@ -549,7 +549,7 @@
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
-         <loc>https://docs.pydio.com/latest/cellsflows/cells-flows-manual/scripting-capabilities/</loc>
+         <loc>https://docs.pydio.com/latest/cellsflows/cells-flows-manual/scripting-capabilities/index/</loc>
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
@@ -577,7 +577,7 @@
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
-         <loc>https://docs.pydio.com/latest/cellsflows/cells-flows-manual/managing-flows/</loc>
+         <loc>https://docs.pydio.com/latest/cellsflows/cells-flows-manual/managing-flows/index/</loc>
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
@@ -597,11 +597,11 @@
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
-         <loc>https://docs.pydio.com/latest/cellsflows/preset-flows/</loc>
+         <loc>https://docs.pydio.com/latest/cellsflows/preset-flows/index/</loc>
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
-         <loc>https://docs.pydio.com/latest/cellsflows/preset-flows/intelligent-file-management/</loc>
+         <loc>https://docs.pydio.com/latest/cellsflows/preset-flows/intelligent-file-management/index/</loc>
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
@@ -617,7 +617,7 @@
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
-         <loc>https://docs.pydio.com/latest/cellsflows/preset-flows/efficient-system-maintenance/</loc>
+         <loc>https://docs.pydio.com/latest/cellsflows/preset-flows/efficient-system-maintenance/index/</loc>
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
@@ -665,7 +665,7 @@
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
-         <loc>https://docs.pydio.com/latest/cellsflows/preset-flows/automated-identity-and-access-management/</loc>
+         <loc>https://docs.pydio.com/latest/cellsflows/preset-flows/automated-identity-and-access-management/index/</loc>
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
@@ -701,7 +701,7 @@
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
-         <loc>https://docs.pydio.com/latest/cellsflows/preset-flows/data-analysis-insights-and-reporting/</loc>
+         <loc>https://docs.pydio.com/latest/cellsflows/preset-flows/data-analysis-insights-and-reporting/index/</loc>
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
@@ -729,7 +729,7 @@
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
-         <loc>https://docs.pydio.com/latest/cellsflows/preset-flows/workflow-automation/</loc>
+         <loc>https://docs.pydio.com/latest/cellsflows/preset-flows/workflow-automation/index/</loc>
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
@@ -745,7 +745,7 @@
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
-         <loc>https://docs.pydio.com/latest/cellsflows/preset-flows/data-formatting-and-conversion/</loc>
+         <loc>https://docs.pydio.com/latest/cellsflows/preset-flows/data-formatting-and-conversion/index/</loc>
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
@@ -777,11 +777,11 @@
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
-         <loc>https://docs.pydio.com/latest/cellsflows/actions/</loc>
+         <loc>https://docs.pydio.com/latest/cellsflows/actions/index/</loc>
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
-         <loc>https://docs.pydio.com/latest/cellsflows/actions/files-folders-operations/</loc>
+         <loc>https://docs.pydio.com/latest/cellsflows/actions/files-folders-operations/index/</loc>
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
@@ -825,7 +825,7 @@
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
-         <loc>https://docs.pydio.com/latest/cellsflows/actions/archives-operations/</loc>
+         <loc>https://docs.pydio.com/latest/cellsflows/actions/archives-operations/index/</loc>
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
@@ -837,7 +837,7 @@
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
-         <loc>https://docs.pydio.com/latest/cellsflows/actions/scheduler-tools-internals/</loc>
+         <loc>https://docs.pydio.com/latest/cellsflows/actions/scheduler-tools-internals/index/</loc>
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
@@ -877,7 +877,7 @@
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
-         <loc>https://docs.pydio.com/latest/cellsflows/actions/upload-download-to-external-servers/</loc>
+         <loc>https://docs.pydio.com/latest/cellsflows/actions/upload-download-to-external-servers/index/</loc>
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
@@ -897,7 +897,7 @@
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
-         <loc>https://docs.pydio.com/latest/cellsflows/actions/atomic-commands-and-scripts/</loc>
+         <loc>https://docs.pydio.com/latest/cellsflows/actions/atomic-commands-and-scripts/index/</loc>
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
@@ -917,7 +917,7 @@
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
-         <loc>https://docs.pydio.com/latest/cellsflows/actions/contents-processing/</loc>
+         <loc>https://docs.pydio.com/latest/cellsflows/actions/contents-processing/index/</loc>
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
@@ -969,7 +969,7 @@
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
-         <loc>https://docs.pydio.com/latest/cellsflows/actions/identity-management/</loc>
+         <loc>https://docs.pydio.com/latest/cellsflows/actions/identity-management/index/</loc>
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
@@ -1029,7 +1029,7 @@
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
-         <loc>https://docs.pydio.com/latest/cellsflows/actions/notifications-and-emails/</loc>
+         <loc>https://docs.pydio.com/latest/cellsflows/actions/notifications-and-emails/index/</loc>
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
@@ -1045,7 +1045,7 @@
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
-         <loc>https://docs.pydio.com/latest/cellsflows/actions/extract-load-transform/</loc>
+         <loc>https://docs.pydio.com/latest/cellsflows/actions/extract-load-transform/index/</loc>
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
@@ -1081,7 +1081,7 @@
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
-         <loc>https://docs.pydio.com/latest/cellsflows/actions/internal-actions/</loc>
+         <loc>https://docs.pydio.com/latest/cellsflows/actions/internal-actions/index/</loc>
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
@@ -1157,7 +1157,7 @@
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
-         <loc>https://docs.pydio.com/latest/cellsflows/filters-queries/</loc>
+         <loc>https://docs.pydio.com/latest/cellsflows/filters-queries/index/</loc>
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
@@ -1201,7 +1201,7 @@
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
-         <loc>https://docs.pydio.com/latest/cellsflows/template-functions/</loc>
+         <loc>https://docs.pydio.com/latest/cellsflows/template-functions/index/</loc>
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
@@ -1225,11 +1225,11 @@
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
-         <loc>https://docs.pydio.com/latest/developer-guide/</loc>
+         <loc>https://docs.pydio.com/latest/developer-guide/index/</loc>
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
-         <loc>https://docs.pydio.com/latest/developer-guide/introduction/</loc>
+         <loc>https://docs.pydio.com/latest/developer-guide/introduction/index/</loc>
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
@@ -1245,7 +1245,7 @@
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
-         <loc>https://docs.pydio.com/latest/developer-guide/introduction/consumers-examples/</loc>
+         <loc>https://docs.pydio.com/latest/developer-guide/introduction/consumers-examples/index/</loc>
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
@@ -1257,7 +1257,7 @@
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
-         <loc>https://docs.pydio.com/latest/developer-guide/clients-sdks/</loc>
+         <loc>https://docs.pydio.com/latest/developer-guide/clients-sdks/index/</loc>
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
@@ -1277,11 +1277,11 @@
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
-         <loc>https://docs.pydio.com/latest/developer-guide/rest-api/</loc>
+         <loc>https://docs.pydio.com/latest/developer-guide/rest-api/index/</loc>
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
-         <loc>https://docs.pydio.com/latest/developer-guide/rest-api/acl-service/</loc>
+         <loc>https://docs.pydio.com/latest/developer-guide/rest-api/acl-service/index/</loc>
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
@@ -1297,7 +1297,7 @@
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
-         <loc>https://docs.pydio.com/latest/developer-guide/rest-api/activity-service/</loc>
+         <loc>https://docs.pydio.com/latest/developer-guide/rest-api/activity-service/index/</loc>
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
@@ -1313,7 +1313,7 @@
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
-         <loc>https://docs.pydio.com/latest/developer-guide/rest-api/admin-tree-service/</loc>
+         <loc>https://docs.pydio.com/latest/developer-guide/rest-api/admin-tree-service/index/</loc>
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
@@ -1325,7 +1325,7 @@
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
-         <loc>https://docs.pydio.com/latest/developer-guide/rest-api/enterprise-audit-service/</loc>
+         <loc>https://docs.pydio.com/latest/developer-guide/rest-api/enterprise-audit-service/index/</loc>
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
@@ -1337,7 +1337,7 @@
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
-         <loc>https://docs.pydio.com/latest/developer-guide/rest-api/config-service/</loc>
+         <loc>https://docs.pydio.com/latest/developer-guide/rest-api/config-service/index/</loc>
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
@@ -1457,7 +1457,7 @@
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
-         <loc>https://docs.pydio.com/latest/developer-guide/rest-api/enterprise-config-service/</loc>
+         <loc>https://docs.pydio.com/latest/developer-guide/rest-api/enterprise-config-service/index/</loc>
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
@@ -1537,7 +1537,7 @@
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
-         <loc>https://docs.pydio.com/latest/developer-guide/rest-api/enterprise-front-service/</loc>
+         <loc>https://docs.pydio.com/latest/developer-guide/rest-api/enterprise-front-service/index/</loc>
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
@@ -1549,7 +1549,7 @@
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
-         <loc>https://docs.pydio.com/latest/developer-guide/rest-api/enterprise-log-service/</loc>
+         <loc>https://docs.pydio.com/latest/developer-guide/rest-api/enterprise-log-service/index/</loc>
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
@@ -1569,7 +1569,7 @@
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
-         <loc>https://docs.pydio.com/latest/developer-guide/rest-api/enterprise-policy-service/</loc>
+         <loc>https://docs.pydio.com/latest/developer-guide/rest-api/enterprise-policy-service/index/</loc>
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
@@ -1597,7 +1597,7 @@
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
-         <loc>https://docs.pydio.com/latest/developer-guide/rest-api/enterprise-templates-service/</loc>
+         <loc>https://docs.pydio.com/latest/developer-guide/rest-api/enterprise-templates-service/index/</loc>
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
@@ -1621,7 +1621,7 @@
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
-         <loc>https://docs.pydio.com/latest/developer-guide/rest-api/enterprise-token-service/</loc>
+         <loc>https://docs.pydio.com/latest/developer-guide/rest-api/enterprise-token-service/index/</loc>
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
@@ -1641,7 +1641,7 @@
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
-         <loc>https://docs.pydio.com/latest/developer-guide/rest-api/frontend-service/</loc>
+         <loc>https://docs.pydio.com/latest/developer-guide/rest-api/frontend-service/index/</loc>
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
@@ -1681,7 +1681,7 @@
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
-         <loc>https://docs.pydio.com/latest/developer-guide/rest-api/graph-service/</loc>
+         <loc>https://docs.pydio.com/latest/developer-guide/rest-api/graph-service/index/</loc>
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
@@ -1697,7 +1697,7 @@
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
-         <loc>https://docs.pydio.com/latest/developer-guide/rest-api/install-service/</loc>
+         <loc>https://docs.pydio.com/latest/developer-guide/rest-api/install-service/index/</loc>
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
@@ -1721,7 +1721,7 @@
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
-         <loc>https://docs.pydio.com/latest/developer-guide/rest-api/jobs-service/</loc>
+         <loc>https://docs.pydio.com/latest/developer-guide/rest-api/jobs-service/index/</loc>
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
@@ -1745,7 +1745,7 @@
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
-         <loc>https://docs.pydio.com/latest/developer-guide/rest-api/enterprise-license-service/</loc>
+         <loc>https://docs.pydio.com/latest/developer-guide/rest-api/enterprise-license-service/index/</loc>
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
@@ -1757,7 +1757,7 @@
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
-         <loc>https://docs.pydio.com/latest/developer-guide/rest-api/log-service/</loc>
+         <loc>https://docs.pydio.com/latest/developer-guide/rest-api/log-service/index/</loc>
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
@@ -1765,7 +1765,7 @@
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
-         <loc>https://docs.pydio.com/latest/developer-guide/rest-api/mailer-service/</loc>
+         <loc>https://docs.pydio.com/latest/developer-guide/rest-api/mailer-service/index/</loc>
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
@@ -1773,7 +1773,7 @@
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
-         <loc>https://docs.pydio.com/latest/developer-guide/rest-api/meta-service/</loc>
+         <loc>https://docs.pydio.com/latest/developer-guide/rest-api/meta-service/index/</loc>
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
@@ -1793,7 +1793,7 @@
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
-         <loc>https://docs.pydio.com/latest/developer-guide/rest-api/policy-service/</loc>
+         <loc>https://docs.pydio.com/latest/developer-guide/rest-api/policy-service/index/</loc>
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
@@ -1801,7 +1801,7 @@
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
-         <loc>https://docs.pydio.com/latest/developer-guide/rest-api/role-service/</loc>
+         <loc>https://docs.pydio.com/latest/developer-guide/rest-api/role-service/index/</loc>
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
@@ -1821,7 +1821,7 @@
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
-         <loc>https://docs.pydio.com/latest/developer-guide/rest-api/enterprise-scheduler-service/</loc>
+         <loc>https://docs.pydio.com/latest/developer-guide/rest-api/enterprise-scheduler-service/index/</loc>
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
@@ -1893,7 +1893,7 @@
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
-         <loc>https://docs.pydio.com/latest/developer-guide/rest-api/search-service/</loc>
+         <loc>https://docs.pydio.com/latest/developer-guide/rest-api/search-service/index/</loc>
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
@@ -1901,7 +1901,7 @@
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
-         <loc>https://docs.pydio.com/latest/developer-guide/rest-api/share-service/</loc>
+         <loc>https://docs.pydio.com/latest/developer-guide/rest-api/share-service/index/</loc>
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
@@ -1937,7 +1937,7 @@
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
-         <loc>https://docs.pydio.com/latest/developer-guide/rest-api/templates-service/</loc>
+         <loc>https://docs.pydio.com/latest/developer-guide/rest-api/templates-service/index/</loc>
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
@@ -1945,7 +1945,7 @@
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
-         <loc>https://docs.pydio.com/latest/developer-guide/rest-api/token-service/</loc>
+         <loc>https://docs.pydio.com/latest/developer-guide/rest-api/token-service/index/</loc>
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
@@ -1965,7 +1965,7 @@
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
-         <loc>https://docs.pydio.com/latest/developer-guide/rest-api/tree-service/</loc>
+         <loc>https://docs.pydio.com/latest/developer-guide/rest-api/tree-service/index/</loc>
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
@@ -1993,7 +1993,7 @@
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
-         <loc>https://docs.pydio.com/latest/developer-guide/rest-api/update-service/</loc>
+         <loc>https://docs.pydio.com/latest/developer-guide/rest-api/update-service/index/</loc>
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
@@ -2005,7 +2005,7 @@
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
-         <loc>https://docs.pydio.com/latest/developer-guide/rest-api/usermeta-service/</loc>
+         <loc>https://docs.pydio.com/latest/developer-guide/rest-api/usermeta-service/index/</loc>
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
@@ -2041,7 +2041,7 @@
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
-         <loc>https://docs.pydio.com/latest/developer-guide/rest-api/users-service/</loc>
+         <loc>https://docs.pydio.com/latest/developer-guide/rest-api/users-service/index/</loc>
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
@@ -2065,7 +2065,7 @@
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
-         <loc>https://docs.pydio.com/latest/developer-guide/rest-api/workspace-service/</loc>
+         <loc>https://docs.pydio.com/latest/developer-guide/rest-api/workspace-service/index/</loc>
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
@@ -2081,11 +2081,11 @@
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
-         <loc>https://docs.pydio.com/latest/developer-guide/command-line-reference/</loc>
+         <loc>https://docs.pydio.com/latest/developer-guide/command-line-reference/index/</loc>
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
-         <loc>https://docs.pydio.com/latest/developer-guide/command-line-reference/cells-binary/</loc>
+         <loc>https://docs.pydio.com/latest/developer-guide/command-line-reference/cells-binary/index/</loc>
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
@@ -2313,7 +2313,7 @@
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
-         <loc>https://docs.pydio.com/latest/developer-guide/command-line-reference/cells-client-cec/</loc>
+         <loc>https://docs.pydio.com/latest/developer-guide/command-line-reference/cells-client-cec/index/</loc>
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
@@ -2449,7 +2449,7 @@
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
-         <loc>https://docs.pydio.com/latest/developer-guide/command-line-reference/cells-sync/</loc>
+         <loc>https://docs.pydio.com/latest/developer-guide/command-line-reference/cells-sync/index/</loc>
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
@@ -2529,7 +2529,7 @@
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
-         <loc>https://docs.pydio.com/latest/developer-guide/command-line-reference/cells-enterprise/</loc>
+         <loc>https://docs.pydio.com/latest/developer-guide/command-line-reference/cells-enterprise/index/</loc>
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
@@ -2781,7 +2781,7 @@
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
-         <loc>https://docs.pydio.com/latest/developer-guide/cells-development/</loc>
+         <loc>https://docs.pydio.com/latest/developer-guide/cells-development/index/</loc>
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
@@ -2789,7 +2789,7 @@
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
-         <loc>https://docs.pydio.com/latest/developer-guide/cells-development/developing-on-cells/</loc>
+         <loc>https://docs.pydio.com/latest/developer-guide/cells-development/developing-on-cells/index/</loc>
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
@@ -2805,7 +2805,7 @@
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
-         <loc>https://docs.pydio.com/latest/developer-guide/cells-development/microservices/</loc>
+         <loc>https://docs.pydio.com/latest/developer-guide/cells-development/microservices/index/</loc>
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
@@ -2829,7 +2829,7 @@
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
-         <loc>https://docs.pydio.com/latest/developer-guide/cells-development/miscellaneous/</loc>
+         <loc>https://docs.pydio.com/latest/developer-guide/cells-development/miscellaneous/index/</loc>
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
@@ -2845,7 +2845,7 @@
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
-         <loc>https://docs.pydio.com/latest/developer-guide/cells-development/services-categories/</loc>
+         <loc>https://docs.pydio.com/latest/developer-guide/cells-development/services-categories/index/</loc>
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
@@ -2869,7 +2869,7 @@
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
-         <loc>https://docs.pydio.com/latest/developer-guide/cells-development/security-model/</loc>
+         <loc>https://docs.pydio.com/latest/developer-guide/cells-development/security-model/index/</loc>
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
@@ -2881,11 +2881,11 @@
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
-         <loc>https://docs.pydio.com/latest/knowledge-base/</loc>
+         <loc>https://docs.pydio.com/latest/knowledge-base/index/</loc>
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
-         <loc>https://docs.pydio.com/latest/knowledge-base/access-control/</loc>
+         <loc>https://docs.pydio.com/latest/knowledge-base/access-control/index/</loc>
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
@@ -2905,7 +2905,7 @@
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
-         <loc>https://docs.pydio.com/latest/knowledge-base/advanced_configuration/</loc>
+         <loc>https://docs.pydio.com/latest/knowledge-base/advanced_configuration/index/</loc>
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
@@ -2913,7 +2913,7 @@
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
-         <loc>https://docs.pydio.com/latest/knowledge-base/cells-in-production/</loc>
+         <loc>https://docs.pydio.com/latest/knowledge-base/cells-in-production/index/</loc>
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
@@ -2937,7 +2937,7 @@
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
-         <loc>https://docs.pydio.com/latest/knowledge-base/client-applications/</loc>
+         <loc>https://docs.pydio.com/latest/knowledge-base/client-applications/index/</loc>
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
@@ -2949,7 +2949,7 @@
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
-         <loc>https://docs.pydio.com/latest/knowledge-base/deployment/</loc>
+         <loc>https://docs.pydio.com/latest/knowledge-base/deployment/index/</loc>
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
@@ -3005,7 +3005,7 @@
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
-         <loc>https://docs.pydio.com/latest/knowledge-base/identity-management/</loc>
+         <loc>https://docs.pydio.com/latest/knowledge-base/identity-management/index/</loc>
          <lastmod>2026-05-26</lastmod>
     </url>
     <url>
