@@ -62,12 +62,13 @@ Groups can be nested, by using a "slash" (`/`) separator in their name (think of
 
 As a result, the "Metadata Info" panel shown to users will look as below: 
 
-<table width="100%" align="center">
-<tr>
-<td> <img src="../images/4_connecting_your_storage/meta-grouping-closed.png  alt="Closed"></td>
-<td> <img src="../images/4_connecting_your_storage/meta-grouping-open.png  alt="Open"> </td>
-</tr>
-</table>
+Collapsed:
+
+![](../images/4_connecting_your_storage/meta-grouping-closed.png)
+
+Expanded:
+
+![](../images/4_connecting_your_storage/meta-grouping-open.png)
 
 Additionally, the **Order** field allows you to fix the order of the fields.
 
