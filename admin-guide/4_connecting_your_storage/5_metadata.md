@@ -64,8 +64,8 @@ As a result, the "Metadata Info" panel shown to users will look as below:
 
 <table width="100%" align="center">
 <tr>
-<td>![](../images/4_connecting_your_storage/meta-grouping-closed.png)</td>
-<td>![](../images/4_connecting_your_storage/meta-grouping-open.png)</td>
+<td> <img src="../images/4_connecting_your_storage/meta-grouping-closed.png  alt="Closed"></td>
+<td> <img src="../images/4_connecting_your_storage/meta-grouping-open.png  alt="Open"> </td>
 </tr>
 </table>
 
